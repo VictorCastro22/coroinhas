@@ -1,9 +1,9 @@
-import Formulario from "../Formulario";
+import CalendarioPadres from "../CalendarioPadres";
 
 const CriarEscala: React.FC = () => {
   return (
-    <div>
-      <Formulario />
+    <div className="p-4">
+      <CalendarioPadres />
     </div>
   );
 };
