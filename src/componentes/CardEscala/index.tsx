@@ -12,9 +12,10 @@ interface CardEscalaProps {
   horario: string;
   local: string;
   coroinhas: Coroinha[];
+  selectedCoroinha?: string;
   onAddCoroinha: () => void;
   onDeleteCoroinha: (id: string) => void;
-  isPublicView?: boolean; // Nova prop opcional para controle de exibição
+  isPublicView?: boolean;
 }
 
 const CardEscala: React.FC<CardEscalaProps> = ({
@@ -23,11 +24,16 @@ const CardEscala: React.FC<CardEscalaProps> = ({
   horario,
   local,
   coroinhas,
+  selectedCoroinha,
   onAddCoroinha,
   onDeleteCoroinha,
-  isPublicView = false, // Valor padrão é false
+  isPublicView = false,
 }) => {
   const dataFormatada = format(new Date(`${data}T00:00:00`), "dd-MM-yyyy");
+
+  const coroinhasFiltrados = selectedCoroinha
+    ? coroinhas.filter(coroinha => coroinha.id === selectedCoroinha)
+    : coroinhas;
 
   return (
     <div className="flex flex-col border p-4 rounded-md shadow-md mb-4">
@@ -45,7 +51,7 @@ const CardEscala: React.FC<CardEscalaProps> = ({
             {dataFormatada} - {horario}
           </p>
         </div>
-        {!isPublicView && ( // Exibir o botão de adicionar apenas se não for a visualização pública
+        {!isPublicView && (
           <button
             type="button"
             onClick={onAddCoroinha}
@@ -57,7 +63,7 @@ const CardEscala: React.FC<CardEscalaProps> = ({
       </div>
 
       <ul className="mt-4">
-        {coroinhas.map((coroinha) => (
+        {coroinhasFiltrados.map((coroinha) => (
           <li
             key={coroinha.id}
             className="flex items-center justify-between border-b py-2"
@@ -70,7 +76,7 @@ const CardEscala: React.FC<CardEscalaProps> = ({
               />
               <span>{coroinha.nome}</span>
             </div>
-            {!isPublicView && ( // Exibir o botão de excluir apenas se não for a visualização pública
+            {!isPublicView && (
               <div className="space-x-2">
                 <button
                   type="button"
