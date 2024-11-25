@@ -13,8 +13,7 @@ interface Coroinha {
 const EscalaFixa: React.FC = () => {
   const [coroinhasData, setCoroinhas] = useState<{ [key: string]: Coroinha[] }>({});
   const [coroinhas, setCoroinhasList] = useState<Coroinha[]>([]);
-  const [selectedCoroinha, setSelectedCoroinha] = useState<string>("");
-  const [filteredEscalas, setFilteredEscalas] = useState<typeof escalas>([]);
+  const [searchTerm, setSearchTerm] = useState<string>("");
 
   const escalas = useMemo(() => [
     { id: "1-2024-11-26-19h-São-Benedito", data: "2024-11-26", horario: "19h", local: "São Benedito", padre: "Padre Eudásio" },
@@ -50,29 +49,30 @@ const EscalaFixa: React.FC = () => {
     fetchCoroinhas();
   }, []);
 
-  useEffect(() => {
-    if (selectedCoroinha) {
-      const newFilteredEscalas = escalas.filter(escala =>
-        coroinhasData[escala.id]?.some(coroinha => coroinha.id === selectedCoroinha)
-      );
-      setFilteredEscalas(newFilteredEscalas);
-    } else {
-      setFilteredEscalas(escalas);
-    }
-  }, [selectedCoroinha, coroinhasData, escalas]);
+  const filteredCoroinhas = coroinhas.filter(coroinha =>
+    coroinha.nome.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const filteredEscalas = escalas.filter(escala =>
+    filteredCoroinhas.some(coroinha =>
+      coroinhasData[escala.id]?.some(c => c.id === coroinha.id)
+    )
+  );
 
   const generatePDF = () => {
     const doc = new jsPDF();
-    const coroinha = coroinhas.find(c => c.id === selectedCoroinha);
-
+  
     doc.setFontSize(18);
     doc.text("Escala de Serviço - Coroinha", 14, 22);
-
-    if (coroinha) {
-      doc.setFontSize(14);
-      doc.text(`Coroinha: ${coroinha.nome}`, 14, 30);
+  
+    if (searchTerm) {
+      const coroinha = coroinhas.find(c => c.nome.toLowerCase() === searchTerm.toLowerCase());
+      if (coroinha) {
+        doc.setFontSize(14);
+        doc.text(`Coroinha: ${coroinha.nome}`, 14, 30);
+      }
     }
-
+  
     filteredEscalas.forEach((escala, index) => {
       const y = 40 + (index * 10);
       doc.setFontSize(12);
@@ -81,9 +81,9 @@ const EscalaFixa: React.FC = () => {
       doc.text(`Local: ${escala.local}`, 110, y);
       doc.text(`Padre: ${escala.padre}`, 160, y);
     });
-
+  
     doc.save("escala-coroinha.pdf");
-  };
+  };  
 
   return (
     <div className="container mx-auto p-4">
@@ -95,24 +95,18 @@ const EscalaFixa: React.FC = () => {
       </h1>
 
       <div className="mb-6">
-        <label htmlFor="coroinha" className="block mb-2 text-sm font-medium text-gray-700">Filtrar por Coroinha:</label>
-        <select
-          id="coroinha"
-          value={selectedCoroinha}
-          onChange={(e) => setSelectedCoroinha(e.target.value)}
+        <input
+          type="text"
+          placeholder="Buscar coroinha"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
           className="w-full p-2 border border-gray-300 rounded-md"
-        >
-          <option value="">Selecione um coroinha</option>
-          {coroinhas.map((coroinha) => (
-            <option key={coroinha.id} value={coroinha.id}>
-              {coroinha.nome}
-            </option>
-          ))}
-        </select>
+        />
       </div>
 
       <div className="flex justify-center mb-6">
         <button
+          type="button"
           onClick={generatePDF}
           className="px-4 py-2 bg-blue-500 text-white rounded-md"
         >
@@ -127,8 +121,7 @@ const EscalaFixa: React.FC = () => {
           data={escala.data}
           horario={escala.horario}
           local={escala.local}
-          coroinhas={coroinhasData[escala.id] || []}
-          selectedCoroinha={selectedCoroinha}
+          coroinhas={coroinhasData[escala.id]?.filter(coroinha => coroinha.nome.toLowerCase().includes(searchTerm.toLowerCase())) || []}
           onAddCoroinha={() => {}}
           onDeleteCoroinha={() => {}}
           isPublicView={true}
