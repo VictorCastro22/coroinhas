@@ -48,7 +48,7 @@ const CalendarioPadres: React.FC = () => {
       const docRef = await addDoc(collection(db, "coroinhas"), {
         nome: coroinha.nome,
         cardId: selectedCard,
-        foto: coroinha.foto, // Adiciona a URL da foto ao Firestore
+        foto: coroinha.foto,
       });
   
       const novosCoroinhas = [
@@ -78,10 +78,9 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "1-2024-11-26-19h-São-Benedito", data: "2024-11-26", horario: "19h", local: "São Benedito", padre: "Padre Eudásio" },
-    { id: "2-2024-11-26-19h-São-Pedro", data: "2024-11-26", horario: "19h", local: "São Pedro", padre: "Padre Ivan" },
-    { id: "1-2024-11-27-19h-Cônego-Pinto", data: "2024-11-27", horario: "19h", local: "Cônego Pinto", padre: "Padre Eudásio" },
-    { id: "2-2024-11-27-19h-Santos-Dumont", data: "2024-11-27", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
+    { id: "1-2024-11-27-19h-Cônego-Pinto", data: "2024-11-27", horario: "19h", local: "Cônego Pinto", padre: "Padre Otaviano" },
+    { id: "2-2024-11-27-19h-Matriz", data: "2024-11-27", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
+    { id: "2-2024-11-27-19h-Santos-Dumont", data: "2024-11-27", horario: "19h", local: "Santos Dumont", padre: "Diácono Alexandre" },
     { id: "1-2024-11-28-19h-Mãe-Rainha", data: "2024-11-28", horario: "19h", local: "Mãe Rainha", padre: "Padre Eudásio" },
     { id: "2-2024-11-28-19h-Campo-Delta", data: "2024-11-28", horario: "19h", local: "Campo Delta", padre: "Padre Ivan" },
     { id: "2-2024-11-29-19h-Rosário", data: "2024-11-29", horario: "19h", local: "Rosário", padre: "Padre Ivan" },

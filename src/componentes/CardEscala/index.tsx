@@ -30,38 +30,57 @@ const CardEscala: React.FC<CardEscalaProps> = ({
   isPublicView = false,
 }) => {
   const dataFormatada = format(new Date(`${data}T00:00:00`), "dd-MM-yyyy");
-
   const coroinhasFiltrados = selectedCoroinha
-    ? coroinhas.filter(coroinha => coroinha.id === selectedCoroinha)
+    ? coroinhas.filter((coroinha) => coroinha.id === selectedCoroinha)
     : coroinhas;
+
+  const getFotoPadre = (padre: string) => {
+    switch (padre) {
+      case "Diácono Alexandre":
+        return "/diac-alexandre.png";
+      case "Padre Eudásio":
+        return "/paroco.jpg";
+      case "Padre Ivan":
+        return "/vigario.png";
+      default:
+        return "/imagens/semfoto.jpg";
+    }
+  };
 
   return (
     <div className="flex flex-col border p-4 rounded-md shadow-md mb-4">
-      <div className="flex items-center">
-        <div className="flex-shrink-0 w-12 h-12 rounded-full overflow-hidden bg-gray-200">
-          <img
-            src={padre === "Padre Eudásio" ? "/paroco.jpg" : "/vigario.png"}
-            alt={padre}
-            className="w-full h-full object-cover"
-          />
+      {/* Cabeçalho com layout ajustado */}
+      <div className="flex items-center mb-4">
+        {/* Foto e Nome no lado esquerdo */}
+        <div className="flex flex-col items-center mr-4">
+          <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-200">
+            <img
+              src={getFotoPadre(padre)}
+              alt={padre}
+              className="w-full h-full object-cover"
+            />
+          </div>
+          <p className="mt-2 font-medium text-gray-800 text-center">{padre}</p>
         </div>
-        <div className="flex-1 ml-4 text-center">
-          <p className="font-medium">{local}</p>
-          <p className="text-sm text-gray-600">
+        {/* Informações Centrais */}
+        <div className="flex-1 text-center">
+          <p className="font-bold text-lg">{local}</p>
+          <p className="text-base text-gray-700">
             {dataFormatada} - {horario}
           </p>
+          {!isPublicView && (
+            <button
+              type="button"
+              onClick={onAddCoroinha}
+              className="text-green-500 text-lg font-bold hover:text-green-700 mt-2"
+            >
+              +
+            </button>
+          )}
         </div>
-        {!isPublicView && (
-          <button
-            type="button"
-            onClick={onAddCoroinha}
-            className="text-green-500 text-lg font-bold hover:text-green-700"
-          >
-            +
-          </button>
-        )}
       </div>
 
+      {/* Lista de Coroinhas */}
       <ul className="mt-4">
         {coroinhasFiltrados.map((coroinha) => (
           <li
