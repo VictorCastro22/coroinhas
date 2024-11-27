@@ -62,7 +62,7 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
                     }}
                     onKeyDown={(e) => {
                       if (e.key === "Enter" || e.key === " ") {
-                        e.preventDefault(); // Previne a rolagem da página ao pressionar Espaço
+                        e.preventDefault();
                       }
                     }}
                   >

@@ -49,9 +49,9 @@ const CardEscala: React.FC<CardEscalaProps> = ({
 
   return (
     <div className="flex flex-col border p-4 rounded-md shadow-md mb-4">
-      {/* Cabeçalho com layout ajustado */}
+      
       <div className="flex items-center mb-4">
-        {/* Foto e Nome no lado esquerdo */}
+        
         <div className="flex flex-col items-center mr-4">
           <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-200">
             <img
@@ -62,7 +62,7 @@ const CardEscala: React.FC<CardEscalaProps> = ({
           </div>
           <p className="mt-2 font-medium text-gray-800 text-center">{padre}</p>
         </div>
-        {/* Informações Centrais */}
+        
         <div className="flex-1 text-center">
           <p className="font-bold text-lg">{local}</p>
           <p className="text-base text-gray-700">
@@ -80,7 +80,7 @@ const CardEscala: React.FC<CardEscalaProps> = ({
         </div>
       </div>
 
-      {/* Lista de Coroinhas */}
+
       <ul className="mt-4">
         {coroinhasFiltrados.map((coroinha) => (
           <li
