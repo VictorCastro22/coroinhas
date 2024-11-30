@@ -84,9 +84,9 @@ const CalendarioPadres: React.FC = () => {
     { id: "1-2024-11-30-20h-Casamento-na-Matriz", data: "2024-11-30", horario: "20h", local: "Casamento na Matriz", padre: "Padre Eudásio" },
 
     { id: "19-2024-12-01-07h-Matriz", data: "2024-12-01", horario: "07h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "34-2024-12-01-07h-Divino", data: "2024-12-01", horario: "07h", local: "Divino", padre: "Diác. João Paulo" },
+
     { id: "20-2024-12-01-09h-Matriz", data: "2024-12-01", horario: "09h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "35-2024-12-01-09h-Sao-Jose", data: "2024-12-01", horario: "09h", local: "São José", padre: "Cele. Leanderson" },
+    
     { id: "2-2024-12-01-17h-Centro-de-Pastoral", data: "2024-12-01", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
     { id: "21-2024-12-01-17h-Divino", data: "2024-12-01", horario: "17h", local: "Divino", padre: "Padre Ivan" },
     { id: "3-2024-12-01-19h-Matriz", data: "2024-12-01", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
@@ -104,7 +104,7 @@ const CalendarioPadres: React.FC = () => {
 
     { id: "07-2024-12-05-08h-Confissões-na-Matriz", data: "2024-12-05", horario: "08h", local: "Matriz", padre: "Padre Ivan" },
     { id: "27-2024-12-05-19h-Parque-Rosas", data: "2024-12-05", horario: "19h", local: "Parque das Rosas", padre: "Padre Ivan" },
-    { id: "27-2024-12-05-19h-Mororó", data: "2024-12-05", horario: "19h", local: "Mororó", padre: "Cele. Edilson " },
+
 
     { id: "11-2024-12-06-18h-Centro-de-Pastoral", data: "2024-12-06", horario: "18h", local: "Centro de Pastoral (1ª sexta)", padre: "Padre Eudásio" },
     { id: "28-2024-12-06-19h-Lages", data: "2024-12-06", horario: "19h", local: "Lages", padre: "Padre Ivan" },
@@ -140,16 +140,13 @@ const CalendarioPadres: React.FC = () => {
     { id: "12-2024-12-13-17h-Vilares", data: "2024-12-13", horario: "17h", local: "Vilares", padre: "Padre Ivan" },
     { id: "10-2024-12-13-19h-Santa-Luzia", data: "2024-12-13", horario: "19h", local: "Santa Luzia (Encerramento)", padre: "Padre Eudásio" },
     { id: "13-2024-12-13-19h-Parque-São-João", data: "2024-12-13", horario: "19h", local: "Parque São João", padre: "Padre Ivan" },
-    { id: "10-2024-12-13-19h-Cônego-Pinto", data: "2024-12-13", horario: "19h", local: "Cônego Pinto", padre: "Cele. Eduardo Cabral " },
     { id: "13-2024-12-13-19h-Rosário", data: "2024-12-13", horario: "19h", local: " Rosário", padre: "Diác. João Paulo" },
 
 
     { id: "17-2024-12-14-10h-Casamento-na-Outra-Banda", data: "2024-12-14", horario: "10h", local: "Casamento na Outra Banda", padre: "Padre Ivan" },
     { id: "15-2024-12-14-17h-Divino", data: "2024-12-14", horario: "17h", local: "Divino", padre: "Padre Eudásio" },
     { id: "18-2024-12-14-17h-Santo-Antônio", data: "2024-12-14", horario: "17h", local: "Santo Antônio", padre: "Padre Ivan" },
-    { id: "19-2024-12-14-17h-Santo-Luzia", data: "2024-12-14", horario: "17h", local: "Santa Luzia", padre: "Cele. Nildo" },
     { id: "20-2024-12-14-17h-Abrigo", data: "2024-12-14", horario: "17h", local: "Abrigo", padre: "Diác. João Paulo" },
-    { id: "21-2024-12-14-17h-Santa-Dulce", data: "2024-12-14", horario: "17h", local: "Santa Dulce", padre: "Cele. Carlos " },
     { id: "18-2024-12-14-19h-Outra-Banda", data: "2024-12-14", horario: "19h", local: "Outra Banda", padre: "Padre Ivan" },
     { id: "18-2024-12-14-19h-Matriz", data: "2024-12-14", horario: "19h", local: "Matriz", padre: "Diác. João Paulo" },
 
@@ -178,7 +175,6 @@ const CalendarioPadres: React.FC = () => {
     { id: "22-2024-12-19-19h-Tangueira", data: "2024-12-19", horario: "19h", local: "Tangueira", padre: "Padre Ivan" },
 
     { id: "23-2024-12-20-19h-Areninha-Area-Verde", data: "2024-12-20", horario: "19h", local: "Areninha da Área Verde", padre: "Padre Ivan" },
-    { id: "24-2024-12-20-19h-Rosario", data: "2024-12-20", horario: "19h", local: "Rosário", padre: "Cele. Djacir" },
 
     { id: "11-2024-12-21-17h-Santo-Antonio", data: "2024-12-21", horario: "17h", local: "Santo Antônio", padre: "Padre Eudásio" },
     { id: "25-2024-12-21-17h-Santa-Luzia", data: "2024-12-21", horario: "17h", local: "Santa Luzia", padre: "Padre Ivan" },
@@ -217,7 +213,6 @@ const CalendarioPadres: React.FC = () => {
 
     { id: "39-2024-12-26-19h-Mae-Rainha", data: "2024-12-26", horario: "19h", local: "Mãe Rainha", padre: "Padre Eudásio" },
     { id: "56-2024-12-26-19h-Fortaleza", data: "2024-12-26", horario: "19h", local: "Fortaleza", padre: "Padre Ivan" },
-    { id: "65-2024-12-26-19h-Campo-Delta", data: "2024-12-26", horario: "19h", local: "Campo Delta", padre: "Cele. Nicodemos" },
 
     { id: "41-2024-12-27-19h-Rosario", data: "2024-12-27", horario: "19h", local: "Rosário", padre: "Padre Eudásio" },
     { id: "57-2024-12-27-19h-Conego-Pinto", data: "2024-12-27", horario: "19h", local: "Cônego Pinto", padre: "Padre Ivan" },
