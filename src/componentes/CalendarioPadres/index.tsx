@@ -85,6 +85,7 @@ const CalendarioPadres: React.FC = () => {
     { id: "05-2024-12-04-17h-Matriz", data: "2024-12-04", horario: "17h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "8-2024-12-04-19h-Missa-pelas-familias", data: "2024-12-04", horario: "19h", local: "Matriz - Missa pelas famílias", padre: "Padre Eudásio" },
     { id: "25-2024-12-04-19h-Guabiraba", data: "2024-12-04", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
+    { id: "25-2024-12-04-19h-SantaLuzia", data: "2024-12-04", horario: "19h", local: "Santa Luzia", padre: "Padre Rafhael" },
 
     { id: "07-2024-12-05-08h-Confissões-na-Matriz", data: "2024-12-05", horario: "08h", local: "Matriz", padre: "Padre Ivan" },
     { id: "27-2024-12-05-19h-Parque-Rosas", data: "2024-12-05", horario: "19h", local: "Parque das Rosas", padre: "Padre Ivan" },
@@ -96,7 +97,7 @@ const CalendarioPadres: React.FC = () => {
    
     { id: "29-2024-12-07-17h-Santo-Antonio", data: "2024-12-07", horario: "17h", local: "Santo Antônio", padre: "Padre Ivan" },
     { id: "14-2024-12-07-19h-Coite", data: "2024-12-07", horario: "19h", local: "Coité (Missa e batizados)", padre: "Padre Eudásio" },
-    { id: "30-2024-12-07-19h-Matriz", data: "2024-12-07", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
+    { id: "30-2024-12-07-19h-Santa Luzia", data: "2024-12-07", horario: "19h", local: "Santa Luzia", padre: "Padre Ivan" },
 
     { id: "15-2024-12-08-07h-Matriz", data: "2024-12-08", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "31-2024-12-08-07h-Divino", data: "2024-12-08", horario: "07h", local: "Divino", padre: "Padre Ivan" },
@@ -108,9 +109,11 @@ const CalendarioPadres: React.FC = () => {
 
 
     { id: "01-2024-12-09-19h-Carrapato", data: "2024-12-09", horario: "19h", local: "Carrapato (Festa de Santa Luzia)", padre: "Padre Eudásio" },
+    { id: "01-2024-12-09-19h-SantaLuzia", data: "2024-12-09", horario: "19h", local: "Santa Luzia", padre: "Padre João Paulo" },
 
     { id: "02-2024-12-10-19h-São-Pedro", data: "2024-12-10", horario: "19h", local: "São Pedro", padre: "Padre Eudásio" },
     { id: "03-2024-12-10-19h-Planalto-dos-Cajueiros", data: "2024-12-10", horario: "19h", local: "Planalto dos Cajueiros", padre: "Padre Ivan" },
+    { id: "01-2024-12-09-19h-SantaLuzia", data: "2024-12-10", horario: "19h", local: "Santa Luzia", padre: "Padre William" },
 
     { id: "04-2024-12-11-19h-Ocara", data: "2024-12-11", horario: "19h", local: "Ocara", padre: "Padre Eudásio" },
     { id: "05-2024-12-11-19h-Santos-Dumont", data: "2024-12-11", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
