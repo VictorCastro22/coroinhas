@@ -78,22 +78,8 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "2-2024-11-30-19h-Matriz", data: "2024-11-30", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "1-2024-11-30-20h-Casamento-na-Matriz", data: "2024-11-30", horario: "20h", local: "Casamento na Matriz", padre: "Padre Eudásio" },
-
-    { id: "19-2024-12-01-07h-Matriz", data: "2024-12-01", horario: "07h", local: "Matriz", padre: "Padre Ivan" },
-
-    { id: "20-2024-12-01-09h-Matriz", data: "2024-12-01", horario: "09h", local: "Matriz", padre: "Padre Ivan" },
-    
-    { id: "2-2024-12-01-17h-Centro-de-Pastoral", data: "2024-12-01", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
-    { id: "21-2024-12-01-17h-Divino", data: "2024-12-01", horario: "17h", local: "Divino", padre: "Padre Ivan" },
-    { id: "3-2024-12-01-19h-Matriz", data: "2024-12-01", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "22-2024-12-01-19h-Parque-Sao-Joao", data: "2024-12-01", horario: "19h", local: "Parque São João", padre: "Padre Ivan" },
-
     { id: "5-2024-12-03-19h-Vila-da-Serra-do-Lagedo", data: "2024-12-03", horario: "19h", local: "Vila da Serra do Lagêdo", padre: "Padre Eudásio" },
     { id: "24-2024-12-03-19h-Santa-Luzia", data: "2024-12-03", horario: "19h", local: "Santa Luzia (Procissão e Missa)", padre: "Padre Ivan" },
-    { id: "36-2024-12-03-19h-Vilares", data: "2024-12-03", horario: "19h", local: "Vilares", padre: "Marquinhos/Elzir" },
-    { id: "36-2024-12-03-19h-Urucará", data: "2024-12-03", horario: "19h", local: "Urucará", padre: "Diác. João Paulo" },
 
     { id: "04-2024-12-04-08h-Secretaria-da-Paroquia", data: "2024-12-04", horario: "08h", local: "Secretaria da Paróquia", padre: "Padre Eudásio" },
     { id: "05-2024-12-04-17h-Matriz", data: "2024-12-04", horario: "17h", local: "Matriz", padre: "Padre Eudásio" },
@@ -138,15 +124,12 @@ const CalendarioPadres: React.FC = () => {
     { id: "12-2024-12-13-17h-Vilares", data: "2024-12-13", horario: "17h", local: "Vilares", padre: "Padre Ivan" },
     { id: "10-2024-12-13-19h-Santa-Luzia", data: "2024-12-13", horario: "19h", local: "Santa Luzia (Encerramento)", padre: "Padre Eudásio" },
     { id: "13-2024-12-13-19h-Parque-São-João", data: "2024-12-13", horario: "19h", local: "Parque São João", padre: "Padre Ivan" },
-    { id: "13-2024-12-13-19h-Rosário", data: "2024-12-13", horario: "19h", local: " Rosário", padre: "Diác. João Paulo" },
 
 
     { id: "17-2024-12-14-10h-Casamento-na-Outra-Banda", data: "2024-12-14", horario: "10h", local: "Casamento na Outra Banda", padre: "Padre Ivan" },
     { id: "15-2024-12-14-17h-Divino", data: "2024-12-14", horario: "17h", local: "Divino", padre: "Padre Eudásio" },
     { id: "18-2024-12-14-17h-Santo-Antônio", data: "2024-12-14", horario: "17h", local: "Santo Antônio", padre: "Padre Ivan" },
-    { id: "20-2024-12-14-17h-Abrigo", data: "2024-12-14", horario: "17h", local: "Abrigo", padre: "Diác. João Paulo" },
     { id: "18-2024-12-14-19h-Outra-Banda", data: "2024-12-14", horario: "19h", local: "Outra Banda", padre: "Padre Ivan" },
-    { id: "18-2024-12-14-19h-Matriz", data: "2024-12-14", horario: "19h", local: "Matriz", padre: "Diác. João Paulo" },
 
     { id: "20-2024-12-15-07h-Divino", data: "2024-12-15", horario: "07h", local: "Divino", padre: "Padre Eudásio" },
     { id: "21-2024-12-15-07h-Matriz", data: "2024-12-15", horario: "07h", local: "Matriz", padre: "Padre Ivan" },
