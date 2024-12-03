@@ -78,9 +78,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "5-2024-12-03-19h-Vila-da-Serra-do-Lagedo", data: "2024-12-03", horario: "19h", local: "Vila da Serra do Lagêdo", padre: "Padre Eudásio" },
-    { id: "24-2024-12-03-19h-Santa-Luzia", data: "2024-12-03", horario: "19h", local: "Santa Luzia (Procissão e Missa)", padre: "Padre Ivan" },
-
     { id: "04-2024-12-04-08h-Secretaria-da-Paroquia", data: "2024-12-04", horario: "08h", local: "Secretaria da Paróquia", padre: "Padre Eudásio" },
     { id: "05-2024-12-04-17h-Matriz", data: "2024-12-04", horario: "17h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "8-2024-12-04-19h-Missa-pelas-familias", data: "2024-12-04", horario: "19h", local: "Matriz - Missa pelas famílias", padre: "Padre Eudásio" },
