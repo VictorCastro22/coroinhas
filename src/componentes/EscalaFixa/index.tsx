@@ -47,7 +47,7 @@ const EscalaFixa: React.FC = () => {
 
 
     { id: "01-2024-12-09-19h-Carrapato", data: "2024-12-09", horario: "19h", local: "Carrapato (Festa de Santa Luzia)", padre: "Padre Eudásio" },
-    { id: "02-2024-12-09-19h-SantaLuzia", data: "2024-12-09", horario: "19h", local: "Santa Luzia", padre: "Padre João Paulo" },
+    { id: "02-2024-12-09-19h-Santa-Luzia", data: "2024-12-09", horario: "19h", local: "Santa Luzia", padre: "Padre João Paulo" },
 
     { id: "02-2024-12-10-19h-São-Pedro", data: "2024-12-10", horario: "19h", local: "São Pedro", padre: "Padre Eudásio" },
     { id: "03-2024-12-10-19h-Planalto-dos-Cajueiros", data: "2024-12-10", horario: "19h", local: "Planalto dos Cajueiros", padre: "Padre Ivan" },
