@@ -1,5 +1,4 @@
 const coroinhas = [
-  { id: "1", nome: "Sem Coroinhas", foto: "/imagens/semfoto.jpg" },
   { id: "75", nome: "Confissão", foto: "/imagens/confissao.png" },
   { id: "2", nome: "Adrian", foto: "/imagens/Adrian-mestre.png" },
   { id: "3", nome: "Ana Luiza", foto: "/imagens/semfoto.jpg" },
