@@ -15,12 +15,14 @@ const CalendarioPadres: React.FC = () => {
   const [coroinhasData, setCoroinhas] = useState<{ [key: string]: Coroinha[] }>({});
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
   const [selectedCoroinha, setSelectedCoroinha] = useState<string>("");
+  const [selectionCounts, setSelectionCounts] = useState<{ [key: string]: number }>({});
 
   useEffect(() => {
     const fetchCoroinhas = async () => {
       const querySnapshot = await getDocs(collection(db, "coroinhas"));
       const coroinhasData: { [key: string]: Coroinha[] } = {};
-  
+      const counts: { [key: string]: number } = {};
+
       for (const doc of querySnapshot.docs) {
         const data = doc.data();
         const cardId = data.cardId;
@@ -30,40 +32,47 @@ const CalendarioPadres: React.FC = () => {
           nome: data.nome,
           foto: data.foto,
         });
+        counts[data.nome] = (counts[data.nome] || 0) + 1;
       }
-  
+
       setCoroinhas(coroinhasData);
+      setSelectionCounts(counts);
     };
-  
+
     fetchCoroinhas();
-  }, []);  
+  }, []);
 
   const handleSubmitCoroinha = async () => {
     if (!selectedCard || !selectedCoroinha) return;
-  
+
     try {
       const coroinha = coroinhas.find(c => c.id === selectedCoroinha);
       if (!coroinha) return;
-  
+
       const docRef = await addDoc(collection(db, "coroinhas"), {
         nome: coroinha.nome,
         cardId: selectedCard,
         foto: coroinha.foto,
       });
-  
+
       const novosCoroinhas = [
         ...(coroinhasData[selectedCard] || []),
         { id: docRef.id, nome: coroinha.nome, foto: coroinha.foto },
       ];
       setCoroinhas({ ...coroinhasData, [selectedCard]: novosCoroinhas });
-  
+
+      setSelectionCounts({ 
+        ...selectionCounts, 
+        [coroinha.nome]: (selectionCounts[coroinha.nome] || 0) + 1 
+      });
+
       setSelectedCard(null);
       setSelectedCoroinha("");
     } catch (error) {
       console.error("Erro ao adicionar coroinha:", error);
     }
   };  
-  
+
   const handleDeleteCoroinha = async (cardId: string, coroinhaId: string) => {
     try {
       await deleteDoc(doc(db, "coroinhas", coroinhaId));
@@ -272,6 +281,7 @@ const CalendarioPadres: React.FC = () => {
         onClose={() => setSelectedCard(null)}
         selectedCoroinha={selectedCoroinha}
         setSelectedCoroinha={setSelectedCoroinha}
+        selectionCounts={selectionCounts}
       />
 
     </div>

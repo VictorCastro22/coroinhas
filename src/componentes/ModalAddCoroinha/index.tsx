@@ -13,6 +13,7 @@ interface ModalAddCoroinhaProps {
   onClose: () => void;
   selectedCoroinha: string;
   setSelectedCoroinha: (value: string) => void;
+  selectionCounts: { [key: string]: number }; 
 }
 
 const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
@@ -22,6 +23,7 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
   onClose,
   selectedCoroinha,
   setSelectedCoroinha,
+  selectionCounts // Adicione esta linha
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -66,7 +68,7 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
                       }
                     }}
                   >
-                    {coroinha.nome}
+                    {coroinha.nome} ({selectionCounts[coroinha.nome] || 0})
                   </button>
                 </li>
               ))}
