@@ -4,6 +4,7 @@ import CriarEscala from "./componentes/CriarEscala";
 import ProtectedRoute from "./componentes/ProtectedRoute";
 import TelaInicial from "./componentes/TelaInicial";
 import EscalaFixa from "./componentes/EscalaFixa";
+import Festejos from "./componentes/Festejos";
 
 const App: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<TelaInicial />} />
         <Route path="/escala-fixa" element={<EscalaFixa />} />
+        <Route path="/festejos-sao-sebastiao" element={<Festejos />} />
         <Route path="/login" element={<Login />} />
         <Route
           path="/criar-escala"
