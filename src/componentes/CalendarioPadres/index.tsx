@@ -240,18 +240,6 @@ const CalendarioPadres: React.FC = () => {
     { id: "77-2025-01-05-17h-Centro-de-Pastoral", data: "2025-01-05", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
     { id: "89-2025-01-05-17h-Parque-Sao-Joao", data: "2025-01-05", horario: "17h", local: "Parque São João", padre: "Padre Ivan" },
     { id: "78-2025-01-05-19h-Matriz", data: "2025-01-05", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-
-      { id: "01-Festejos", data: "2025-01-10", horario: "18h", local: "Matriz - Abertura", padre: "Padre Eudásio" },
-      { id: "02-Festejos", data: "2025-01-11", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "03-Festejos", data: "2025-01-12", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "04-Festejos", data: "2025-01-13", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "05-Festejos", data: "2025-01-14", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "06-Festejos", data: "2025-01-15", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "07-Festejos", data: "2025-01-16", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "08-Festejos", data: "2025-01-17", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "09-Festejos", data: "2025-01-18", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "10-Festejos", data: "2025-01-19", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "11-Festejos", data: "2025-01-20", horario: "18h", local: "Matriz - Encerramento", padre: "Padre Eudásio" },
   ];
 
   return (

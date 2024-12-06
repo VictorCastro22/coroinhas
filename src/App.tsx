@@ -12,7 +12,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<TelaInicial />} />
         <Route path="/escala-fixa" element={<EscalaFixa />} />
-        <Route path="/festejos-sao-sebastiao" element={<Festejos />} />
+        <Route path="/santa-luzia" element={<Festejos />} />
         <Route path="/login" element={<Login />} />
         <Route
           path="/criar-escala"

@@ -22,7 +22,6 @@ const EscalaFixa: React.FC = () => {
    
     { id: "29-2024-12-07-17h-Santo-Antonio", data: "2024-12-07", horario: "17h", local: "Santo Antônio", padre: "Padre Ivan" },
     { id: "14-2024-12-07-19h-Coite", data: "2024-12-07", horario: "19h", local: "Coité (Missa e batizados)", padre: "Padre Eudásio" },
-    { id: "30-2024-12-07-19h-Santa Luzia", data: "2024-12-07", horario: "19h", local: "Santa Luzia", padre: "Padre Ivan" },
 
     { id: "15-2024-12-08-07h-Matriz", data: "2024-12-08", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "31-2024-12-08-07h-Divino", data: "2024-12-08", horario: "07h", local: "Divino", padre: "Padre Ivan" },
@@ -34,11 +33,9 @@ const EscalaFixa: React.FC = () => {
 
 
     { id: "01-2024-12-09-19h-Carrapato", data: "2024-12-09", horario: "19h", local: "Carrapato (Festa de Santa Luzia)", padre: "Padre Eudásio" },
-    { id: "02-2024-12-09-19h-Santa-Luzia", data: "2024-12-09", horario: "19h", local: "Santa Luzia", padre: "Padre João Paulo" },
 
     { id: "02-2024-12-10-19h-São-Pedro", data: "2024-12-10", horario: "19h", local: "São Pedro", padre: "Padre Eudásio" },
     { id: "03-2024-12-10-19h-Planalto-dos-Cajueiros", data: "2024-12-10", horario: "19h", local: "Planalto dos Cajueiros", padre: "Padre Ivan" },
-    { id: "01-2024-12-09-19h-SantaLuzia", data: "2024-12-10", horario: "19h", local: "Santa Luzia", padre: "Padre William" },
 
     { id: "04-2024-12-11-19h-Ocara", data: "2024-12-11", horario: "19h", local: "Ocara", padre: "Padre Eudásio" },
     { id: "05-2024-12-11-19h-Santos-Dumont", data: "2024-12-11", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
@@ -47,10 +44,8 @@ const EscalaFixa: React.FC = () => {
     { id: "06-2024-12-12-19h-Quixadá", data: "2024-12-12", horario: "19h", local: "Quixadá", padre: "Padre Eudásio" },
     { id: "08-2024-12-12-19h-Mãe-Rainha", data: "2024-12-12", horario: "19h", local: "Mãe Rainha", padre: "Padre Ivan" },
 
-    { id: "09-2024-12-13-09h-Santa-Luzia", data: "2024-12-13", horario: "09h", local: "Santa Luzia (Solenidade da Festa)", padre: "Padre Eudásio" },
     { id: "11-2024-12-13-12h-Matriz", data: "2024-12-13", horario: "12h", local: "Matriz", padre: "Padre Ivan" },
     { id: "12-2024-12-13-17h-Vilares", data: "2024-12-13", horario: "17h", local: "Vilares", padre: "Padre Ivan" },
-    { id: "10-2024-12-13-19h-Santa-Luzia", data: "2024-12-13", horario: "19h", local: "Santa Luzia (Encerramento)", padre: "Padre Eudásio" },
     { id: "13-2024-12-13-19h-Parque-São-João", data: "2024-12-13", horario: "19h", local: "Parque São João", padre: "Padre Ivan" },
 
 
@@ -223,9 +218,10 @@ const EscalaFixa: React.FC = () => {
     filteredEscalas.forEach((escala, index) => {
       const y = 40 + (index * 10);
       doc.setFontSize(12);
+      doc.setFontSize(12);
       doc.text(`Data: ${escala.data}`, 14, y);
-      doc.text(`Horário: ${escala.horario}`, 60, y);
-      doc.text(`Local: ${escala.local}`, 110, y);
+      doc.text(`Horário: ${escala.horario}`, 50, y);
+      doc.text(`Local: ${escala.local}`, 80, y);
       doc.text(`Padre: ${escala.padre}`, 160, y);
     });
   

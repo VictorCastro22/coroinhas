@@ -16,13 +16,15 @@ const TelaInicial: React.FC = () => {
         >
           Escala Fixa
         </button>
+
         <button
           type="button"
-          onClick={() => navigate("/festejos-sao-sebastiao")}
-          className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded w-full sm:w-auto"
+          onClick={() => navigate("/santa-luzia")}
+          className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded w-full sm:w-auto"
         >
-          Festejos São Sebastião
+          Festejos Santa Luzia
         </button>
+        
         <button
           type="button"
           onClick={() => navigate("/login")}

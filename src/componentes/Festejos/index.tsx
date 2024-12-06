@@ -17,17 +17,11 @@ const Festejos: React.FC = () => {
 
   const escalas = useMemo(
     () => [
-      { id: "01-Festejos", data: "2025-01-10", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "02-Festejos", data: "2025-01-11", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "03-Festejos", data: "2025-01-12", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "04-Festejos", data: "2025-01-13", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "05-Festejos", data: "2025-01-14", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "06-Festejos", data: "2025-01-15", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "07-Festejos", data: "2025-01-16", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "08-Festejos", data: "2025-01-17", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "09-Festejos", data: "2025-01-18", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "10-Festejos", data: "2025-01-19", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
-      { id: "11-Festejos", data: "2025-01-20", horario: "18h", local: "Matriz", padre: "Padre Eudásio" },
+      { id: "30-2024-12-07-19h-Santa Luzia", data: "2024-12-07", horario: "19h", local: "Santa Luzia", padre: "Padre Ivan" },
+      { id: "02-2024-12-09-19h-Santa-Luzia", data: "2024-12-09", horario: "19h", local: "Santa Luzia", padre: "Padre João Paulo" },
+      { id: "01-2024-12-09-19h-SantaLuzia", data: "2024-12-10", horario: "19h", local: "Santa Luzia", padre: "Padre William" },
+      { id: "09-2024-12-13-09h-Santa-Luzia", data: "2024-12-13", horario: "09h", local: "Santa Luzia (Solenidade da Festa)", padre: "Padre Eudásio" },
+      { id: "10-2024-12-13-19h-Santa-Luzia", data: "2024-12-13", horario: "19h", local: "Santa Luzia (Encerramento)", padre: "Padre Eudásio" },
     ],
     []
   );
@@ -68,30 +62,33 @@ const Festejos: React.FC = () => {
     const doc = new jsPDF();
 
     doc.setFontSize(18);
-    doc.text("Escala de Festejos São Sebastião", 14, 22);
+    doc.text("Escala Santa Luzia", 14, 22);
 
     filteredEscalas.forEach((escala, index) => {
       const y = 40 + index * 10;
       doc.setFontSize(12);
       doc.text(`Data: ${escala.data}`, 14, y);
-      doc.text(`Horário: ${escala.horario}`, 60, y);
-      doc.text(`Local: ${escala.local}`, 110, y);
+      doc.text(`Horário: ${escala.horario}`, 50, y);
+      doc.text(`Local: ${escala.local}`, 80, y);
       doc.text(`Padre: ${escala.padre}`, 160, y);
     });
 
-    doc.save("festejos-sao-sebastiao.pdf");
+    doc.save("santa-luzia.pdf");
   };
 
   return (
     <div className="container mx-auto p-4">
       <div className="w-full mb-6">
         <img
-          src="/logo-coroinha.jpeg"
+          src="/santa-luzia.jpg"
           alt="Logo Festejos"
-          className="w-full h-32 md:h-48 lg:h-64 object-cover"
+          style={{ height: '180px' }}
+          className="w-full object-cover"
         />
       </div>
-      <h1 className="text-2xl font-bold text-center mb-6">Festejos São Sebastião</h1>
+
+
+      <h1 className="text-2xl font-bold text-center mb-6">Festejos Santa Luzia</h1>
 
       <div className="mb-6">
         <input
@@ -104,13 +101,13 @@ const Festejos: React.FC = () => {
       </div>
 
       <div className="flex justify-center mb-6">
-        <button
-          type="button"
-          onClick={generatePDF}
-          className="px-4 py-2 bg-red-500 text-white rounded-md"
-        >
-          Imprimir Escala em PDF
-        </button>
+      <button
+        type="button"
+        onClick={generatePDF}
+        className="px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-white rounded-md"
+      >
+        Imprimir Escala em PDF
+      </button>
       </div>
 
       {filteredEscalas.map((escala) => (
