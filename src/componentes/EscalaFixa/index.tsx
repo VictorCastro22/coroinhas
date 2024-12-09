@@ -16,20 +16,6 @@ const EscalaFixa: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const escalas = useMemo(() => [
-    { id: "29-2024-12-07-17h-Santo-Antonio", data: "2024-12-07", horario: "17h", local: "Santo Antônio", padre: "Padre Ivan" },
-    { id: "14-2024-12-07-19h-Coite", data: "2024-12-07", horario: "19h", local: "Coité (Missa e batizados)", padre: "Padre Eudásio" },
-
-    { id: "15-2024-12-08-07h-Matriz", data: "2024-12-08", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "31-2024-12-08-07h-Divino", data: "2024-12-08", horario: "07h", local: "Divino", padre: "Padre Ivan" },
-    { id: "16-2024-12-08-09h-Matriz", data: "2024-12-08", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "17-2024-12-08-17h-Centro-de-Pastoral", data: "2024-12-08", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
-    { id: "32-2024-12-08-17h-Divino", data: "2024-12-08", horario: "17h", local: "Divino", padre: "Padre Ivan" },
-    { id: "18-2024-12-08-19h-Matriz", data: "2024-12-08", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "33-2024-12-08-19h-Nova-Parque-Iracema", data: "2024-12-08", horario: "19h", local: "Nova Parque Iracema", padre: "Padre Ivan" }, 
-
-
-    { id: "01-2024-12-09-19h-Carrapato", data: "2024-12-09", horario: "19h", local: "Carrapato (Festa de Santa Luzia)", padre: "Padre Eudásio" },
-
     { id: "02-2024-12-10-19h-São-Pedro", data: "2024-12-10", horario: "19h", local: "São Pedro", padre: "Padre Eudásio" },
     { id: "03-2024-12-10-19h-Planalto-dos-Cajueiros", data: "2024-12-10", horario: "19h", local: "Planalto dos Cajueiros", padre: "Padre Ivan" },
 
