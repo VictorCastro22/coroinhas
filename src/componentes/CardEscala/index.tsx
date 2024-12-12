@@ -1,4 +1,4 @@
-import { format } from "date-fns";
+import { format, isToday, parseISO } from "date-fns";
 
 interface Coroinha {
   id: string;
@@ -34,10 +34,10 @@ const CardEscala: React.FC<CardEscalaProps> = ({
     ? coroinhas.filter((coroinha) => coroinha.id === selectedCoroinha)
     : coroinhas;
 
+  const isTodayCard = isToday(parseISO(`${data}T00:00:00`));
+
   const getFotoPadre = (padre: string) => {
     switch (padre) {
-      case "Diácono Alexandre":
-        return "/diac-alexandre.png";
       case "Padre Eudásio":
         return "/paroco.jpg";
       case "Padre Ivan":
@@ -45,19 +45,21 @@ const CardEscala: React.FC<CardEscalaProps> = ({
       case "Padre Rafhael":
         return "/padre-rafhael.png";
       case "Padre William":
-          return "/padre-william.png";
+        return "/padre-william.png";
       case "Padre João Paulo":
-          return "/padre-joaop.png";
+        return "/padre-joaop.png";
       default:
         return "/imagens/semfoto.jpg";
     }
   };
-  
+
   return (
-    <div className="flex flex-col border p-4 rounded-md shadow-md mb-4">
-      
+    <div
+      className={`flex flex-col border p-4 rounded-md shadow-md mb-4 ${
+        isTodayCard ? "bg-green-300" : "bg-white"
+      }`}
+    >
       <div className="flex items-center mb-4">
-        
         <div className="flex flex-col items-center mr-4">
           <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-200">
             <img
@@ -68,7 +70,6 @@ const CardEscala: React.FC<CardEscalaProps> = ({
           </div>
           <p className="mt-2 font-medium text-gray-800 text-center">{padre}</p>
         </div>
-        
         <div className="flex-1 text-center">
           <p className="font-bold text-lg">{local}</p>
           <p className="text-base text-gray-700">
@@ -85,7 +86,6 @@ const CardEscala: React.FC<CardEscalaProps> = ({
           )}
         </div>
       </div>
-
 
       <ul className="mt-4">
         {coroinhasFiltrados.map((coroinha) => (
