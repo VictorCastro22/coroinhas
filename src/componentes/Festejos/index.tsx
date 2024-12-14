@@ -17,7 +17,8 @@ const Festejos: React.FC = () => {
 
   const escalas = useMemo(
     () => [
-      { id: "10-2024-12-13-19h-Santa-Luzia", data: "2024-12-13", horario: "19h", local: "Santa Luzia (Encerramento)", padre: "Padre Eudásio" },
+      { id: "78-2025-01-10-19h-Matriz", data: "2025-01-10", horario: "18h", local: "Abertura dos Festejos", padre: "Padre Eudásio" },
+      { id: "79-2025-01-10-19h-Matriz", data: "2025-01-10", horario: "18h", local: "Abertura dos Festejos", padre: "Padre Ivan" },
     ],
     []
   );

@@ -202,6 +202,9 @@ const CalendarioPadres: React.FC = () => {
     { id: "77-2025-01-05-17h-Centro-de-Pastoral", data: "2025-01-05", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
     { id: "89-2025-01-05-17h-Parque-Sao-Joao", data: "2025-01-05", horario: "17h", local: "Parque São João", padre: "Padre Ivan" },
     { id: "78-2025-01-05-19h-Matriz", data: "2025-01-05", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
+
+    { id: "78-2025-01-10-19h-Matriz", data: "2025-01-10", horario: "18h", local: "Abertura dos Festejos", padre: "Padre Eudásio" },
+    { id: "79-2025-01-10-19h-Matriz", data: "2025-01-10", horario: "18h", local: "Abertura dos Festejos", padre: "Padre Ivan" },
   ];
 
   return (
