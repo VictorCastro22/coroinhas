@@ -58,7 +58,7 @@ const Festejos: React.FC = () => {
     const doc = new jsPDF();
 
     doc.setFontSize(18);
-    doc.text("Escala Santa Luzia", 14, 22);
+    doc.text("Escala São Sebastião", 14, 22);
 
     filteredEscalas.forEach((escala, index) => {
       const y = 40 + index * 10;
@@ -69,14 +69,14 @@ const Festejos: React.FC = () => {
       doc.text(`Padre: ${escala.padre}`, 160, y);
     });
 
-    doc.save("santa-luzia.pdf");
+    doc.save("sao-sebastiao.pdf");
   };
 
   return (
     <div className="container mx-auto p-4">
       <div className="w-full mb-6">
         <img
-          src="/santa-luzia.jpg"
+          src="/sao-sebastiao.jpg"
           alt="Logo Festejos"
           style={{ height: '180px' }}
           className="w-full object-cover"
@@ -84,7 +84,7 @@ const Festejos: React.FC = () => {
       </div>
 
 
-      <h1 className="text-2xl font-bold text-center mb-6">Festejos Santa Luzia</h1>
+      <h1 className="text-2xl font-bold text-center mb-6">Festejos de São Sebastião</h1>
 
       <div className="mb-6">
         <input
@@ -100,7 +100,7 @@ const Festejos: React.FC = () => {
       <button
         type="button"
         onClick={generatePDF}
-        className="px-4 py-2 bg-yellow-500 hover:bg-yellow-600 text-white rounded-md"
+        className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-md"
       >
         Imprimir Escala em PDF
       </button>

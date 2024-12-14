@@ -87,11 +87,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "12-2024-12-13-17h-Vilares", data: "2024-12-13", horario: "17h", local: "Vilares", padre: "Padre Ivan" },
-    { id: "10-2024-12-13-19h-Santa-Luzia", data: "2024-12-13", horario: "19h", local: "Santa Luzia (Encerramento)", padre: "Padre Eudásio" },
-    { id: "13-2024-12-13-19h-Parque-São-João", data: "2024-12-13", horario: "19h", local: "Parque São João", padre: "Padre Ivan" },
-
-
     { id: "17-2024-12-14-10h-Casamento-na-Outra-Banda", data: "2024-12-14", horario: "10h", local: "Casamento na Outra Banda", padre: "Padre Ivan" },
     { id: "15-2024-12-14-17h-Divino", data: "2024-12-14", horario: "17h", local: "Divino", padre: "Padre Eudásio" },
     { id: "18-2024-12-14-17h-Santo-Antônio", data: "2024-12-14", horario: "17h", local: "Santo Antônio", padre: "Padre Ivan" },

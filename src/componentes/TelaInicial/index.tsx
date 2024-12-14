@@ -20,9 +20,9 @@ const TelaInicial: React.FC = () => {
         <button
           type="button"
           onClick={() => navigate("/santa-luzia")}
-          className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded w-full sm:w-auto"
+          className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded w-full sm:w-auto"
         >
-          Festejos Santa Luzia
+          Festejos São Sebastião
         </button>
         
         <button
