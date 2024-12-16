@@ -16,15 +16,6 @@ const EscalaFixa: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const escalas = useMemo(() => [
-    { id: "20-2024-12-15-07h-Divino", data: "2024-12-15", horario: "07h", local: "Divino", padre: "Padre Eudásio" },
-    { id: "21-2024-12-15-07h-Matriz", data: "2024-12-15", horario: "07h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "22-2024-12-15-09h-Matriz", data: "2024-12-15", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "23-2024-12-15-09h-São-José", data: "2024-12-15", horario: "09h", local: "São José", padre: "Padre Ivan" },
-    { id: "24-2024-12-15-17h-Divino", data: "2024-12-15", horario: "17h", local: "Divino", padre: "Padre Eudásio" },
-    { id: "25-2024-12-15-17h-Centro-de-Pastoral", data: "2024-12-15", horario: "17h", local: "Centro de Pastoral", padre: "Padre Ivan" },
-    { id: "26-2024-12-15-19h-Matriz", data: "2024-12-15", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "27-2024-12-15-19h-Parque-São-João", data: "2024-12-15", horario: "19h", local: "Parque São João", padre: "Padre Ivan" },
-
     { id: "01-2024-12-16-19h-Timbauba", data: "2024-12-16", horario: "19h", local: "Timbaúba", padre: "Padre Eudásio" },
 
     { id: "02-2024-12-17-18h-Pirapora", data: "2024-12-17", horario: "18h", local: "Pirapora", padre: "Padre Eudásio" },
