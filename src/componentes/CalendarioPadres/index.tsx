@@ -87,12 +87,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "01-2024-12-16-19h-Timbauba", data: "2024-12-16", horario: "19h", local: "Timbaúba", padre: "Padre Eudásio" },
-
-    { id: "02-2024-12-17-18h-Pirapora", data: "2024-12-17", horario: "18h", local: "Pirapora", padre: "Padre Eudásio" },
-    { id: "03-2024-12-17-19h-Area-Seca", data: "2024-12-17", horario: "19h", local: "Área Seca", padre: "Padre Eudásio" },
-    { id: "20-2024-12-17-19h-Urucara", data: "2024-12-17", horario: "19h", local: "Urucará", padre: "Padre Ivan" },
-
     { id: "04-2024-12-18-08h-Secretaria-da-Paroquia", data: "2024-12-18", horario: "08h", local: "Secretaria da Paróquia", padre: "Padre Eudásio" },
     { id: "05-2024-12-18-17h-Matriz", data: "2024-12-18", horario: "17h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "06-2024-12-18-19h-Matriz", data: "2024-12-18", horario: "19h", local: "Matriz (Missa pelas Famílias)", padre: "Padre Eudásio" },
