@@ -87,11 +87,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "04-2024-12-18-08h-Secretaria-da-Paroquia", data: "2024-12-18", horario: "08h", local: "Secretaria da Paróquia", padre: "Padre Eudásio" },
-    { id: "05-2024-12-18-17h-Matriz", data: "2024-12-18", horario: "17h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "06-2024-12-18-19h-Matriz", data: "2024-12-18", horario: "19h", local: "Matriz (Missa pelas Famílias)", padre: "Padre Eudásio" },
-    { id: "21-2024-12-18-19h-Guabiraba", data: "2024-12-18", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
-
     { id: "07-2024-12-19-18h-Parque-das-Rosas", data: "2024-12-19", horario: "18h", local: "Parque das Rosas", padre: "Padre Eudásio" },
     { id: "08-2024-12-19-19h-Matriz", data: "2024-12-19", horario: "19h", local: "Matriz (Ação de Graças pelos 37 anos de Vida Sacerdotal)", padre: "Padre Eudásio" },
     { id: "22-2024-12-19-19h-Tangueira", data: "2024-12-19", horario: "19h", local: "Tangueira", padre: "Padre Ivan" },
