@@ -16,12 +16,6 @@ const EscalaFixa: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const escalas = useMemo(() => [
-    { id: "07-2024-12-19-18h-Parque-das-Rosas", data: "2024-12-19", horario: "18h", local: "Parque das Rosas", padre: "Padre Eudásio" },
-    { id: "08-2024-12-19-19h-Matriz", data: "2024-12-19", horario: "19h", local: "Matriz (Ação de Graças pelos 37 anos de Vida Sacerdotal)", padre: "Padre Eudásio" },
-    { id: "22-2024-12-19-19h-Tangueira", data: "2024-12-19", horario: "19h", local: "Tangueira", padre: "Padre Ivan" },
-
-    { id: "23-2024-12-20-19h-Areninha-Area-Verde", data: "2024-12-20", horario: "19h", local: "Areninha da Área Verde", padre: "Padre Ivan" },
-
     { id: "11-2024-12-21-17h-Santo-Antonio", data: "2024-12-21", horario: "17h", local: "Santo Antônio", padre: "Padre Eudásio" },
     { id: "25-2024-12-21-17h-Santa-Luzia", data: "2024-12-21", horario: "17h", local: "Santa Luzia", padre: "Padre Ivan" },
     { id: "12-2024-12-21-19h-Coite", data: "2024-12-21", horario: "19h", local: "Coité", padre: "Padre Eudásio" },
