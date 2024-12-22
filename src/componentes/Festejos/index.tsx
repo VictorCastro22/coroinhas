@@ -18,7 +18,16 @@ const Festejos: React.FC = () => {
   const escalas = useMemo(
     () => [
       { id: "78-2025-01-10-19h-Matriz", data: "2025-01-10", horario: "18h", local: "Abertura dos Festejos", padre: "Padre Eudásio" },
-      { id: "79-2025-01-10-19h-Matriz", data: "2025-01-10", horario: "18h", local: "Abertura dos Festejos", padre: "Padre Ivan" },
+      { id: "78-2025-01-11-19h-Matriz", data: "2025-01-11", horario: "18h", local: "Segundo Dia", padre: "?" },
+      { id: "78-2025-01-12-19h-Matriz", data: "2025-01-12", horario: "18h", local: "Terceiro Dia", padre: "?" },
+      { id: "78-2025-01-13-19h-Matriz", data: "2025-01-13", horario: "18h", local: "Quarto Dia", padre: "?" },
+      { id: "78-2025-01-14-19h-Matriz", data: "2025-01-14", horario: "18h", local: "Quinto Dia", padre: "?" },
+      { id: "78-2025-01-15-19h-Matriz", data: "2025-01-15", horario: "18h", local: "Sexto Dia", padre: "?" },
+      { id: "78-2025-01-16-19h-Matriz", data: "2025-01-16", horario: "18h", local: "Sétimo Dia", padre: "?" },
+      { id: "78-2025-01-17-19h-Matriz", data: "2025-01-17", horario: "18h", local: "Oitavo Dia", padre: "?" },
+      { id: "78-2025-01-18-19h-Matriz", data: "2025-01-18", horario: "18h", local: "Nono Dia", padre: "?" },
+      { id: "78-2025-01-19-19h-Matriz", data: "2025-01-19", horario: "18h", local: "Décimo Dia", padre: "?" },
+      { id: "78-2025-01-20-19h-Matriz", data: "2025-01-20", horario: "18h", local: "Encerramento dos Festejos", padre: "Padre Eudásio" },
     ],
     []
   );

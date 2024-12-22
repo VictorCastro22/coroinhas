@@ -73,7 +73,7 @@ const coroinhas = [
   { id: "72", nome: "Victor Manuel", foto: "/imagens/Victor.jfif" },
   { id: "73", nome: "Victoria", foto: "/imagens/semfoto.jpg" },
   { id: "74", nome: "Yasmim", foto: "/imagens/semfoto.jpg" },
-  { id: "100", nome: "Escalas Somente em Janeiro", foto: "/imagens/semfoto.jpg" },
+  { id: "100", nome: "Em Breve", foto: "/imagens/semfoto.jpg" },
 ];
 
 export default coroinhas;

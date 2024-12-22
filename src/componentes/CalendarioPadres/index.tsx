@@ -87,12 +87,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "11-2024-12-21-17h-Santo-Antonio", data: "2024-12-21", horario: "17h", local: "Santo Antônio", padre: "Padre Eudásio" },
-    { id: "25-2024-12-21-17h-Santa-Luzia", data: "2024-12-21", horario: "17h", local: "Santa Luzia", padre: "Padre Ivan" },
-    { id: "12-2024-12-21-19h-Coite", data: "2024-12-21", horario: "19h", local: "Coité", padre: "Padre Eudásio" },
-    { id: "26-2024-12-21-19h-Matriz", data: "2024-12-21", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "14-2024-12-21-21h-Empresa-Penha", data: "2024-12-21", horario: "21h", local: "Missa na Empresa Penha", padre: "Padre Eudásio" },
-
     { id: "15-2024-12-22-07h-Matriz", data: "2024-12-22", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "28-2024-12-22-07h-Divino", data: "2024-12-22", horario: "07h", local: "Divino", padre: "Padre Ivan" },
     { id: "16-2024-12-22-09h-Matriz", data: "2024-12-22", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
@@ -173,7 +167,16 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-01-05-19h-Matriz", data: "2025-01-05", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
 
     { id: "78-2025-01-10-19h-Matriz", data: "2025-01-10", horario: "18h", local: "Abertura dos Festejos", padre: "Padre Eudásio" },
-    { id: "79-2025-01-10-19h-Matriz", data: "2025-01-10", horario: "18h", local: "Abertura dos Festejos", padre: "Padre Ivan" },
+      { id: "78-2025-01-11-19h-Matriz", data: "2025-01-11", horario: "18h", local: "Segundo Dia", padre: "?" },
+      { id: "78-2025-01-12-19h-Matriz", data: "2025-01-12", horario: "18h", local: "Terceiro Dia", padre: "?" },
+      { id: "78-2025-01-13-19h-Matriz", data: "2025-01-13", horario: "18h", local: "Quarto Dia", padre: "?" },
+      { id: "78-2025-01-14-19h-Matriz", data: "2025-01-14", horario: "18h", local: "Quinto Dia", padre: "?" },
+      { id: "78-2025-01-15-19h-Matriz", data: "2025-01-15", horario: "18h", local: "Sexto Dia", padre: "?" },
+      { id: "78-2025-01-16-19h-Matriz", data: "2025-01-16", horario: "18h", local: "Sétimo Dia", padre: "?" },
+      { id: "78-2025-01-17-19h-Matriz", data: "2025-01-17", horario: "18h", local: "Oitavo Dia", padre: "?" },
+      { id: "78-2025-01-18-19h-Matriz", data: "2025-01-18", horario: "18h", local: "Nono Dia", padre: "?" },
+      { id: "78-2025-01-19-19h-Matriz", data: "2025-01-19", horario: "18h", local: "Décimo Dia", padre: "?" },
+      { id: "78-2025-01-20-19h-Matriz", data: "2025-01-20", horario: "18h", local: "Encerramento dos Festejos", padre: "Padre Eudásio" },
   ];
 
   return (
