@@ -16,15 +16,6 @@ const EscalaFixa: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const escalas = useMemo(() => [
-    { id: "17-2024-12-22-15h30-Santos-Dumont", data: "2024-12-22", horario: "15h30", local: "Santos Dumont", padre: "Padre Eudásio" },
-    { id: "18-2024-12-22-17h-Centro-de-Pastoral", data: "2024-12-22", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
-    { id: "29-2024-12-22-17h-Divino", data: "2024-12-22", horario: "17h", local: "Divino", padre: "Padre Ivan" },
-    { id: "19-2024-12-22-19h-Nova-Parque-Iracema", data: "2024-12-22", horario: "19h", local: "Nova Parque Iracema", padre: "Padre Eudásio" },
-    { id: "30-2024-12-22-19h-Matriz", data: "2024-12-22", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-
-    { id: "31-2024-12-23-19h-Aratuba", data: "2024-12-23", horario: "19h", local: "Aratuba (Festa de São Francisco de Paula)", padre: "Padre Eudásio" },
-
-
     { id: "32-2024-12-24-19h-Matriz", data: "2024-12-24", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "50-2024-12-24-19h-Divino", data: "2024-12-24", horario: "19h", local: "Divino", padre: "Padre Ivan" },
     { id: "33-2024-12-24-21h-Parque-Sao-Joao", data: "2024-12-24", horario: "21h", local: "Parque São João", padre: "Padre Eudásio" },
@@ -91,9 +82,6 @@ const EscalaFixa: React.FC = () => {
     { id: "77-2025-01-05-17h-Centro-de-Pastoral", data: "2025-01-05", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
     { id: "89-2025-01-05-17h-Parque-Sao-Joao", data: "2025-01-05", horario: "17h", local: "Parque São João", padre: "Padre Ivan" },
     { id: "78-2025-01-05-19h-Matriz", data: "2025-01-05", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-
-    { id: "80-2025-01-10-18h-Procissao-Sao-Sebastiao", data: "2025-01-10", horario: "18h", local: "Abertura da Festa de São Sebastião", padre: "Padre Eudásio" },
-    { id: "91-2025-01-10-18h-Procissao-Sao-Sebastiao", data: "2025-01-10", horario: "18h", local: "Abertura da Festa de São Sebastião", padre: "Padre Ivan" }
   ], []);
 
   useEffect(() => {
