@@ -87,17 +87,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "32-2024-12-24-19h-Matriz", data: "2024-12-24", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "50-2024-12-24-19h-Divino", data: "2024-12-24", horario: "19h", local: "Divino", padre: "Padre Ivan" },
-    { id: "33-2024-12-24-21h-Parque-Sao-Joao", data: "2024-12-24", horario: "21h", local: "Parque São João", padre: "Padre Eudásio" },
-    { id: "51-2024-12-24-21h-Nova-Pq-Iracema", data: "2024-12-24", horario: "21h", local: "Nova Parque Iracema", padre: "Padre Ivan" },
-    { id: "34-2024-12-24-24h-Matriz", data: "2024-12-24", horario: "00h", local: "Matriz (Missa do Galo)", padre: "Padre Eudásio" },
-
-
-    { id: "35-2024-12-25-07h-Divino", data: "2024-12-25", horario: "07h", local: "Divino", padre: "Padre Eudásio" },
-    { id: "52-2024-12-25-07h-Matriz", data: "2024-12-25", horario: "07h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "36-2024-12-25-09h-Matriz", data: "2024-12-25", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "53-2024-12-25-09h-Sao-Jose", data: "2024-12-25", horario: "09h", local: "São José", padre: "Padre Ivan" },
     { id: "37-2024-12-25-17h-Centro-de-Pastoral", data: "2024-12-25", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
     { id: "54-2024-12-25-17h-Divino", data: "2024-12-25", horario: "17h", local: "Divino", padre: "Padre Ivan" },
     { id: "38-2024-12-25-19h-Matriz", data: "2024-12-25", horario: "19h", local: "Matriz (Missa pelas Famílias)", padre: "Padre Eudásio" },
