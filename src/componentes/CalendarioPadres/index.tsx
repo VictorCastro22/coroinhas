@@ -87,12 +87,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "37-2024-12-25-17h-Centro-de-Pastoral", data: "2024-12-25", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
-    { id: "54-2024-12-25-17h-Divino", data: "2024-12-25", horario: "17h", local: "Divino", padre: "Padre Ivan" },
-    { id: "38-2024-12-25-19h-Matriz", data: "2024-12-25", horario: "19h", local: "Matriz (Missa pelas Famílias)", padre: "Padre Eudásio" },
-    { id: "55-2024-12-25-19h-Parque-Sao-Joao", data: "2024-12-25", horario: "19h", local: "Parque São João", padre: "Padre Ivan" },
-
-
     { id: "39-2024-12-26-19h-Mae-Rainha", data: "2024-12-26", horario: "19h", local: "Mãe Rainha", padre: "Padre Eudásio" },
     { id: "56-2024-12-26-19h-Fortaleza", data: "2024-12-26", horario: "19h", local: "Fortaleza", padre: "Padre Ivan" },
 
