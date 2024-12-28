@@ -48,6 +48,22 @@ const CardEscala: React.FC<CardEscalaProps> = ({
         return "/padre-william.png";
       case "Padre João Paulo":
         return "/padre-joaop.png";
+      case "Padre Frei Gilmar":
+        return "frei-gilmar.jpeg";
+      case "Padre Vicente":
+        return "/pe-vicente.jpeg";
+      case "Padre Odésio":
+        return "/pe_odesio.png";
+      case "Padre Gleison":
+        return "/padre-gleison.jpeg";
+      case "Padre Sávio":
+        return "/pe-savio.jpeg";
+      case "Padre Diego":
+        return "/pe-diego.jpeg";
+      case "Padre Ednaldo":
+        return "/pe-ednaldo.jpeg";
+      case "Padre Abimael":
+        return "/pe-abimael.jpeg";
       default:
         return "/imagens/semfoto.jpg";
     }
