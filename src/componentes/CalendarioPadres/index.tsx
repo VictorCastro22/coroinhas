@@ -87,14 +87,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "43-2024-12-28-17h-Santa-Dulce", data: "2024-12-28", horario: "17h", local: "Santa Dulce", padre: "Padre Eudásio" },
-    { id: "59-2024-12-28-17h-Abrigo", data: "2024-12-28", horario: "17h", local: "Abrigo", padre: "Padre Ivan" },
-    { id: "44-2024-12-28-19h-Outra-Banda", data: "2024-12-28", horario: "19h", local: "Outra Banda", padre: "Padre Eudásio" },
-    { id: "60-2024-12-28-19h-Matriz", data: "2024-12-28", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-
-    { id: "45-2024-12-29-07h-Divino", data: "2024-12-29", horario: "07h", local: "Divino", padre: "Padre Eudásio" },
-    { id: "61-2024-12-29-07h-Matriz", data: "2024-12-29", horario: "07h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "46-2024-12-29-09h-Matriz", data: "2024-12-29", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "47-2024-12-29-17h-Centro-de-Pastoral", data: "2024-12-29", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
     { id: "62-2024-12-29-17h-Divino", data: "2024-12-29", horario: "17h", local: "Divino", padre: "Padre Ivan" },
     { id: "48-2024-12-29-19h-Matriz", data: "2024-12-29", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
