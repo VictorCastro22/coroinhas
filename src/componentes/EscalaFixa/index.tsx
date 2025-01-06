@@ -95,7 +95,7 @@ const EscalaFixa: React.FC = () => {
         <img src="/logo-coroinha.jpeg" alt="Logo Coroinha" className="w-full h-32 md:h-48 lg:h-64 object-cover" />
       </div>
       <h1 className="text-2xl font-bold text-center mb-6">
-        Escala Fixa
+      Escala Fora dos Festejos
       </h1>
 
       <div className="mb-6">

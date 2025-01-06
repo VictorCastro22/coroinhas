@@ -14,7 +14,7 @@ const TelaInicial: React.FC = () => {
           onClick={() => navigate("/escala-fixa")}
           className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded w-full sm:w-auto"
         >
-          Escala Fixa
+          Escala Fora dos Festejos
         </button>
 
         <button
