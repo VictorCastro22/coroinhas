@@ -87,21 +87,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "72-2025-01-04-17h-Santo-Antonio", data: "2025-01-04", horario: "17h", local: "Santo Antônio", padre: "Padre Eudásio" },
-    { id: "85-2025-01-04-17h-Santa-Luzia", data: "2025-01-04", horario: "17h", local: "Santa Luzia", padre: "Padre Ivan" },
-    { id: "73-2025-01-04-19h-Coite", data: "2025-01-04", horario: "19h", local: "Coité", padre: "Padre Eudásio" },
-    { id: "86-2025-01-04-19h-Matriz", data: "2025-01-04", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-
-    { id: "87-2025-01-05-07h-Matriz", data: "2025-01-05", horario: "07h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "74-2025-01-05-07h-Matriz", data: "2025-01-05", horario: "07h", local: "Divino", padre: "Padre Eudásio" },
-    { id: "75-2025-01-05-09h-Matriz", data: "2025-01-05", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "88-2025-01-05-09h-Sao-Jose", data: "2025-01-05", horario: "09h", local: "São José", padre: "Padre Ivan" },
-    { id: "77-2025-01-05-17h-Centro-de-Pastoral", data: "2025-01-05", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
-    
-    { id: "88-2025-01-05-17h-Divino", data: "2025-01-05", horario: "17h", local: "Divino", padre: "Padre Ivan" },
-    { id: "78-2025-01-05-19h-Matriz", data: "2025-01-05", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "89-2025-01-05-19h-Parque-Sao-Joao", data: "2025-01-05", horario: "19h", local: "Parque São João", padre: "Padre Ivan" },
-
     { id: "78-2025-01-10-19h-Matriz", data: "2025-01-10", horario: "18h", local: "Abertura dos Festejos", padre: "Padre Eudásio" },
     { id: "78-2025-01-11-19h-Matriz", data: "2025-01-11", horario: "18h", local: "Segundo Dia", padre: "Padre Vicente" },
     { id: "78-2025-01-12-19h-Matriz", data: "2025-01-12", horario: "18h", local: "Terceiro Dia", padre: "Padre Frei Gilmar" },
