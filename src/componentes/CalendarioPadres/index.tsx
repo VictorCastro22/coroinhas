@@ -88,12 +88,6 @@ const CalendarioPadres: React.FC = () => {
 
   const escalas = [
 
-    { id: "78-2025-01-12-19h-Matriz", data: "2025-01-12", horario: "18h", local: "Terceiro Dia", padre: "Padre Frei Gilmar" },
-
-    { id: "78-2025-01-12-07h-Matriz", data: "2025-01-12", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-01-12-09h-Matriz", data: "2025-01-12", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-01-12-17h-Divino", data: "2025-01-12", horario: "17h", local: "Divino", padre: "Padre Ivan" },
-
     { id: "78-2025-01-13-19h-Matriz", data: "2025-01-13", horario: "18h", local: "Quarto Dia", padre: "Padre Odésio" },
     { id: "78-2025-01-14-19h-Matriz", data: "2025-01-14", horario: "18h", local: "Quinto Dia", padre: "Padre Gleison" },
     { id: "78-2025-01-15-19h-Matriz", data: "2025-01-15", horario: "18h", local: "Sexto Dia", padre: "Padre Sávio" },
