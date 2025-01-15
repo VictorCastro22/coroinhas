@@ -17,9 +17,9 @@ const EscalaFixa: React.FC = () => {
 
   const escalas = useMemo(() => [
     { id: "78-2025-01-19-07h-Matriz", data: "2025-01-19", horario: "07h", local: "Matriz", padre: "?" },
-    { id: "79-2025-01-19-09h-SJ", data: "2025-01-19", horario: "09h", local: "São José", padre: "Padre Ivan" },
     { id: "78-2025-01-19-07h-Divino", data: "2025-01-19", horario: "07h", local: "Divino", padre: "?" },
     { id: "78-2025-01-19-09h-Matriz", data: "2025-01-19", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
+    { id: "79-2025-01-19-09h-SJ", data: "2025-01-19", horario: "09h", local: "São José", padre: "Padre Ivan" },
     { id: "78-2025-01-19-17h-Divino", data: "2025-01-19", horario: "17h", local: "Divino", padre: "Padre Ivan" },
 
     { id: "90-2025-01-20-09h-Matriz", data: "2025-01-20", horario: "09h", local: "Matriz (Solene)", padre: "Padre Eudásio" },
