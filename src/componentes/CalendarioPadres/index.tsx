@@ -87,24 +87,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "78-2025-01-18-19h-Matriz", data: "2025-01-18", horario: "18h", local: "Nono Dia", padre: "Padre Ednaldo" },
-    
-
-    { id: "78-2025-01-19-07h-Matriz", data: "2025-01-19", horario: "07h", local: "Matriz", padre: "?" },
-    { id: "78-2025-01-19-07h-Divino", data: "2025-01-19", horario: "07h", local: "Divino", padre: "?" },
-    { id: "79-2025-01-19-09h-SJ", data: "2025-01-19", horario: "09h", local: "São José", padre: "Padre Ivan" },
-    { id: "78-2025-01-19-09h-Matriz", data: "2025-01-19", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-01-19-17h-Divino", data: "2025-01-19", horario: "17h", local: "Divino", padre: "Padre Ivan" },
-
-    { id: "78-2025-01-19-19h-Matriz", data: "2025-01-19", horario: "18h", local: "Décimo Dia", padre: "Padre Abimael" },
-
-    { id: "90-2025-01-20-09h-Matriz", data: "2025-01-20", horario: "09h", local: "Matriz (Solene)", padre: "Padre Eudásio" },
-    { id: "78-2025-01-20-19h-Matriz", data: "2025-01-20", horario: "18h", local: "Encerramento dos Festejos", padre: "Padre Eudásio" },
-
-
-
-    { id: "78-2025-01-21-19h-Pirapora", data: "2025-01-21", horario: "19h", local: "Pirapora", padre: "Padre Ivan" },
-
     { id: "78-2025-01-22-19h-SantosDumont", data: "2025-01-22", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
     { id: "78-2025-01-22-19h-Matriz-MissaFamilias", data: "2025-01-22", horario: "19h", local: "Matriz (Missa pelas Famílias)", padre: "Padre Eudásio" },
 

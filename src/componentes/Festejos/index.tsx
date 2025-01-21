@@ -18,8 +18,7 @@ const Festejos: React.FC = () => {
   const escalas = useMemo(
     () => [
       { id: "78-2025-01-18-19h-Matriz", data: "2025-01-18", horario: "18h", local: "Nono Dia", padre: "Padre Ednaldo" },
-      { id: "78-2025-01-19-19h-Matriz", data: "2025-01-19", horario: "18h", local: "Décimo Dia", padre: "Padre Abimael" },
-      { id: "78-2025-01-20-19h-Matriz", data: "2025-01-20", horario: "18h", local: "Encerramento dos Festejos", padre: "Padre Eudásio" },
+    
     ],
     []
   );
@@ -86,7 +85,7 @@ const Festejos: React.FC = () => {
       </div>
 
 
-      <h1 className="text-2xl font-bold text-center mb-6">Festejos de São Sebastião</h1>
+      <h1 className="text-2xl font-bold text-center mb-6">Festejos</h1>
 
       <div className="mb-6">
         <input

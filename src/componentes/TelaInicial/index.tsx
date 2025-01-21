@@ -14,16 +14,18 @@ const TelaInicial: React.FC = () => {
           onClick={() => navigate("/escala-fixa")}
           className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded w-full sm:w-auto"
         >
-          Escala Fora dos Festejos
+          Escala Fixa
         </button>
 
         <button
           type="button"
           onClick={() => navigate("/festejos")}
-          className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded w-full sm:w-auto"
+          className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded w-full sm:w-auto disabled:bg-gray-400 disabled:cursor-not-allowed"
+          disabled
         >
-          Festejos São Sebastião
+          Sem Festejos
         </button>
+
         
         <button
           type="button"
