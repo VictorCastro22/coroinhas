@@ -95,6 +95,14 @@ const CalendarioPadres: React.FC = () => {
 
     { id: "78-2025-01-24-18h-Horizonte-SantaDulce", data: "2025-01-24", horario: "18h", local: "Horizonte na Comunidade de Santa Dulce (Casamento da Thays)", padre: "Padre Eudásio" },
     { id: "78-2025-01-24-19h-ConegoPinto", data: "2025-01-24", horario: "19h", local: "Cônego Pinto", padre: "Padre Ivan" },
+   
+    { id: "80-2025-01-24-19h-Urucara", data: "2025-01-24", horario: "19h", local: "Urucará", padre: "Padre Rafhael" },
+    { id: "80-2025-01-27-19h-Urucara", data: "2025-01-27", horario: "19h", local: "Urucará", padre: "Padre Antônio" },
+    { id: "80-2025-01-28-19h-Urucara", data: "2025-01-28", horario: "19h", local: "Urucará", padre: "Padre João Paulo" },
+    { id: "80-2025-01-29-19h-Urucara", data: "2025-01-29", horario: "19h", local: "Urucará", padre: "Padre Cláudio" },
+    { id: "80-2025-01-31-19h-Urucara", data: "2025-01-31", horario: "19h", local: "Urucará", padre: "Padre John Lennon" },
+    { id: "80-2025-02-01-19h-Urucara", data: "2025-02-01", horario: "19h", local: "Urucará", padre: "Padre Aurénio" },
+    { id: "78-2025-02-02-19h-Urucara", data: "2025-02-02", horario: "19h", local: "Urucará (Encerramento)", padre: "Padre Ivan" },
 
     { id: "78-2025-01-25-17h-SantaDulce", data: "2025-01-25", horario: "17h", local: "Santa Dulce", padre: "Padre Eudásio" },
     { id: "78-2025-01-25-17h-Abrigo", data: "2025-01-25", horario: "17h", local: "Abrigo", padre: "Padre Ivan" },
@@ -127,7 +135,7 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-02-02-17h-CentroDePastoral", data: "2025-02-02", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
     { id: "78-2025-02-02-17h-Divino", data: "2025-02-02", horario: "17h", local: "Divino", padre: "Padre Ivan" },
     { id: "78-2025-02-02-19h-Matriz", data: "2025-02-02", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-02-02-19h-Urucara", data: "2025-02-02", horario: "19h", local: "Urucará", padre: "Padre Ivan" },
+
 
     { id: "78-2025-02-04-19h-Vilares", data: "2025-02-04", horario: "19h", local: "Vilares", padre: "Padre Ivan" },
 

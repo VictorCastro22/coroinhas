@@ -20,8 +20,8 @@ const TelaInicial: React.FC = () => {
         <button
           type="button"
           onClick={() => navigate("/festejos")}
-          className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded w-full sm:w-auto disabled:bg-gray-400 disabled:cursor-not-allowed"
-          disabled
+          className="bg-blue-300 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded w-full sm:w-auto disabled:bg-gray-400 disabled:cursor-not-allowed"
+
         >
           Nossa Senhora das Candeias
         </button>

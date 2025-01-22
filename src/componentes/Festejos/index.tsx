@@ -17,8 +17,14 @@ const Festejos: React.FC = () => {
 
   const escalas = useMemo(
     () => [
-      { id: "78-2025-01-18-19h-Matriz", data: "2025-01-18", horario: "18h", local: "Nono Dia", padre: "Padre Ednaldo" },
-    
+      { id: "78-2025-01-23-18:30h-Urucara", data: "2025-01-23", horario: "18:30h", local: "Urucará (abertura da festa de N. Sra. das Candeias)", padre: "Padre Eudásio" },
+      { id: "80-2025-01-24-19h-Urucara", data: "2025-01-24", horario: "19h", local: "Urucará", padre: "Padre Rafhael" },
+      { id: "80-2025-01-27-19h-Urucara", data: "2025-01-27", horario: "19h", local: "Urucará", padre: "Padre Antônio" },
+      { id: "80-2025-01-28-19h-Urucara", data: "2025-01-28", horario: "19h", local: "Urucará", padre: "Padre João Paulo" },
+      { id: "80-2025-01-29-19h-Urucara", data: "2025-01-29", horario: "19h", local: "Urucará", padre: "Padre Cláudio" },
+      { id: "80-2025-01-31-19h-Urucara", data: "2025-01-31", horario: "19h", local: "Urucará", padre: "Padre John Lennon" },
+      { id: "80-2025-02-01-19h-Urucara", data: "2025-02-01", horario: "19h", local: "Urucará", padre: "Padre Aurénio" },
+      { id: "78-2025-02-02-19h-Urucara", data: "2025-02-02", horario: "19h", local: "Urucará (Encerramento)", padre: "Padre Ivan" },
     ],
     []
   );
@@ -59,7 +65,7 @@ const Festejos: React.FC = () => {
     const doc = new jsPDF();
 
     doc.setFontSize(18);
-    doc.text("Escala São Sebastião", 14, 22);
+    doc.text("Escala N.S das Candeias", 14, 22);
 
     filteredEscalas.forEach((escala, index) => {
       const y = 40 + index * 10;
@@ -70,14 +76,14 @@ const Festejos: React.FC = () => {
       doc.text(`Padre: ${escala.padre}`, 160, y);
     });
 
-    doc.save("sao-sebastiao.pdf");
+    doc.save("n.s-candeias.pdf");
   };
 
   return (
     <div className="container mx-auto p-4">
       <div className="w-full mb-6">
         <img
-          src="/sao-sebastiao.jpg"
+          src="/n.s-candeias.png"
           alt="Logo Festejos"
           style={{ height: '180px' }}
           className="w-full object-cover"
@@ -85,7 +91,7 @@ const Festejos: React.FC = () => {
       </div>
 
 
-      <h1 className="text-2xl font-bold text-center mb-6">Festejos</h1>
+      <h1 className="text-2xl font-bold text-center mb-6">Nossa Senhora das Candeias</h1>
 
       <div className="mb-6">
         <input
@@ -101,7 +107,7 @@ const Festejos: React.FC = () => {
       <button
         type="button"
         onClick={generatePDF}
-        className="px-4 py-2 bg-red-500 hover:bg-red-600 text-white rounded-md"
+        className="px-4 py-2 bg-blue-300 hover:bg-blue-600 text-white rounded-md"
       >
         Imprimir Escala em PDF
       </button>
