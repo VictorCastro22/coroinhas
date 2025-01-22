@@ -66,6 +66,8 @@ const CardEscala: React.FC<CardEscalaProps> = ({
         return "/pe-abimael.jpeg";
       case "Dom Gregório":
         return "/dom-gregorio.png";
+      case "Padre Rafael":
+        return "/pe-rafael.png";
       default:
         return "/imagens/semfoto.jpg";
     }
