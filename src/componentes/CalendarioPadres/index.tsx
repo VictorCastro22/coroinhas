@@ -87,9 +87,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "78-2025-01-22-19h-SantosDumont", data: "2025-01-22", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
-    { id: "78-2025-01-22-19h-Matriz-MissaFamilias", data: "2025-01-22", horario: "19h", local: "Matriz (Missa pelas Famílias)", padre: "Padre Eudásio" },
-
     { id: "78-2025-01-23-18:30h-Urucara", data: "2025-01-23", horario: "18:30h", local: "Urucará (abertura da festa de N. Sra. das Candeias)", padre: "Padre Eudásio" },
     { id: "78-2025-01-23-MaeRainha", data: "2025-01-23", horario: "19h", local: "Mãe Rainha", padre: "Padre Ivan" },
 
