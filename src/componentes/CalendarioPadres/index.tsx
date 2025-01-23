@@ -87,7 +87,7 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "78-2025-01-23-18:30h-Urucara", data: "2025-01-23", horario: "18:30h", local: "Urucará (abertura da festa de N. Sra. das Candeias)", padre: "Padre Eudásio" },
+    { id: "78-2025-01-23-18:30h-Urucara", data: "2025-01-23", horario: "19h", local: "Urucará (abertura da festa de N. Sra. das Candeias)", padre: "Padre Eudásio" },
     { id: "78-2025-01-23-MaeRainha", data: "2025-01-23", horario: "19h", local: "Mãe Rainha", padre: "Padre Ivan" },
 
     { id: "78-2025-01-24-18h-Horizonte-SantaDulce", data: "2025-01-24", horario: "18h", local: "Horizonte na Comunidade de Santa Dulce (Casamento da Thays)", padre: "Padre Eudásio" },
