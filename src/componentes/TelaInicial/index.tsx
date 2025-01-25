@@ -1,3 +1,4 @@
+import Destaque from "../Destaque";
 import Navbar from "../Navbar";
 
 const TelaInicial: React.FC = () => {
@@ -17,7 +18,7 @@ const TelaInicial: React.FC = () => {
           <img
             src="/logo.png"
             alt="Logo da Paróquia"
-            className="w-32 h-32 object-contain mb-2"
+            className="w-36 h-36 object-contain mb-2"
           />
           <h2 className="text-center font-playfair text-[1.0rem] font-medium uppercase leading-[1.2em] text-shadow-lg text-[#F1DA93]">
             Coroinhas de
@@ -28,6 +29,7 @@ const TelaInicial: React.FC = () => {
         </div>
       </section>
       <Navbar />
+      <Destaque />
     </div>
   );
 };
