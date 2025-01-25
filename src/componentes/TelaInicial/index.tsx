@@ -1,51 +1,33 @@
-import { useNavigate } from "react-router-dom";
-import { FaCalendarAlt, FaHandHoldingHeart, FaSignInAlt } from "react-icons/fa";
+import Navbar from "../Navbar";
 
 const TelaInicial: React.FC = () => {
-  const navigate = useNavigate();
-
   return (
-    <div
-      className="flex h-screen items-center justify-center bg-cover bg-center relative"
-      style={{ backgroundImage: "url('/foto-coroinha.jpeg')" }}
-    >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50"></div>
-
-      {/* Content */}
-      <div className="relative z-10 text-center">
-        <h1 className="text-3xl sm:text-5xl font-bold text-white mb-8">
-          Bem-vindo(a)!
-        </h1>
-        <div className="flex flex-col gap-4 sm:flex-row">
-          <button
-            type="button"
-            onClick={() => navigate("/escala-fixa")}
-            className="flex items-center justify-center gap-2 bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded shadow-lg transform transition-transform hover:scale-105"
-          >
-            <FaCalendarAlt className="text-lg" />
-            Escala Fixa
-          </button>
-
-          <button
-            type="button"
-            onClick={() => navigate("/festejos")}
-            className="flex items-center justify-center gap-2 bg-blue-400 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded shadow-lg transform transition-transform hover:scale-105"
-          >
-            <FaHandHoldingHeart className="text-lg" />
-            Nossa Senhora das Candeias
-          </button>
-
-          <button
-            type="button"
-            onClick={() => navigate("/login")}
-            className="flex items-center justify-center gap-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded shadow-lg transform transition-transform hover:scale-105"
-          >
-            <FaSignInAlt className="text-lg" />
-            Criar Escala
-          </button>
+    <div>
+      <section className="flex items-center justify-center bg-cover bg-center relative w-full h-[221px]">
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: "url('/capa.png')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+          }}
+        />
+        <div className="absolute inset-0 bg-black bg-opacity-40" />
+        <div className="relative z-10 flex flex-col items-center text-white w-full sm:w-[400px]">
+          <img
+            src="/logo.png"
+            alt="Logo da Paróquia"
+            className="w-32 h-32 object-contain mb-2"
+          />
+          <h2 className="text-center font-playfair text-[1.0rem] font-medium uppercase leading-[1.2em] text-shadow-lg text-[#F1DA93]">
+            Coroinhas de
+          </h2>
+          <h1 className="text-center font-playfair text-[1.4rem] font-bold uppercase leading-[1.0em] text-shadow-lg text-[#F1DA93]">
+            Maranguape
+          </h1>
         </div>
-      </div>
+      </section>
+      <Navbar />
     </div>
   );
 };
