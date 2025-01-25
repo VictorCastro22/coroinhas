@@ -103,7 +103,7 @@ const Navbar: React.FC = () => {
                   textTransform: "uppercase",
                 }}
               >
-                Festejos
+                Nossa Senhora das Candeias
               </button>
             </li>
             <li>
