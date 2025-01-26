@@ -87,19 +87,14 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "78-2025-01-24-19h-ConegoPinto", data: "2025-01-24", horario: "19h", local: "Cônego Pinto", padre: "Padre Ivan" },
-    { id: "80-2025-01-24-19h-Urucara", data: "2025-01-24", horario: "19h", local: "Urucará", padre: "Padre Rafhael" },
+
+
     { id: "80-2025-01-27-19h-Urucara", data: "2025-01-27", horario: "19h", local: "Urucará", padre: "Padre Antônio" },
     { id: "80-2025-01-28-19h-Urucara", data: "2025-01-28", horario: "19h", local: "Urucará", padre: "Padre João Paulo" },
     { id: "80-2025-01-29-19h-Urucara", data: "2025-01-29", horario: "19h", local: "Urucará", padre: "Padre Cláudio" },
     { id: "80-2025-01-31-19h-Urucara", data: "2025-01-31", horario: "19h", local: "Urucará", padre: "Padre John Lennon" },
     { id: "80-2025-02-01-19h-Urucara", data: "2025-02-01", horario: "19h", local: "Urucará", padre: "Padre Aurénio" },
     { id: "78-2025-02-02-19h-Urucara", data: "2025-02-02", horario: "19h", local: "Urucará (Encerramento)", padre: "Padre Ivan" },
-
-    { id: "78-2025-01-25-17h-SantaDulce", data: "2025-01-25", horario: "17h", local: "Santa Dulce", padre: "Padre Eudásio" },
-    { id: "78-2025-01-25-17h-Abrigo", data: "2025-01-25", horario: "17h", local: "Abrigo", padre: "Padre Ivan" },
-    { id: "78-2025-01-25-19h-Matriz", data: "2025-01-25", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-01-25-19h-OutraBanda", data: "2025-01-25", horario: "19h", local: "Outra Banda", padre: "Padre Ivan" },
 
 
     { id: "78-2025-01-26-07h-Matriz", data: "2025-01-26", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },

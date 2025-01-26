@@ -1,9 +1,23 @@
 import Destaque from "../Destaque";
 import Navbar from "../Navbar";
+import Noticias from "../Noticias"; 
 
 const TelaInicial: React.FC = () => {
+ 
+  const noticias = [
+    {
+      id: "1",
+      titulo: "Paróquia de Maranguape recebe novo vigário, Pe. Rafael Nascimento Rocha",
+      link: "/noticias/1",
+      imagem: "/noticia1.jpeg",
+      alt: "Novo Vigário de Maranguape",
+    },
+  ];
+  
+
   return (
     <div>
+      
       <section className="flex items-center justify-center bg-cover bg-center relative w-full h-[221px]">
         <div
           className="absolute inset-0"
@@ -28,8 +42,17 @@ const TelaInicial: React.FC = () => {
           </h1>
         </div>
       </section>
+
+      
       <Navbar />
+
+      
       <Destaque />
+
+      
+      <section className="p-6">
+        <Noticias noticias={noticias} />
+      </section>
     </div>
   );
 };

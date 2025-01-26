@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,10 +11,11 @@ const Navbar: React.FC = () => {
       style={{ fontFamily: "Playfair Display, Sans-serif" }}
     >
       <div className="container mx-auto flex justify-between items-center px-4">
+        {/* Tornando o nome "PNSP" clicável para redirecionar ao início */}
+        <Link to="/" className="text-2xl font-bold hover:underline">
+          PNSP
+        </Link>
 
-      <h1 className="text-2xl font-bold">PNSP</h1>
-
-          
         <div className="flex items-center gap-4">
           {!menuOpen && (
             <button
@@ -68,7 +69,6 @@ const Navbar: React.FC = () => {
           )}
         </div>
       </div>
-
 
       {menuOpen && (
         <div

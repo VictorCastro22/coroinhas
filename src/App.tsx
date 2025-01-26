@@ -5,12 +5,14 @@ import ProtectedRoute from "./componentes/ProtectedRoute";
 import TelaInicial from "./componentes/TelaInicial";
 import EscalaFixa from "./componentes/EscalaFixa";
 import Festejos from "./componentes/Festejos";
+import NoticiaDetalhe from "./componentes/NoticiaDetalhe";
 
 const App: React.FC = () => {
   return (
     <Router>
       <Routes>
         <Route path="/" element={<TelaInicial />} />
+        <Route path="/noticias/:id" element={<NoticiaDetalhe />} />
         <Route path="/escala-fixa" element={<EscalaFixa />} />
         <Route path="/festejos" element={<Festejos />} />
         <Route path="/login" element={<Login />} />
