@@ -80,15 +80,6 @@ const Festejos: React.FC = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <div className="w-full mb-6">
-        <img
-          src="/n.s-candeias.png"
-          alt="Logo Festejos"
-          style={{ height: '180px' }}
-          className="w-full object-cover"
-        />
-      </div>
-
 
       <h1 className="text-2xl font-bold text-center mb-6">Nossa Senhora das Candeias</h1>
 

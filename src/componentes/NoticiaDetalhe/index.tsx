@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import Navbar from "../Navbar";
+
 
 const NoticiaDetalhe: React.FC = () => {
   const { id } = useParams<{ id: string }>();
@@ -52,8 +52,6 @@ const NoticiaDetalhe: React.FC = () => {
           </h1>
         </div>
       </section>
-
-      <Navbar />
 
       <div className="p-6">
         
