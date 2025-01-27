@@ -20,7 +20,6 @@ const Noticias: React.FC<NoticiasProps> = ({ noticias }) => {
           key={noticia.id}
           className="elementor-post__card border rounded-lg shadow-lg overflow-hidden bg-white"
         >
-          
           <Link to={noticia.link} className="elementor-post__thumbnail__link">
             <div className="elementor-post__thumbnail">
               <img
@@ -32,7 +31,7 @@ const Noticias: React.FC<NoticiasProps> = ({ noticias }) => {
             </div>
           </Link>
           <div className="elementor-post__text p-4">
-            <h3 className="elementor-post__title text-lg font-bold text-gray-800 hover:text-blue-600 transition-colors">
+            <h3 className="elementor-post__title text-lg font-bold text-gray-800 hover:text-blue-600 transition-colors text-center">
               <Link to={noticia.link}>{noticia.titulo}</Link>
             </h3>
           </div>

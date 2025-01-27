@@ -1,8 +1,15 @@
 import Destaque from "../Destaque";
-import Noticias from "../Noticias"; 
+import Noticias from "../Noticias";
 
 const TelaInicial: React.FC = () => {
   const noticias = [
+    {
+      id: "2",
+      titulo: "As Indulgências no Ano Jubilar 2025",
+      link: "/noticias/2",
+      imagem: "/jubilar.png",
+      alt: "Ano Jubilar",
+    },
     {
       id: "1",
       titulo: "Paróquia de Maranguape recebe novo vigário, Pe. Rafael Nascimento Rocha",
