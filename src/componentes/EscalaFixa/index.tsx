@@ -16,26 +16,6 @@ const EscalaFixa: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const escalas = useMemo(() => [
-    { id: "78-2025-01-23-MaeRainha", data: "2025-01-23", horario: "19h", local: "Mãe Rainha", padre: "Padre Ivan" },
-
-    { id: "78-2025-01-24-19h-ConegoPinto", data: "2025-01-24", horario: "19h", local: "Cônego Pinto", padre: "Padre Ivan" },
-
-    { id: "78-2025-01-25-17h-SantaDulce", data: "2025-01-25", horario: "17h", local: "Santa Dulce", padre: "Padre Eudásio" },
-    { id: "78-2025-01-25-17h-Abrigo", data: "2025-01-25", horario: "17h", local: "Abrigo", padre: "Padre Ivan" },
-    { id: "78-2025-01-25-19h-Matriz", data: "2025-01-25", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-01-25-19h-OutraBanda", data: "2025-01-25", horario: "19h", local: "Outra Banda", padre: "Padre Ivan" },
-
-
-    { id: "78-2025-01-26-07h-Matriz", data: "2025-01-26", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-01-26-07h-Divino", data: "2025-01-26", horario: "07h", local: "Divino", padre: "Padre Ivan" },
-    { id: "78-2025-01-26-09h-Matriz", data: "2025-01-26", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-01-26-17h-CentroDePastoral", data: "2025-01-26", horario: "17h", local: "Centro de Pastoral", padre: "Padre Ivan" },
-    { id: "78-2025-01-26-17h-Divino", data: "2025-01-26", horario: "17h", local: "Divino", padre: "Padre Eudásio" },
-    { id: "78-2025-01-26-19h-Matriz", data: "2025-01-26", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "78-2025-01-26-19h-NovoParqueIracema", data: "2025-01-26", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Eudásio" },
-
-    { id: "78-2025-01-28-19h-SaoPedro", data: "2025-01-28", horario: "19h", local: "São Pedro", padre: "Padre Ivan" },
-
     { id: "78-2025-01-29-19h-MissaFamilias", data: "2025-01-29", horario: "19h", local: "Matriz (Missa pelas Famílias)", padre: "Padre Ivan" },
 
     { id: "78-2025-02-01-17h-SantaLuzia", data: "2025-02-01", horario: "17h", local: "Santa Luzia", padre: "Padre Eudásio" },
