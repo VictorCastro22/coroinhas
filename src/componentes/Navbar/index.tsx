@@ -18,7 +18,7 @@ const Navbar: React.FC = () => {
       style={{ fontFamily: "Playfair Display, Sans-serif" }}
     >
       <div className="container mx-auto flex justify-between items-center px-4">
-        <Link to="/" className="text-2xl font-bold hover:underline">
+        <Link to="/" className="text-2xl font-bold hover:underline link-style">
           PNSP
         </Link>
 
@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
       >
         <ul className="flex flex-col gap-4">
           <li>
-            <button type="button" onClick={() => handleNavigation("/")} className="hover:underline text-left">
+            <button type="button" onClick={() => handleNavigation("/")} className="hover:underline text-left link-style">
               INÍCIO
             </button>
           </li>
@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
             <button
               type="button"
               onClick={() => setSubmenuOpen(!submenuOpen)}
-              className="hover:underline text-left flex items-center gap-2"
+              className="hover:underline text-left flex items-center gap-2 link-style"
             >
               ESCALA
               <span className="sub-arrow">
@@ -105,12 +105,12 @@ const Navbar: React.FC = () => {
             {submenuOpen && (
               <ul className="ml-4 flex flex-col gap-2">
                 <li>
-                  <button type="button" onClick={() => handleNavigation("/escala-fixa")} className="hover:underline text-left">
+                  <button type="button" onClick={() => handleNavigation("/escala-fixa")} className="hover:underline text-left link-style">
                     ESCALA FIXA
                   </button>
                 </li>
                 <li>
-                  <button type="button" onClick={() => handleNavigation("/festejos")} className="hover:underline text-left">
+                  <button type="button" onClick={() => handleNavigation("/festejos")} className="hover:underline text-left link-style">
                     NOSSA SENHORA DAS CANDEIAS
                   </button>
                 </li>
@@ -118,17 +118,17 @@ const Navbar: React.FC = () => {
             )}
           </li>
           <li>
-            <button type="button" onClick={() => handleNavigation("/mestres")} className="hover:underline text-left">
+            <button type="button" onClick={() => handleNavigation("/mestres")} className="hover:underline text-left link-style">
               MESTRES
             </button>
           </li>
           <li className="text-gray-400">
-            <button type="button" className="text-left" disabled>
+            <button type="button" className="text-left link-style" disabled>
               CALENDÁRIO CATÓLICO
             </button>
           </li>
-          <li className="text-gray-400">
-            <button type="button" className="text-left" disabled>
+          <li>
+            <button type="button" onClick={() => handleNavigation("/rosario")} className="hover:underline text-left link-style">
               TERÇO
             </button>
           </li>
