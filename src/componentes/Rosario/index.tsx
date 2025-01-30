@@ -1,5 +1,13 @@
 import { useState } from "react";
 
+const oracoesIniciais = [
+  "Sinal da Cruz: Em nome do Pai, do Filho e do Espírito Santo. Amém.",
+  "Credo: Creio em Deus Pai todo-poderoso, Criador do céu e da terra...",
+  "Pai Nosso: Pai nosso que estais no céu, santificado seja o Vosso nome...",
+  "Ave Maria (3x): Ave Maria, cheia de graça, o Senhor é convosco...",
+  "Glória ao Pai: Glória ao Pai, ao Filho e ao Espírito Santo..."
+];
+
 const misterios = [
   {
     nome: "Mistérios Gozosos",
@@ -43,21 +51,37 @@ const misterios = [
   }
 ];
 
+const oracaoFinal = "Salve Rainha: Salve Rainha, Mãe de misericórdia, vida, doçura e esperança nossa, salve...";
+
 export default function Rosario() {
+  const [fase, setFase] = useState("inicio");
   const [misterioAtual, setMisterioAtual] = useState(0);
   const [meditacaoAtual, setMeditacaoAtual] = useState(0);
   const [contagem, setContagem] = useState(0);
+  const [oracaoAtual, setOracaoAtual] = useState(0);
 
-  const avancarContagem = () => {
-    if (contagem < 10) {
-      setContagem(contagem + 1);
-    } else {
-      setContagem(0);
-      if (meditacaoAtual < 4) {
-        setMeditacaoAtual(meditacaoAtual + 1);
+  const avancar = () => {
+    if (fase === "inicio") {
+      if (oracaoAtual < oracoesIniciais.length - 1) {
+        setOracaoAtual(oracaoAtual + 1);
       } else {
-        setMeditacaoAtual(0);
-        setMisterioAtual((misterioAtual + 1) % misterios.length);
+        setFase("misterios");
+      }
+    } else if (fase === "misterios") {
+      if (contagem < 10) {
+        setContagem(contagem + 1);
+      } else {
+        setContagem(0);
+        if (meditacaoAtual < 4) {
+          setMeditacaoAtual(meditacaoAtual + 1);
+        } else {
+          if (misterioAtual < misterios.length - 1) {
+            setMisterioAtual(misterioAtual + 1);
+            setMeditacaoAtual(0);
+          } else {
+            setFase("final");
+          }
+        }
       }
     }
   };
@@ -65,12 +89,23 @@ export default function Rosario() {
   return (
     <div className="flex flex-col items-center p-4 gap-4 bg-gray-100 min-h-screen">
       <div className="w-full max-w-md bg-white shadow-md rounded-lg p-6 text-center">
-        <h2 className="text-xl font-bold">{misterios[misterioAtual].nome}</h2>
-        <p className="text-gray-600 mt-2">{misterios[misterioAtual].meditacoes[meditacaoAtual]}</p>
+        {fase === "inicio" && <h2 className="text-xl font-bold">Orações Iniciais</h2>}
+        {fase === "misterios" && <h2 className="text-xl font-bold">{misterios[misterioAtual].nome}</h2>}
+        {fase === "final" && <h2 className="text-xl font-bold">Oração Final</h2>}
+        <p className="text-gray-600 mt-2">
+          {fase === "inicio" && oracoesIniciais[oracaoAtual]}
+          {fase === "misterios" && misterios[misterioAtual].meditacoes[meditacaoAtual]}
+          {fase === "final" && oracaoFinal}
+        </p>
       </div>
-      <div className="text-3xl font-bold">{contagem}/10 Ave-Marias</div>
-      <button onClick={avancarContagem} className="px-6 py-2 bg-blue-600 text-white rounded-lg text-lg">
-        Contar Ave-Maria
+      {fase !== "final" && (
+        <div className="text-3xl font-bold">{contagem}/10 Ave-Marias</div>
+      )}
+      <button
+        onClick={avancar}
+        className="px-6 py-2 bg-blue-600 text-white rounded-lg text-lg transition-transform transform active:scale-95"
+      >
+        {fase === "inicio" ? "Avançar Oração" : fase === "misterios" ? "Contar Ave-Maria" : "Finalizar"}
       </button>
     </div>
   );
