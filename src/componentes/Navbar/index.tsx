@@ -89,6 +89,11 @@ const Navbar: React.FC = () => {
             </button>
           </li>
           <li>
+            <button type="button" onClick={() => handleNavigation("/agenda-paroquial")} className="hover:underline text-left link-style">
+              AGENDA PAROQUIAL
+            </button> 
+          </li>
+          <li>
             <button
               type="button"
               onClick={() => setSubmenuOpen(!submenuOpen)}
@@ -120,11 +125,6 @@ const Navbar: React.FC = () => {
           <li>
             <button type="button" onClick={() => handleNavigation("/mestres")} className="hover:underline text-left link-style">
               MESTRES
-            </button>
-          </li>
-          <li className="text-gray-400">
-            <button type="button" className="text-left link-style" disabled>
-              CALENDÁRIO CATÓLICO
             </button>
           </li>
           <li>

@@ -7,7 +7,7 @@ import EscalaFixa from "./componentes/EscalaFixa";
 import Festejos from "./componentes/Festejos";
 import NoticiaDetalhe from "./componentes/NoticiaDetalhe";
 import Layout from "./componentes/Layout";
-import CalendarioCatolico from "./componentes/CalendarioCatolico";
+import AgendaParoquial from "./componentes/AgendaParoquial";
 import Rosario from "./componentes/Rosario";
 
 const App: React.FC = () => {
@@ -21,7 +21,7 @@ const App: React.FC = () => {
           <Route path="/escala-fixa" element={<EscalaFixa />} />
           <Route path="/festejos" element={<Festejos />} />
           <Route path="/rosario" element={<Rosario />} />
-          <Route path="/calendario-catolico" element={<CalendarioCatolico />} /> 
+          <Route path="/agenda-paroquial" element={<AgendaParoquial />} /> 
           <Route
             path="/criar-escala"
             element={
