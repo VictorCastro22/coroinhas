@@ -127,11 +127,6 @@ const Navbar: React.FC = () => {
               MESTRES
             </button>
           </li>
-          <li>
-            <button type="button" onClick={() => handleNavigation("/rosario")} className="hover:underline text-left link-style">
-              TERÇO
-            </button>
-          </li>
         </ul>
       </div>
     </nav>

@@ -115,9 +115,10 @@ const EscalaFixa: React.FC = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-2xl font-bold text-center mb-6">
-      Escala Fixa
+      <h1 className="text-[30px] font-playfair font-semibold text-[#535043] text-center mb-6">
+        Escala Fixa
       </h1>
+
 
       <div className="mb-6">
         <input

@@ -87,13 +87,11 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "80-2025-01-31-19h-Urucara", data: "2025-01-31", horario: "19h", local: "Urucará", padre: "Padre John Lennon" },
-
     { id: "78-2025-02-01-17h-SantaLuzia", data: "2025-02-01", horario: "17h", local: "Santa Luzia", padre: "Padre Eudásio" },
     { id: "78-2025-02-01-17h-SantoAntonio", data: "2025-02-01", horario: "17h", local: "Santo Antônio", padre: "Padre Ivan" },
     { id: "78-2025-02-01-19h-Matriz", data: "2025-02-01", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "78-2025-02-01-19h-Coite", data: "2025-02-01", horario: "19h", local: "Coité", padre: "Padre Ivan" },
-    { id: "80-2025-02-01-19h-Urucara", data: "2025-02-01", horario: "19h", local: "Urucará", padre: "Padre Aurénio" },
+    { id: "80-2025-02-01-19h-Urucara", data: "2025-02-01", horario: "19h", local: "Urucará", padre: "Padre Aurênio" },
 
     { id: "78-2025-02-02-07h-Matriz", data: "2025-02-02", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "78-2025-02-02-07h-Divino", data: "2025-02-02", horario: "07h", local: "Divino", padre: "Padre Ivan" },
@@ -130,9 +128,10 @@ const CalendarioPadres: React.FC = () => {
 
   return (
     <div>
-      <h1 className="text-2xl font-bold text-center mb-6">
-        Calendário de Serviço
+      <h1 className="text-[30px] font-playfair font-semibold text-[#535043] text-center mb-6">
+        Calendário das Missas
       </h1>
+
 
       {escalas.map((escala) => (
         <CardEscala

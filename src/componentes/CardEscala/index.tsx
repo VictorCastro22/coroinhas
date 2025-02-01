@@ -68,11 +68,13 @@ const CardEscala: React.FC<CardEscalaProps> = ({
         return "/dom-gregorio.png";
       case "Padre Rafael":
         return "/pe-rafael.png";
+      case "Padre Aurênio":
+        return "/pe-aurenio.png";
       default:
         return "/imagens/semfoto.jpg";
     }
   };
-
+  
   return (
     <div
       className={`flex flex-col border p-4 rounded-md shadow-md mb-4 ${
