@@ -89,8 +89,8 @@ const Navbar: React.FC = () => {
             </button>
           </li>
           <li>
-            <button type="button" onClick={() => handleNavigation("/agenda-paroquial")} className="hover:underline text-left link-style">
-              AGENDA PAROQUIAL
+            <button type="button" onClick={() => handleNavigation("/calendario")} className="hover:underline text-left link-style">
+              CALENDÁRIO
             </button> 
           </li>
           <li>
