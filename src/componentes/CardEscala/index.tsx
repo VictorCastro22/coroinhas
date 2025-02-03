@@ -13,8 +13,8 @@ interface CardEscalaProps {
   local: string;
   coroinhas: Coroinha[];
   selectedCoroinha?: string;
-  onAddCoroinha: () => void;
-  onDeleteCoroinha: (id: string) => void;
+  onAddCoroinha?: () => void;
+  onDeleteCoroinha?: (id: string) => void;
   isPublicView?: boolean;
 }
 
@@ -74,7 +74,7 @@ const CardEscala: React.FC<CardEscalaProps> = ({
         return "/imagens/semfoto.jpg";
     }
   };
-  
+
   return (
     <div
       className={`flex flex-col border p-4 rounded-md shadow-md mb-4 ${
@@ -97,7 +97,7 @@ const CardEscala: React.FC<CardEscalaProps> = ({
           <p className="text-base text-gray-700">
             {dataFormatada} - {horario}
           </p>
-          {!isPublicView && (
+          {!isPublicView && onAddCoroinha && (
             <button
               type="button"
               onClick={onAddCoroinha}
@@ -123,7 +123,7 @@ const CardEscala: React.FC<CardEscalaProps> = ({
               />
               <span>{coroinha.nome}</span>
             </div>
-            {!isPublicView && (
+            {!isPublicView && onDeleteCoroinha && (
               <div className="space-x-2">
                 <button
                   type="button"
