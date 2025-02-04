@@ -8,7 +8,7 @@ const TelaInicial: React.FC = () => {
       id: "3",
       titulo: "Calendário de Fevereiro",
       link: "/noticias/3",
-      imagem: "/pnsp.jpeg",
+      imagem: "/pnsp.png",
       alt: "Calendário de Missas de Fevereiro",
     },
   ];

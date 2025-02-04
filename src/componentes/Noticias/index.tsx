@@ -21,7 +21,7 @@ const Noticias: React.FC<NoticiasProps> = ({ noticias }) => {
           className="elementor-post__card border rounded-lg shadow-lg overflow-hidden bg-white"
         >
           <Link
-            to={noticia.id === "3" ? "/calendario-missas" : noticia.link} // ⬅️ Aqui verificamos se é a notícia da missa
+            to={noticia.id === "3" ? "/calendario-missas" : noticia.link}
             className="elementor-post__thumbnail__link"
           >
             <div className="elementor-post__thumbnail">
