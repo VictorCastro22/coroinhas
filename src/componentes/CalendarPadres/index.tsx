@@ -35,13 +35,6 @@ const CalendarPadres: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "80-2025-02-05-19h-Matriz", data: "2025-02-05", horario: "19h", local: "Matriz (Missa pelas famílias)", padre: "Padre Ivan" },
-
-    { id: "81-2025-02-06-19h-ParqueDasRosas", data: "2025-02-06", horario: "19h", local: "Parque das Rosas", padre: "Padre Ivan" },
-
-    { id: "82-2025-02-07-18h30-AnoJubilarMatriz", data: "2025-02-07", horario: "18h30", local: "Abertura do Ano Jubilar", padre: "Padre Eudásio" },
-    { id: "83-2025-02-07-18h30-AnoJubileu", data: "2025-02-07", horario: "18h30", local: "Abertura do Ano Jubilar", padre: "Padre Ivan" },
-
     { id: "84-2025-02-08-19h-MissaVotiva", data: "2025-02-08", horario: "19h", local: "Matriz (Missa Votiva de N. Sra. da Penha)", padre: "Padre Eudásio" },
 
     { id: "85-2025-02-09-07h-Matriz", data: "2025-02-09", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
