@@ -23,7 +23,7 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
   onClose,
   selectedCoroinha,
   setSelectedCoroinha,
-  selectionCounts // Adicione esta linha
+  selectionCounts
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
