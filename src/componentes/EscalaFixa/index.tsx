@@ -16,18 +16,6 @@ const EscalaFixa: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const escalas = useMemo(() => [
-    { id: "78-2025-02-11-19h-PlanaltoDosCajueiros", data: "2025-02-11", horario: "19h", local: "Santa Dulce", padre: "Padre Ivan" },
-    { id: "78-2025-02-11-19h-SaoPedro", data: "2025-02-11", horario: "19h", local: "São Pedro", padre: "Padre Rafael" },
-
-    { id: "78-2025-02-12-19h-MatrizFamilias", data: "2025-02-12", horario: "19h", local: "Matriz (Missa pelas famílias)", padre: "Padre Rafael" },
-    { id: "78-2025-02-12-19h-SantosDumont", data: "2025-02-12", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
-
-    { id: "78-2025-02-13-12h-Matriz", data: "2025-02-13", horario: "12h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-02-13-17h-Vilares", data: "2025-02-13", horario: "17h", local: "Vilares", padre: "Padre Ivan" },
-    { id: "78-2025-02-13-19h-MaeRainha", data: "2025-02-13", horario: "19h", local: "Mãe Rainha", padre: "Padre Rafael" },
-    { id: "78-2025-02-13-19h-PqSaoJoao", data: "2025-02-13", horario: "19h", local: "Pq. São João", padre: "Padre Ivan" },
-
-
     { id: "78-2025-02-14-19h-ConegoPinto", data: "2025-02-14", horario: "19h", local: "Cônego Pinto", padre: "Padre Rafael" },
     { id: "78-2025-02-14-19h-Rosario", data: "2025-02-14", horario: "19h", local: "Rosário", padre: "Padre Ivan" },
 
