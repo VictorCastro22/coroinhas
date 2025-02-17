@@ -37,19 +37,6 @@ const CalendarPadres: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "84-2025-02-15-17h-SantoAntonio", data: "2025-02-15", horario: "17h", local: "Santo Antônio", padre: "Padre Rafael" },
-     { id: "84-2025-02-15-17h-SantaLuzia", data: "2025-02-15", horario: "17h", local: "Santa Luzia", padre: "Padre Ivan" }, 
-     { id: "84-2025-02-15-19h-Matriz", data: "2025-02-15", horario: "19h", local: "Matriz", padre: "Padre Rafael" }, 
-     { id: "84-2025-02-15-19h-Coite", data: "2025-02-15", horario: "19h", local: "Coité", padre: "Padre Ivan" }, 
-
-     { id: "84-2025-02-16-07h-Divino", data: "2025-02-16", horario: "07h", local: "Divino", padre: "Padre Rafael" }, 
-     { id: "84-2025-02-16-07h-Matriz", data: "2025-02-16", horario: "07h", local: "Matriz", padre: "Padre Ivan" }, 
-     { id: "84-2025-02-16-09h-Matriz", data: "2025-02-16", horario: "09h", local: "Matriz", padre: "Padre Rafael" },
-      { id: "84-2025-02-16-09h-SaoJose", data: "2025-02-16", horario: "09h", local: "São José", padre: "Padre Ivan" }, 
-      { id: "84-2025-02-16-17h-CentroDePastoral", data: "2025-02-16", horario: "17h", local: "Centro de Pastoral", padre: "Padre Rafael" }, 
-      { id: "84-2025-02-16-17h-Divino", data: "2025-02-16", horario: "17h", local: "Divino", padre: "Padre Ivan" }, 
-      { id: "84-2025-02-16-19h-Matriz", data: "2025-02-16", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-       { id: "84-2025-02-16-19h-PqSaoJoao", data: "2025-02-16", horario: "19h", local: "Pq. São João", padre: "Padre Ivan" },
 
         { id: "84-2025-02-18-19h-Urucara", data: "2025-02-18", horario: "19h", local: "Urucará", padre: "Padre Rafael" }, 
         { id: "84-2025-02-18-19h-Pirapora", data: "2025-02-18", horario: "19h", local: "Pirapora", padre: "Padre Ivan" }, 
