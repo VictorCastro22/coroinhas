@@ -163,13 +163,13 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-03-13-19h-PqSaoJoao", data: "2025-03-13", horario: "19h", local: "Parque São João", padre: "Padre Ivan" },
     { id: "78-2025-03-13-19h-MaeRainha", data: "2025-03-13", horario: "19h", local: "Mãe Rainha", padre: "Padre Rafael" },
 
-    { id: "78-2025-03-14-08h-VisitaEnfermos", data: "2025-03-14", horario: "08h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-03-14-08h-VisitaEnfermos", data: "2025-03-14", horario: "08h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-03-14-17h-ConfissoesMatriz", data: "2025-03-14", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-03-14-18h-ConfissoesMatriz", data: "2025-03-14", horario: "18h", local: "Matriz", padre: "Padre Ivan" },
+    { id: "78-2025-03-14-08h-VisitaEnfermos", data: "2025-03-14", horario: "08h", local: "Visita aos Enfermos", padre: "Padre Eudásio" },
+    { id: "79-2025-03-14-08h-VisitaEnfermos", data: "2025-03-14", horario: "08h", local: "Visita aos Enfermos", padre: "Padre Rafael" },
+    { id: "78-2025-03-14-17h-ConfissoesMatriz", data: "2025-03-14", horario: "17h", local: "Confissões na Matriz", padre: "Padre Rafael" },
+    { id: "78-2025-03-14-18h-ConfissoesMatriz", data: "2025-03-14", horario: "18h", local: "Confissões na Matriz", padre: "Padre Ivan" },
     { id: "78-2025-03-14-19h-Matriz", data: "2025-03-14", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
 
-    { id: "78-2025-03-15-07h30-FormacaoMissionaria", data: "2025-03-15", horario: "07h30", local: "Matriz", padre: "Padre Eudásio" },
+    { id: "78-2025-03-15-07h30-FormacaoMissionaria", data: "2025-03-15", horario: "07h30", local: "Formação Missionária", padre: "Padre Eudásio" },
     { id: "78-2025-03-15-17h-SantoAntonio", data: "2025-03-15", horario: "17h", local: "Santo Antônio", padre: "Padre Ivan" },
     { id: "78-2025-03-15-17h-SantaLuzia", data: "2025-03-15", horario: "17h", local: "Santa Luzia", padre: "Padre Rafael" },
     { id: "78-2025-03-15-19h-Coite", data: "2025-03-15", horario: "19h", local: "Coité", padre: "Padre Ivan" },
