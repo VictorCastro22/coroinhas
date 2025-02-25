@@ -83,7 +83,7 @@ const EscalaFixa: React.FC = () => {
     { id: "78-2025-03-12-19h-AtendimentoSecretaria", data: "2025-03-12", horario: "08h", local: "Atendimento na Secretaria", padre: "Padre Eudásio" },
     { id: "78-2025-03-12-17h-ConfissoesMatriz", data: "2025-03-12", horario: "17h", local: "Confissões na Matriz", padre: "Padre Rafael" },
     { id: "78-2025-03-12-19h-SantosDumont", data: "2025-03-12", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
-    { id: "78-2025-03-12-19h-MissaFamilias", data: "2025-03-12", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
+    { id: "78-2025-03-12-19h-MissaFamilias", data: "2025-03-12", horario: "19h", local: "Missa pelas famílias", padre: "Padre Rafael" },
 
     { id: "78-2025-03-13-08h-ConfissoesMatriz", data: "2025-03-13", horario: "08h", local: "Confissões na Matriz", padre: "Padre Ivan" },
     { id: "78-2025-03-13-12h-Matriz", data: "2025-03-13", horario: "12h", local: "Matriz", padre: "Padre Eudásio" },
