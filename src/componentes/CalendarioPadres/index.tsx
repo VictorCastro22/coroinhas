@@ -185,7 +185,23 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-03-16-17h-PqSaoJoao", data: "2025-03-16", horario: "17h", local: "Parque São João", padre: "Padre Ivan" },
     { id: "78-2025-03-16-17h-CentroPastoral", data: "2025-03-16", horario: "17h", local: "Centro de Pastoral", padre: "Padre Rafael" },
     { id: "78-2025-03-16-19h-Matriz", data: "2025-03-16", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-03-16-19h-NPqIracema", data: "2025-03-16", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Rafael" }
+    { id: "78-2025-03-16-19h-NPqIracema", data: "2025-03-16", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Rafael" },
+
+    { id: "78-2025-03-17-19h-Susto", data: "2025-03-17", horario: "19h", local: "Susto", padre: "Padre Ivan" },
+
+    { id: "78-2025-03-18-19h-PlanaltoCajueiros", data: "2025-03-18", horario: "19h", local: "Planalto dos Cajueiros", padre: "Padre Eudásio" },
+    { id: "78-2025-03-18-19h-Vilares", data: "2025-03-18", horario: "19h", local: "Vilares", padre: "Padre Ivan" },
+    { id: "78-2025-03-18-19h-Urucara", data: "2025-03-18", horario: "19h", local: "Urucará", padre: "Padre Rafael" },
+
+    { id: "78-2025-03-19-08h-AtendimentoSecretaria", data: "2025-03-19", horario: "08h", local: "Atendimento na Secretaria", padre: "Padre Eudásio" },
+    { id: "78-2025-03-19-09h-SaoJoseFesta", data: "2025-03-19", horario: "09h", local: "São José (Festa)", padre: "Padre Rafael" },
+    { id: "78-2025-03-19-19h-SaoJoseFesta", data: "2025-03-19", horario: "19h", local: "São José (Festa)", padre: "Padre Eudásio" },
+    { id: "78-2025-03-19-19h-Guabiraba", data: "2025-03-19", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
+    { id: "78-2025-03-19-19h-MissaFamilias", data: "2025-03-19", horario: "19h", local: "Missa pelas famílias", padre: "Padre Rafael" },
+
+    { id: "78-2025-03-20-08h-ConfissoesMatriz", data: "2025-03-20", horario: "08h", local: "Confissões na Matriz", padre: "Padre Ivan" },
+    { id: "78-2025-03-20-19h-PqRosas", data: "2025-03-20", horario: "19h", local: "Parque das Rosas", padre: "Padre Ivan" },
+    { id: "78-2025-03-20-19h-Tanguera", data: "2025-03-20", horario: "19h", local: "Tangueira", padre: "Padre Rafael" }
   ];
 
   return (
