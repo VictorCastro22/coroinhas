@@ -16,7 +16,6 @@ const EscalaFixa: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const escalas = useMemo(() => [
-    
     { id: "78-2025-02-25-19h-SaoPedro", data: "2025-02-25", horario: "19h", local: "São Pedro", padre: "Padre Rafael" },
 
     { id: "78-2025-02-26-19h-SantosDumont", data: "2025-02-26", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
@@ -24,6 +23,56 @@ const EscalaFixa: React.FC = () => {
 
     { id: "78-2025-02-27-19h-CampoDoNilo", data: "2025-02-27", horario: "19h", local: "Campo do Nilo", padre: "Padre Ivan" },
     { id: "78-2025-02-27-19h-MaeRainha", data: "2025-02-27", horario: "19h", local: "Mãe Rainha", padre: "Padre Rafael" },
+
+    { id: "78-2025-03-01-07h30-CPP", data: "2025-03-01", horario: "07:30h", local: "CPP", padre: "Padre Eudásio" },
+    { id: "79-2025-03-01-07h30-CPP", data: "2025-03-01", horario: "07:30h", local: "CPP", padre: "Padre Rafael" },
+    { id: "78-2025-03-01-17h-SantaLuzia", data: "2025-03-01", horario: "17h", local: "Santa Luzia", padre: "Padre Eudásio" },
+    { id: "78-2025-03-01-17h-SantoAntonio", data: "2025-03-01", horario: "17h", local: "Santo Antônio", padre: "Padre Rafael" },
+    { id: "78-2025-03-01-19h-Matriz", data: "2025-03-01", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
+    { id: "78-2025-03-01-19h-Coite", data: "2025-03-01", horario: "19h", local: "Coité", padre: "Padre Rafael" },
+
+    { id: "78-2025-03-02-07h-Divino", data: "2025-03-02", horario: "07h", local: "Divino", padre: "Padre Eudásio" },
+    { id: "78-2025-03-02-07h-Matriz", data: "2025-03-02", horario: "07h", local: "Matriz", padre: "Padre Rafael" },
+    { id: "78-2025-03-02-09h-Matriz", data: "2025-03-02", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
+    { id: "78-2025-03-02-09h-SaoJose", data: "2025-03-02", horario: "09h", local: "São José", padre: "Padre Rafael" },
+    { id: "78-2025-03-02-17h-CentroPastoral", data: "2025-03-02", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
+    { id: "78-2025-03-02-17h-Divino", data: "2025-03-02", horario: "17h", local: "Divino", padre: "Padre Rafael" },
+    { id: "78-2025-03-02-19h-Matriz", data: "2025-03-02", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
+    { id: "78-2025-03-02-19h-NPqIracema", data: "2025-03-02", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Rafael" },
+
+    { id: "78-2025-03-05-07h-Matriz", data: "2025-03-05", horario: "07h", local: "Matriz (Missa das Cinzas)", padre: "Padre Eudásio" },
+    { id: "78-2025-03-05-07h-Divino", data: "2025-03-05", horario: "07h", local: "Divino (Missa das Cinzas)", padre: "Padre Rafael" },
+    { id: "78-2025-03-05-17h-Divino", data: "2025-03-05", horario: "17h", local: "Divino (Missa das Cinzas)", padre: "Padre Eudásio" },
+    { id: "78-2025-03-05-17h-ConfissoesMatriz", data: "2025-03-05", horario: "17h", local: "Confissões na Matriz", padre: "Padre Rafael" },
+    { id: "78-2025-03-05-19h-Matriz", data: "2025-03-05", horario: "19h", local: "Missa pelas famílias e das Cinzas", padre: "Padre Rafael" },
+
+    { id: "78-2025-03-06-08h-ConfissoesMatriz", data: "2025-03-06", horario: "08h", local: "Confissões na Matriz", padre: "Padre Ivan" },
+    { id: "78-2025-03-06-19h-EncontroPastoral", data: "2025-03-06", horario: "19h", local: "Encontro de Pastoral", padre: "Padre Eudásio" },
+    { id: "78-2025-03-06-19h-ParqueRosas", data: "2025-03-06", horario: "19h", local: "Parque das Rosas", padre: "Padre Rafael" },
+    { id: "78-2025-03-06-19h-Mororo", data: "2025-03-06", horario: "19h", local: "Mororó", padre: "Padre Ivan" },
+
+    { id: "78-2025-03-07-08h-VisitaEnfermos", data: "2025-03-07", horario: "08h", local: "Visita aos Enfermos", padre: "Padre Eudásio" },
+    { id: "78-2025-03-07-08h-VisitaEnfermos", data: "2025-03-07", horario: "08h", local: "Visita aos Enfermos", padre: "Padre Rafael" },
+    { id: "78-2025-03-07-18h-ConfissoesCentroPastoral", data: "2025-03-07", horario: "18h", local: "Confissões no Centro de Pastoral", padre: "Padre Ivan" },
+    { id: "78-2025-03-07-18h30-AdoracaoSS", data: "2025-03-07", horario: "18:30h", local: "Adoração (Centro Pastoral)", padre: "Padre Eudásio" },
+    { id: "79-2025-03-07-18h30-AdoracaoSS", data: "2025-03-07", horario: "18:30h", local: "Adoração (Centro Pastoral)", padre: "Padre Rafael" },
+
+
+    { id: "78-2025-03-08-07h30-DiaDMissionario", data: "2025-03-08", horario: "07:30h", local: "Dia 'D' Missionário", padre: "Padre Eudásio" },
+    { id: "78-2025-03-08-07h30-DiaDMissionarioPq", data: "2025-03-08", horario: "07:30h", local: "Dia 'D' Missionário", padre: "Padre Ivan" },
+    { id: "78-2025-03-08-07h30-DiaDMissionarioPqSantaFe", data: "2025-03-08", horario: "07:30h", local: "Dia 'D' Missionário", padre: "Padre Rafael" },
+    { id: "78-2025-03-08-19h-Matriz", data: "2025-03-08", horario: "19h", local: "Matriz (Missa votiva a N. Sra. da Penha)", padre: "Padre Eudásio" },
+
+    { id: "78-2025-03-09-07h-Matriz", data: "2025-03-09", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
+    { id: "78-2025-03-09-07h-Divino", data: "2025-03-09", horario: "07h", local: "Divino", padre: "Padre Ivan" },
+    { id: "78-2025-03-09-07h-Abrigo", data: "2025-03-09", horario: "07h", local: "Abrigo", padre: "Padre Rafael" },
+    { id: "78-2025-03-09-09h-Matriz", data: "2025-03-09", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
+    { id: "78-2025-03-09-17h-PqSaoJoao", data: "2025-03-09", horario: "17h", local: "Parque São João", padre: "Padre Eudásio" },
+    { id: "78-2025-03-09-17h-CentroPastoral", data: "2025-03-09", horario: "17h", local: "Centro de Pastoral", padre: "Padre Ivan" },
+    { id: "78-2025-03-09-17h-Divino", data: "2025-03-09", horario: "17h", local: "Divino", padre: "Padre Rafael" },
+    { id: "78-2025-03-09-19h-SaoJose", data: "2025-03-09", horario: "19h", local: "São José (Bandeira da festa)", padre: "Padre Eudásio" },
+    { id: "78-2025-03-09-19h-Matriz", data: "2025-03-09", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
+    { id: "78-2025-03-09-19h-NPqIracema", data: "2025-03-09", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" }
   ], []);
 
   useEffect(() => {
