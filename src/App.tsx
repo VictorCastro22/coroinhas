@@ -8,8 +8,8 @@ import Festejos from "./componentes/Festejos";
 import NoticiaDetalhe from "./componentes/NoticiaDetalhe";
 import Layout from "./componentes/Layout";
 import AgendaParoquial from "./componentes/AgendaParoquial";
-import Rosario from "./componentes/Rosario";
 import CalendarPadres from "./componentes/CalendarPadres";
+import Mestres from "./componentes/Mestres";
 
 const App: React.FC = () => {
   return (
@@ -21,9 +21,9 @@ const App: React.FC = () => {
           <Route path="/noticias/:id" element={<NoticiaDetalhe />} />
           <Route path="/escala-fixa" element={<EscalaFixa />} />
           <Route path="/festejos" element={<Festejos />} />
-          <Route path="/rosario" element={<Rosario />} />
           <Route path="/calendario" element={<AgendaParoquial />} /> 
           <Route path="/calendario-missas" element={<CalendarPadres />} />
+          <Route path="/mestres" element={<Mestres />} />
           <Route
             path="/criar-escala"
             element={

@@ -9,7 +9,7 @@ const Login: React.FC = () => {
   const handleLogin = () => {
     if (usuario === "mestre" && senha === "405060") {
       localStorage.setItem("auth", "true");
-      navigate("/criar-escala");
+      navigate("/mestres");
     } else {
       alert("Usuário ou senha inválidos!");
     }

@@ -17,8 +17,13 @@ const Festejos: React.FC = () => {
 
   const escalas = useMemo(
     () => [
-      { id: "80-2025-02-01-19h-Urucara", data: "2025-02-01", horario: "19h", local: "Urucará", padre: "Padre Aurênio" },
-      { id: "78-2025-02-02-19h-Urucara", data: "2025-02-02", horario: "19h", local: "Urucará (Encerramento)", padre: "Padre Ivan" },
+      { id: "80-2025-03-09-19h-SJ", data: "2025-03-09", horario: "19h", local: "São José", padre: "Padre Eudásio" },
+      { id: "80-2025-03-10-19h-SJ", data: "2025-03-10", horario: "19h", local: "São José", padre: "Padre Kleriston" },
+      { id: "80-2025-03-11-19h-SJ", data: "2025-03-11", horario: "19h", local: "São José", padre: "Padre João Paulo" },
+      { id: "80-2025-03-15-19h-SJ", data: "2025-03-15", horario: "19h", local: "São José", padre: "Padre Diego Félix" },
+      { id: "80-2025-03-18-19h-SJ", data: "2025-03-18", horario: "19h", local: "São José", padre: "Padre Otaviano" },
+      { id: "78-2025-03-19-09h-SaoJoseFesta", data: "2025-03-19", horario: "09h", local: "São José (Festa)", padre: "Padre Rafael" },
+      { id: "78-2025-03-19-19h-SaoJoseFesta", data: "2025-03-19", horario: "19h", local: "São José (Festa)", padre: "Padre Eudásio" }
     ],
     []
   );
@@ -59,7 +64,7 @@ const Festejos: React.FC = () => {
     const doc = new jsPDF();
 
     doc.setFontSize(18);
-    doc.text("Escala N.S das Candeias", 14, 22);
+    doc.text("Escala São José", 14, 22);
 
     filteredEscalas.forEach((escala, index) => {
       const y = 40 + index * 10;
@@ -70,14 +75,14 @@ const Festejos: React.FC = () => {
       doc.text(`Padre: ${escala.padre}`, 160, y);
     });
 
-    doc.save("n.s-candeias.pdf");
+    doc.save("saojose.pdf");
   };
 
   return (
     <div className="container mx-auto p-4">
 
       <h1 className="text-[30px] font-playfair font-semibold text-[#535043] text-center mb-6">
-        Nossa Senhora das Candeias
+        São José
       </h1>
 
       <div className="mb-6">
@@ -94,7 +99,7 @@ const Festejos: React.FC = () => {
       <button
         type="button"
         onClick={generatePDF}
-        className="px-4 py-2 bg-blue-300 hover:bg-blue-600 text-white rounded-md"
+        className="px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-md"
       >
         Imprimir Escala em PDF
       </button>
