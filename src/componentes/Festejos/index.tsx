@@ -20,7 +20,7 @@ const Festejos: React.FC = () => {
       { id: "80-2025-03-09-19h-SJ", data: "2025-03-09", horario: "19h", local: "São José", padre: "Padre Eudásio" },
       { id: "80-2025-03-10-19h-SJ", data: "2025-03-10", horario: "19h", local: "São José", padre: "Padre Kleriston" },
       { id: "80-2025-03-11-19h-SJ", data: "2025-03-11", horario: "19h", local: "São José", padre: "Padre João Paulo" },
-      { id: "80-2025-03-15-19h-SJ", data: "2025-03-15", horario: "19h", local: "São José", padre: "Padre Diego Félix" },
+      { id: "80-2025-03-15-19h-SJ", data: "2025-03-15", horario: "19h", local: "São José", padre: "Padre Diego" },
       { id: "80-2025-03-18-19h-SJ", data: "2025-03-18", horario: "19h", local: "São José", padre: "Padre Otaviano" },
       { id: "78-2025-03-19-09h-SaoJoseFesta", data: "2025-03-19", horario: "09h", local: "São José (Festa)", padre: "Padre Rafael" },
       { id: "78-2025-03-19-19h-SaoJoseFesta", data: "2025-03-19", horario: "19h", local: "São José (Festa)", padre: "Padre Eudásio" }

@@ -9,6 +9,7 @@ import NoticiaDetalhe from "./componentes/NoticiaDetalhe";
 import Layout from "./componentes/Layout";
 import AgendaParoquial from "./componentes/AgendaParoquial";
 import CalendarPadres from "./componentes/CalendarPadres";
+import CalendarioPadresFestejos from "./componentes/CalendarioPadresFestejos";
 import Mestres from "./componentes/Mestres";
 
 const App: React.FC = () => {
@@ -24,6 +25,7 @@ const App: React.FC = () => {
           <Route path="/calendario" element={<AgendaParoquial />} /> 
           <Route path="/calendario-missas" element={<CalendarPadres />} />
           <Route path="/mestres" element={<Mestres />} />
+          <Route path="/criar-festejos" element={<CalendarioPadresFestejos />} />
           <Route
             path="/criar-escala"
             element={

@@ -15,13 +15,13 @@ const Mestres: React.FC = () => {
         </button>
         <button
           className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
-          onClick={() => navigate("/criar-escala-festejos")}
+          onClick={() => navigate("/criar-festejos")}
         >
           <FaChurch /> Criar Escala Festejos de São José
         </button>
         <button
-          className="flex items-center gap-2 bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded w-full"
-          onClick={() => navigate("/coroinhas")}
+          className="flex items-center gap-2 bg-purple-500 text-white font-bold py-2 px-4 rounded w-full opacity-50 cursor-not-allowed"
+          disabled
         >
           <FaUsers /> Coroinhas
         </button>
