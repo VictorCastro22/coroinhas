@@ -4,10 +4,21 @@ import Confissoes from "../Confissoes";
 import Noticias from "../Noticias";
 
 const TelaInicial: React.FC = () => {
+
+  const noticiasConfissoes = [
+    {
+      id: "4",
+      titulo: "Calendário de Confissões de Março",
+      link: "/noticias/4",
+      imagem: "/confissoes.png",
+      alt: "Calendário de Confissões de Março",
+    },
+  ];
+
   const noticiasMissas = [
     {
       id: "3",
-      titulo: "Calendário de Março",
+      titulo: "Calendário de Missas de Março",
       link: "/noticias/3",
       imagem: "/pnsp.png",
       alt: "Calendário de Missas de Março",
@@ -35,6 +46,10 @@ const TelaInicial: React.FC = () => {
   return (
     <div>
       <Confissoes />
+      <section className="p-6">
+        <Noticias noticias={noticiasConfissoes} />
+      </section>
+
       <Missas />
       <section className="p-6">
         <Noticias noticias={noticiasMissas} />
