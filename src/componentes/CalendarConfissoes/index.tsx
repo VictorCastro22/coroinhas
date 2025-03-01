@@ -37,10 +37,23 @@ const CalendarConfissoes: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "83-2025-03-01-17h-SantaLuzia", data: "2025-03-01", horario: "17h", local: "Santa Luzia", padre: "Padre Eudásio" },
-    { id: "83-2025-03-01-17h-SantoAntonio", data: "2025-03-01", horario: "17h", local: "Santo Antônio", padre: "Padre Rafael" },
-    { id: "83-2025-03-01-19h-Matriz", data: "2025-03-01", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "83-2025-03-01-19h-Coite", data: "2025-03-01", horario: "19h", local: "Coité", padre: "Padre Rafael" }
+    { id: "83-2025-03-05-17h-Matriz", data: "2025-03-05", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
+  { id: "83-2025-03-06-08h-Matriz", data: "2025-03-06", horario: "08h", local: "Matriz", padre: "Padre Ivan" },
+  { id: "83-2025-03-07-18h-C.P", data: "2025-03-07", horario: "18h", local: "Centro Pastoral", padre: "Padre Ivan" },
+  { id: "83-2025-03-12-08h-Secretaria", data: "2025-03-12", horario: "08h", local: "Secretaria", padre: "Padre Eudásio" },
+  { id: "83-2025-03-12-17h-Matriz", data: "2025-03-12", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
+  { id: "83-2025-03-13-08h-Matriz", data: "2025-03-13", horario: "08h", local: "Matriz", padre: "Padre Ivan" },
+  { id: "83-2025-03-14-17h-Matriz", data: "2025-03-14", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
+  { id: "83-2025-03-14-18h-Matriz", data: "2025-03-14", horario: "18h", local: "Matriz", padre: "Padre Ivan" },
+  { id: "83-2025-03-19-08h-Secretaria", data: "2025-03-19", horario: "08h", local: "Secretaria", padre: "Padre Eudásio" },
+  { id: "83-2025-03-19-17h-Matriz", data: "2025-03-19", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
+  { id: "83-2025-03-20-08h-Matriz", data: "2025-03-20", horario: "08h", local: "Matriz", padre: "Padre Ivan" },
+  { id: "83-2025-03-21-17h-1Divino", data: "2025-03-21", horario: "17h", local: "Divino", padre: "Padre Eudásio" },
+  { id: "83-2025-03-21-17h-2Divino", data: "2025-03-21", horario: "17h", local: "Divino", padre: "Padre Ivan" },
+  { id: "83-2025-03-21-17h-3Divino", data: "2025-03-21", horario: "17h", local: "Divino", padre: "Padre Rafael" },
+  { id: "83-2025-03-26-08h-Secretaria", data: "2025-03-26", horario: "08h", local: "Secretaria", padre: "Padre Eudásio" },
+  { id: "83-2025-03-26-17h-Matriz", data: "2025-03-26", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
+  { id: "83-2025-03-27-08h-Matriz", data: "2025-03-27", horario: "08h", local: "Matriz", padre: "Padre Ivan" }
   ];
 
 

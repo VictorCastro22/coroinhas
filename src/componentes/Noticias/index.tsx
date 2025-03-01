@@ -21,7 +21,13 @@ const Noticias: React.FC<NoticiasProps> = ({ noticias }) => {
           className="elementor-post__card border rounded-lg shadow-lg overflow-hidden bg-white"
         >
           <Link
-            to={noticia.id === "3" ? "/calendario-missas" : noticia.link}
+            to={
+              noticia.id === "3"
+                ? "/calendario-missas"
+                : noticia.id === "4"
+                ? "/calendario-confissoes"
+                : noticia.link
+            }
             className="elementor-post__thumbnail__link"
           >
             <div className="elementor-post__thumbnail">
@@ -35,7 +41,15 @@ const Noticias: React.FC<NoticiasProps> = ({ noticias }) => {
           </Link>
           <div className="elementor-post__text p-4">
             <h3 className="elementor-post__title text-lg font-bold text-gray-800 hover:text-blue-600 transition-colors text-center">
-              <Link to={noticia.id === "3" ? "/calendario-missas" : noticia.link}>
+              <Link
+                to={
+                  noticia.id === "3"
+                    ? "/calendario-missas"
+                    : noticia.id === "4"
+                    ? "/calendario-confissoes"
+                    : noticia.link
+                }
+              >
                 {noticia.titulo}
               </Link>
             </h3>
