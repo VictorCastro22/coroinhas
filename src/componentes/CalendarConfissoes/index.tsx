@@ -57,7 +57,7 @@ const CalendarConfissoes: React.FC = () => {
   return (
     <div className="p-4">
       <h1 className="text-[30px] font-playfair font-semibold text-[#535043] text-center mb-6 mt-6">
-        Calendário de Missas
+        Calendário de Confissões
       </h1>
       <div className="filters flex justify-around mb-6 p-4 bg-gray-100 rounded-lg shadow-lg">
         <select
