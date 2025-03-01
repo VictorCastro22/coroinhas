@@ -96,15 +96,18 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-03-02-07h-Matriz", data: "2025-03-02", horario: "07h", local: "Matriz", padre: "Padre Rafael" },
     { id: "78-2025-03-02-09h-Matriz", data: "2025-03-02", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "78-2025-03-02-09h-SaoJose", data: "2025-03-02", horario: "09h", local: "São José", padre: "Padre Rafael" },
-    { id: "78-2025-03-02-17h-CentroPastoral", data: "2025-03-02", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
+    { id: "78-2025-03-02-17h-CentroPastoral", data: "2025-03-02", horario: "17h", local: "Centro de Pastoral (Renovar)", padre: "Padre Eudásio" },
     { id: "78-2025-03-02-17h-Divino", data: "2025-03-02", horario: "17h", local: "Divino", padre: "Padre Rafael" },
     { id: "78-2025-03-02-19h-Matriz", data: "2025-03-02", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "78-2025-03-02-19h-NPqIracema", data: "2025-03-02", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Rafael" },
 
+    { id: "78-2025-03-03-18h-Renovar", data: "2025-03-03", horario: "18h", local: "Centro Pastoral", padre: "Renovar" },
+
+    { id: "78-2025-03-04-18h-Renovar", data: "2025-03-04", horario: "18h", local: "Centro Pastoral", padre: "Renovar" },
+
     { id: "78-2025-03-05-07h-Matriz", data: "2025-03-05", horario: "07h", local: "Matriz (Missa das Cinzas)", padre: "Padre Eudásio" },
     { id: "78-2025-03-05-07h-Divino", data: "2025-03-05", horario: "07h", local: "Divino (Missa das Cinzas)", padre: "Padre Rafael" },
     { id: "78-2025-03-05-17h-Divino", data: "2025-03-05", horario: "17h", local: "Divino (Missa das Cinzas)", padre: "Padre Eudásio" },
-    { id: "78-2025-03-05-17h-ConfissoesMatriz", data: "2025-03-05", horario: "17h", local: "Confissões na Matriz", padre: "Padre Rafael" },
     { id: "78-2025-03-05-19h-Matriz", data: "2025-03-05", horario: "19h", local: "Missa pelas famílias e das Cinzas", padre: "Padre Rafael" },
 
 
@@ -152,7 +155,6 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-03-16-07h-Divino", data: "2025-03-16", horario: "07h", local: "Divino", padre: "Padre Rafael" },
     { id: "78-2025-03-16-09h-Matriz", data: "2025-03-16", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "78-2025-03-16-09h-SaoJose", data: "2025-03-16", horario: "09h", local: "São José", padre: "Padre Ivan" },
-    { id: "78-2025-03-16-09h-EncontroPastoral", data: "2025-03-16", horario: "09h", local: "Encontro Pastoral", padre: "Padre Rafael" },
     { id: "78-2025-03-16-17h-Divino", data: "2025-03-16", horario: "17h", local: "Divino", padre: "Padre Eudásio" },
     { id: "78-2025-03-16-17h-PqSaoJoao", data: "2025-03-16", horario: "17h", local: "Parque São João", padre: "Padre Ivan" },
     { id: "78-2025-03-16-17h-CentroPastoral", data: "2025-03-16", horario: "17h", local: "Centro de Pastoral", padre: "Padre Rafael" },

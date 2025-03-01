@@ -1,4 +1,4 @@
-const Missas: React.FC = () => {
+const Confissoes: React.FC = () => {
     return (
       <div
         className="e-con-inner flex items-center gap-4"
@@ -58,7 +58,7 @@ const Missas: React.FC = () => {
                 fontWeight: 600,
               }}
             >
-              <a href="/missas/horarios/">Missas</a>
+              <a href="/confissoes/horarios/">Confissões</a>
             </h2>
           </div>
         </div>
@@ -66,4 +66,4 @@ const Missas: React.FC = () => {
     );
   };
   
-  export default Missas;
+  export default Confissoes;

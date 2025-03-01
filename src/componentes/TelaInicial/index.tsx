@@ -1,5 +1,6 @@
 import Destaque from "../Destaque";
 import Missas from "../Missas";
+import Confissoes from "../Confissoes";
 import Noticias from "../Noticias";
 
 const TelaInicial: React.FC = () => {
@@ -33,9 +34,10 @@ const TelaInicial: React.FC = () => {
 
   return (
     <div>
+      <Confissoes />
       <Missas />
       <section className="p-6">
-      <Noticias noticias={noticiasMissas} />
+        <Noticias noticias={noticiasMissas} />
       </section>
 
       <Destaque />
