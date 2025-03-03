@@ -16,20 +16,6 @@ const EscalaFixa: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const escalas = useMemo(() => [
-    { id: "78-2025-03-01-17h-SantaLuzia", data: "2025-03-01", horario: "17h", local: "Santa Luzia", padre: "Padre Eudásio" },
-    { id: "78-2025-03-01-17h-SantoAntonio", data: "2025-03-01", horario: "17h", local: "Santo Antônio", padre: "Padre Rafael" },
-    { id: "78-2025-03-01-19h-Matriz", data: "2025-03-01", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-03-01-19h-Coite", data: "2025-03-01", horario: "19h", local: "Coité", padre: "Padre Rafael" },
-
-    { id: "78-2025-03-02-07h-Divino", data: "2025-03-02", horario: "07h", local: "Divino", padre: "Padre Eudásio" },
-    { id: "78-2025-03-02-07h-Matriz", data: "2025-03-02", horario: "07h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-03-02-09h-Matriz", data: "2025-03-02", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-03-02-09h-SaoJose", data: "2025-03-02", horario: "09h", local: "São José", padre: "Padre Rafael" },
-    { id: "78-2025-03-02-17h-CentroPastoral", data: "2025-03-02", horario: "17h", local: "Centro de Pastoral (Renovar)", padre: "Padre Eudásio" },
-    { id: "78-2025-03-02-17h-Divino", data: "2025-03-02", horario: "17h", local: "Divino", padre: "Padre Rafael" },
-    { id: "78-2025-03-02-19h-Matriz", data: "2025-03-02", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-03-02-19h-NPqIracema", data: "2025-03-02", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Rafael" },
-
     { id: "78-2025-03-03-18h-Renovar", data: "2025-03-03", horario: "18h", local: "Centro Pastoral", padre: "Renovar" },
 
     { id: "78-2025-03-04-18h-Renovar", data: "2025-03-04", horario: "18h", local: "Centro Pastoral", padre: "Renovar" },
