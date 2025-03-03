@@ -26,6 +26,8 @@ const Noticias: React.FC<NoticiasProps> = ({ noticias }) => {
                 ? "/calendario-missas"
                 : noticia.id === "4"
                 ? "/calendario-confissoes"
+                : noticia.id === "5"
+                ? "/agenda-paroquial" // Adicionando link para a Agenda Paroquial
                 : noticia.link
             }
             className="elementor-post__thumbnail__link"
@@ -47,6 +49,8 @@ const Noticias: React.FC<NoticiasProps> = ({ noticias }) => {
                     ? "/calendario-missas"
                     : noticia.id === "4"
                     ? "/calendario-confissoes"
+                    : noticia.id === "5"
+                    ? "/agenda-paroquial" // Adicionando link para a Agenda Paroquial
                     : noticia.link
                 }
               >

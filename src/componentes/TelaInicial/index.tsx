@@ -4,7 +4,6 @@ import Confissoes from "../Confissoes";
 import Noticias from "../Noticias";
 
 const TelaInicial: React.FC = () => {
-
   const noticiasConfissoes = [
     {
       id: "4",
@@ -26,6 +25,13 @@ const TelaInicial: React.FC = () => {
   ];
 
   const noticiasDestaque = [
+    {
+      id: "5",
+      titulo: "Festejo de São José 2025",
+      link: "/noticias/5",
+      imagem: "/festejo_sao_jose.png",
+      alt: "Festejo de São José",
+    },
     {
       id: "2",
       titulo: "As Indulgências no Ano Jubilar 2025",
