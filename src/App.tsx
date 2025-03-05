@@ -26,11 +26,11 @@ const App: React.FC = () => {
           <Route path="/festejos" element={<Festejos />} />
           <Route path="/calendario" element={<AgendaParoquial />} /> 
           <Route path="/calendario-missas" element={<CalendarPadres />} />
+          <Route path="/festejos-sao-jose" element={<AgendaParoquial />} />
           <Route path="/calendario-confissoes" element={<CalendarConfissoes />} />
           <Route path="/mestres" element={<Mestres />} />
           <Route path="/criar-festejos" element={<CalendarioPadresFestejos />} />
-          <Route path="/festejos-sao-jose" element={<AgendaParoquial />} />
-          <Route path="/admin" element={<Admin />} /> {/* Rota oculta */}
+          <Route path="/admin" element={<Admin />} />
           <Route
             path="/criar-escala"
             element={
