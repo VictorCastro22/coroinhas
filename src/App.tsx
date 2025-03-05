@@ -28,7 +28,7 @@ const App: React.FC = () => {
           <Route path="/calendario-confissoes" element={<CalendarConfissoes />} />
           <Route path="/mestres" element={<Mestres />} />
           <Route path="/criar-festejos" element={<CalendarioPadresFestejos />} />
-          <Route path="/agenda-paroquial" element={<AgendaParoquial />} />
+          <Route path="/festejos-sao-jose" element={<AgendaParoquial />} />
           <Route
             path="/criar-escala"
             element={
