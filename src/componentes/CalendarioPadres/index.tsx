@@ -87,12 +87,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "78-2025-03-05-07h-Matriz", data: "2025-03-05", horario: "07h", local: "Matriz (Missa das Cinzas)", padre: "Padre Eudásio" },
-    { id: "78-2025-03-05-07h-Divino", data: "2025-03-05", horario: "07h", local: "Divino (Missa das Cinzas)", padre: "Padre Rafael" },
-    { id: "78-2025-03-05-17h-Divino", data: "2025-03-05", horario: "17h", local: "Divino (Missa das Cinzas)", padre: "Padre Eudásio" },
-    { id: "78-2025-03-05-19h-Matriz", data: "2025-03-05", horario: "19h", local: "Missa pelas famílias e das Cinzas", padre: "Padre Rafael" },
-
-
     { id: "78-2025-03-06-19h-ParqueRosas", data: "2025-03-06", horario: "19h", local: "Parque das Rosas", padre: "Padre Rafael" },
     { id: "78-2025-03-06-19h-Mororo", data: "2025-03-06", horario: "19h", local: "Mororó", padre: "Padre Ivan" },
 
