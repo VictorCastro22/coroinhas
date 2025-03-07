@@ -16,10 +16,6 @@ const EscalaFixa: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const escalas = useMemo(() => [
-    { id: "78-2025-03-06-19h-ParqueRosas", data: "2025-03-06", horario: "19h", local: "Parque das Rosas", padre: "Padre Rafael" },
-    { id: "78-2025-03-06-19h-Mororo", data: "2025-03-06", horario: "19h", local: "Mororó", padre: "Padre Ivan" },
-
-
     { id: "78-2025-03-07-18h30-AdoracaoSS", data: "2025-03-07", horario: "18:30h", local: "Adoração (Centro Pastoral)", padre: "Padre Eudásio" },
     { id: "79-2025-03-07-18h30-AdoracaoSS", data: "2025-03-07", horario: "18:30h", local: "Adoração (Centro Pastoral)", padre: "Padre Rafael" },
 
