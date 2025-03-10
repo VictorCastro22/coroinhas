@@ -17,7 +17,6 @@ const Festejos: React.FC = () => {
 
   const escalas = useMemo(
     () => [
-      { id: "80-2025-03-09-19h-SJ", data: "2025-03-09", horario: "19h", local: "São José", padre: "Padre Eudásio" },
       { id: "80-2025-03-10-19h-SJ", data: "2025-03-10", horario: "19h", local: "São José", padre: "Padre Kleriston" },
       { id: "80-2025-03-11-19h-SJ", data: "2025-03-11", horario: "19h", local: "São José", padre: "Padre João Paulo" },
       { id: "80-2025-03-15-19h-SJ", data: "2025-03-15", horario: "19h", local: "São José", padre: "Padre Diego" },

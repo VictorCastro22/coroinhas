@@ -88,19 +88,6 @@ const CalendarioPadres: React.FC = () => {
 
   const escalas = [
 
-    { id: "78-2025-03-08-19h-Matriz", data: "2025-03-08", horario: "19h", local: "Matriz (Missa votiva a N. Sra. da Penha)", padre: "Padre Eudásio" },
-
-    { id: "78-2025-03-09-07h-Matriz", data: "2025-03-09", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-03-09-07h-Divino", data: "2025-03-09", horario: "07h", local: "Divino", padre: "Padre Ivan" },
-    { id: "78-2025-03-09-07h-Abrigo", data: "2025-03-09", horario: "07h", local: "Abrigo", padre: "Padre Rafael" },
-    { id: "78-2025-03-09-09h-Matriz", data: "2025-03-09", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-03-09-17h-PqSaoJoao", data: "2025-03-09", horario: "17h", local: "Parque São João", padre: "Padre Eudásio" },
-    { id: "78-2025-03-09-17h-CentroPastoral", data: "2025-03-09", horario: "17h", local: "Centro de Pastoral", padre: "Padre Ivan" },
-    { id: "78-2025-03-09-17h-Divino", data: "2025-03-09", horario: "17h", local: "Divino", padre: "Padre Rafael" },
-    { id: "78-2025-03-09-19h-Matriz", data: "2025-03-09", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-03-09-19h-NPqIracema", data: "2025-03-09", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
-
-
     { id: "78-2025-03-11-19h-SaoPedro", data: "2025-03-11", horario: "19h", local: "São Pedro", padre: "Padre Ivan" },
     { id: "78-2025-03-11-19h-SantaDulce", data: "2025-03-11", horario: "19h", local: "Santa Dulce", padre: "Padre Rafael" },
 

@@ -42,7 +42,6 @@ const CalendarConfissoes: React.FC = () => {
     { id: "83-2025-03-13-08h-Matriz", data: "2025-03-13", horario: "08h", local: "Matriz", padre: "Padre Ivan" },
     { id: "83-2025-03-14-17h-Matriz", data: "2025-03-14", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
     { id: "83-2025-03-14-18h-Matriz", data: "2025-03-14", horario: "18h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "83-2025-03-19-08h-Secretaria", data: "2025-03-19", horario: "08h", local: "Secretaria", padre: "Padre Eudásio" },
     { id: "83-2025-03-19-17h-Matriz", data: "2025-03-19", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
     { id: "83-2025-03-20-08h-Matriz", data: "2025-03-20", horario: "08h", local: "Matriz", padre: "Padre Ivan" },
     { id: "83-2025-03-21-17h-1Divino", data: "2025-03-21", horario: "17h", local: "Divino", padre: "Padre Eudásio" },
