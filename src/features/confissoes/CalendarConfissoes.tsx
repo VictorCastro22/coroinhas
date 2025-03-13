@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import db from "../../../firebaseConfig";
-import CardEscala from "../CardEscala";
+import CardEscala from "../../comp/CardEscala";
 
 interface Coroinha {
   id: string;
@@ -37,8 +37,6 @@ const CalendarConfissoes: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "83-2025-03-12-08h-Secretaria", data: "2025-03-12", horario: "08h", local: "Secretaria", padre: "Padre Eudásio" },
-    { id: "83-2025-03-12-17h-Matriz", data: "2025-03-12", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
     { id: "83-2025-03-13-08h-Matriz", data: "2025-03-13", horario: "08h", local: "Matriz", padre: "Padre Ivan" },
     { id: "83-2025-03-14-17h-Matriz", data: "2025-03-14", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
     { id: "83-2025-03-14-18h-Matriz", data: "2025-03-14", horario: "18h", local: "Matriz", padre: "Padre Ivan" },

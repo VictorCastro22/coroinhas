@@ -1,18 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./componentes/Login";
-import CriarEscala from "./componentes/CriarEscala";
-import ProtectedRoute from "./componentes/ProtectedRoute";
-import TelaInicial from "./componentes/TelaInicial";
-import EscalaFixa from "./componentes/EscalaFixa";
-import Festejos from "./componentes/Festejos";
-import NoticiaDetalhe from "./componentes/NoticiaDetalhe";
-import Layout from "./componentes/Layout";
-import AgendaParoquial from "./componentes/AgendaParoquial";
-import CalendarPadres from "./componentes/CalendarPadres";
-import CalendarConfissoes from "./componentes/CalendarConfissoes";
-import CalendarioPadresFestejos from "./componentes/CalendarioPadresFestejos";
-import Mestres from "./componentes/Mestres";
-import Admin from "./componentes/Admin";
+import Login from "./comp/Login";
+import CriarEscala from "./comp/CriarEscala";
+import ProtectedRoute from "./comp/ProtectedRoute";
+import TelaInicial from "./comp/TelaInicial";
+import EscalaFixa from "./comp/EscalaFixa";
+import Festejos from "./comp/Festejos";
+import NoticiaDetalhe from "./features/noticias/NoticiaDetalhe";
+import Layout from "./comp/Layout";
+import AgendaParoquial from "./comp/AgendaParoquial";
+import CalendarPadres from "./comp/CalendarPadres";
+import CalendarConfissoes from "./features/confissoes/CalendarConfissoes";
+import CalendarioPadresFestejos from "./comp/CalendarioPadresFestejos";
+import Mestres from "./comp/Mestres";
 
 const App: React.FC = () => {
   return (
@@ -30,7 +29,6 @@ const App: React.FC = () => {
           <Route path="/calendario-confissoes" element={<CalendarConfissoes />} />
           <Route path="/mestres" element={<Mestres />} />
           <Route path="/criar-festejos" element={<CalendarioPadresFestejos />} />
-          <Route path="/admin" element={<Admin />} />
           <Route
             path="/criar-escala"
             element={

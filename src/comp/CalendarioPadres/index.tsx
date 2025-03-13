@@ -87,13 +87,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-
-    { id: "78-2025-03-11-19h-SaoPedro", data: "2025-03-11", horario: "19h", local: "São Pedro", padre: "Padre Ivan" },
-    { id: "78-2025-03-11-19h-SantaDulce", data: "2025-03-11", horario: "19h", local: "Santa Dulce", padre: "Padre Rafael" },
-
-    { id: "78-2025-03-12-19h-SantosDumont", data: "2025-03-12", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
-    { id: "78-2025-03-12-19h-MissaFamilias", data: "2025-03-12", horario: "19h", local: "Missa pelas famílias", padre: "Padre Rafael" },
-
     { id: "78-2025-03-13-12h-Matriz", data: "2025-03-13", horario: "12h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "78-2025-03-13-17h-Vilares", data: "2025-03-13", horario: "17h", local: "Vilares", padre: "Padre Ivan" },
     { id: "78-2025-03-13-19h-Pirapora", data: "2025-03-13", horario: "19h", local: "Pirapora", padre: "Padre Eudásio" },
