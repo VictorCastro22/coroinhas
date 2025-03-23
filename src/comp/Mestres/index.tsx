@@ -6,7 +6,7 @@ const Mestres: React.FC = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-gray-100">
-      {/* Conteúdo principal - cresce para empurrar o footer para o final */}
+      
       <div className="flex-1 flex flex-col items-center pt-16">
         <div className="bg-white shadow-md rounded px-8 py-6 w-96 flex flex-col gap-4 mb-8">
           <button
@@ -18,6 +18,7 @@ const Mestres: React.FC = () => {
           <button
             className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
             onClick={() => navigate("/criar-festejos")}
+            disabled
           >
             <FaChurch /> Criar Escala Festejos de São José
           </button>

@@ -114,11 +114,6 @@ const Navbar: React.FC = () => {
                     ESCALA FIXA
                   </button>
                 </li>
-                <li>
-                  <button type="button" onClick={() => handleNavigation("/festejos")} className="hover:underline text-left link-style">
-                    FESTEJOS DE SÃO JOSÉ
-                  </button>
-                </li>
               </ul>
             )}
           </li>
