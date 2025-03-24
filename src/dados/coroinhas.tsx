@@ -37,8 +37,7 @@ const coroinhas = [
   { id: "38", nome: "Julia", foto: "/imagens/semfoto.jpg" },
   { id: "39", nome: "Kacilane", foto: "/imagens/kacilane.png" },
   { id: "40", nome: "Kaciele", foto: "/imagens/kaciele.JPG" },
-  { id: "41", nome: "Kauan ", foto: "/imagens/semfoto.jpg" },
-  { id: "42", nome: "Kauan Maciel", foto: "/imagens/semfoto.jpg" },
+  { id: "41", nome: "Kauan ", foto: "/imagens/semfoto.jpg"}, 
   { id: "43", nome: "Kaylane", foto: "/imagens/semfoto.jpg" },
   { id: "44", nome: "Larissa", foto: "/imagens/semfoto.jpg" },
   { id: "45", nome: "Laura", foto: "/imagens/laura.png" },
@@ -69,7 +68,6 @@ const coroinhas = [
   { id: "72", nome: "Victor Manuel", foto: "/imagens/Victor.jfif" },
   { id: "73", nome: "Victoria", foto: "/imagens/semfoto.jpg" },
   { id: "74", nome: "Yasmim", foto: "/imagens/semfoto.jpg" },
-  { id: "100", nome: "Férias", foto: "/imagens/semfoto.jpg" },
 ];
 
 export default coroinhas;

@@ -37,16 +37,6 @@ const CalendarPadres: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "83-2025-03-23-07h-Divino", data: "2025-03-23", horario: "07h", local: "Divino", padre: "Padre Ivan" },
-    { id: "83-2025-03-23-07h-Matriz", data: "2025-03-23", horario: "07h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "83-2025-03-23-09h-Matriz", data: "2025-03-23", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "83-2025-03-23-15h30-SantosDumont", data: "2025-03-23", horario: "15h30", local: "Santos Dumont", padre: "Padre Eudásio" },
-    { id: "83-2025-03-23-17h-PqSaoJoao", data: "2025-03-23", horario: "17h", local: "Parque São João", padre: "Padre Eudásio" },
-    { id: "83-2025-03-23-17h-CentroPastoral", data: "2025-03-23", horario: "17h", local: "Centro de Pastoral", padre: "Padre Ivan" },
-    { id: "83-2025-03-23-17h-Divino", data: "2025-03-23", horario: "17h", local: "Divino", padre: "Padre Rafael" },
-    { id: "83-2025-03-23-19h-NPqIracema", data: "2025-03-23", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
-    { id: "83-2025-03-23-19h-Matriz", data: "2025-03-23", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-
     { id: "83-2025-03-25-19h-SerraPelada", data: "2025-03-25", horario: "19h", local: "Serra Pelada", padre: "Padre Ivan" },
     { id: "83-2025-03-25-19h-SaoPedro", data: "2025-03-25", horario: "19h", local: "São Pedro", padre: "Padre Rafael" },
 
