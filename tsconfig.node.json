@@ -24,6 +24,6 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "firebaseConfig.ts"],
+  "include": ["src", "firebaseConfig.ts", "firebaseCalendario.ts"],
   "exclude": ["node_modules"]
 }
