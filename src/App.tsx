@@ -12,6 +12,7 @@ import CalendarPadres from "./comp/CalendarPadres";
 import CalendarConfissoes from "./features/confissoes/CalendarConfissoes";
 import CalendarioPadresFestejos from "./comp/CalendarioPadresFestejos";
 import Mestres from "./comp/Mestres";
+import CriaCalendario from "./pages/CriaCalendario";
 
 const App: React.FC = () => {
   return (
@@ -29,6 +30,7 @@ const App: React.FC = () => {
           <Route path="/calendario-confissoes" element={<CalendarConfissoes />} />
           <Route path="/mestres" element={<Mestres />} />
           <Route path="/criar-festejos" element={<CalendarioPadresFestejos />} />
+          <Route path="/agenda-padres-786523" element={<CriaCalendario />} />
           <Route
             path="/criar-escala"
             element={
