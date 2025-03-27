@@ -37,10 +37,6 @@ const CalendarPadres: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "83-2025-03-26-19h-SantosDumont", data: "2025-03-26", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
-    { id: "83-2025-03-26-19h-MissaFamilias", data: "2025-03-26", horario: "19h", local: "Missa pelas famílias", padre: "Padre Rafael" },
-
-
     { id: "83-2025-03-27-19h-CampoDelta", data: "2025-03-27", horario: "19h", local: "Campo Delta", padre: "Padre Ivan" },
     { id: "83-2025-03-27-19h-MaeRainha", data: "2025-03-27", horario: "19h", local: "Mãe Rainha", padre: "Padre Rafael" },
 
