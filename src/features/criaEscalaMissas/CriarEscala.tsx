@@ -1,4 +1,4 @@
-import CalendarioPadres from "../CalendarioPadres";
+import CalendarioPadres from "./CalendarioPadres";
 
 const CriarEscala: React.FC = () => {
   return (

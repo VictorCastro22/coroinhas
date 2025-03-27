@@ -17,7 +17,7 @@ const CapaComLogo: React.FC = () => {
           className="w-36 h-36 object-contain mb-2"
         />
         <h2 className="text-center font-playfair text-[1.0rem] font-medium uppercase leading-[1.2em] text-shadow-lg text-[#F1DA93]">
-          Coroinhas de
+          Paróquia de
         </h2>
         <h1 className="text-center font-playfair text-[1.4rem] font-bold uppercase leading-[1.0em] text-shadow-lg text-[#F1DA93]">
           Maranguape

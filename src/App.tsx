@@ -1,17 +1,16 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Login from "./comp/Login";
-import CriarEscala from "./comp/CriarEscala";
-import ProtectedRoute from "./comp/ProtectedRoute";
-import TelaInicial from "./comp/TelaInicial";
-import EscalaFixa from "./comp/EscalaFixa";
-import Festejos from "./comp/Festejos";
+import Login from "./pages/Login";
+import CriarEscala from "./features/criaEscalaMissas/CriarEscala";
+import ProtectedRoute from "./components/ProtectedRoute";
+import TelaInicial from "./pages/TelaInicial";
+import EscalaFixa from "./features/escala/EscalaFixa";
+import Festejos from "./features/escala/EscalaFestejos";
 import NoticiaDetalhe from "./features/noticias/NoticiaDetalhe";
-import Layout from "./comp/Layout";
-import AgendaParoquial from "./comp/AgendaParoquial";
-import CalendarPadres from "./comp/CalendarPadres";
+import Layout from "./components/Layout";
+import CalendarPadres from "./features/missas/CalendarioMissas";
 import CalendarConfissoes from "./features/confissoes/CalendarConfissoes";
-import CalendarioPadresFestejos from "./comp/CalendarioPadresFestejos";
-import Mestres from "./comp/Mestres";
+import CalendarioPadresFestejos from "./features/criarEscalaFestejos/CalendarioPadresFestejos";
+import Mestres from "./pages/Mestres";
 import CriaCalendario from "./pages/CriaCalendario";
 
 const App: React.FC = () => {
@@ -24,9 +23,7 @@ const App: React.FC = () => {
           <Route path="/noticias/:id" element={<NoticiaDetalhe />} />
           <Route path="/escala-fixa" element={<EscalaFixa />} />
           <Route path="/festejos" element={<Festejos />} />
-          <Route path="/calendario" element={<AgendaParoquial />} /> 
           <Route path="/calendario-missas" element={<CalendarPadres />} />
-          <Route path="/festejos-sao-jose" element={<AgendaParoquial />} />
           <Route path="/calendario-confissoes" element={<CalendarConfissoes />} />
           <Route path="/mestres" element={<Mestres />} />
           <Route path="/criar-festejos" element={<CalendarioPadresFestejos />} />

@@ -1,4 +1,4 @@
-import CalendarioPadresFestejos from "../CalendarioPadresFestejos";
+import CalendarioPadresFestejos from "./CalendarioPadresFestejos";
 
 const CriarEscalaFestejos: React.FC = () => {
   return (

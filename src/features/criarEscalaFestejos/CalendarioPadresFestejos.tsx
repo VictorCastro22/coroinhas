@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { collection, addDoc, getDocs, deleteDoc, doc } from "firebase/firestore";
 import db from "../../../firebaseConfig";
-import CardEscala from "../CardEscala";
-import ModalAddCoroinha from "../ModalAddCoroinha";
+import CardEscala from "../../components/CardEscala";
+import ModalAddCoroinha from "../../components/ModalAddCoroinha";
 import coroinhas from "../../dados/coroinhas"; 
 
 interface Coroinha {
@@ -11,7 +11,7 @@ interface Coroinha {
   foto: string;
 }
 
-const CalendarioPadres: React.FC = () => {
+const CalendarioPadresFestejos: React.FC = () => {
   const [coroinhasData, setCoroinhas] = useState<{ [key: string]: Coroinha[] }>({});
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
   const [selectedCoroinha, setSelectedCoroinha] = useState<string>("");
@@ -87,24 +87,10 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "78-2025-03-27-19h-CampoDelta", data: "2025-03-27", horario: "19h", local: "Campo Delta", padre: "Padre Ivan" },
-    { id: "78-2025-03-27-19h-MaeRainha", data: "2025-03-27", horario: "19h", local: "Mãe Rainha", padre: "Padre Rafael" },
-
-    { id: "78-2025-03-28-19h-Tabuba", data: "2025-03-28", horario: "19h", local: "Tabuba (Posse de Pe. Ednaldo)", padre: "Padre Eudásio" },
-    { id: "78-2025-03-28-19h-ConegoPinto", data: "2025-03-28", horario: "19h", local: "Cônego Pinto", padre: "Padre Ivan" },
-    { id: "78-2025-03-28-19h-Rosario", data: "2025-03-28", horario: "19h", local: "Rosário", padre: "Padre Rafael" },
-
-    { id: "78-2025-03-29-17h-SaoBenedito", data: "2025-03-29", horario: "17h", local: "São Benedito", padre: "Padre Rafael" },
-    { id: "78-2025-03-29-19h-Matriz", data: "2025-03-29", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-
-    { id: "78-2025-03-30-07h-Matriz", data: "2025-03-30", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-03-30-07h-Divino", data: "2025-03-30", horario: "07h", local: "Divino", padre: "Padre Ivan" },
-    { id: "78-2025-03-30-09h-Matriz", data: "2025-03-30", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-03-30-17h-PqSaoJoao", data: "2025-03-30", horario: "17h", local: "Parque São João", padre: "Padre Ivan" },
-    { id: "78-2025-03-30-17h-CentroPastoral", data: "2025-03-30", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
-    { id: "78-2025-03-30-17h-Divino", data: "2025-03-30", horario: "17h", local: "Divino", padre: "Padre Rafael" },
-    { id: "78-2025-03-30-19h-NPqIracema", data: "2025-03-30", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
-    { id: "78-2025-03-30-19h-PqSaoJoao", data: "2025-03-30", horario: "19h", local: "Matriz", padre: "Padre Rafael" }
+    { id: "80-2025-03-15-19h-SJ", data: "2025-03-15", horario: "19h", local: "São José", padre: "Padre Diego" },
+    { id: "80-2025-03-18-19h-SJ", data: "2025-03-18", horario: "19h", local: "São José", padre: "Padre Otaviano" },
+    { id: "78-2025-03-19-09h-SaoJoseFesta", data: "2025-03-19", horario: "09h", local: "São José (Festa)", padre: "Padre Rafael" },
+    { id: "78-2025-03-19-19h-SaoJoseFesta", data: "2025-03-19", horario: "19h", local: "São José (Festa)", padre: "Padre Eudásio" }
 
   ];
 
@@ -142,4 +128,4 @@ const CalendarioPadres: React.FC = () => {
   );
 };
 
-export default CalendarioPadres;
+export default CalendarioPadresFestejos;

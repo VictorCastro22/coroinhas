@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import db from "../../../firebaseConfig";
-import CardEscala from "../../comp/CardEscala";
+import CardEscala from "../../components/CardEscala";
 
 interface Coroinha {
   id: string;

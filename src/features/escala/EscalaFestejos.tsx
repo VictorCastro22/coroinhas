@@ -1,7 +1,7 @@
 import { useState, useEffect, useMemo } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import db from "../../../firebaseConfig";
-import CardEscala from "../CardEscala";
+import CardEscala from "../../components/CardEscala";
 import jsPDF from "jspdf";
 
 interface Coroinha {

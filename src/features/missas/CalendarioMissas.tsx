@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import db from "../../../firebaseConfig";
-import CardEscala from "../CardEscala";
+import CardEscala from "../../components/CardEscala";
 
 interface Coroinha {
   id: string;
@@ -9,7 +9,7 @@ interface Coroinha {
   foto: string;
 }
 
-const CalendarPadres: React.FC = () => {
+const CalendarioMissas: React.FC = () => {
   const [coroinhasData, setCoroinhas] = useState<{ [key: string]: Coroinha[] }>({});
   const [padreFilter, setPadreFilter] = useState("");
   const [localFilter, setLocalFilter] = useState("");
@@ -109,4 +109,4 @@ const CalendarPadres: React.FC = () => {
   );
 };
 
-export default CalendarPadres;
+export default CalendarioMissas;

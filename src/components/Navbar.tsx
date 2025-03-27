@@ -89,11 +89,6 @@ const Navbar: React.FC = () => {
             </button>
           </li>
           <li>
-            <button type="button" onClick={() => handleNavigation("/calendario")} className="hover:underline text-left link-style">
-              CALENDÁRIO
-            </button> 
-          </li>
-          <li>
             <button
               type="button"
               onClick={() => setSubmenuOpen(!submenuOpen)}

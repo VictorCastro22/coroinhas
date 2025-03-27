@@ -1,7 +1,7 @@
-import Destaque from "../Destaque";
-import Missas from "../Missas";
-import Confissoes from "../../features/confissoes/Confissoes";
-import Noticias from "../../features/noticias/Noticias";
+import Destaque from "../components/Destaque";
+import Missas from "../features/missas/Missas";
+import Confissoes from "../features/confissoes/Confissoes";
+import Noticias from "../features/noticias/Noticias";
 
 const TelaInicial: React.FC = () => {
   const noticiasConfissoes = [

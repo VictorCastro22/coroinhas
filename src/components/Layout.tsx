@@ -1,8 +1,7 @@
-// Layout.tsx
 import { Outlet } from "react-router-dom";
-import Footer from "../Footer";
-import Navbar from "../Navbar";
-import CapaComLogo from "../CapaComLogo";
+import Footer from "./Footer";
+import Navbar from "./Navbar";
+import CapaComLogo from "./CapaComLogo";
 
 const Layout: React.FC = () => {
   return (
