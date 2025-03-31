@@ -110,10 +110,10 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-04-06-09h-Matriz", data: "2025-04-06", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "78-2025-04-06-09h-SaoJose", data: "2025-04-06", horario: "09h", local: "São José", padre: "Padre Ivan" },
     { id: "78-2025-04-06-10h30-BatismoMatriz", data: "2025-04-06", horario: "10h30", local: "Batismo na Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-04-06-17h-CentroPastoral", data: "2025-04-06", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
+    { id: "78-2025-04-06-17h-CentroPastoral", data: "2025-04-06", horario: "17h", local: "Centro Pastoral", padre: "Padre Eudásio" },
     { id: "78-2025-04-06-17h-Divino", data: "2025-04-06", horario: "17h", local: "Divino", padre: "Padre Ivan" },
     { id: "78-2025-04-06-17h-PqSaoJoao", data: "2025-04-06", horario: "17h", local: "Parque São João com Batismo", padre: "Padre Rafael" },
-    { id: "78-2025-04-06-19h-NPIracema", data: "2025-04-06", horario: "19h", local: "Nossa Parque Iracema", padre: "Padre Ivan" },
+    { id: "78-2025-04-06-19h-NPIracema", data: "2025-04-06", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
     { id: "78-2025-04-06-19h-Matriz", data: "2025-04-06", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
 
   ];
