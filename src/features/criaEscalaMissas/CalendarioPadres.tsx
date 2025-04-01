@@ -144,6 +144,26 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-04-13-19h-Matriz", data: "2025-04-13", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
     { id: "78-2025-04-13-19h-NPIracema", data: "2025-04-13", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
 
+    { id: "78-2025-04-14-19h-Matriz", data: "2025-04-14", horario: "19h", local: "Matriz - Via sacra", padre: "Padre Eudásio" },
+    { id: "78-2025-04-15-19h-Matriz", data: "2025-04-15", horario: "19h", local: "Matriz - Via sacra", padre: "Padre Eudásio" },
+    { id: "78-2025-04-16-19h-Matriz", data: "2025-04-16", horario: "19h", local: "Matriz - Queima dos pecados", padre: "Padre Eudásio" },
+
+    { id: "78-2025-04-17-19h-Matriz", data: "2025-04-17", horario: "19h", local: "Matriz - Santa Ceia e Lava pés", padre: "Padre Eudásio" },
+    { id: "78-2025-04-17-19h-Divino", data: "2025-04-17", horario: "19h", local: "Divino - Santa Ceia e Lava pés", padre: "Padre Roberto" },
+    { id: "78-2025-04-17-19h-NossaSenhoraParqueIracema", data: "2025-04-17", horario: "19h", local: "Novo Parque Iracema - Santa Ceia e Lava pés", padre: "Padre Rafael" },
+    { id: "78-2025-04-17-19h-PqSaoJoao", data: "2025-04-17", horario: "19h", local: "Parque São João - Santa Ceia e Lava pés", padre: "Padre Ivan" },
+
+
+    { id: "78-2025-04-18-15h-PaixaoMatriz", data: "2025-04-18", horario: "15h", local: "Matriz - Paixão e Morte do Senhor", padre: "Padre Eudásio" },
+    { id: "78-2025-04-18-15h-PaixaoDivino", data: "2025-04-18", horario: "15h", local: "Divino - Paixão e Morte do Senhor", padre: "Padre Roberto" },
+    { id: "78-2025-04-18-15h-NossaSenhoraParqueIracema", data: "2025-04-18", horario: "15h", local: "Novo Parque Iracema - Paixão e Morte do Senhor", padre: "Padre Rafael" },
+    { id: "78-2025-04-18-15h-PaixaoPqSaoJoao", data: "2025-04-18", horario: "15h", local: "Parque São João - Paixão e Morte do Senhor", padre: "Padre Ivan" },
+
+    { id: "78-2025-04-19-19h-Matriz", data: "2025-04-19", horario: "19h", local: "Matriz - Vigília Pascal", padre: "Padre Eudásio" },
+      { id: "78-2025-04-19-19h-Divino", data: "2025-04-19", horario: "19h", local: "Divino - Vigília Pascal", padre: "Padre Roberto" },
+    { id: "78-2025-04-19-19h-NossaSenhoraParqueIracema", data: "2025-04-19", horario: "19h", local: "Novo Parque Iracema - Vigília Pascal", padre: "Padre Rafael" },
+    { id: "78-2025-04-19-19h-PqSaoJoao", data: "2025-04-19", horario: "19h", local: "Parque São João - Vigília Pascal", padre: "Padre Ivan" },
+
   ];
 
   return (
