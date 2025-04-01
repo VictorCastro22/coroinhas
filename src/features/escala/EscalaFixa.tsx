@@ -26,7 +26,7 @@ const EscalaFixa: React.FC = () => {
     { id: "78-2025-04-03-19h-Guabiraba", data: "2025-04-03", horario: "19h", local: "Mororó", padre: "Padre Ivan" },
 
     { id: "78-2025-04-04-18h-CP", data: "2025-04-04", horario: "18h30", local: "Centro Pastoral (Primeira sexta)", padre: "Padre Eudásio" },
-    { id: "78-2025-04-04-18h-CP", data: "2025-04-04", horario: "18h30", local: "Centro Pastoral (Primeira sexta)", padre: "Padre Rafael" },
+    { id: "78-2025-04-04-18h-CP2", data: "2025-04-04", horario: "18h30", local: "Centro Pastoral (Primeira sexta)", padre: "Padre Rafael" },
 
     { id: "78-2025-04-05-17h-SantoAntonio", data: "2025-04-05", horario: "17h", local: "Santo Antônio", padre: "Padre Rafael" },
     { id: "78-2025-04-05-17h-SantaLuzia", data: "2025-04-05", horario: "17h", local: "Santa Luzia", padre: "Padre Ivan" },
@@ -46,15 +46,15 @@ const EscalaFixa: React.FC = () => {
     { id: "78-2025-04-06-19h-Matriz", data: "2025-04-06", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
 
     { id: "78-2025-04-08-19h-Matriz", data: "2025-04-08", horario: "19h", local: "Matriz (Missa Votiva a NSP)", padre: "Padre Eudásio" },
-    { id: "78-2025-04-08-19h-Matriz", data: "2025-04-08", horario: "19h", local: "Matriz (Missa Votiva a NSP)", padre: "Padre Rafael" },
-    { id: "78-2025-04-08-19h-Matriz", data: "2025-04-08", horario: "19h", local: "Matriz (Missa Votiva a NSP)", padre: "Padre Ivan" },
+    { id: "78-2025-04-08-19h-Matriz2", data: "2025-04-08", horario: "19h", local: "Matriz (Missa Votiva a NSP)", padre: "Padre Rafael" },
+    { id: "78-2025-04-08-19h-Matriz3", data: "2025-04-08", horario: "19h", local: "Matriz (Missa Votiva a NSP)", padre: "Padre Ivan" },
 
     { id: "78-2025-04-09-19h-MissaFamilias", data: "2025-04-09", horario: "19h", local: "Missa pelas famílias", padre: "Padre Rafael" },
     { id: "78-2025-04-09-19h-SantosDumont", data: "2025-04-09", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
 
     { id: "78-2025-04-11-19h-MatrizJubilar", data: "2025-04-11", horario: "19h", local: "Matriz (Missa Jubilar)", padre: "Padre Eudásio" },
-    { id: "78-2025-04-11-19h-MatrizJubilar", data: "2025-04-11", horario: "19h", local: "Matriz (Missa Jubilar)", padre: "Padre Rafael" },
-    { id: "78-2025-04-11-19h-MatrizJubilar", data: "2025-04-11", horario: "19h", local: "Matriz (Missa Jubilar)", padre: "Padre Ivan" },
+    { id: "78-2025-04-11-19h-MatrizJubilar2", data: "2025-04-11", horario: "19h", local: "Matriz (Missa Jubilar)", padre: "Padre Rafael" },
+    { id: "78-2025-04-11-19h-MatrizJubilar3", data: "2025-04-11", horario: "19h", local: "Matriz (Missa Jubilar)", padre: "Padre Ivan" },
 
     { id: "78-2025-04-12-19h-Matriz", data: "2025-04-12", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
     { id: "78-2025-04-12-19h-OutraBanda", data: "2025-04-12", horario: "18h", local: "Outra Banda", padre: "Padre Eudásio" },
@@ -156,16 +156,20 @@ const EscalaFixa: React.FC = () => {
     fetchCoroinhas();
   }, []);
 
-  const filteredCoroinhas = coroinhas.filter(coroinha =>
-    coroinha.nome.toLowerCase().includes(searchTerm.toLowerCase())
-  );
-
-  const filteredEscalas = escalas.filter(escala =>
-    filteredCoroinhas.some(coroinha =>
-      coroinhasData[escala.id]?.some(c => c.id === coroinha.id)
-    )
-  );
-
+  const filteredCoroinhas = useMemo(() => {
+    return coroinhas.filter((coroinha) =>
+      coroinha.nome.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+  }, [coroinhas, searchTerm]);
+  
+  const filteredEscalas = useMemo(() => {
+    return escalas.filter((escala) =>
+      coroinhasData[escala.id]?.some((coroinha) =>
+        filteredCoroinhas.some((c) => c.id === coroinha.id)
+      )
+    );
+  }, [escalas, coroinhasData, filteredCoroinhas]);
+  
   const generatePDF = () => {
     const doc = new jsPDF();
   
@@ -227,7 +231,9 @@ const EscalaFixa: React.FC = () => {
           data={escala.data}
           horario={escala.horario}
           local={escala.local}
-          coroinhas={coroinhasData[escala.id]?.filter(coroinha => coroinha.nome.toLowerCase().includes(searchTerm.toLowerCase())) || []}
+          coroinhas={coroinhasData[escala.id]?.filter((coroinha) =>
+            coroinha.nome.toLowerCase().includes(searchTerm.toLowerCase())
+          ) || []}
           onAddCoroinha={() => {}}
           onDeleteCoroinha={() => {}}
           isPublicView={true}
