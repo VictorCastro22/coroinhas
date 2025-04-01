@@ -7,20 +7,20 @@ const TelaInicial: React.FC = () => {
   const noticiasConfissoes = [
     {
       id: "4",
-      titulo: "Calendário de Confissões de Março",
+      titulo: "Calendário de Confissões de Abril",
       link: "/noticias/4",
       imagem: "/confissoes.png",
-      alt: "Calendário de Confissões de Março",
+      alt: "Calendário de Confissões de Abril",
     },
   ];
 
   const noticiasMissas = [
     {
       id: "3",
-      titulo: "Calendário de Missas de Março",
+      titulo: "Calendário de Missas de Abril",
       link: "/noticias/3",
       imagem: "/pnsp.png",
-      alt: "Calendário de Missas de Março",
+      alt: "Calendário de Missas de Abril",
     },
   ];
 
