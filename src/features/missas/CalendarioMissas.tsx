@@ -37,9 +37,6 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "83-2025-04-03-19h-Matriz", data: "2025-04-03", horario: "19h", local: "Parque das Rosas", padre: "Padre Rafael" },
-    { id: "83-2025-04-03-19h-Guabiraba", data: "2025-04-03", horario: "19h", local: "Mororó", padre: "Padre Ivan" },
-
     { id: "83-2025-04-04-18h-CP", data: "2025-04-04", horario: "18h30", local: "Centro Pastoral (Primeira sexta)", padre: "Padre Eudásio" },
     { id: "83-2025-04-04-18h-CP", data: "2025-04-04", horario: "18h30", local: "Centro Pastoral (Primeira sexta)", padre: "Padre Rafael" },
 
