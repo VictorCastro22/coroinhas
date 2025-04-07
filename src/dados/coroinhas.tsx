@@ -56,7 +56,31 @@ const coroinhas = [
   { id: "55", nome: "Miguel Dourado", foto: "/imagens/semfoto.jpg" },
   { id: "56", nome: "Nalberto", foto: "/imagens/semfoto.jpg" },
   { id: "57", nome: "Pedro Guilherme", foto: "/imagens/semfoto.jpg" },
-  { id: "58", nome: "Ramon", foto: "/imagens/ramon.png" },
+  {
+    id: "58",
+    nome: "Ramon",
+    foto: "/imagens/ramon.png",
+    permissoes: [
+      "Guabiraba-19h-Quarta",
+      "Coité-19h-Sábado",
+      "Coité-19h-Domingo",
+      "Parque São João-17h-Sábado",
+      "Parque São João-17h-Domingo",
+      "Parque São João-19h-Domingo",
+      "Matriz-07h-Domingo",
+      "Matriz-19h-Domingo",
+      "CentroPastoral-17h-Domingo",
+      "Cemiterio-07h-Domingo",
+      "Cemiterio-17h-Domingo",
+      "Cemiterio-19h-Domingo",
+      "Matriz-19h-Segunda",
+      "Matriz-19h-Terça",
+      "Matriz-19h-Quinta",
+      "Centro Pastoral-18h30-Sexta",
+      "Matriz-19h-Sexta",
+      "Matriz-19h-Sábado"
+    ]
+  },
   { id: "59", nome: "Rayssa", foto: "/imagens/rayssa.png" },
   { id: "60", nome: "Samira", foto: "/imagens/semfoto.jpg" },
   { id: "61", nome: "Sophia", foto: "/imagens/semfoto.jpg" },
@@ -64,9 +88,14 @@ const coroinhas = [
   { id: "63", nome: "Taylania", foto: "/imagens/semfoto.jpg" },
   { id: "64", nome: "Thaissa", foto: "/imagens/thaissa.png" },
   { id: "65", nome: "Victor Martins", foto: "/imagens/semfoto.jpg" },
-  { id: "66", nome: "Victor Manuel", foto: "/imagens/Victor.jfif" },
+  {
+    id: "66",
+    nome: "Victor Manuel",
+    foto: "/imagens/Victor.jfif",
+    permissoes: ["Matriz-07h-Domingo", "Centro Pastoral-17h-Domingo", "Matriz-19h-Domingo"]
+  },
   { id: "67", nome: "Victoria", foto: "/imagens/semfoto.jpg" },
-  { id: "68", nome: "Yasmim", foto: "/imagens/semfoto.jpg" },
+  { id: "68", nome: "Yasmim", foto: "/imagens/semfoto.jpg" }
 ];
 
 export default coroinhas;

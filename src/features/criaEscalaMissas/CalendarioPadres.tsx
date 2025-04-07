@@ -1,18 +1,22 @@
+import { getDay, parseISO } from "date-fns";
 import { useState, useEffect } from "react";
 import { collection, addDoc, getDocs, deleteDoc, doc } from "firebase/firestore";
 import db from "../../../firebaseConfig";
 import CardEscala from "../../components/CardEscala";
 import ModalAddCoroinha from "../../components/ModalAddCoroinha";
-import coroinhas from "../../dados/coroinhas"; 
+import coroinhas from "../../dados/coroinhas";
+
 
 interface Coroinha {
   id: string;
   nome: string;
   foto: string;
+  permissoes?: string[];
 }
 
 const CalendarioPadres: React.FC = () => {
   const [coroinhasData, setCoroinhas] = useState<{ [key: string]: Coroinha[] }>({});
+  const [filteredCoroinhas, setFilteredCoroinhas] = useState<Coroinha[]>([]);
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
   const [selectedCoroinha, setSelectedCoroinha] = useState<string>("");
   const [selectionCounts, setSelectionCounts] = useState<{ [key: string]: number }>({});
@@ -31,6 +35,7 @@ const CalendarioPadres: React.FC = () => {
           id: doc.id,
           nome: data.nome,
           foto: data.foto,
+          permissoes: data.permissoes || [],
         });
         counts[data.nome] = (counts[data.nome] || 0) + 1;
       }
@@ -42,28 +47,53 @@ const CalendarioPadres: React.FC = () => {
     fetchCoroinhas();
   }, []);
 
+  const handleAddCoroinha = (cardId: string, local: string, horario: string, data?: string) => {
+    if (!data) {
+      console.error("A data está indefinida.");
+      return;
+    }
+  
+    const diaSemana = getDay(parseISO(data));
+    const diasSemanaMap = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
+    const dia = diasSemanaMap[diaSemana];
+  
+    const coroinhasPermitidos = coroinhas.filter((coroinha) =>
+      (coroinha.permissoes || []).includes(`${local}-${horario}-${dia}`)
+    );
+  
+    setFilteredCoroinhas(coroinhasPermitidos);
+    setSelectedCard(cardId);
+  };
+  
   const handleSubmitCoroinha = async () => {
     if (!selectedCard || !selectedCoroinha) return;
 
     try {
-      const coroinha = coroinhas.find(c => c.id === selectedCoroinha);
+      const coroinha = coroinhas.find((c) => c.id === selectedCoroinha);
       if (!coroinha) return;
 
       const docRef = await addDoc(collection(db, "coroinhas"), {
         nome: coroinha.nome,
         cardId: selectedCard,
         foto: coroinha.foto,
+        permissoes: coroinha.permissoes,
       });
 
       const novosCoroinhas = [
         ...(coroinhasData[selectedCard] || []),
-        { id: docRef.id, nome: coroinha.nome, foto: coroinha.foto },
+        { id: docRef.id, nome: coroinha.nome, foto: coroinha.foto, permissoes: coroinha.permissoes },
       ];
-      setCoroinhas({ ...coroinhasData, [selectedCard]: novosCoroinhas });
+      setCoroinhas({
+        ...coroinhasData,
+        [selectedCard as string]: novosCoroinhas.map((c) => ({
+          ...c,
+          permissoes: c.permissoes || [],
+        })),
+      });
 
-      setSelectionCounts({ 
-        ...selectionCounts, 
-        [coroinha.nome]: (selectionCounts[coroinha.nome] || 0) + 1 
+      setSelectionCounts({
+        ...selectionCounts,
+        [coroinha.nome]: (selectionCounts[coroinha.nome] || 0) + 1,
       });
 
       setSelectedCard(null);
@@ -71,7 +101,7 @@ const CalendarioPadres: React.FC = () => {
     } catch (error) {
       console.error("Erro ao adicionar coroinha:", error);
     }
-  };  
+  };
 
   const handleDeleteCoroinha = async (cardId: string, coroinhaId: string) => {
     try {
@@ -87,26 +117,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "78-2025-04-04-18h-CP", data: "2025-04-04", horario: "18h30", local: "Centro Pastoral (Primeira sexta)", padre: "Padre Eudásio" },
-    { id: "78-2025-04-04-18h-CP2", data: "2025-04-04", horario: "18h30", local: "Centro Pastoral (Primeira sexta)", padre: "Padre Rafael" },
-
-    { id: "78-2025-04-05-17h-SantoAntonio", data: "2025-04-05", horario: "17h", local: "Santo Antônio", padre: "Padre Rafael" },
-    { id: "78-2025-04-05-17h-SantaLuzia", data: "2025-04-05", horario: "17h", local: "Santa Luzia", padre: "Padre Ivan" },
-    { id: "78-2025-04-05-19h-Coite", data: "2025-04-05", horario: "19h", local: "Coité", padre: "Padre Eudásio" },
-    { id: "78-2025-04-05-19h-Matriz", data: "2025-04-05", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "78-2025-04-05-19h-BatismoDivino", data: "2025-04-05", horario: "19h", local: "Batismo no Divino", padre: "Padre Rafael" },
-
-    { id: "78-2025-04-06-07h-Matriz", data: "2025-04-06", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-04-06-07h-Divino", data: "2025-04-06", horario: "07h", local: "Divino", padre: "Padre Rafael" },
-    { id: "78-2025-04-06-09h-Matriz", data: "2025-04-06", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-04-06-09h-SaoJose", data: "2025-04-06", horario: "09h", local: "São José", padre: "Padre Ivan" },
-    { id: "78-2025-04-06-10h30-BatismoMatriz", data: "2025-04-06", horario: "10h30", local: "Batismo na Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-04-06-17h-CentroPastoral", data: "2025-04-06", horario: "17h", local: "Centro Pastoral", padre: "Padre Eudásio" },
-    { id: "78-2025-04-06-17h-Divino", data: "2025-04-06", horario: "17h", local: "Divino", padre: "Padre Ivan" },
-    { id: "78-2025-04-06-17h-PqSaoJoao", data: "2025-04-06", horario: "17h", local: "Parque São João com Batismo", padre: "Padre Rafael" },
-    { id: "78-2025-04-06-19h-NPIracema", data: "2025-04-06", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
-    { id: "78-2025-04-06-19h-Matriz", data: "2025-04-06", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-
     { id: "78-2025-04-08-19h-Matriz", data: "2025-04-08", horario: "19h", local: "Matriz (Missa Votiva a NSP)", padre: "Padre Eudásio" },
     { id: "78-2025-04-08-19h-Matriz2", data: "2025-04-08", horario: "19h", local: "Matriz (Missa Votiva a NSP)", padre: "Padre Rafael" },
     { id: "78-2025-04-08-19h-Matriz3", data: "2025-04-08", horario: "19h", local: "Matriz (Missa Votiva a NSP)", padre: "Padre Ivan" },
@@ -193,7 +203,6 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-04-27-19h-NovoParqueIracema", data: "2025-04-27", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
     
     { id: "78-2025-04-30-19h-Matriz", data: "2025-04-30", horario: "19h", local: "Matriz - Missa pelas famílias", padre: "Padre Rafael" }
-
   ];
 
   return (
@@ -202,30 +211,28 @@ const CalendarioPadres: React.FC = () => {
         Calendário das Missas
       </h1>
 
-
       {escalas.map((escala) => (
-        <CardEscala
-          key={escala.id}
-          padre={escala.padre}
-          data={escala.data}
-          horario={escala.horario}
-          local={escala.local}
-          coroinhas={coroinhasData[escala.id] || []}
-          onAddCoroinha={() => setSelectedCard(escala.id)}
-          onDeleteCoroinha={(id) => handleDeleteCoroinha(escala.id, id)}
-        />
-      ))}
+      <CardEscala
+        key={escala.id}
+        padre={escala.padre}
+        data={escala.data} // Certifique-se de que esta propriedade está no formato correto
+        horario={escala.horario}
+        local={escala.local}
+        coroinhas={coroinhasData[escala.id] || []}
+        onAddCoroinha={() => handleAddCoroinha(escala.id, escala.local, escala.horario, escala.data)}
+        onDeleteCoroinha={(id) => handleDeleteCoroinha(escala.id, id)}
+      />
+    ))}
 
       <ModalAddCoroinha
         isOpen={!!selectedCard}
-        coroinhas={coroinhas}
+        coroinhas={filteredCoroinhas}
         onSubmit={handleSubmitCoroinha}
         onClose={() => setSelectedCard(null)}
         selectedCoroinha={selectedCoroinha}
         setSelectedCoroinha={setSelectedCoroinha}
         selectionCounts={selectionCounts}
       />
-
     </div>
   );
 };

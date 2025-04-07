@@ -12,8 +12,7 @@ interface CardEscalaProps {
   horario: string;
   local: string;
   coroinhas: Coroinha[];
-  selectedCoroinha?: string;
-  onAddCoroinha?: () => void;
+  onAddCoroinha?: () => void; // Evento para abrir o modal
   onDeleteCoroinha?: (id: string) => void;
   isPublicView?: boolean;
 }
@@ -24,54 +23,25 @@ const CardEscala: React.FC<CardEscalaProps> = ({
   horario,
   local,
   coroinhas,
-  selectedCoroinha,
   onAddCoroinha,
   onDeleteCoroinha,
   isPublicView = false,
 }) => {
+  
   const dataFormatada = format(new Date(`${data}T00:00:00`), "dd-MM-yyyy");
-  const coroinhasFiltrados = selectedCoroinha
-    ? coroinhas.filter((coroinha) => coroinha.id === selectedCoroinha)
-    : coroinhas;
 
+  
   const isTodayCard = isToday(parseISO(`${data}T00:00:00`));
 
+  
   const getFotoPadre = (padre: string) => {
     switch (padre) {
       case "Padre Eudásio":
         return "/paroco.jpg";
       case "Padre Ivan":
         return "/vigario.png";
-      case "Padre Rafhael":
-        return "/padre-rafhael.png";
-      case "Padre William":
-        return "/padre-william.png";
-      case "Padre João Paulo":
-        return "/padre-joaop.png";
-      case "Padre Frei Gilmar":
-        return "frei-gilmar.jpeg";
-      case "Padre Vicente":
-        return "/pe-vicente.jpeg";
-      case "Padre Odésio":
-        return "/pe_odesio.png";
-      case "Padre Gleison":
-        return "/padre-gleison.jpeg";
-      case "Padre Sávio":
-        return "/pe-savio.jpeg";
-      case "Padre Diego":
-        return "/pe-diego.jpeg";
-      case "Padre Ednaldo":
-        return "/pe-ednaldo.jpeg";
-      case "Padre Abimael":
-        return "/pe-abimael.jpeg";
-      case "Dom Gregório":
-        return "/dom-gregorio.png";
       case "Padre Rafael":
         return "/pe-rafael.png";
-      case "Padre Aurênio":
-        return "/pe-aurenio.png";
-      case "Padre Kleriston":
-        return "/pe-kleriston.png";
       default:
         return "/imagens/semfoto.jpg";
     }
@@ -83,6 +53,7 @@ const CardEscala: React.FC<CardEscalaProps> = ({
         isTodayCard ? "bg-green-300" : "bg-white"
       }`}
     >
+      {/* Informações do Padre */}
       <div className="flex items-center mb-4">
         <div className="flex flex-col items-center mr-4">
           <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-200">
@@ -99,6 +70,8 @@ const CardEscala: React.FC<CardEscalaProps> = ({
           <p className="text-base text-gray-700">
             {dataFormatada} - {horario}
           </p>
+          
+          {/* Botão para adicionar coroinha (abre o modal) */}
           {!isPublicView && onAddCoroinha && (
             <button
               type="button"
@@ -111,8 +84,9 @@ const CardEscala: React.FC<CardEscalaProps> = ({
         </div>
       </div>
 
+      {/* Lista de coroinhas */}
       <ul className="mt-4">
-        {coroinhasFiltrados.map((coroinha) => (
+        {coroinhas.map((coroinha) => (
           <li
             key={coroinha.id}
             className="flex items-center justify-between border-b py-2"
