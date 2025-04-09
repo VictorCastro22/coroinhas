@@ -37,7 +37,6 @@ const CalendarConfissoes: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "78-2025-04-09-08h-Secretaria", data: "2025-04-09", horario: "08h", local: "Secretaria - Atendimento e Confissões", padre: "Padre Eudásio" },
     { id: "78-2025-04-09-17h-Matriz", data: "2025-04-09", horario: "17h", local: "Matriz - Confissões", padre: "Padre Rafael" },
     { id: "78-2025-04-10-08h-Matriz", data: "2025-04-10", horario: "08h", local: "Matriz - Confissões", padre: "Padre Ivan" },
     { id: "78-2025-04-10-18h-CentroPastoral", data: "2025-04-10", horario: "18h", local: "Centro de Pastoral - Mutirão de Confissões", padre: "Padre Rafael" },

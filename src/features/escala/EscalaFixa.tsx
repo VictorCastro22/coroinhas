@@ -16,10 +16,6 @@ const EscalaFixa: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const escalas = useMemo(() => [
-    { id: "78-2025-04-08-19h-Matriz", data: "2025-04-08", horario: "19h", local: "Matriz (Missa Votiva a NSP)", padre: "Padre Eudásio" },
-    { id: "78-2025-04-08-19h-Matriz2", data: "2025-04-08", horario: "19h", local: "Matriz (Missa Votiva a NSP)", padre: "Padre Rafael" },
-    { id: "78-2025-04-08-19h-Matriz3", data: "2025-04-08", horario: "19h", local: "Matriz (Missa Votiva a NSP)", padre: "Padre Ivan" },
-
     { id: "78-2025-04-09-19h-MissaFamilias", data: "2025-04-09", horario: "19h", local: "Missa pelas famílias", padre: "Padre Rafael" },
     { id: "78-2025-04-09-19h-SantosDumont", data: "2025-04-09", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
 
