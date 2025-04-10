@@ -1,11 +1,38 @@
 const coroinhas = [
   { id: "1", nome: "Adrian", foto: "/imagens/Adrian-mestre.png" },
-  { id: "2", nome: "Ana Luiza", foto: "/imagens/semfoto.jpg" },
-  { id: "3", nome: "Ayla", foto: "/imagens/semfoto.jpg" },
-  { id: "4", nome: "Aysha", foto: "/imagens/semfoto.jpg" },
-  { id: "5", nome: "Carlos André", foto: "/imagens/carlos.png" },
   { 
-    id: "6", 
+    id: "2", 
+    nome: "Ana Luiza", 
+    foto: "/imagens/semfoto.jpg",
+    permissoes: [
+      "Centro Pastoral-18h30-Sexta",
+      "Guabiraba-19h-Quarta",
+      "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",
+      "Matriz-19h-Quarta",
+      "Matriz-19h-Sábado",
+      "Rosário-19h-Sexta",
+    ]
+   },
+  { 
+    id: "3", 
+    nome: "Áylla", 
+    foto: "/imagens/semfoto.jpg",
+    permissoes: [
+      "Centro Pastoral-17h-Domingo",
+      "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",
+    ]
+   },
+  { 
+    id: "4", 
+    nome: "Aysha", 
+    foto: "/imagens/semfoto.jpg",
+    permissoes: [
+      "Centro Pastoral-17h-Domingo",
+      "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",
+    ]
+   },
+  { 
+    id: "5", 
     nome: "Beatriz Lemos", 
     foto: "/imagens/beatriz-lemos.jpg",
     permissoes: [
@@ -25,8 +52,27 @@ const coroinhas = [
       "Rosário-19h-Sexta",
     ]
    },
-  { id: "7", nome: "Beatriz Martins", foto: "/imagens/beatriz.jpeg" },
-  { id: "8", nome: "Carla", foto: "/imagens/carla.png" },
+  { id: "6", nome: "Beatriz Martins", foto: "/imagens/beatriz.jpeg" },
+  { id: "7", nome: "Carla", foto: "/imagens/carla.png" },
+  { 
+    id: "8", 
+    nome: "Carlos André", 
+    foto: "/imagens/carlos.png",
+    permissoes: [
+      "Centro Pastoral-18h30-Sexta",
+      "Centro Pastoral-17h-Domingo",
+      "Matriz-19h-Domingo",
+      "Matriz-12h-Segunda",
+      "Matriz-12h-Terça",
+      "Matriz-12h-Quarta",
+      "Matriz-19h-Quarta",
+      "Matriz-12h-Quinta",
+      "Matriz-12h-Sexta",
+      "Matriz-19h-Sábado",
+      "Novo Parque Iracema-19h-Domingo",
+      "Rosário-19h-Sexta",
+    ]
+   },
   { id: "9", nome: "Cecília", foto: "/imagens/cecilia.png" },
   { id: "10", nome: "Charlys", foto: "/imagens/semfoto.jpg" },
   { id: "11", nome: "Clarisse", foto: "/imagens/semfoto.jpg" },
@@ -124,7 +170,15 @@ const coroinhas = [
       "Parque São João-17h-Domingo", "Parque São João-19h-Domingo",
     ] 
   },
-  { id: "43", nome: "Liah", foto: "/imagens/liah.jpg" },
+  { id: "43", 
+    nome: "Liah", 
+    foto: "/imagens/liah.jpg",
+    permissoes: [
+      "Centro Pastoral-17h-Domingo",
+      "Divino-07h-Domingo","Divino-17h-Domingo",
+      "Matriz-07h-Domingo",
+    ]  
+   },
   { id: "44", nome: "Luiz Felipe", foto: "/imagens/luizfelipe.jpeg" },
   { id: "45", nome: "Luiz Guilherme", foto: "/imagens/semfoto.jpg" },
   { id: "46", nome: "Marjory", foto: "/imagens/marjory.png" },
@@ -186,7 +240,7 @@ const coroinhas = [
     nome: "Victor Martins", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
-      "Urucará-17h-Sábado","Urucará-19-Sábado",
+      "Urucará-17h-Sábado","Urucará-19h-Sábado",
       "Matriz-09h-Domingo",
     ]
   },
