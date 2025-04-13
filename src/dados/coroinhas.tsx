@@ -52,8 +52,26 @@ const coroinhas = [
       "Rosário-19h-Sexta",
     ]
    },
-  { id: "6", nome: "Beatriz Martins", foto: "/imagens/beatriz.jpeg" },
-  { id: "7", nome: "Carla", foto: "/imagens/carla.png" },
+  { 
+    id: "6", 
+    nome: "Beatriz Martins", 
+    foto: "/imagens/beatriz.jpeg",
+    permissoes: [
+      "Centro Pastoral-17h-Domingo",
+      "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",
+      "Matriz-19h-Terça",
+      "Matriz-19h-Quinta",
+      "Matriz-19h-Sábado",
+    ]
+   },
+  { 
+    id: "7", 
+    nome: "Carla", 
+    foto: "/imagens/carla.png",
+    permissoes: [
+      "Matriz-09h-Domingo",
+    ]
+   },
   { 
     id: "8", 
     nome: "Carlos André", 

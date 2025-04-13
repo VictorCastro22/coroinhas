@@ -117,14 +117,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "78-2025-04-11-19h-MatrizJubilar", data: "2025-04-11", horario: "19h", local: "Matriz (Missa Jubilar)", padre: "Padre Eudásio" },
-    { id: "78-2025-04-11-19h-MatrizJubilar2", data: "2025-04-11", horario: "19h", local: "Matriz (Missa Jubilar)", padre: "Padre Rafael" },
-    { id: "78-2025-04-11-19h-MatrizJubilar3", data: "2025-04-11", horario: "19h", local: "Matriz (Missa Jubilar)", padre: "Padre Ivan" },
-
-    { id: "78-2025-04-12-19h-Matriz", data: "2025-04-12", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "78-2025-04-12-19h-OutraBanda", data: "2025-04-12", horario: "18h", local: "Outra Banda", padre: "Padre Eudásio" },
-    { id: "78-2025-04-12-19h-BatismoOutraBanda", data: "2025-04-12", horario: "19h", local: "Batismo na Outra Banda", padre: "Padre Rafael" },
-
     { id: "78-2025-04-13-07h-Matriz", data: "2025-04-13", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "78-2025-04-13-07h-Abrigo", data: "2025-04-13", horario: "07h", local: "Abrigo", padre: "Padre Ivan" },
     { id: "78-2025-04-13-07h-Divino", data: "2025-04-13", horario: "07h", local: "Divino", padre: "Padre Rafael" },

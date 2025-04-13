@@ -37,13 +37,7 @@ const CalendarConfissoes: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "78-2025-04-10-08h-Matriz", data: "2025-04-10", horario: "08h", local: "Matriz - Confissões", padre: "Padre Ivan" },
-    { id: "78-2025-04-10-18h-CentroPastoral", data: "2025-04-10", horario: "18h", local: "Centro Pastoral - Mutirão de Confissões", padre: "Padre Rafael" },
-    { id: "78-2025-04-10-18h-CentroPastoral", data: "2025-04-10", horario: "18h", local: "Centro Pastoral - Mutirão de Confissões", padre: "Padre Ivan" },
-    { id: "78-2025-04-10-18h-CentroPastoral", data: "2025-04-10", horario: "18h", local: "Centro Pastoral - Mutirão de Confissões", padre: "Padre Eudásio" },
-    { id: "78-2025-04-11-17h-Matriz", data: "2025-04-11", horario: "17h", local: "Matriz - Confissões", padre: "Padre Rafael" },
-    { id: "78-2025-04-11-17h-Matriz", data: "2025-04-11", horario: "17h", local: "Matriz - Confissões", padre: "Padre Ivan" },
-    { id: "78-2025-04-11-17h-Matriz", data: "2025-04-11", horario: "17h", local: "Matriz - Confissões", padre: "Padre Eudásio" },
+    { id: "78-2025-04-16-17h-NPI", data: "2025-04-16", horario: "17h", local: "Novo Parque Iracema", padre: "Padre Rafael" },   
     { id: "78-2025-04-24-08h-Matriz", data: "2025-04-24", horario: "08h", local: "Matriz - Confissões", padre: "Padre Ivan" },
     { id: "78-2025-04-30-08h-Secretaria", data: "2025-04-30", horario: "08h", local: "Secretaria - Atendimento e Confissões", padre: "Padre Eudásio" },
     { id: "78-2025-04-30-17h-Matriz", data: "2025-04-30", horario: "17h", local: "Matriz - Confissões", padre: "Padre Rafael" }    
