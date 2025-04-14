@@ -37,19 +37,6 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "83-2025-04-13-07h-Matriz", data: "2025-04-13", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "83-2025-04-13-07h-Abrigo", data: "2025-04-13", horario: "07h", local: "Abrigo", padre: "Padre Ivan" },
-    { id: "83-2025-04-13-07h-Divino", data: "2025-04-13", horario: "07h", local: "Divino", padre: "Padre Rafael" },
-    { id: "83-2025-04-13-09h-Matriz", data: "2025-04-13", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "83-2025-04-13-09h-BatismoCoite", data: "2025-04-13", horario: "09h", local: "Batismo no Coité", padre: "Padre Rafael" },
-    { id: "83-2025-04-13-12h-Matriz", data: "2025-04-13", horario: "12h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "83-2025-04-13-15h30-Vilares", data: "2025-04-13", horario: "15h30", local: "Vilares", padre: "Padre Eudásio" },
-    { id: "83-2025-04-13-17h-CentroPastoral", data: "2025-04-13", horario: "17h", local: "Centro Pastoral", padre: "Padre Eudásio" },
-    { id: "83-2025-04-13-17h-PqSaoJoao", data: "2025-04-13", horario: "17h", local: "Parque São João", padre: "Padre Rafael" },
-    { id: "83-2025-04-13-17h-Divino", data: "2025-04-13", horario: "17h", local: "Divino", padre: "Padre Ivan" },
-    { id: "83-2025-04-13-19h-Matriz", data: "2025-04-13", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "83-2025-04-13-19h-NPIracema", data: "2025-04-13", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
-
     { id: "83-2025-04-14-19h-Matriz", data: "2025-04-14", horario: "19h", local: "Matriz - Via sacra", padre: "Padre Eudásio" },
     { id: "83-2025-04-15-19h-Matriz", data: "2025-04-15", horario: "19h", local: "Matriz - Via sacra", padre: "Padre Eudásio" },
     { id: "83-2025-04-16-19h-Matriz", data: "2025-04-16", horario: "19h", local: "Matriz - Queima dos pecados", padre: "Padre Eudásio" },
