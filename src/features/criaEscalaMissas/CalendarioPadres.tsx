@@ -117,16 +117,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "78-2025-04-19-19h-Matriz", data: "2025-04-19", horario: "19h", local: "Matriz - Vigília Pascal", padre: "Padre Eudásio" },
-    { id: "78-2025-04-19-19h-Divino", data: "2025-04-19", horario: "19h", local: "Divino - Vigília Pascal", padre: "Padre Roberto" },
-    { id: "78-2025-04-19-19h-NossaSenhoraParqueIracema", data: "2025-04-19", horario: "19h", local: "Novo Parque Iracema - Vigília Pascal", padre: "Padre Rafael" },
-    { id: "78-2025-04-19-19h-PqSaoJoao", data: "2025-04-19", horario: "19h", local: "Parque São João - Vigília Pascal", padre: "Padre Ivan" },
-
-    { id: "78-2025-04-20-07h-Matriz", data: "2025-04-20", horario: "07h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-04-20-07h-Divino", data: "2025-04-20", horario: "07h", local: "Divino", padre: "Padre Roberto" },
-    { id: "78-2025-04-20-09h-NovoParqueIracema", data: "2025-04-20", horario: "09h", local: "Batizado Novo Parque Iracema", padre: "Padre Rafael" },
-    { id: "78-2025-04-20-09h-SaoJose", data: "2025-04-20", horario: "09h", local: "São José", padre: "Padre Ivan" },
-    { id: "78-2025-04-20-09h-Matriz", data: "2025-04-20", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "78-2025-04-20-17h-Divino", data: "2025-04-20", horario: "17h", local: "Divino", padre: "Padre Rafael" },
     { id: "78-2025-04-20-17h-PqSaoJoao", data: "2025-04-20", horario: "17h", local: "Parque São João", padre: "Padre Ivan" },
     { id: "78-2025-04-20-17h-CentroPastoral", data: "2025-04-20", horario: "17h", local: "Centro Pastoral", padre: "Padre Eudásio" },
