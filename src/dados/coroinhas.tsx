@@ -10,7 +10,7 @@ const coroinhas = [
       "Guabiraba-19h-Quarta",
       "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",
       "Matriz-19h-Quarta",
-      "Matriz-19h-Sábado",
+      "Matriz-19h-Sábado", 
       "Rosário-19h-Sexta",
     ]
    },
@@ -130,6 +130,7 @@ const coroinhas = [
       "Matriz-19h-Sábado",
       "Parque São João-17h-Domingo",
       "Santo Antônio-17h-Sábado",
+      "Santos Dumont-19h-Quarta", "Santos Dumont-15h30-Domingo",
       "Rosário-19h-Sexta",
       "Urucará-19h-Terça",
       "Urucará-17h-Sábado","Urucará-19h-Sábado",
@@ -145,6 +146,7 @@ const coroinhas = [
       "Centro Pastoral-17h-Domingo",
       "Divino-07h-Domingo","Divino-17h-Domingo",
       "Matriz-07h-Domingo","Matriz-19h-Domingo",
+      "Matriz-19h-Quarta",
       "Matriz-19h-Sábado",
       "Santa Luzia-17h-Sábado",
     ]
@@ -209,21 +211,117 @@ const coroinhas = [
       "Santa Luzia-17h-Sábado",
     ]
    },
-  { id: "15", nome: "Dafny", foto: "/imagens/dafny.png" },
-  { id: "16", nome: "Davi", foto: "/imagens/semfoto.jpg" },
-  { id: "17", nome: "Eduarda Cavalcante", foto: "/imagens/semfoto.jpg" },
-  { id: "18", nome: "Fernando", foto: "/imagens/semfoto.jpg" },
-  { id: "19", nome: "Francisco José", foto: "/imagens/semfoto.jpg" },
-  { id: "20", nome: "Gabriel Andrade", foto: "/imagens/joaogabriel.jpeg" },
-  { id: "21", nome: "Gabriel Christian", foto: "/imagens/semfoto.jpg" },
-  { id: "22", nome: "Gabriel Gomes", foto: "/imagens/semfoto.jpg" },
-  { id: "23", nome: "Gabriele", foto: "/imagens/semfoto.jpg" },
-  { id: "24", nome: "Gustavo", foto: "/imagens/gustavo-mestre.png" },
-  { id: "25", nome: "Isaías", foto: "/imagens/semfoto.jpg" },
-  { id: "26", nome: "Ingrid", foto: "/imagens/semfoto.jpg" },
-  { id: "27", nome: "Izadora", foto: "/imagens/semfoto.jpg" },
-  { id: "28", nome: "Isabelly Guedes", foto: "/imagens/semfoto.jpg" },
-  { id: "29", nome: "Isadora Oliveira", foto: "/imagens/semfoto.jpg" },
+
+  {
+    id: "15", 
+    nome: "Dafny", 
+    foto: "/imagens/dafny.png"
+
+   },
+
+  { 
+    id: "16", 
+    nome: "Davi", 
+    foto: "/imagens/semfoto.jpg",
+    permissoes: [
+      "Santos Dumont-15h30-Domingo",
+      "Novo Parque Iracema-19h-Domingo",
+    ]
+   },
+
+  { 
+    id: "17", 
+    nome: "Eduarda Cavalcante", 
+    foto: "/imagens/semfoto.jpg",
+  
+  },
+
+  { 
+    id: "18", 
+    nome: "Fernando", 
+    foto: "/imagens/semfoto.jpg"
+   },
+
+  { 
+    id: "19", 
+    nome: "Francisco José", 
+    foto: "/imagens/semfoto.jpg"
+   },
+
+  { 
+    id: "20", 
+    nome: "Gabriel de Andrade", 
+    foto: "/imagens/joaogabriel.jpeg",
+    permissoes: [
+      "Abrigo-07h-Domingo",
+      "Centro Pastoral-18h30-Sexta",
+      "Centro Pastoral-17h-Domingo",
+      "Guabiraba-19h-Quarta",
+      "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",
+      "Matriz-19h-Segunda",
+      "Matriz-19h-Terça",
+      "Matriz-19h-Quarta",
+      "Matriz-19h-Quinta",
+      "Matriz-19h-Sexta",
+      "Matriz-19h-Sábado",
+      "Santo Antônio-17h-Sábado",
+      "Santos Dumont-19h-Quarta", "Santos Dumont-15h30-Domingo",
+    ]
+  },
+
+  { 
+    id: "21", 
+    nome: "Gabriel Christian", 
+    foto: "/imagens/semfoto.jpg",
+
+   },
+
+  { 
+    id: "22", 
+    nome: "Gabriel Gomes", 
+    foto: "/imagens/semfoto.jpg",
+  
+  },
+
+  { 
+    id: "23", 
+    nome: "Gabriele", 
+    foto: "/imagens/semfoto.jpg",
+  
+  },
+
+  { 
+    id: "24", 
+    nome: "Gustavo", 
+    foto: "/imagens/gustavo-mestre.png",
+
+  },
+
+  { 
+    id: "25", 
+    nome: "Isaías", 
+    foto: "/imagens/semfoto.jpg"
+   },
+
+  { 
+    id: "26", 
+    nome: "Ingrid", 
+    foto: "/imagens/semfoto.jpg"
+   },
+
+  { 
+    id: "28", 
+    nome: "Isabelly Guedes", 
+    foto: "/imagens/semfoto.jpg"
+  
+  },
+
+  { 
+    id: "29", 
+    nome: "Isadora Oliveira", 
+    foto: "/imagens/semfoto.jpg"
+   },
+
   { 
     id: "30", 
     nome: "Isabelle", 
@@ -239,19 +337,70 @@ const coroinhas = [
       "Rosário-19h-Sexta",
     ]
    },
-   
-  { id: "32", nome: "João Pedro", foto: "/imagens/semfoto.jpg" },
-  { id: "33", nome: "José Vitor", foto: "/imagens/semfoto.jpg" },
-  { id: "34", nome: "Jhonnata", foto: "/imagens/semfoto.jpg" },
-  { id: "35", nome: "Julia", foto: "/imagens/semfoto.jpg" },
-  { id: "36", nome: "Kacilane", foto: "/imagens/kacilane.png" },
-  { id: "37", nome: "Kaciele", foto: "/imagens/kaciele.JPG" },
-  { id: "38", nome: "Kauan ", foto: "/imagens/semfoto.jpg"}, 
-  { id: "39", nome: "Kaylane", foto: "/imagens/semfoto.jpg" },
-  { id: "40", nome: "Larissa", foto: "/imagens/semfoto.jpg" },
-  { id: "41", nome: "Laura", foto: "/imagens/laura.png" },
+
   { 
-    id: "42", 
+    id: "31", 
+    nome: "João Pedro", 
+    foto: "/imagens/semfoto.jpg"
+   },
+
+  { 
+    id: "32", 
+    nome: "José Vitor", 
+    foto: "/imagens/semfoto.jpg"
+   },
+
+  { 
+    id: "33", 
+    nome: "Jhonnata", 
+    foto: "/imagens/semfoto.jpg"
+   },
+
+  { 
+    id: "34", 
+    nome: "Julia", 
+    foto: "/imagens/semfoto.jpg"
+   },
+
+  { 
+    id: "35", 
+    nome: "Kacilane", 
+    foto: "/imagens/kacilane.png"
+   },
+
+  { 
+    id: "36", 
+    nome: "Kaciele", 
+    foto: "/imagens/kaciele.JPG"
+   },
+
+  { 
+    id: "37", 
+    nome: "Kauan ", 
+    foto: "/imagens/semfoto.jpg"
+  }, 
+
+  { 
+    id: "38", 
+    nome: "Kaylane", 
+    foto: "/imagens/semfoto.jpg",
+  
+  },
+
+  { 
+    id: "39", 
+    nome: "Larissa", 
+    foto: "/imagens/semfoto.jpg",
+   },
+
+  { 
+    id: "40", 
+    nome: "Laura", 
+    foto: "/imagens/laura.png"
+   },
+
+  { 
+    id: "41", 
     nome: "Letícia", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -261,7 +410,7 @@ const coroinhas = [
       "Parque São João-17h-Domingo", "Parque São João-19h-Domingo",
     ] 
   },
-  { id: "43", 
+  { id: "42", 
     nome: "Liah", 
     foto: "/imagens/liah.jpg",
     permissoes: [
@@ -270,12 +419,12 @@ const coroinhas = [
       "Matriz-07h-Domingo",
     ]  
    },
-  { id: "44", nome: "Luiz Felipe", foto: "/imagens/luizfelipe.jpeg" },
-  { id: "45", nome: "Luiz Guilherme", foto: "/imagens/semfoto.jpg" },
-  { id: "46", nome: "Marjory", foto: "/imagens/marjory.png" },
-  { id: "47", nome: "Mariana", foto: "/imagens/semfoto.jpg" },
+  { id: "43", nome: "Luiz Felipe", foto: "/imagens/luizfelipe.jpeg" },
+  { id: "44", nome: "Luiz Guilherme", foto: "/imagens/semfoto.jpg" },
+  { id: "45", nome: "Marjory", foto: "/imagens/marjory.png" },
+  { id: "46", nome: "Mariana", foto: "/imagens/semfoto.jpg" },
   { 
-    id: "48", 
+    id: "47", 
     nome: "Marina", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -284,7 +433,7 @@ const coroinhas = [
    },
 
   { 
-    id: "49", 
+    id: "48", 
     nome: "Maria Luiza", 
     foto: "/imagens/marialuiza.png",
     permissoes: [
@@ -301,16 +450,16 @@ const coroinhas = [
       "Rosário-19h-Sexta",
     ]
    },
-  { id: "50", nome: "Maria Lara", foto: "/imagens/semfoto.jpg" },
-  { id: "51", nome: "Maria Rita", foto: "/imagens/semfoto.jpg" },
-  { id: "52", nome: "Martha", foto: "/imagens/semfoto.jpg" },
-  { id: "53", nome: "Melissa", foto: "/imagens/semfoto.jpg" },
-  { id: "54", nome: "Miguel Anselmo", foto: "/imagens/miguelanselmo.png" },
-  { id: "55", nome: "Miguel Dourado", foto: "/imagens/semfoto.jpg" },
-  { id: "56", nome: "Nalberto", foto: "/imagens/semfoto.jpg" },
-  { id: "57", nome: "Pedro Guilherme", foto: "/imagens/semfoto.jpg" },
+  { id: "49", nome: "Maria Lara", foto: "/imagens/semfoto.jpg" },
+  { id: "50", nome: "Maria Rita", foto: "/imagens/semfoto.jpg" },
+  { id: "51", nome: "Martha", foto: "/imagens/semfoto.jpg" },
+  { id: "52", nome: "Melissa", foto: "/imagens/semfoto.jpg" },
+  { id: "53", nome: "Miguel Anselmo", foto: "/imagens/miguelanselmo.png" },
+  { id: "54", nome: "Miguel Dourado", foto: "/imagens/semfoto.jpg" },
+  { id: "55", nome: "Nalberto", foto: "/imagens/semfoto.jpg" },
+  { id: "56", nome: "Pedro Guilherme", foto: "/imagens/semfoto.jpg" },
   {
-    id: "58",
+    id: "57",
     nome: "Ramon",
     foto: "/imagens/ramon.png",
     permissoes: [
@@ -329,14 +478,14 @@ const coroinhas = [
       "Parque São João-17h-Domingo", "Parque São João-19h-Domingo",
     ]
   },
-  { id: "59", nome: "Rayssa", foto: "/imagens/rayssa.png" },
-  { id: "60", nome: "Samira", foto: "/imagens/semfoto.jpg" },
-  { id: "61", nome: "Sophia", foto: "/imagens/semfoto.jpg" },
-  { id: "62", nome: "Stefhany", foto: "/imagens/ste.png" },
-  { id: "63", nome: "Taylania", foto: "/imagens/semfoto.jpg" },
-  { id: "64", nome: "Thaissa", foto: "/imagens/thaissa.png" },
+  { id: "58", nome: "Rayssa", foto: "/imagens/rayssa.png" },
+  { id: "59", nome: "Samira", foto: "/imagens/semfoto.jpg" },
+  { id: "60", nome: "Sophia", foto: "/imagens/semfoto.jpg" },
+  { id: "61", nome: "Stefhany", foto: "/imagens/ste.png" },
+  { id: "62", nome: "Taylania", foto: "/imagens/semfoto.jpg" },
+  { id: "63", nome: "Thaissa", foto: "/imagens/thaissa.png" },
   { 
-    id: "65", 
+    id: "64", 
     nome: "Victor Martins", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -346,7 +495,7 @@ const coroinhas = [
     ]
   },
   {
-    id: "66",
+    id: "65",
     nome: "Victor Manuel",
     foto: "/imagens/Victor.jfif",
     permissoes: [
@@ -355,8 +504,8 @@ const coroinhas = [
       "Matriz-07h-Domingo", "Matriz-19h-Domingo",
     ]
   },
-  { id: "67", nome: "Victoria", foto: "/imagens/semfoto.jpg" },
-  { id: "68", nome: "Yasmim", foto: "/imagens/semfoto.jpg" }
+  { id: "66", nome: "Victoria", foto: "/imagens/semfoto.jpg" },
+  { id: "67", nome: "Yasmim", foto: "/imagens/semfoto.jpg" }
 ];
 
 export default coroinhas;
