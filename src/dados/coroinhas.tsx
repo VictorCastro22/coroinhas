@@ -734,6 +734,7 @@ const coroinhas = [
       "Matriz-19h-Segunda",
       "Matriz-19h-Terça",
       "Matriz-19h-Quarta",
+      "Matriz - Missa pelas familias-19h-Quarta",
       "Matriz-19h-Quinta",
       "Matriz-19h-Sexta",
       "Matriz-19h-Sábado",
