@@ -3,13 +3,13 @@ import { useNavigate, Link } from "react-router-dom";
 
 const Navbar: React.FC = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [submenuOpen, setSubmenuOpen] = useState(false);
+  const [sobreSubmenuOpen, setSobreSubmenuOpen] = useState(false);
   const navigate = useNavigate();
 
   const handleNavigation = (path: string) => {
     navigate(path);
     setMenuOpen(false);
-    setSubmenuOpen(false);
+    setSobreSubmenuOpen(false);
   };
 
   return (
@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
         </Link>
 
         <div className="flex items-center gap-4">
-          {!menuOpen && (
+          {!menuOpen ? (
             <button
               type="button"
               onClick={() => setMenuOpen(true)}
@@ -47,9 +47,7 @@ const Navbar: React.FC = () => {
                 <line x1="4" y1="18" x2="20" y2="18" />
               </svg>
             </button>
-          )}
-
-          {menuOpen && (
+          ) : (
             <button
               type="button"
               onClick={() => setMenuOpen(false)}
@@ -78,35 +76,62 @@ const Navbar: React.FC = () => {
 
       <div
         className={`${
-          menuOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
+          menuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
         } absolute left-0 w-full bg-[#FFFFFF] text-[#063265] p-4 shadow-md overflow-hidden transition-all duration-500 ease-in-out`}
         style={{ top: "100%" }}
       >
         <ul className="flex flex-col gap-4">
           <li>
-            <button type="button" onClick={() => handleNavigation("/")} className="hover:underline text-left link-style">
-              INÍCIO
+            <button
+              type="button"
+              onClick={() => handleNavigation("/")}
+              className="hover:underline text-left link-style"
+            >
+              PÁGINA INICIAL
             </button>
           </li>
+
           <li>
             <button
               type="button"
-              onClick={() => setSubmenuOpen(!submenuOpen)}
+              onClick={() => setSobreSubmenuOpen(!sobreSubmenuOpen)}
               className="hover:underline text-left flex items-center gap-2 link-style"
             >
-              ESCALA
+              SOBRE A PARÓQUIA
               <span className="sub-arrow">
-                <svg className="h-4 w-4" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <svg className="h-4 w-4" viewBox="0 0 448 512">
                   <title>Seta para abrir submenu</title>
                   <path d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z" />
                 </svg>
               </span>
             </button>
-            {submenuOpen && (
+            {sobreSubmenuOpen && (
               <ul className="ml-4 flex flex-col gap-2">
                 <li>
-                  <button type="button" onClick={() => handleNavigation("/escala-fixa")} className="hover:underline text-left link-style">
-                    ESCALA FIXA
+                  <button
+                    type="button"
+                    onClick={() => handleNavigation("/")}
+                    className="hover:underline text-left link-style"
+                  >
+                    História da Paróquia Nossa Senhora da Penha
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    onClick={() => handleNavigation("/")}
+                    className="hover:underline text-left link-style"
+                  >
+                    O Pároco
+                  </button>
+                </li>
+                <li>
+                  <button
+                    type="button"
+                    onClick={() => handleNavigation("/s")}
+                    className="hover:underline text-left link-style"
+                  >
+                    Secretária
                   </button>
                 </li>
               </ul>
@@ -114,8 +139,72 @@ const Navbar: React.FC = () => {
           </li>
 
           <li>
-            <button type="button" onClick={() => handleNavigation("/login")} className="hover:underline text-left link-style">
-              MESTRES
+            <button
+              type="button"
+              onClick={() => handleNavigation("/coroinhas")}
+              className="hover:underline text-left link-style"
+            >
+              COROINHAS
+            </button>
+          </li>
+
+          <li>
+            <button
+              type="button"
+              onClick={() => handleNavigation("/")}
+              className="hover:underline text-left link-style"
+            >
+              COMUNIDADES
+            </button>
+          </li>
+
+          <li>
+            <button
+              type="button"
+              onClick={() => handleNavigation("/")}
+              className="hover:underline text-left link-style"
+            >
+              AÇÃO PASTORAL
+            </button>
+          </li>
+
+          <li>
+            <button
+              type="button"
+              onClick={() => handleNavigation("/")}
+              className="hover:underline text-left link-style"
+            >
+              COMUNICAÇÃO
+            </button>
+          </li>
+
+          <li>
+            <button
+              type="button"
+              onClick={() => handleNavigation("/")}
+              className="hover:underline text-left link-style"
+            >
+              SEJA DIZIMISTA
+            </button>
+          </li>
+
+          <li>
+            <button
+              type="button"
+              onClick={() => handleNavigation("/")}
+              className="hover:underline text-left link-style"
+            >
+              LOJA
+            </button>
+          </li>
+
+          <li>
+            <button
+              type="button"
+              onClick={() => handleNavigation("/")}
+              className="hover:underline text-left link-style"
+            >
+              CONTATO
             </button>
           </li>
         </ul>
