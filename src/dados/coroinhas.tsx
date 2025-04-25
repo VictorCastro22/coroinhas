@@ -286,7 +286,19 @@ const coroinhas = [
     id: "21", 
     nome: "Gabriel Christian", 
     foto: "/imagens/semfoto.jpg",
-
+    permissoes: [
+      "Abrigo-17h-Sábado", "Abrigo-07h-Domingo",
+      "Centro Pastoral-18h30-Sexta",
+      "Centro Pastoral-17h-Domingo",
+      "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",
+      "Matriz-19h-Quarta",
+      "Matriz-19h-Quinta",
+      "Matriz-19h-Sexta",
+      "Matriz-19h-Sábado",
+      "Parque São João-17h-Sábado", "Parque São João-19h-Sábado",
+      "Parque São João-17h-Domingo", "Parque São João-19h-Domingo",
+      "Rosário-19h-Sexta",
+    ]
    },
 
   { 
@@ -416,8 +428,13 @@ const coroinhas = [
 
   { 
     id: "34", 
-    nome: "Julia", 
-    foto: "/imagens/semfoto.jpg"
+    nome: "Júlia", 
+    foto: "/imagens/semfoto.jpg",
+    permissoes: [
+      "Matriz-09h-Domingo",
+      "Urucará-19h-Terça",
+      "Urucará-17h-Sábado","Urucará-19h-Sábado",   
+    ]
    },
 
   { 
@@ -594,7 +611,7 @@ const coroinhas = [
      nome: "Melissa", 
      foto: "/imagens/semfoto.jpg",
      permissoes: [
-      "Abrigo-17h-Sábado","Abrigo-07h-Domingo",
+      "Abrigo-07h-Domingo",
       "Centro Pastoral-18h30-Sexta",
       "Centro Pastoral-17h-Domingo",
       "Matriz-07h-Domingo","Matriz-19h-Domingo",
@@ -602,7 +619,6 @@ const coroinhas = [
       "Matriz-19h-Sexta",
       "Matriz-19h-Sábado",
       "Rosário-19h-Sexta",
-      "Santo Antônio-17h-Sábado",
       "Santos Dumont-19h-Quarta", "Santos Dumont-15h30-Domingo",
     ]
      },
@@ -734,7 +750,7 @@ const coroinhas = [
       "Matriz-19h-Segunda",
       "Matriz-19h-Terça",
       "Matriz-19h-Quarta",
-      "Matriz - Missa pelas familias-19h-Quarta",
+      "Matriz-Quarta",
       "Matriz-19h-Quinta",
       "Matriz-19h-Sexta",
       "Matriz-19h-Sábado",
@@ -752,6 +768,7 @@ const coroinhas = [
     foto: "/imagens/semfoto.jpg",
     permissoes: [
       "Matriz-07h-Domingo","Matriz-09h-Domingo",
+      "Matriz-19h-Quarta",
       "Parque das Rosas-19h-Quinta",
     ]
    },
@@ -771,7 +788,9 @@ const coroinhas = [
       "Matriz-19h-Sábado",
       "Mãe Rainha-19h-Quinta",
       "Mororó-19h-Quinta",
-      "Santa Luzia-17h-Sábado",
+      "Vilares da Serra-19h-Terça",
+      "Vilares da Serra-17h-Domingo","Vilares da Serra-17h-Segunda","Vilares da Serra-17h-Terça",
+      "Vilares da Serra-17h-Quarta","Vilares da Serra-17h-Quinta","Vilares da Serra-17h-Sexta","Vilares da Serra-17h-Sábado",
     ]
    },
 
