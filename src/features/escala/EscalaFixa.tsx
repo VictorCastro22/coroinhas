@@ -16,23 +16,6 @@ const EscalaFixa: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const escalas = useMemo(() => [
-    { id: "78-2025-04-20-17h-Divino", data: "2025-04-20", horario: "17h", local: "Divino", padre: "Padre Rafael" },
-    { id: "78-2025-04-20-17h-PqSaoJoao", data: "2025-04-20", horario: "17h", local: "Parque São João", padre: "Padre Ivan" },
-    { id: "78-2025-04-20-17h-CentroPastoral", data: "2025-04-20", horario: "17h", local: "Centro Pastoral", padre: "Padre Eudásio" },
-    { id: "78-2025-04-20-19h-NovoParqueIracema", data: "2025-04-20", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Rafael" },
-    { id: "78-2025-04-20-19h-Matriz", data: "2025-04-20", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    
-    { id: "78-2025-04-22-19h-SerraPelada", data: "2025-04-22", horario: "19h", local: "Serra Pelada", padre: "Padre Rafael" },
-
-    { id: "78-2025-04-23-19h-SantaCecilia", data: "2025-04-23", horario: "19h", local: "Santa Cecília", padre: "Padre Ivan" },
-    { id: "78-2025-04-23-19h-Matriz", data: "2025-04-23", horario: "19h", local: "Matriz - Missa pelas familias", padre: "Convidado" },
-
-    { id: "78-2025-04-24-19h-MaeRainha", data: "2025-04-24", horario: "19h", local: "Mãe Rainha", padre: "Padre Rafael" },
-    { id: "78-2025-04-24-19h-CampoDelta", data: "2025-04-24", horario: "19h", local: "Campo Delta", padre: "Padre Ivan" },
-
-    { id: "78-2025-04-25-19h-ConegoPinto", data: "2025-04-25", horario: "19h", local: "Cônego Pinto", padre: "Padre Rafael" },
-    { id: "78-2025-04-25-19h-Rosario", data: "2025-04-25", horario: "19h", local: "Rosário", padre: "Padre Ivan" },
-
     { id: "78-2025-04-26-17h-Abrigo", data: "2025-04-26", horario: "17h", local: "Abrigo", padre: "Padre Ivan" },
     { id: "78-2025-04-26-17h-SantaDulce", data: "2025-04-26", horario: "17h", local: "Santa Dulce", padre: "Padre Eudásio" },
     { id: "78-2025-04-26-19h-OutraBanda", data: "2025-04-26", horario: "19h", local: "Outra Banda", padre: "Padre Ivan" },

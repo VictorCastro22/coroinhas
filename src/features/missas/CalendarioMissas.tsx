@@ -37,17 +37,6 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "83-2025-04-22-19h-SerraPelada", data: "2025-04-22", horario: "19h", local: "Serra Pelada", padre: "Padre Rafael" },
-
-    { id: "83-2025-04-23-19h-SantaCecilia", data: "2025-04-23", horario: "19h", local: "Santa Cecília", padre: "Padre Ivan" },
-    { id: "83-2025-04-23-19h-Matriz", data: "2025-04-23", horario: "19h", local: "Matriz - Missa pelas familias", padre: "Convidado" },
-
-    { id: "83-2025-04-24-19h-MaeRainha", data: "2025-04-24", horario: "19h", local: "Mãe Rainha", padre: "Padre Rafael" },
-    { id: "83-2025-04-24-19h-CampoDelta", data: "2025-04-24", horario: "19h", local: "Campo Delta", padre: "Padre Ivan" },
-
-    { id: "83-2025-04-25-19h-ConegoPinto", data: "2025-04-25", horario: "19h", local: "Cônego Pinto", padre: "Padre Rafael" },
-    { id: "83-2025-04-25-19h-Rosario", data: "2025-04-25", horario: "19h", local: "Rosário", padre: "Padre Ivan" },
-
     { id: "83-2025-04-26-17h-Abrigo", data: "2025-04-26", horario: "17h", local: "Abrigo", padre: "Padre Ivan" },
     { id: "83-2025-04-26-17h-SantaDulce", data: "2025-04-26", horario: "17h", local: "Santa Dulce", padre: "Padre Eudásio" },
     { id: "83-2025-04-26-19h-OutraBanda", data: "2025-04-26", horario: "19h", local: "Outra Banda", padre: "Padre Ivan" },
