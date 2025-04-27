@@ -37,11 +37,6 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "83-2025-04-26-17h-Abrigo", data: "2025-04-26", horario: "17h", local: "Abrigo", padre: "Padre Ivan" },
-    { id: "83-2025-04-26-17h-SantaDulce", data: "2025-04-26", horario: "17h", local: "Santa Dulce", padre: "Padre Eudásio" },
-    { id: "83-2025-04-26-19h-OutraBanda", data: "2025-04-26", horario: "19h", local: "Outra Banda", padre: "Padre Ivan" },
-    { id: "83-2025-04-26-19h-Matriz", data: "2025-04-26", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-
     { id: "83-2025-04-27-07h-Matriz", data: "2025-04-27", horario: "07h", local: "Matriz", padre: "Padre Rafael" },
     { id: "83-2025-04-27-07h-Divino", data: "2025-04-27", horario: "07h", local: "Divino", padre: "Padre Ivan" },
     { id: "83-2025-04-27-09h-Matriz", data: "2025-04-27", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
