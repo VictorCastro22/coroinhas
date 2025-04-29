@@ -143,6 +143,36 @@ const CalendarioPadres: React.FC = () => {
     { id: "79-2025-05-04-17h-PqSaoJoao", data: "2025-05-04", horario: "17h", local: "Parque São João", padre: "Padre Rafael" },
     { id: "79-2025-05-04-19h-Matriz", data: "2025-05-04", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
     { id: "79-2025-05-04-19h-NovoPqIracema", data: "2025-05-04", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
+
+    { id: "79-2025-05-06-19h-Vilares", data: "2025-05-06", horario: "19h", local: "Vilares", padre: "Padre Ivan" },
+    { id: "79-2025-05-06-19h-Urucara", data: "2025-05-06", horario: "19h", local: "Urucará", padre: "Padre Rafael" },  
+  
+    { id: "78-2025-05-07-08h-Secretaria", data: "2025-05-07", horario: "08h", local: "Secretaria", padre: "Padre Eudásio" },
+    { id: "79-2025-05-07-17h-ConfissoesMatriz", data: "2025-05-07", horario: "17h", local: "Confissões na Matriz", padre: "Padre Rafael" },
+    { id: "79-2025-05-07-19h-MissaFamilias", data: "2025-05-07", horario: "19h", local: "Matriz - Missa pelas famílias", padre: "Padre Rafael" },
+    { id: "79-2025-05-07-19h-Guabiraba", data: "2025-05-07", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
+  
+    { id: "79-2025-05-08-08h-Matriz", data: "2025-05-08", horario: "08h", local: "Matriz - Confissões", padre: "Padre Ivan" },
+    { id: "79-2025-05-08-19h-Matriz", data: "2025-05-08", horario: "19h", local: "Matriz - Missa votiva à N. Sra. da Penha", padre: "Padre Ivan" },
+    { id: "78-2025-05-08-19h-Matriz", data: "2025-05-08", horario: "19h", local: "Matriz - Missa Votiva a N. Sra. da Penha", padre: "Padre Eudásio" },
+  
+    { id: "78-2025-05-09-17h-Matriz", data: "2025-05-09", horario: "17h", local: "Matriz - Confissões na programação Jubilar", padre: "Padre Eudásio" },
+    { id: "79-2025-05-09-17h-ConfissoesMatrizJubilar", data: "2025-05-09", horario: "17h", local: "Confissões na Matriz (na programação Jubilar)", padre: "Padre Rafael" },
+    { id: "79-2025-05-09-17h-Matriz", data: "2025-05-09", horario: "17h", local: "Matriz - Confissões (Na programação Jubilar)", padre: "Padre Ivan" },
+  
+    { id: "79-2025-05-10-19h-Matriz", data: "2025-05-10", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
+    { id: "79-2025-05-10-19h-OutraBanda", data: "2025-05-10", horario: "19h", local: "Outra Banda", padre: "Padre Ivan" },
+    
+    { id: "79-2025-05-11-07h-Matriz", data: "2025-05-11", horario: "07h", local: "Matriz", padre: "Padre Rafael" },
+    { id: "79-2025-05-11-07h-Divino", data: "2025-05-11", horario: "07h", local: "Divino", padre: "Padre Ivan" },
+    { id: "78-2025-05-11-07h-Abrigo", data: "2025-05-11", horario: "07h", local: "Abrigo", padre: "Padre Eudásio" },
+    { id: "78-2025-05-11-09h-Matriz", data: "2025-05-11", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
+    { id: "79-2025-05-11-17h-CentroPastoral", data: "2025-05-11", horario: "17h", local: "Centro de Pastoral", padre: "Padre Ivan" },
+    { id: "78-2025-05-11-17h-PqSaoJoao", data: "2025-05-11", horario: "17h", local: "Parque São João", padre: "Padre Eudásio" },
+    { id: "79-2025-05-11-17h-Divino", data: "2025-05-11", horario: "17h", local: "Divino", padre: "Padre Rafael" },
+    { id: "78-2025-05-11-19h-Matriz", data: "2025-05-11", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
+    { id: "79-2025-05-11-19h-NovoPqIracema", data: "2025-05-11", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Rafael" },
+    { id: "79-2025-05-11-19h-MaeRainha", data: "2025-05-11", horario: "19h", local: "Mãe Rainha", padre: "Padre Ivan" },
   ];
 
   return (
