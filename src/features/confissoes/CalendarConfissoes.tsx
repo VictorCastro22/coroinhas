@@ -37,8 +37,21 @@ const CalendarConfissoes: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "78-2025-04-30-08h-Secretaria", data: "2025-04-30", horario: "08h", local: "Secretaria - Atendimento e Confissões", padre: "Padre Eudásio" },
-    { id: "78-2025-04-30-17h-Matriz", data: "2025-04-30", horario: "17h", local: "Matriz - Confissões", padre: "Padre Rafael" }    
+    { id: "78-2025-05-02-17h30-CentroPastoral", data: "2025-05-02", horario: "17h30", local: "Centro Pastoral", padre: "Padre Ivan" },
+    { id: "83-2025-05-07-08h-Secretaria", data: "2025-05-07", horario: "08h", local: "Secretaria", padre: "Padre Eudásio" },
+    { id: "83-2025-05-07-17h-ConfissoesMatriz", data: "2025-05-07", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
+    { id: "83-2025-05-08-08h-Matriz", data: "2025-05-08", horario: "08h", local: "Matriz", padre: "Padre Ivan" },
+    { id: "78-2025-05-09-17h-Matriz", data: "2025-05-09", horario: "17h", local: "Matriz", padre: "Padre Eudásio" },
+    { id: "78-2025-05-09-17h-ConfissoesMatrizJubilar", data: "2025-05-09", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
+    { id: "78-2025-05-09-17h-Matriz", data: "2025-05-09", horario: "17h", local: "Matriz)", padre: "Padre Ivan" },
+    { id: "83-2025-05-14-08h-Secretaria", data: "2025-05-14", horario: "08h", local: "Secretaria", padre: "Padre Eudásio" },
+    { id: "83-2025-05-14-17h-ConfissoesMatriz", data: "2025-05-14", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
+    { id: "83-2025-05-21-08h-Secretaria", data: "2025-05-21", horario: "08h", local: "Secretaria", padre: "Padre Eudásio" },
+    { id: "83-2025-05-21-17h-ConfissoesMatriz", data: "2025-05-21", horario: "17h", local: "Matriz", padre: "Padre Rafael" },  
+    { id: "83-2025-05-22-08h-Matriz", data: "2025-05-22", horario: "08h", local: "Matriz", padre: "Padre Ivan" },
+    { id: "83-2025-05-28-17h-ConfissoesMatriz", data: "2025-05-28", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
+
+
   ];
 
 

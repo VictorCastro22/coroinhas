@@ -119,10 +119,8 @@ const CalendarioPadres: React.FC = () => {
   const escalas = [
     { id: "78-2025-04-30-19h-Matriz", data: "2025-04-30", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
     
-    { id: "78-2025-05-01-08h-Matriz1", data: "2025-05-01", horario: "08h", local: "Matriz - Confissões", padre: "Padre Ivan" },
     { id: "78-2025-05-01-19h-Matriz2", data: "2025-05-01", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
   
-    { id: "78-2025-05-02-17h30-CentroPastoral", data: "2025-05-02", horario: "17h30", local: "Centro Pastoral - Confissões", padre: "Padre Ivan" },
     { id: "78-2025-05-02-18h30-CentroPastoral", data: "2025-05-02", horario: "18h30", local: "Centro Pastoral", padre: "Padre Eudásio" },
     { id: "78-2025-05-02-19h-CentroPastoral", data: "2025-05-02", horario: "18h30", local: "Centro Pastoral", padre: "Padre Rafael" },
   
@@ -145,18 +143,13 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-05-06-19h-Vilares da Serra", data: "2025-05-06", horario: "19h", local: "Vilares da Serra", padre: "Padre Ivan" },
     { id: "78-2025-05-06-19h-Urucara", data: "2025-05-06", horario: "19h", local: "Urucará", padre: "Padre Rafael" },  
   
-    { id: "78-2025-05-07-08h-Secretaria", data: "2025-05-07", horario: "08h", local: "Secretaria", padre: "Padre Eudásio" },
-    { id: "78-2025-05-07-17h-ConfissoesMatriz", data: "2025-05-07", horario: "17h", local: "Confissões na Matriz", padre: "Padre Rafael" },
     { id: "78-2025-05-07-19h-MissaFamilias", data: "2025-05-07", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
     { id: "78-2025-05-07-19h-Guabiraba", data: "2025-05-07", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
   
-    { id: "78-2025-05-08-08h-Matriz", data: "2025-05-08", horario: "08h", local: "Matriz - Confissões", padre: "Padre Ivan" },
-    { id: "78-2025-05-08-19h-Matriz1", data: "2025-05-08", horario: "19h", local: "Matriz - Missa votiva à N. Sra. da Penha", padre: "Padre Ivan" },
-    { id: "78-2025-05-08-19h-Matriz2", data: "2025-05-08", horario: "19h", local: "Matriz - Missa Votiva a N. Sra. da Penha", padre: "Padre Eudásio" },
+
+    { id: "78-2025-05-08-19h-Matriz1", data: "2025-05-08", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
+    { id: "78-2025-05-08-19h-Matriz2", data: "2025-05-08", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
   
-    { id: "78-2025-05-09-17h-Matriz", data: "2025-05-09", horario: "17h", local: "Matriz - Confissões na programação Jubilar", padre: "Padre Eudásio" },
-    { id: "78-2025-05-09-17h-ConfissoesMatrizJubilar", data: "2025-05-09", horario: "17h", local: "Confissões na Matriz (na programação Jubilar)", padre: "Padre Rafael" },
-    { id: "78-2025-05-09-17h-Matriz", data: "2025-05-09", horario: "17h", local: "Matriz - Confissões (Na programação Jubilar)", padre: "Padre Ivan" },
   
     { id: "78-2025-05-10-19h-Matriz", data: "2025-05-10", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
     { id: "78-2025-05-10-19h-OutraBanda", data: "2025-05-10", horario: "19h", local: "Outra Banda", padre: "Padre Ivan" },
@@ -182,8 +175,7 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-05-13-19h-Vilares da Serra", data: "2025-05-13", horario: "19h", local: "Vilares da Serra", padre: "Padre Rafael" },
     { id: "78-2025-05-13-19h-SaoPedro", data: "2025-05-13", horario: "19h", local: "São Pedro", padre: "Padre Ivan" },
 
-    { id: "78-2025-05-14-08h-Secretaria", data: "2025-05-14", horario: "08h", local: "Secretaria", padre: "Padre Eudásio" },
-    { id: "78-2025-05-14-17h-ConfissoesMatriz", data: "2025-05-14", horario: "17h", local: "Confissões na Matriz", padre: "Padre Rafael" },
+
     { id: "78-2025-05-14-19h-MissaFamilias", data: "2025-05-14", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
     { id: "78-2025-05-14-19h-SantosDumont", data: "2025-05-14", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
 
@@ -215,12 +207,9 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-05-20-19h-Urucara", data: "2025-05-20", horario: "19h", local: "Urucará", padre: "Padre Ivan" },
     { id: "78-2025-05-20-19h-Vilares da Serra", data: "2025-05-20", horario: "19h", local: "Vilares da Serra", padre: "Padre Rafael" },
 
-    { id: "78-2025-05-21-08h-Secretaria", data: "2025-05-21", horario: "08h", local: "Secretaria", padre: "Padre Eudásio" },
-    { id: "78-2025-05-21-17h-ConfissoesMatriz", data: "2025-05-21", horario: "17h", local: "Confissões na Matriz", padre: "Padre Rafael" },
     { id: "78-2025-05-21-19h-MissaFamilias", data: "2025-05-21", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
     { id: "78-2025-05-21-19h-Guabiraba", data: "2025-05-21", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
 
-    { id: "78-2025-05-22-08h-Matriz", data: "2025-05-22", horario: "08h", local: "Matriz - Confissões", padre: "Padre Ivan" },
     { id: "78-2025-05-22-18h30-Guabiraba", data: "2025-05-22", horario: "18h30", local: "Guabiraba", padre: "Padre Eudásio" },
     { id: "78-2025-05-22-19h-AreaSeca", data: "2025-05-22", horario: "19h", local: "Área Seca (CDD)", padre: "Padre Ivan" },
     { id: "78-2025-05-22-19h-MaeRainha", data: "2025-05-22", horario: "19h", local: "Mãe Rainha", padre: "Padre Rafael" },
@@ -246,7 +235,6 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-05-27-19h-SerraPelada", data: "2025-05-27", horario: "19h", local: "Serra Pelada", padre: "Padre Eudásio" },
     { id: "78-2025-05-27-19h-SaoPedro", data: "2025-05-27", horario: "19h", local: "São Pedro", padre: "Padre Ivan" },
 
-    { id: "78-2025-05-28-17h-ConfissoesMatriz", data: "2025-05-28", horario: "17h", local: "Confissões na Matriz", padre: "Padre Rafael" },
     { id: "78-2025-05-28-19h-MissaFamilias", data: "2025-05-28", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
     { id: "78-2025-05-28-19h-SantosDumont", data: "2025-05-28", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
 
