@@ -246,7 +246,23 @@ const coroinhas = [
     id: "17", 
     nome: "Eduarda Cavalcante", 
     foto: "/imagens/semfoto.jpg",
-  
+    permissoes: [
+      "Centro Pastoral-18h30-Sexta",
+      "Centro Pastoral-17h-Domingo",
+      "Divino-07h-Domingo","Divino-17h-Domingo",
+      "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",
+      "Matriz-19h-Segunda",
+      "Matriz-19h-Terça",
+      "Matriz-19h-Quarta",
+      "Matriz-19h-Quinta",
+      "Matriz-19h-Sexta",
+      "Matriz-19h-Sábado",
+      "Outra Banda-19h-Sábado",
+      "Parque das Rosas-19h-Quinta",
+      "São José-09h-Domingo",
+      "Santa Luzia-17h-Sábado",
+      "Rosário-19h-Sexta",
+    ]
   },
 
   { 
@@ -315,7 +331,6 @@ const coroinhas = [
       "São José-09h-Domingo",
       "Rosário-19h-Sexta",
     ]
-  
   },
 
   { 
@@ -344,20 +359,82 @@ const coroinhas = [
   { 
     id: "25", 
     nome: "Isaías", 
-    foto: "/imagens/semfoto.jpg"
+    foto: "/imagens/semfoto.jpg",
+    permissoes: [
+      "Centro Pastoral-18h30-Sexta",
+      "Centro Pastoral-17h-Domingo",
+      "Divino-07h-Domingo","Divino-17h-Domingo",
+      "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",
+      "Matriz-19h-Segunda",
+      "Matriz-19h-Terça",
+      "Matriz-19h-Quarta",
+      "Matriz-19h-Quinta",
+      "Matriz-19h-Sexta",
+      "Matriz-19h-Sábado",
+      "Outra Banda-19h-Sábado",
+      "Parque das Rosas-19h-Quinta",
+      "São José-09h-Domingo",
+      "Santa Luzia-17h-Sábado",
+      "Rosário-19h-Sexta",
+      "Novo Parque Iracema-19h-Domingo",
+      "Rosário-19h-Sexta",
+      "Urucará-19h-Terça",
+      "Urucará-17h-Sábado","Urucará-19h-Sábado",  
+    ]
    },
 
   { 
     id: "26", 
     nome: "Ingrid", 
-    foto: "/imagens/semfoto.jpg"
+    foto: "/imagens/semfoto.jpg",
+    permissoes: [
+      "Centro Pastoral-18h30-Sexta",
+      "Centro Pastoral-17h-Domingo",
+      "Divino-07h-Domingo","Divino-17h-Domingo",
+      "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",
+      "Matriz-19h-Segunda",
+      "Matriz-19h-Terça",
+      "Matriz-19h-Quarta",
+      "Matriz-19h-Quinta",
+      "Matriz-19h-Sexta",
+      "Matriz-19h-Sábado",
+      "Outra Banda-19h-Sábado",
+      "Parque das Rosas-19h-Quinta",
+      "São José-09h-Domingo",
+      "Santa Luzia-17h-Sábado",
+      "Rosário-19h-Sexta",
+      "Novo Parque Iracema-19h-Domingo",
+      "Rosário-19h-Sexta",
+      "Urucará-19h-Terça",
+      "Urucará-17h-Sábado","Urucará-19h-Sábado",  
+    ]
    },
 
   { 
     id: "28", 
     nome: "Isabelly Guedes", 
-    foto: "/imagens/semfoto.jpg"
-  
+    foto: "/imagens/semfoto.jpg",
+    permissoes: [
+      "Centro Pastoral-18h30-Sexta",
+      "Centro Pastoral-17h-Domingo",
+      "Divino-07h-Domingo","Divino-17h-Domingo",
+      "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",
+      "Matriz-19h-Segunda",
+      "Matriz-19h-Terça",
+      "Matriz-19h-Quarta",
+      "Matriz-19h-Quinta",
+      "Matriz-19h-Sexta",
+      "Matriz-19h-Sábado",
+      "Outra Banda-19h-Sábado",
+      "Parque das Rosas-19h-Quinta",
+      "São José-09h-Domingo",
+      "Santa Luzia-17h-Sábado",
+      "Rosário-19h-Sexta",
+      "Novo Parque Iracema-19h-Domingo",
+      "Rosário-19h-Sexta",
+      "Urucará-19h-Terça",
+      "Urucará-17h-Sábado","Urucará-19h-Sábado",  
+    ]
   },
 
   { 
@@ -485,7 +562,27 @@ const coroinhas = [
     id: "38", 
     nome: "Kaylane", 
     foto: "/imagens/semfoto.jpg",
-  
+    permissoes: [
+      "Centro Pastoral-18h30-Sexta",
+      "Centro Pastoral-17h-Domingo",
+      "Divino-07h-Domingo","Divino-17h-Domingo",
+      "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",
+      "Matriz-19h-Segunda",
+      "Matriz-19h-Terça",
+      "Matriz-19h-Quarta",
+      "Matriz-19h-Quinta",
+      "Matriz-19h-Sexta",
+      "Matriz-19h-Sábado",
+      "Outra Banda-19h-Sábado",
+      "Parque das Rosas-19h-Quinta",
+      "São José-09h-Domingo",
+      "Santa Luzia-17h-Sábado",
+      "Rosário-19h-Sexta",
+      "Novo Parque Iracema-19h-Domingo",
+      "Rosário-19h-Sexta",
+      "Urucará-19h-Terça",
+      "Urucará-17h-Sábado","Urucará-19h-Sábado",  
+    ]
   },
 
   { 
@@ -536,7 +633,32 @@ const coroinhas = [
     ]  
    },
 
-  { id: "44", nome: "Luiz Guilherme", foto: "/imagens/semfoto.jpg" },
+  { 
+    id: "44", 
+    nome: "Luiz Guilherme", 
+    foto: "/imagens/semfoto.jpg",
+    permissoes: [
+      "Centro Pastoral-18h30-Sexta",
+      "Centro Pastoral-17h-Domingo",
+      "Divino-07h-Domingo","Divino-17h-Domingo",
+      "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",
+      "Matriz-19h-Segunda",
+      "Matriz-19h-Terça",
+      "Matriz-19h-Quarta",
+      "Matriz-19h-Quinta",
+      "Matriz-19h-Sexta",
+      "Matriz-19h-Sábado",
+      "Outra Banda-19h-Sábado",
+      "Parque das Rosas-19h-Quinta",
+      "São José-09h-Domingo",
+      "Santa Luzia-17h-Sábado",
+      "Rosário-19h-Sexta",
+      "Novo Parque Iracema-19h-Domingo",
+      "Rosário-19h-Sexta",
+      "Urucará-19h-Terça",
+      "Urucará-17h-Sábado","Urucará-19h-Sábado",  
+    ]
+   },
 
   { 
     id: "45", 
@@ -550,7 +672,32 @@ const coroinhas = [
     ]
    },
 
-  { id: "46", nome: "Mariana", foto: "/imagens/semfoto.jpg" },
+  { 
+    id: "46", 
+    nome: "Mariana", 
+    foto: "/imagens/semfoto.jpg",
+    permissoes: [
+      "Centro Pastoral-18h30-Sexta",
+      "Centro Pastoral-17h-Domingo",
+      "Divino-07h-Domingo","Divino-17h-Domingo",
+      "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",
+      "Matriz-19h-Segunda",
+      "Matriz-19h-Terça",
+      "Matriz-19h-Quarta",
+      "Matriz-19h-Quinta",
+      "Matriz-19h-Sexta",
+      "Matriz-19h-Sábado",
+      "Outra Banda-19h-Sábado",
+      "Parque das Rosas-19h-Quinta",
+      "São José-09h-Domingo",
+      "Santa Luzia-17h-Sábado",
+      "Rosário-19h-Sexta",
+      "Novo Parque Iracema-19h-Domingo",
+      "Rosário-19h-Sexta",
+      "Urucará-19h-Terça",
+      "Urucará-17h-Sábado","Urucará-19h-Sábado",  
+    ]
+   },
 
   { 
     id: "47", 
@@ -584,7 +731,25 @@ const coroinhas = [
     nome: "Maria Lara", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
-      "Divino-17h-Domingo",
+        "Centro Pastoral-18h30-Sexta",
+        "Centro Pastoral-17h-Domingo",
+        "Divino-07h-Domingo","Divino-17h-Domingo",
+        "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",
+        "Matriz-19h-Segunda",
+        "Matriz-19h-Terça",
+        "Matriz-19h-Quarta",
+        "Matriz-19h-Quinta",
+        "Matriz-19h-Sexta",
+        "Matriz-19h-Sábado",
+        "Outra Banda-19h-Sábado",
+        "Parque das Rosas-19h-Quinta",
+        "São José-09h-Domingo",
+        "Santa Luzia-17h-Sábado",
+        "Rosário-19h-Sexta",
+        "Novo Parque Iracema-19h-Domingo",
+        "Rosário-19h-Sexta",
+        "Urucará-19h-Terça",
+        "Urucará-17h-Sábado","Urucará-19h-Sábado",
     ]
    },
 
@@ -661,6 +826,27 @@ const coroinhas = [
     id: "55", 
     nome: "Nalberto", 
     foto: "/imagens/semfoto.jpg",
+    permissoes: [
+      "Centro Pastoral-18h30-Sexta",
+      "Centro Pastoral-17h-Domingo",
+      "Divino-07h-Domingo","Divino-17h-Domingo",
+      "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",
+      "Matriz-19h-Segunda",
+      "Matriz-19h-Terça",
+      "Matriz-19h-Quarta",
+      "Matriz-19h-Quinta",
+      "Matriz-19h-Sexta",
+      "Matriz-19h-Sábado",
+      "Outra Banda-19h-Sábado",
+      "Parque das Rosas-19h-Quinta",
+      "São José-09h-Domingo",
+      "Santa Luzia-17h-Sábado",
+      "Rosário-19h-Sexta",
+      "Novo Parque Iracema-19h-Domingo",
+      "Rosário-19h-Sexta",
+      "Urucará-19h-Terça",
+      "Urucará-17h-Sábado","Urucará-19h-Sábado",  
+    ]
    },
 
   { 
@@ -789,7 +975,7 @@ const coroinhas = [
       "Mãe Rainha-19h-Quinta",
       "Mororó-19h-Quinta",
       "Vilares da Serra-19h-Terça",
-      "Vilares da Serra-17h-Domingo","Vilares da Serra-17h-Segunda","Vilares da Serra-17h-Terça",
+      "Vilares da Serra-17h-Domingo","Vilares da Serra-19h-Domingo", "Vilares da Serra-17h-Segunda","Vilares da Serra-17h-Terça",
       "Vilares da Serra-17h-Quarta","Vilares da Serra-17h-Quinta","Vilares da Serra-17h-Sexta","Vilares da Serra-17h-Sábado",
     ]
    },
@@ -828,7 +1014,7 @@ const coroinhas = [
       "Matriz-19h-Quinta",
       "Matriz-19h-Sexta",
       "Matriz-19h-Sábado",
-      "Pirapora-19h-Terça",
+      "Pirapora-19h-Terça", "Pirapora-19h-Sexta",
     ]
    }
 ];
