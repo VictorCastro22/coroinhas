@@ -37,8 +37,6 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "83-2025-04-30-19h-Matriz", data: "2025-04-30", horario: "19h", local: "Matriz - Missa pelas famílias", padre: "Padre Rafael" },
-
     { id: "83-2025-05-01-19h-Matriz2", data: "2025-05-01", horario: "19h", local: "Matriz - Missa de abertura do mês de maio e envio das imagens peregrinas", padre: "Padre Eudásio" },
     { id: "83-2025-05-01-19h-Matriz3", data: "2025-05-01", horario: "19h", local: "Matriz - Missa de abertura do mês de maio e envio das imagens peregrinas", padre: "Padre Ivan" },
     { id: "83-2025-05-01-19h-Matriz4", data: "2025-05-01", horario: "19h", local: "Matriz - Missa de abertura do mês de maio e envio das imagens peregrinas", padre: "Padre Rafael" },

@@ -8,12 +8,12 @@ interface Coroinha {
 
 interface ModalAddCoroinhaProps {
   isOpen: boolean; // Controle de abertura do modal
-  coroinhas: Coroinha[]; // Lista de coroinhas (já filtrados)
-  onSubmit: () => void; // Função ao confirmar
-  onClose: () => void; // Função para fechar o modal
-  selectedCoroinha: string; // Coroinha selecionado
-  setSelectedCoroinha: (value: string) => void; // Atualizar o coroinha selecionado
-  selectionCounts: { [key: string]: number }; // Contador de seleções por coroinha
+  coroinhas: Coroinha[];
+  onSubmit: () => void;
+  onClose: () => void;
+  selectedCoroinha: string;
+  setSelectedCoroinha: (value: string) => void;
+  selectionCounts: { [key: string]: number };
 }
 
 const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
@@ -25,11 +25,10 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
   setSelectedCoroinha,
   selectionCounts,
 }) => {
-  const [isExpanded, setIsExpanded] = useState(false); // Estado de expansão do menu de seleção
+  const [isExpanded, setIsExpanded] = useState(false);
 
-  if (!isOpen) return null; // Retorna nulo se o modal estiver fechado
+  if (!isOpen) return null;
 
-  // Encontra o coroinha atualmente selecionado
   const coroinhaSelecionado = coroinhas.find((c) => c.id === selectedCoroinha);
 
   return (
@@ -37,7 +36,7 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
       <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
         <h2 className="text-xl font-bold mb-4">Adicionar Coroinha</h2>
         <div className="relative">
-          {/* Botão para abrir o menu de seleção */}
+         
           <button
             type="button"
             className="w-full text-left bg-gray-200 py-2 px-4 rounded-md"
@@ -46,7 +45,7 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
             {coroinhaSelecionado ? coroinhaSelecionado.nome : "Selecionar Coroinha"}
           </button>
 
-          {/* Lista de coroinhas */}
+         
           {isExpanded && (
             <ul className="absolute z-10 w-full bg-white shadow-lg max-h-48 overflow-y-auto mt-1 rounded-md">
               {coroinhas.length === 0 ? (
@@ -62,8 +61,8 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
                         selectedCoroinha === coroinha.id ? "bg-gray-300" : ""
                       }`}
                       onClick={() => {
-                        setSelectedCoroinha(coroinha.id); // Atualiza o coroinha selecionado
-                        setIsExpanded(false); // Fecha o menu
+                        setSelectedCoroinha(coroinha.id);
+                        setIsExpanded(false); 
                       }}
                       onKeyUp={(e) => {
                         if (e.key === "Enter" || e.key === " ") {
@@ -86,7 +85,7 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
           )}
         </div>
 
-        {/* Botões de ação */}
+        
         <div className="flex justify-end mt-4">
           <button
             type="button"
@@ -97,7 +96,7 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
           </button>
           <button
             type="button"
-            onClick={onClose} // Fecha o modal
+            onClick={onClose}
             className="bg-red-500 text-white px-4 py-2 rounded-md"
           >
             Cancelar
