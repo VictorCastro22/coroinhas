@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { useState } from "react";
 
 const galeria = [
@@ -28,18 +27,9 @@ const CoroinhasPage = () => {
           Ser coroinha é mais do que ajudar nas celebrações: é uma missão de amor e entrega ao serviço do altar. 
           É se colocar à disposição de Deus, com simplicidade e alegria, para tornar a liturgia mais bela, mais orante e mais viva.
           É aprender a viver em comunidade, a crescer na fé, a ouvir a Palavra e a se deixar formar por ela.
-          No silêncio do altar, no som do sino, na ordem da procissão — ali está o coração de quem serve com o coração de criança e a alma cheia de Deus.
+          No silêncio do altar, no som do sino, na ordem da procissão, ali está o coração de quem serve com o coração de criança e a alma cheia de Deus.
         </p>
       </section>
-
-      <div className="text-center mb-8">
-        <p className="text-gray-700 mb-4">Confira quando é sua próxima escala:</p>
-        <Link to="/escala-fixa">
-          <button className="bg-[#063265] text-white px-6 py-2 rounded-full hover:bg-[#042644] transition">
-            Ver Escala
-          </button>
-        </Link>
-      </div>
 
       <section>
         <h2 className="text-xl font-semibold mb-2 text-[#535043]">Galeria</h2>
