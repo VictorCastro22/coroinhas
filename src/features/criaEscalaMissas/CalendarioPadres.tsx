@@ -166,7 +166,7 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-05-11-19h-MaeRainha", data: "2025-05-11", horario: "19h", local: "Mãe Rainha", padre: "Padre Ivan" },
 
     
-    { id: "78-2025-05-12-19h-Guabiraba", data: "2025-05-12", horario: "19h", local: "Guabiraba - Bandeira da Festa de Santa Rita de Cássia", padre: "Padre Ivan" },
+    { id: "78-2025-05-12-19h-Guabiraba", data: "2025-05-12", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
 
     { id: "78-2025-05-13-11h30-PracaJoaoLeite", data: "2025-05-13", horario: "11h30", local: "Praça João Leite - Procissão com a imagem de N. Sra. de Fátima para a Matriz", padre: "Padre Eudásio" },
     { id: "78-2025-05-13-12h-Matriz", data: "2025-05-13", horario: "12h", local: "Matriz", padre: "Padre Eudásio" },
@@ -201,7 +201,7 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-05-18-17h-PqSaoJoao", data: "2025-05-18", horario: "17h", local: "Parque São João", padre: "Padre Rafael" },
     { id: "78-2025-05-18-19h-Matriz", data: "2025-05-18", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "78-2025-05-18-19h-NovoPqIracema", data: "2025-05-18", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
-    { id: "78-2025-05-18-19h-GuabirabaSantaRita", data: "2025-05-18", horario: "19h", local: "Guabiraba (Novenário de Santa Rita de Cássia)", padre: "Padre Rafael" },
+    { id: "78-2025-05-18-19h-GuabirabaSantaRita", data: "2025-05-18", horario: "19h", local: "Guabiraba", padre: "Padre Rafael" },
 
     { id: "78-2025-05-20-19h-PlanaltoCajueiros", data: "2025-05-20", horario: "19h", local: "Planalto dos Cajueiros", padre: "Padre Eudásio" },
     { id: "78-2025-05-20-19h-Urucara", data: "2025-05-20", horario: "19h", local: "Urucará", padre: "Padre Ivan" },
