@@ -555,6 +555,10 @@ const coroinhas = [
       "Matriz-12h-Quinta",
       "Matriz-12h-Sexta",
       "Matriz-12h-Sábado",
+      "Vilares da Serra-17h-Domingo", "Vilares da Serra-17h-Segunda","Vilares da Serra-17h-Terça",
+      "Vilares da Serra-17h-Quarta","Vilares da Serra-17h-Quinta","Vilares da Serra-17h-Sexta","Vilares da Serra-17h-Sábado",
+      "Vilares da Serra-19h-Domingo", "Vilares da Serra-19h-Segunda","Vilares da Serra-19h-Terça",
+      "Vilares da Serra-19h-Quarta","Vilares da Serra-19h-Quinta","Vilares da Serra-19h-Sexta","Vilares da Serra-19h-Sábado",
     ]
   }, 
 
@@ -946,6 +950,10 @@ const coroinhas = [
       "São Pedro-19h-Terça",
       "Santa Luzia-17h-Sábado",
       "Rosário-19h-Sexta",
+      "Vilares da Serra-17h-Domingo", "Vilares da Serra-17h-Segunda","Vilares da Serra-17h-Terça",
+      "Vilares da Serra-17h-Quarta","Vilares da Serra-17h-Quinta","Vilares da Serra-17h-Sexta","Vilares da Serra-17h-Sábado",
+      "Vilares da Serra-19h-Domingo", "Vilares da Serra-19h-Segunda","Vilares da Serra-19h-Terça",
+      "Vilares da Serra-19h-Quarta","Vilares da Serra-19h-Quinta","Vilares da Serra-19h-Sexta","Vilares da Serra-19h-Sábado",
     ]
    },
   { 
@@ -974,9 +982,10 @@ const coroinhas = [
       "Matriz-19h-Sábado",
       "Mãe Rainha-19h-Quinta",
       "Mororó-19h-Quinta",
-      "Vilares da Serra-19h-Terça",
-      "Vilares da Serra-17h-Domingo","Vilares da Serra-19h-Domingo", "Vilares da Serra-17h-Segunda","Vilares da Serra-17h-Terça",
+      "Vilares da Serra-17h-Domingo", "Vilares da Serra-17h-Segunda","Vilares da Serra-17h-Terça",
       "Vilares da Serra-17h-Quarta","Vilares da Serra-17h-Quinta","Vilares da Serra-17h-Sexta","Vilares da Serra-17h-Sábado",
+      "Vilares da Serra-19h-Domingo", "Vilares da Serra-19h-Segunda","Vilares da Serra-19h-Terça",
+      "Vilares da Serra-19h-Quarta","Vilares da Serra-19h-Quinta","Vilares da Serra-19h-Sexta","Vilares da Serra-19h-Sábado",
     ]
    },
 

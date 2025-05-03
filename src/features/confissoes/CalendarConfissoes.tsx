@@ -37,7 +37,6 @@ const CalendarConfissoes: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "78-2025-05-02-17h30-CentroPastoral", data: "2025-05-02", horario: "17h30", local: "Centro Pastoral", padre: "Padre Ivan" },
     { id: "83-2025-05-07-08h-Secretaria", data: "2025-05-07", horario: "08h", local: "Secretaria", padre: "Padre Eudásio" },
     { id: "83-2025-05-07-17h-ConfissoesMatriz", data: "2025-05-07", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
     { id: "83-2025-05-08-08h-Matriz", data: "2025-05-08", horario: "08h", local: "Matriz", padre: "Padre Ivan" },

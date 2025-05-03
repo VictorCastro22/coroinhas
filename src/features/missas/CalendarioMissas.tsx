@@ -37,13 +37,6 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "83-2025-05-01-19h-Matriz2", data: "2025-05-01", horario: "19h", local: "Matriz - Missa de abertura do mês de maio e envio das imagens peregrinas", padre: "Padre Eudásio" },
-    { id: "83-2025-05-01-19h-Matriz3", data: "2025-05-01", horario: "19h", local: "Matriz - Missa de abertura do mês de maio e envio das imagens peregrinas", padre: "Padre Ivan" },
-    { id: "83-2025-05-01-19h-Matriz4", data: "2025-05-01", horario: "19h", local: "Matriz - Missa de abertura do mês de maio e envio das imagens peregrinas", padre: "Padre Rafael" },
-  
-    { id: "83-2025-05-02-18h30-CentroPastoral", data: "2025-05-02", horario: "18h30", local: "Centro de Pastoral", padre: "Padre Eudásio" },
-    { id: "83-2025-05-02-19h-CentroPastoral", data: "2025-05-02", horario: "18h30", local: "Centro de Pastoral", padre: "Padre Rafael" },
-  
     { id: "83-2025-05-03-17h-SantaLuzia", data: "2025-05-03", horario: "17h", local: "Santa Luzia", padre: "Padre Ivan" },
     { id: "83-2025-05-03-17h-SantoAntonio", data: "2025-05-03", horario: "17h", local: "Santo Antônio", padre: "Padre Rafael" },
     { id: "83-2025-05-03-19h-Vilares", data: "2025-05-03", horario: "19h", local: "Vilares da Serra", padre: "Padre Eudásio" },
