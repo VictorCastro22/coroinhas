@@ -117,22 +117,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "78-2025-05-03-17h-SantaLuzia", data: "2025-05-03", horario: "17h", local: "Santa Luzia", padre: "Padre Ivan" },
-    { id: "78-2025-05-03-17h-SantoAntonio", data: "2025-05-03", horario: "17h", local: "Santo Antônio", padre: "Padre Rafael" },
-    { id: "78-2025-05-03-19h-Vilares da Serra", data: "2025-05-03", horario: "19h", local: "Vilares da Serra", padre: "Padre Eudásio" },
-    { id: "78-2025-05-03-19h-PqSaoJoao", data: "2025-05-03", horario: "19h", local: "Parque São João", padre: "Padre Ivan" },
-    { id: "78-2025-05-03-19h-Matriz", data: "2025-05-03", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-  
-    { id: "78-2025-05-04-07h-Divino", data: "2025-05-04", horario: "07h", local: "Divino", padre: "Padre Eudásio" },
-    { id: "78-2025-05-04-07h-Matriz", data: "2025-05-04", horario: "07h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "78-2025-05-04-09h-Matriz", data: "2025-05-04", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-05-04-09h-SaoJose", data: "2025-05-04", horario: "09h", local: "São José", padre: "Padre Rafael" },
-    { id: "78-2025-05-04-17h-CentroPastoral", data: "2025-05-04", horario: "17h", local: "Centro Pastoral", padre: "Padre Eudásio" },
-    { id: "78-2025-05-04-17h-Divino", data: "2025-05-04", horario: "17h", local: "Divino", padre: "Padre Ivan" },
-    { id: "78-2025-05-04-17h-PqSaoJoao", data: "2025-05-04", horario: "17h", local: "Parque São João", padre: "Padre Rafael" },
-    { id: "78-2025-05-04-19h-Matriz", data: "2025-05-04", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-05-04-19h-NovoPqIracema", data: "2025-05-04", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
-
     { id: "78-2025-05-06-19h-Urucara", data: "2025-05-06", horario: "19h", local: "Urucará", padre: "Padre Rafael" },  
   
     { id: "78-2025-05-07-19h-MissaFamilias", data: "2025-05-07", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
