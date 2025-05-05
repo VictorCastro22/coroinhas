@@ -9,7 +9,7 @@ const TelaInicial: React.FC = () => {
       id: "4",
       titulo: "Calendário de Confissões de Maio",
       link: "/noticias/4",
-      imagem: "/confissoes.png",
+      imagem: "/pnsp.png",
       alt: "Calendário de Confissões de Maio",
     },
   ];
@@ -19,7 +19,7 @@ const TelaInicial: React.FC = () => {
       id: "3",
       titulo: "Calendário de Missas de Maio",
       link: "/noticias/3",
-      imagem: "/pnsp.png",
+      imagem: "/confissoes.png",
       alt: "Calendário de Missas de Maio",
     },
   ];

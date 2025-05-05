@@ -9,19 +9,42 @@ const Mestres: React.FC = () => {
       
       <div className="flex-1 flex flex-col items-center pt-16">
         <div className="bg-white shadow-md rounded px-8 py-6 w-96 flex flex-col gap-4 mb-8">
+
           <button
             className="flex items-center gap-2 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full"
             onClick={() => navigate("/criar-escala")}
           >
             <FaCalendarAlt /> Criar Escala Fixa
           </button>
+
           <button
             className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
-            onClick={() => navigate("/criar-festejos")}
-            disabled
+            onClick={() => navigate("/criar-vilares")}
           >
-            <FaChurch /> Criar Escala Festejos de São José
+            <FaChurch /> Criar Escala Festejos de Vilares
           </button>
+
+          <button
+            className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
+            onClick={() => navigate("/criar-psj")}
+          >
+            <FaChurch /> Criar Escala Festejos de PSJ
+          </button>
+
+          <button
+            className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
+            onClick={() => navigate("/criar-divino")}
+          >
+            <FaChurch /> Criar Escala Festejos de Divino
+          </button>
+
+          <button
+            className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
+            onClick={() => navigate("/criar-rita")}
+          >
+            <FaChurch /> Criar Escala Festejos de S. Rita
+          </button>
+
           <button
             className="flex items-center gap-2 bg-purple-500 text-white font-bold py-2 px-4 rounded w-full opacity-50 cursor-not-allowed"
             disabled

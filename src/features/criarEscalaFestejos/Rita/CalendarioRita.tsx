@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import { collection, addDoc, getDocs, deleteDoc, doc } from "firebase/firestore";
-import db from "../../../firebaseConfig";
-import CardEscala from "../../components/CardEscala";
-import ModalAddCoroinha from "../../components/ModalAddCoroinha";
-import coroinhas from "../../dados/coroinhas"; 
+import db from "../../../../firebaseConfig";
+import CardEscala from "../../../components/CardEscala";
+import ModalAddCoroinha from "../../../components/ModalAddCoroinha";
+import coroinhas from "../../../dados/coroinhas"; 
 
 interface Coroinha {
   id: string;
@@ -11,7 +11,7 @@ interface Coroinha {
   foto: string;
 }
 
-const CalendarioPadresFestejos: React.FC = () => {
+const CalendarioPadresRita: React.FC = () => {
   const [coroinhasData, setCoroinhas] = useState<{ [key: string]: Coroinha[] }>({});
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
   const [selectedCoroinha, setSelectedCoroinha] = useState<string>("");
@@ -128,4 +128,4 @@ const CalendarioPadresFestejos: React.FC = () => {
   );
 };
 
-export default CalendarioPadresFestejos;
+export default CalendarioPadresRita;

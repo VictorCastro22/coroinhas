@@ -9,10 +9,15 @@ import NoticiaDetalhe from "./features/noticias/NoticiaDetalhe";
 import Layout from "./components/Layout";
 import CalendarPadres from "./features/missas/CalendarioMissas";
 import CalendarConfissoes from "./features/confissoes/CalendarConfissoes";
-import CalendarioPadresFestejos from "./features/criarEscalaFestejos/CalendarioPadresFestejos";
+import CalendarioPadresFestejos from "./features/criarEscalaFestejos/FatimaPSJ/CalendarioFatimaPSJ";
 import Mestres from "./pages/Mestres";
 import CriaCalendario from "./pages/CriaCalendario";
 import CoroinhasPage from "./pages/CoroinhasPage";
+
+import CriarEscalaFestejosDivino from "./features/criarEscalaFestejos/Divino/CriarEscalaDivino";
+import CriarEscalaFestejosFatimaPSJ from "./features/criarEscalaFestejos/FatimaPSJ/CriarEscalaFatimaPSJ";
+import CriarEscalaFestejosFatimaVi from "./features/criarEscalaFestejos/FatimaVI/CriarEscalaFatima2";
+import CriarEscalaFestejosRita from "./features/criarEscalaFestejos/Rita/CriarEscalaRita";
 
 const App: React.FC = () => {
   return (
@@ -30,6 +35,12 @@ const App: React.FC = () => {
           <Route path="/criar-festejos" element={<CalendarioPadresFestejos />} />
           <Route path="/admin" element={<CriaCalendario />} />
           <Route path="/coroinhas" element={<CoroinhasPage />} />
+
+          <Route path="/criar-divino" element={<CriarEscalaFestejosDivino />} />
+          <Route path="/criar-psj" element={<CriarEscalaFestejosFatimaPSJ />} />
+          <Route path="/criar-vilares" element={<CriarEscalaFestejosFatimaVi />} />
+          <Route path="/criar-rita" element={<CriarEscalaFestejosRita />} />
+
           <Route
             path="/criar-escala"
             element={

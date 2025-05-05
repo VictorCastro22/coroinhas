@@ -133,7 +133,6 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-05-04-19h-Matriz", data: "2025-05-04", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
     { id: "78-2025-05-04-19h-NovoPqIracema", data: "2025-05-04", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
 
-    { id: "78-2025-05-06-19h-Vilares da Serra", data: "2025-05-06", horario: "19h", local: "Vilares da Serra", padre: "Padre Ivan" },
     { id: "78-2025-05-06-19h-Urucara", data: "2025-05-06", horario: "19h", local: "Urucará", padre: "Padre Rafael" },  
   
     { id: "78-2025-05-07-19h-MissaFamilias", data: "2025-05-07", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
@@ -152,7 +151,6 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-05-11-07h-Abrigo", data: "2025-05-11", horario: "07h", local: "Abrigo", padre: "Padre Eudásio" },
     { id: "78-2025-05-11-09h-Matriz", data: "2025-05-11", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "78-2025-05-11-17h-CentroPastoral", data: "2025-05-11", horario: "17h", local: "Centro Pastoral", padre: "Padre Ivan" },
-    { id: "78-2025-05-11-17h-PqSaoJoao", data: "2025-05-11", horario: "17h", local: "Parque São João", padre: "Padre Eudásio" },
     { id: "78-2025-05-11-17h-Divino", data: "2025-05-11", horario: "17h", local: "Divino", padre: "Padre Rafael" },
     { id: "78-2025-05-11-19h-Matriz", data: "2025-05-11", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
     { id: "78-2025-05-11-19h-NovoPqIracema", data: "2025-05-11", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Rafael" },
@@ -164,8 +162,6 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-05-13-11h30-PracaJoaoLeite", data: "2025-05-13", horario: "11h30", local: "Praça João Leite - Procissão com a imagem de N. Sra. de Fátima para a Matriz", padre: "Padre Eudásio" },
     { id: "78-2025-05-13-12h-Matriz", data: "2025-05-13", horario: "12h", local: "Matriz", padre: "Padre Eudásio" },
 
-    { id: "78-2025-05-13-19h-PqSaoJoao", data: "2025-05-13", horario: "19h", local: "Parque São João", padre: "Padre Eudásio" },
-    { id: "78-2025-05-13-19h-Vilares da Serra", data: "2025-05-13", horario: "19h", local: "Vilares da Serra", padre: "Padre Rafael" },
     { id: "78-2025-05-13-19h-SaoPedro", data: "2025-05-13", horario: "19h", local: "São Pedro", padre: "Padre Ivan" },
 
 
