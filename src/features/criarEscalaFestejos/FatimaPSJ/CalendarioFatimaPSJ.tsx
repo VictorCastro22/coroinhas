@@ -92,7 +92,6 @@ const CalendarioPadresFatimaPSJ: React.FC = () => {
     { id: "80-2025-05-11-19h-PSJ", data: "2025-05-11", horario: "17h", local: "Parque São João", padre: "Padre Eudásio" },
     { id: "80-2025-05-12-19h-PSJ", data: "2025-05-12", horario: "19h", local: "Parque São João", padre: "Padre Flávio" },
     { id: "80-2025-05-13-19h-PSJ", data: "2025-05-13", horario: "19h", local: "Parque São João", padre: "Padre Eudásio" },
-
   ];
 
   return (

@@ -87,7 +87,7 @@ const CalendarioPadresDivino: React.FC = () => {
   };
 
   const escalas = [
-    { id: "80-2025-05-05-19h-PSJ", data: "2025-05-05", horario: "19h", local: "Parque São João", padre: "Padre João Paulo" },
+    { id: "80-2025-05-29-19h-Divino", data: "2025-05-29", horario: "19h", local: "Parque São João", padre: "Padre João Paulo" },
     { id: "80-2025-05-06-19h-PSJ", data: "2025-05-06", horario: "19h", local: "Parque São João", padre: "Padre Edvando" },
     { id: "80-2025-05-05-19h-PSJ", data: "2025-05-0", horario: "19h", local: "Parque São João", padre: "Padre João Paulo" },
     { id: "80-2025-05-05-19h-PSJ", data: "2025-05-0", horario: "19h", local: "Parque São João", padre: "Padre João Paulo" },

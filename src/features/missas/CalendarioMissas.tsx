@@ -60,7 +60,6 @@ const CalendarioMissas: React.FC = () => {
     { id: "83-2025-05-11-19h-NovoPqIracema", data: "2025-05-11", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Rafael" },
     { id: "83-2025-05-11-19h-MaeRainha", data: "2025-05-11", horario: "19h", local: "Mãe Rainha", padre: "Padre Ivan" },
 
-    
     { id: "83-2025-05-12-19h-Guabiraba", data: "2025-05-12", horario: "19h", local: "Guabiraba - Bandeira da Festa de Santa Rita de Cássia", padre: "Padre Ivan" },
 
     { id: "83-2025-05-13-11h30-PracaJoaoLeite", data: "2025-05-13", horario: "11h30", local: "Praça João Leite - Procissão com a imagem de N. Sra. de Fátima para a Matriz", padre: "Padre Eudásio" },

@@ -19,6 +19,11 @@ import CriarEscalaFestejosFatimaPSJ from "./features/criarEscalaFestejos/FatimaP
 import CriarEscalaFestejosFatimaVi from "./features/criarEscalaFestejos/FatimaVI/CriarEscalaFatima2";
 import CriarEscalaFestejosRita from "./features/criarEscalaFestejos/Rita/CriarEscalaRita";
 
+import EscalaDivino from "./features/escala/EscalaDivino";
+import EscalaPSJ from "./features/escala/EscalaPSJ";
+import EscalaSRita from "./features/escala/EscalaSRita";
+import EscalaVilares from "./features/escala/EscalaVilares";
+
 const App: React.FC = () => {
   return (
     <Router>
@@ -40,6 +45,12 @@ const App: React.FC = () => {
           <Route path="/criar-psj" element={<CriarEscalaFestejosFatimaPSJ />} />
           <Route path="/criar-vilares" element={<CriarEscalaFestejosFatimaVi />} />
           <Route path="/criar-rita" element={<CriarEscalaFestejosRita />} />
+
+          <Route path="/escala-Divino" element={<EscalaDivino />} />
+          <Route path="/escala-PSJ" element={<EscalaPSJ />} />
+          <Route path="/escala-Santa-Rita" element={<EscalaSRita />} />
+          <Route path="/escala-Vilares" element={<EscalaVilares />} />
+
 
           <Route
             path="/criar-escala"
