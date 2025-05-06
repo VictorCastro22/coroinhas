@@ -1,4 +1,3 @@
-import { getDay, parseISO } from "date-fns";
 import { useState, useEffect } from "react";
 import { collection, addDoc, getDocs, deleteDoc, doc } from "firebase/firestore";
 import db from "../../../firebaseConfig";
@@ -11,12 +10,10 @@ interface Coroinha {
   id: string;
   nome: string;
   foto: string;
-  permissoes?: string[];
 }
 
 const CalendarioPadres: React.FC = () => {
   const [coroinhasData, setCoroinhas] = useState<{ [key: string]: Coroinha[] }>({});
-  const [filteredCoroinhas, setFilteredCoroinhas] = useState<Coroinha[]>([]);
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
   const [selectedCoroinha, setSelectedCoroinha] = useState<string>("");
   const [selectionCounts, setSelectionCounts] = useState<{ [key: string]: number }>({});
@@ -35,7 +32,6 @@ const CalendarioPadres: React.FC = () => {
           id: doc.id,
           nome: data.nome,
           foto: data.foto,
-          permissoes: data.permissoes || [],
         });
         counts[data.nome] = (counts[data.nome] || 0) + 1;
       }
@@ -47,53 +43,28 @@ const CalendarioPadres: React.FC = () => {
     fetchCoroinhas();
   }, []);
 
-  const handleAddCoroinha = (cardId: string, local: string, horario: string, data?: string) => {
-    if (!data) {
-      console.error("A data está indefinida.");
-      return;
-    }
-  
-    const diaSemana = getDay(parseISO(data));
-    const diasSemanaMap = ["Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado"];
-    const dia = diasSemanaMap[diaSemana];
-  
-    const coroinhasPermitidos = coroinhas.filter((coroinha) =>
-      (coroinha.permissoes || []).includes(`${local}-${horario}-${dia}`)
-    );
-  
-    setFilteredCoroinhas(coroinhasPermitidos);
-    setSelectedCard(cardId);
-  };
-  
   const handleSubmitCoroinha = async () => {
     if (!selectedCard || !selectedCoroinha) return;
 
     try {
-      const coroinha = coroinhas.find((c) => c.id === selectedCoroinha);
+      const coroinha = coroinhas.find(c => c.id === selectedCoroinha);
       if (!coroinha) return;
 
       const docRef = await addDoc(collection(db, "coroinhas"), {
         nome: coroinha.nome,
         cardId: selectedCard,
         foto: coroinha.foto,
-        permissoes: coroinha.permissoes,
       });
 
       const novosCoroinhas = [
         ...(coroinhasData[selectedCard] || []),
-        { id: docRef.id, nome: coroinha.nome, foto: coroinha.foto, permissoes: coroinha.permissoes },
+        { id: docRef.id, nome: coroinha.nome, foto: coroinha.foto },
       ];
-      setCoroinhas({
-        ...coroinhasData,
-        [selectedCard as string]: novosCoroinhas.map((c) => ({
-          ...c,
-          permissoes: c.permissoes || [],
-        })),
-      });
+      setCoroinhas({ ...coroinhasData, [selectedCard]: novosCoroinhas });
 
-      setSelectionCounts({
-        ...selectionCounts,
-        [coroinha.nome]: (selectionCounts[coroinha.nome] || 0) + 1,
+      setSelectionCounts({ 
+        ...selectionCounts, 
+        [coroinha.nome]: (selectionCounts[coroinha.nome] || 0) + 1 
       });
 
       setSelectedCard(null);
@@ -101,7 +72,7 @@ const CalendarioPadres: React.FC = () => {
     } catch (error) {
       console.error("Erro ao adicionar coroinha:", error);
     }
-  };
+  };  
 
   const handleDeleteCoroinha = async (cardId: string, coroinhaId: string) => {
     try {
@@ -228,30 +199,32 @@ const CalendarioPadres: React.FC = () => {
         Calendário das Missas
       </h1>
 
-      {escalas.map((escala) => (
-      <CardEscala
-        key={escala.id}
-        padre={escala.padre}
-        data={escala.data}
-        horario={escala.horario}
-        local={escala.local}
-        coroinhas={coroinhasData[escala.id] || []}
-        onAddCoroinha={() => handleAddCoroinha(escala.id, escala.local, escala.horario, escala.data)}
-        onDeleteCoroinha={(id) => handleDeleteCoroinha(escala.id, id)}
-      />
-    ))}
-
-      <ModalAddCoroinha
-        isOpen={!!selectedCard}
-        coroinhas={filteredCoroinhas}
-        onSubmit={handleSubmitCoroinha}
-        onClose={() => setSelectedCard(null)}
-        selectedCoroinha={selectedCoroinha}
-        setSelectedCoroinha={setSelectedCoroinha}
-        selectionCounts={selectionCounts}
-      />
-    </div>
-  );
-};
+      
+            {escalas.map((escala) => (
+              <CardEscala
+                key={escala.id}
+                padre={escala.padre}
+                data={escala.data}
+                horario={escala.horario}
+                local={escala.local}
+                coroinhas={coroinhasData[escala.id] || []}
+                onAddCoroinha={() => setSelectedCard(escala.id)}
+                onDeleteCoroinha={(id) => handleDeleteCoroinha(escala.id, id)}
+              />
+            ))}
+      
+            <ModalAddCoroinha
+              isOpen={!!selectedCard}
+              coroinhas={coroinhas}
+              onSubmit={handleSubmitCoroinha}
+              onClose={() => setSelectedCard(null)}
+              selectedCoroinha={selectedCoroinha}
+              setSelectedCoroinha={setSelectedCoroinha}
+              selectionCounts={selectionCounts}
+            />
+      
+          </div>
+        );
+      };
 
 export default CalendarioPadres;
