@@ -73,7 +73,7 @@ const coroinhas = [
   { 
     id: "99", 
     nome: "Bianca", 
-    foto: "/imagens/semfoto.jpg",
+    foto: "/imagens/bianca.jpeg",
     permissoes: [
       "Abrigo-17h-Sábado",
       "Centro Pastoral-18h30-Sexta",
@@ -134,7 +134,7 @@ const coroinhas = [
   { 
     id: "10", 
     nome: "Charlys", 
-    foto: "/imagens/semfoto.jpg",
+    foto: "/imagens/charlys.jpeg",
     permissoes: [
       "Abrigo-17h-Sábado","Abrigo-07h-Domingo",
       "Centro Pastoral-18h30-Sexta",
