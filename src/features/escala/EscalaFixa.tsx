@@ -16,22 +16,6 @@ const EscalaFixa: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const escalas = useMemo(() => [
-    { id: "78-2025-05-03-17h-SantaLuzia", data: "2025-05-03", horario: "17h", local: "Santa Luzia", padre: "Padre Ivan" },
-    { id: "78-2025-05-03-17h-SantoAntonio", data: "2025-05-03", horario: "17h", local: "Santo Antônio", padre: "Padre Rafael" },
-    { id: "78-2025-05-03-19h-Vilares da Serra", data: "2025-05-03", horario: "19h", local: "Vilares da Serra", padre: "Padre Eudásio" },
-    { id: "78-2025-05-03-19h-PqSaoJoao", data: "2025-05-03", horario: "19h", local: "Parque São João", padre: "Padre Ivan" },
-    { id: "78-2025-05-03-19h-Matriz", data: "2025-05-03", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-  
-    { id: "78-2025-05-04-07h-Divino", data: "2025-05-04", horario: "07h", local: "Divino", padre: "Padre Eudásio" },
-    { id: "78-2025-05-04-07h-Matriz", data: "2025-05-04", horario: "07h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "78-2025-05-04-09h-Matriz", data: "2025-05-04", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-05-04-09h-SaoJose", data: "2025-05-04", horario: "09h", local: "São José", padre: "Padre Rafael" },
-    { id: "78-2025-05-04-17h-CentroPastoral", data: "2025-05-04", horario: "17h", local: "Centro Pastoral", padre: "Padre Eudásio" },
-    { id: "78-2025-05-04-17h-Divino", data: "2025-05-04", horario: "17h", local: "Divino", padre: "Padre Ivan" },
-    { id: "78-2025-05-04-17h-PqSaoJoao", data: "2025-05-04", horario: "17h", local: "Parque São João", padre: "Padre Rafael" },
-    { id: "78-2025-05-04-19h-Matriz", data: "2025-05-04", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-05-04-19h-NovoPqIracema", data: "2025-05-04", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
-
     { id: "78-2025-05-06-19h-Vilares da Serra", data: "2025-05-06", horario: "19h", local: "Vilares da Serra", padre: "Padre Ivan" },
     { id: "78-2025-05-06-19h-Urucara", data: "2025-05-06", horario: "19h", local: "Urucará", padre: "Padre Rafael" },  
   
@@ -41,7 +25,11 @@ const EscalaFixa: React.FC = () => {
 
     { id: "78-2025-05-08-19h-Matriz1", data: "2025-05-08", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
     { id: "78-2025-05-08-19h-Matriz2", data: "2025-05-08", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
+
+    
+    { id: "78-2025-05-09-19h-Matriz", data: "2025-05-09", horario: "19h", local: "Matriz", padre: "Padre" },
   
+    { id: "78-2025-05-10-17h-Coité", data: "2025-05-10", horario: "17h", local: "Coité", padre: "Padre Eudásio" },
   
     { id: "78-2025-05-10-19h-Matriz", data: "2025-05-10", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
     { id: "78-2025-05-10-19h-OutraBanda", data: "2025-05-10", horario: "19h", local: "Outra Banda", padre: "Padre Ivan" },

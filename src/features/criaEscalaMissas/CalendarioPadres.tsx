@@ -96,7 +96,10 @@ const CalendarioPadres: React.FC = () => {
 
     { id: "78-2025-05-08-19h-Matriz1", data: "2025-05-08", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
     { id: "78-2025-05-08-19h-Matriz2", data: "2025-05-08", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
+
+    { id: "78-2025-05-09-19h-Matriz", data: "2025-05-09", horario: "19h", local: "Matriz", padre: "Padre" },
   
+    { id: "78-2025-05-10-17h-Coité", data: "2025-05-10", horario: "17h", local: "Coité", padre: "Padre Eudásio" },
   
     { id: "78-2025-05-10-19h-Matriz", data: "2025-05-10", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
     { id: "78-2025-05-10-19h-OutraBanda", data: "2025-05-10", horario: "19h", local: "Outra Banda", padre: "Padre Ivan" },
