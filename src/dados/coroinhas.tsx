@@ -881,14 +881,7 @@ const coroinhas = [
       "Parque São João-17h-Domingo", "Parque São João-19h-Domingo",
     ]
   },
-  { 
-    id: "55", 
-    nome: "Rayssa", 
-    foto: "/imagens/rayssa.png",
-    permissoes: [
-      "Matriz-07h-Domingo","Matriz-09h-Domingo",
-    ]
-   },
+
   { 
     id: "56", 
     nome: "Samyra", 

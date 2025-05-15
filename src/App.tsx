@@ -9,20 +9,13 @@ import NoticiaDetalhe from "./features/noticias/NoticiaDetalhe";
 import Layout from "./components/Layout";
 import CalendarPadres from "./features/missas/CalendarioMissas";
 import CalendarConfissoes from "./features/confissoes/CalendarConfissoes";
-import CalendarioPadresFestejos from "./features/criarEscalaFestejos/FatimaPSJ/CalendarioFatimaPSJ";
 import Mestres from "./pages/Mestres";
 import CriaCalendario from "./pages/CriaCalendario";
 import CoroinhasPage from "./pages/CoroinhasPage";
 
 import CriarEscalaFestejosDivino from "./features/criarEscalaFestejos/Divino/CriarEscalaDivino";
-import CriarEscalaFestejosFatimaPSJ from "./features/criarEscalaFestejos/FatimaPSJ/CriarEscalaFatimaPSJ";
-import CriarEscalaFestejosFatimaVi from "./features/criarEscalaFestejos/FatimaVI/CriarEscalaFatima2";
-import CriarEscalaFestejosRita from "./features/criarEscalaFestejos/Rita/CriarEscalaRita";
 
 import EscalaDivino from "./features/escala/EscalaDivino";
-import EscalaPSJ from "./features/escala/EscalaPSJ";
-import EscalaSRita from "./features/escala/EscalaSRita";
-import EscalaVilares from "./features/escala/EscalaVilares";
 
 const App: React.FC = () => {
   return (
@@ -37,20 +30,11 @@ const App: React.FC = () => {
           <Route path="/calendario-missas" element={<CalendarPadres />} />
           <Route path="/calendario-confissoes" element={<CalendarConfissoes />} />
           <Route path="/mestres" element={<Mestres />} />
-          <Route path="/criar-festejos" element={<CalendarioPadresFestejos />} />
           <Route path="/admin" element={<CriaCalendario />} />
           <Route path="/coroinhas" element={<CoroinhasPage />} />
 
           <Route path="/criar-divino" element={<CriarEscalaFestejosDivino />} />
-          <Route path="/criar-psj" element={<CriarEscalaFestejosFatimaPSJ />} />
-          <Route path="/criar-vilares" element={<CriarEscalaFestejosFatimaVi />} />
-          <Route path="/criar-rita" element={<CriarEscalaFestejosRita />} />
-
           <Route path="/escala-Divino" element={<EscalaDivino />} />
-          <Route path="/escala-PSJ" element={<EscalaPSJ />} />
-          <Route path="/escala-Santa-Rita" element={<EscalaSRita />} />
-          <Route path="/escala-Vilares" element={<EscalaVilares />} />
-
 
           <Route
             path="/criar-escala"

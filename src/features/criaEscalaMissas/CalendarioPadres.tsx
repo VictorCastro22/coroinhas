@@ -88,44 +88,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "78-2025-05-06-19h-Urucara", data: "2025-05-06", horario: "19h", local: "Urucará", padre: "Padre Rafael" },  
-  
-    { id: "78-2025-05-07-19h-MissaFamilias", data: "2025-05-07", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-05-07-19h-Guabiraba", data: "2025-05-07", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
-  
-
-    { id: "78-2025-05-08-19h-Matriz1", data: "2025-05-08", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "78-2025-05-08-19h-Matriz2", data: "2025-05-08", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-
-    { id: "78-2025-05-09-19h-Matriz", data: "2025-05-09", horario: "19h", local: "Matriz", padre: "Padre" },
-  
-    { id: "78-2025-05-10-17h-Coité", data: "2025-05-10", horario: "17h", local: "Coité", padre: "Padre Eudásio" },
-  
-    { id: "78-2025-05-10-19h-Matriz", data: "2025-05-10", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-05-10-19h-OutraBanda", data: "2025-05-10", horario: "19h", local: "Outra Banda", padre: "Padre Ivan" },
-    
-    { id: "78-2025-05-11-07h-Matriz", data: "2025-05-11", horario: "07h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-05-11-07h-Divino", data: "2025-05-11", horario: "07h", local: "Divino", padre: "Padre Ivan" },
-    { id: "78-2025-05-11-07h-Abrigo", data: "2025-05-11", horario: "07h", local: "Abrigo", padre: "Padre Eudásio" },
-    { id: "78-2025-05-11-09h-Matriz", data: "2025-05-11", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-05-11-17h-CentroPastoral", data: "2025-05-11", horario: "17h", local: "Centro Pastoral", padre: "Padre Ivan" },
-    { id: "78-2025-05-11-17h-Divino", data: "2025-05-11", horario: "17h", local: "Divino", padre: "Padre Rafael" },
-    { id: "78-2025-05-11-19h-Matriz", data: "2025-05-11", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-05-11-19h-NovoPqIracema", data: "2025-05-11", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Rafael" },
-    { id: "78-2025-05-11-19h-MaeRainha", data: "2025-05-11", horario: "19h", local: "Mãe Rainha", padre: "Padre Ivan" },
-
-    
-    { id: "78-2025-05-12-19h-Guabiraba", data: "2025-05-12", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
-
-    { id: "78-2025-05-13-11h30-PracaJoaoLeite", data: "2025-05-13", horario: "11h30", local: "Praça João Leite - Procissão com a imagem de N. Sra. de Fátima para a Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-05-13-12h-Matriz", data: "2025-05-13", horario: "12h", local: "Matriz", padre: "Padre Eudásio" },
-
-    { id: "78-2025-05-13-19h-SaoPedro", data: "2025-05-13", horario: "19h", local: "São Pedro", padre: "Padre Ivan" },
-
-
-    { id: "78-2025-05-14-19h-MissaFamilias", data: "2025-05-14", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-05-14-19h-SantosDumont", data: "2025-05-14", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
-
     { id: "78-2025-05-15-19h-PqRosas", data: "2025-05-15", horario: "19h", local: "Parque das Rosas", padre: "Padre Rafael" },
     { id: "78-2025-05-15-19h-Tangueira", data: "2025-05-15", horario: "19h", local: "Tangueira", padre: "Padre Ivan" },
 

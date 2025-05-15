@@ -18,33 +18,11 @@ const Mestres: React.FC = () => {
           </button>
 
           <button
-            className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
-            onClick={() => navigate("/criar-vilares")}
-          >
-            <FaChurch /> Criar Escala Festejos de Vilares
-          </button>
-
-          <button
-            className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
-            onClick={() => navigate("/criar-psj")}
-          >
-            <FaChurch /> Criar Escala Festejos de PSJ
-          </button>
-
-          <button
             className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full cursor-not-allowed"
             onClick={() => navigate("/criar-divino")}
             disabled
           >
             <FaChurch /> Criar Escala Festejos de Divino
-          </button>
-
-          <button
-            className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full cursor-not-allowed"
-            onClick={() => navigate("/criar-rita")}
-            disabled
-          >
-            <FaChurch /> Criar Escala Festejos de S. Rita
           </button>
 
           <button

@@ -162,23 +162,6 @@ const Navbar: React.FC = () => {
                   </button>
                 </li>
 
-                <li>
-                  <button
-                    onClick={() => handleNavigation("/escala-PSJ")}
-                    className="text-left hover:underline"
-                  >
-                    Festejos Parque São João
-                  </button>
-                </li>
-
-                <li>
-                  <button
-                    onClick={() => handleNavigation("/escala-Vilares")}
-                    className="text-left hover:underline"
-                  >
-                   Festejos Vilares da Serra
-                  </button>
-                </li>
 
                 <li>
                   <button
@@ -188,15 +171,7 @@ const Navbar: React.FC = () => {
                     Festejos Divino
                   </button>
                 </li>
-
-                <li>
-                  <button
-                    onClick={() => handleNavigation("/escala-Santa-Rita")}
-                    className="text-left hover:underline"
-                  >
-                    Festejos Santa Rita
-                  </button>
-                </li>
+                
               </ul>
             )}
           </div>
