@@ -1,4 +1,5 @@
 import { format, isToday, parseISO } from "date-fns";
+import { ptBR } from "date-fns/locale";
 
 interface Coroinha {
   id: string;
@@ -30,7 +31,8 @@ const CardEscala: React.FC<CardEscalaProps> = ({
   
   const dataFormatada = format(new Date(`${data}T00:00:00`), "dd-MM-yyyy");
 
-  
+  const diaSemana = format(new Date(`${data}T00:00:00`), "EEEE", { locale: ptBR });
+
   const isTodayCard = isToday(parseISO(`${data}T00:00:00`));
 
   
@@ -67,9 +69,12 @@ const CardEscala: React.FC<CardEscalaProps> = ({
         </div>
         <div className="flex-1 text-center">
           <p className="font-bold text-lg">{local}</p>
-          <p className="text-base text-gray-700">
-            {dataFormatada} - {horario}
-          </p>
+          <div className="flex flex-col items-center text-gray-700 text-base">
+            <span className="font-semibold">{diaSemana.charAt(0).toUpperCase() + diaSemana.slice(1)}</span>
+            <span>{dataFormatada} - {horario}</span>
+          </div>
+
+
           
           {/* Botão para adicionar coroinha (abre o modal) */}
           {!isPublicView && onAddCoroinha && (
