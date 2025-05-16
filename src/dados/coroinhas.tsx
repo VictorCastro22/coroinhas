@@ -60,7 +60,7 @@ const coroinhas = [
   { 
     id: "6", 
     nome: "Beatriz Martins", 
-    foto: "/imagens/beatriz.jpeg",
+    foto: "/imagens/beatriz_martins.jpeg",
     permissoes: [
       "Centro Pastoral-17h-Domingo",
       "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",

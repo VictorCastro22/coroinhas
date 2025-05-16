@@ -41,10 +41,7 @@ const CalendarConfissoes: React.FC = () => {
     { id: "83-2025-05-21-17h-ConfissoesMatriz", data: "2025-05-21", horario: "17h", local: "Matriz", padre: "Padre Rafael" },  
     { id: "83-2025-05-22-08h-Matriz", data: "2025-05-22", horario: "08h", local: "Matriz", padre: "Padre Ivan" },
     { id: "83-2025-05-28-17h-ConfissoesMatriz", data: "2025-05-28", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
-
-
   ];
-
 
   const getUniquePadres = () => Array.from(new Set(escalas.map((escala) => escala.padre)));
   const getUniqueLocais = () => Array.from(new Set(escalas.map((escala) => escala.local)));
