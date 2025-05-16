@@ -219,7 +219,7 @@ const coroinhas = [
   { 
     id: "14", 
     nome: "Clara Santiago", 
-    foto: "/imagens/semfoto.jpg",
+    foto: "/imagens/clara_santiago.jpeg",
     permissoes: [
       "Centro Pastoral-18h30-Sexta",
       "Centro Pastoral-17h-Domingo",
@@ -319,7 +319,7 @@ const coroinhas = [
   { 
     id: "21", 
     nome: "Gabriel Christian", 
-    foto: "/imagens/semfoto.jpg",
+    foto: "/imagens/gabriel_christian.png",
     permissoes: [
       "Abrigo-17h-Sábado", "Abrigo-07h-Domingo",
       "Centro Pastoral-18h30-Sexta",
@@ -354,7 +354,7 @@ const coroinhas = [
   { 
     id: "23", 
     nome: "Gabrielle", 
-    foto: "/imagens/semfoto.jpg",
+    foto: "/imagens/gabrielle.png",
     permissoes: [
       "Centro Pastoral-17h-Domingo",
       "Mãe Rainha-19h-Quinta",
@@ -556,7 +556,7 @@ const coroinhas = [
   { 
     id: "36", 
     nome: "Kaylane", 
-    foto: "/imagens/semfoto.jpg",
+    foto: "/imagens/kaylane.png",
     permissoes: [
       "Centro Pastoral-18h30-Sexta",
       "Centro Pastoral-17h-Domingo",
@@ -583,7 +583,7 @@ const coroinhas = [
   { 
     id: "37", 
     nome: "Larissa", 
-    foto: "/imagens/semfoto.jpg",
+    foto: "/imagens/larissa.png",
     permissoes: [
       "Novo Parque Iracema-19h-Domingo",
     ]
@@ -610,7 +610,7 @@ const coroinhas = [
   { 
     id: "39", 
     nome: "Letícia", 
-    foto: "/imagens/semfoto.jpg",
+    foto: "/imagens/leticia.png",
     permissoes: [
       "Coité-17h-Sábado", "Coité-19h-Sábado", 
       "Coité-17h-Domingo", "Coité-19h-Domingo",
@@ -670,7 +670,7 @@ const coroinhas = [
   { 
     id: "43", 
     nome: "Mariana", 
-    foto: "/imagens/semfoto.jpg",
+    foto: "/imagens/mariana.png",
     permissoes: [
       "Centro Pastoral-18h30-Sexta",
       "Centro Pastoral-17h-Domingo",
@@ -769,7 +769,7 @@ const coroinhas = [
   { 
      id: "49", 
      nome: "Melissa", 
-     foto: "/imagens/semfoto.jpg",
+     foto: "/imagens/melissa.png",
      permissoes: [
       "Abrigo-07h-Domingo",
       "Centro Pastoral-18h30-Sexta",
@@ -786,7 +786,7 @@ const coroinhas = [
   { 
     id: "50", 
     nome: "Miguel Anselmo", 
-    foto: "/imagens/miguelanselmo.png",
+    foto: "/imagens/miguel_anselmo.jpeg",
     permissoes: [
       "Abrigo-17h-Sábado", "Abrigo-07h-Domingo",
       "Centro Pastoral-18h30-Sexta",
@@ -901,7 +901,7 @@ const coroinhas = [
   { 
     id: "57", 
     nome: "Sophia", 
-    foto: "/imagens/semfoto.jpg",
+    foto: "/imagens/sophia.jpeg",
     permissoes: [
       "Centro Pastoral-18h30-Sexta",
       "Centro Pastoral-17h-Domingo",
@@ -976,7 +976,7 @@ const coroinhas = [
   { 
     id: "61", 
     nome: "Victor Martins", 
-    foto: "/imagens/semfoto.jpg",
+    foto: "/imagens/victor_martins.png",
     permissoes: [
       "Matriz-09h-Domingo",
       "Urucará-19h-Terça",
