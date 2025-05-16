@@ -86,32 +86,50 @@ const CardEscala: React.FC<CardEscalaProps> = ({
 
       {/* Lista de coroinhas */}
       <ul className="mt-4">
-        {coroinhas.map((coroinha) => (
-          <li
-            key={coroinha.id}
-            className="flex items-center justify-between border-b py-2"
-          >
-            <div className="flex items-center">
-              <img
-                src={coroinha.foto}
-                alt={coroinha.nome}
-                className="w-8 h-8 rounded-full mr-2"
-              />
-              <span>{coroinha.nome}</span>
-            </div>
-            {!isPublicView && onDeleteCoroinha && (
-              <div className="space-x-2">
-                <button
-                  type="button"
-                  onClick={() => onDeleteCoroinha(coroinha.id)}
-                  className="text-red-500 text-sm hover:underline"
-                >
-                  Excluir
-                </button>
+        {coroinhas.map((coroinha) => {
+          const diaSemana = new Date(`${data}T00:00:00`).getDay();
+          const isSabado = diaSemana === 6;
+          const isDomingo = diaSemana === 0;
+
+          const tunicaVermelha =
+            local === "Matriz" &&
+            (
+              (isSabado && horario === "19h") ||
+              (isDomingo && ["07h", "09h", "19h"].includes(horario))
+            );
+
+          return (
+            <li
+              key={coroinha.id}
+              className="flex items-center justify-between border-b py-2"
+            >
+              <div className="flex items-center">
+                <img
+                  src={coroinha.foto}
+                  alt={coroinha.nome}
+                  className="w-8 h-8 rounded-full mr-2"
+                />
+                <span className="flex flex-col">
+                  <span>{coroinha.nome}</span>
+                  <span className={`text-xs ${tunicaVermelha ? 'text-red-600' : 'text-gray-500'}`}>
+                    ({tunicaVermelha ? 'Túnica Vermelha' : 'Túnica Branca'})
+                  </span>
+                </span>
               </div>
-            )}
-          </li>
-        ))}
+              {!isPublicView && onDeleteCoroinha && (
+                <div className="space-x-2">
+                  <button
+                    type="button"
+                    onClick={() => onDeleteCoroinha(coroinha.id)}
+                    className="text-red-500 text-sm hover:underline"
+                  >
+                    Excluir
+                  </button>
+                </div>
+              )}
+            </li>
+          );
+        })}
       </ul>
     </div>
   );

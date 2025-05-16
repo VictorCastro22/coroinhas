@@ -88,9 +88,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "78-2025-05-15-19h-PqRosas", data: "2025-05-15", horario: "19h", local: "Parque das Rosas", padre: "Padre Rafael" },
-    { id: "78-2025-05-15-19h-Tangueira", data: "2025-05-15", horario: "19h", local: "Tangueira", padre: "Padre Ivan" },
-
     { id: "78-2025-05-16-19h-Pirapora", data: "2025-05-16", horario: "19h", local: "Pirapora", padre: "Padre Eudásio" },
     { id: "78-2025-05-16-19h-Rosario", data: "2025-05-16", horario: "19h", local: "Rosário", padre: "Padre Rafael" },
     { id: "78-2025-05-16-19h-AreaVerde", data: "2025-05-16", horario: "19h", local: "Área Verde (Areninha)", padre: "Padre Ivan" },
