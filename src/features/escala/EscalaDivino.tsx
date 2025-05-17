@@ -17,10 +17,15 @@ const EscalaDivino: React.FC = () => {
 
   const escalas = useMemo(
     () => [
-      { id: "80-2025-03-15-19h-SJ", data: "2025-03-15", horario: "19h", local: "São José", padre: "Padre Diego" },
-      { id: "80-2025-03-18-19h-SJ", data: "2025-03-18", horario: "19h", local: "São José", padre: "Padre Otaviano" },
-      { id: "78-2025-03-19-09h-SaoJoseFesta", data: "2025-03-19", horario: "09h", local: "São José (Festa)", padre: "Padre Rafael" },
-      { id: "78-2025-03-19-19h-SaoJoseFesta", data: "2025-03-19", horario: "19h", local: "São José (Festa)", padre: "Padre Eudásio" }
+      { id: "80-2025-05-29-19h-Divino", data: "2025-05-29", horario: "19h", local: "Divino", padre: "Padre Ivan" },
+      { id: "80-2025-05-30-19h-Divino", data: "2025-05-30", horario: "19h", local: "Divino", padre: "Padre William" },
+      { id: "80-2025-06-01-17h-Divino", data: "2025-06-01", horario: "17h", local: "Divino", padre: "Padre" },
+      { id: "80-2025-06-02-19h-Divino", data: "2025-06-02", horario: "19h", local: "Divino", padre: "Padre João Paulo" },
+      { id: "80-2025-06-03-19h-Divino", data: "2025-06-03", horario: "19h", local: "Divino", padre: "Padre Paulo" },
+      { id: "80-2025-06-04-19h-Divino", data: "2025-06-04", horario: "19h", local: "Divino", padre: "Padre Nonato" },
+      { id: "80-2025-06-05-19h-Divino", data: "2025-06-05", horario: "19h", local: "Divino", padre: "Padre Aurênio" },
+      { id: "80-2025-06-06-19h-Divino", data: "2025-06-07", horario: "19h", local: "Divino", padre: "Padre Rafhael" },
+      { id: "80-2025-06-08-17h-Divino", data: "2025-06-08", horario: "17h", local: "Divino", padre: "Padre" },
     ],
     []
   );
