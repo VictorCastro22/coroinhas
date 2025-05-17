@@ -37,10 +37,6 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "83-2025-05-16-19h-Pirapora", data: "2025-05-16", horario: "19h", local: "Pirapora", padre: "Padre Eudásio" },
-    { id: "83-2025-05-16-19h-Rosario", data: "2025-05-16", horario: "19h", local: "Rosário", padre: "Padre Rafael" },
-    { id: "83-2025-05-16-19h-AreaVerde", data: "2025-05-16", horario: "19h", local: "Área Verde (Areninha)", padre: "Padre Ivan" },
-
     { id: "83-2025-05-17-17h-Matriz", data: "2025-05-17", horario: "17h", local: "Matriz - Casamento comunitário", padre: "Padre Eudásio" },
     { id: "83-2025-05-17-17h-SantaLuzia", data: "2025-05-17", horario: "17h", local: "Santa Luzia", padre: "Padre Rafael" },
     { id: "83-2025-05-17-17h-SantoAntonio", data: "2025-05-17", horario: "17h", local: "Santo Antônio", padre: "Padre Ivan" },

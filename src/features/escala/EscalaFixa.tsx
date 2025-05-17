@@ -16,16 +16,6 @@ const EscalaFixa: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const escalas = useMemo(() => [
-    { id: "78-2025-05-14-19h-MissaFamilias", data: "2025-05-14", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-05-14-19h-SantosDumont", data: "2025-05-14", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
-
-    { id: "78-2025-05-15-19h-PqRosas", data: "2025-05-15", horario: "19h", local: "Parque das Rosas", padre: "Padre Rafael" },
-    { id: "78-2025-05-15-19h-Tangueira", data: "2025-05-15", horario: "19h", local: "Tangueira", padre: "Padre Ivan" },
-
-    { id: "78-2025-05-16-19h-Pirapora", data: "2025-05-16", horario: "19h", local: "Pirapora", padre: "Padre Eudásio" },
-    { id: "78-2025-05-16-19h-Rosario", data: "2025-05-16", horario: "19h", local: "Rosário", padre: "Padre Rafael" },
-    { id: "78-2025-05-16-19h-AreaVerde", data: "2025-05-16", horario: "19h", local: "Área Verde (Areninha)", padre: "Padre Ivan" },
-
     { id: "78-2025-05-17-17h-Matriz", data: "2025-05-17", horario: "17h", local: "Matriz - Casamento comunitário", padre: "Padre Eudásio" },
     { id: "78-2025-05-17-17h-SantaLuzia", data: "2025-05-17", horario: "17h", local: "Santa Luzia", padre: "Padre Rafael" },
     { id: "78-2025-05-17-17h-SantoAntonio", data: "2025-05-17", horario: "17h", local: "Santo Antônio", padre: "Padre Ivan" },
