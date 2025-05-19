@@ -44,7 +44,7 @@ const EscalaFixa: React.FC = () => {
     { id: "78-2025-05-25-17h-Divino", data: "2025-05-25", horario: "17h", local: "Divino", padre: "Padre Eudásio" },
     { id: "78-2025-05-25-17h-CentroPastoral", data: "2025-05-25", horario: "17h", local: "Centro Pastoral", padre: "Padre Rafael" },
     { id: "78-2025-05-25-19h-Matriz", data: "2025-05-25", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-05-25-19h-NovoParqueIracema", data: "2025-05-25", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
+    { id: "78-2025-05-25-19h-NovoParqueIracema", data: "2025-05-25", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
 
     { id: "78-2025-05-27-19h-SerraPelada", data: "2025-05-27", horario: "19h", local: "Serra Pelada", padre: "Padre Eudásio" },
     { id: "78-2025-05-27-19h-SaoPedro", data: "2025-05-27", horario: "19h", local: "São Pedro", padre: "Padre Ivan" },
