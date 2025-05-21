@@ -7,10 +7,9 @@ interface EscalaModalProps {
 }
 
 const locais = [
-  "Guabiraba", "Novo Parque Iracema", "Coité", "Tangueira", "Rosário", "Divino", "Santa Luzia", "Horto",
-  "Cônego Pinto", "Urucará", "Pirapora", "Parque Santa Fé", "Parque das Rosas", "Parque São João",
-  "Vilares da Serra", "São Benedito", "São José", "Mororó", "Mãe Rainha", "Serra Pelada", "Santos Dumont",
-  "São Pedro", "São João Batista", "Matriz", "Centro Pastoral"
+  "Abrigo", "Centro Pastoral", "Coité", "Cônego Pinto", "Divino", "Guabiraba", "Horto", "Mãe Rainha", "Matriz", "Mororó",
+  "Novo Parque Iracema", "Parque das Rosas", "Parque Santa Fé", "Parque São João", "Pirapora", "Rosário", "Santa Luzia",
+  "Santos Dumont", "São Benedito", "Outra Banda", "São José", "São Pedro", "Serra Pelada", "Tangueira", "Urucará", "Vilares da Serra"
 ];
 
 const horarios = ["00h", "07h", "09h", "12h", "15h", "15h30", "17h", "19h"];
