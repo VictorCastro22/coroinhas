@@ -37,11 +37,6 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "83-2025-05-20-19h-PlanaltoCajueiros", data: "2025-05-20", horario: "19h", local: "Planalto dos Cajueiros", padre: "Padre Eudásio" },
-    { id: "83-2025-05-20-19h-Urucara", data: "2025-05-20", horario: "19h", local: "Urucará", padre: "Padre Ivan" },
-    { id: "83-2025-05-20-19h-Vilares", data: "2025-05-20", horario: "19h", local: "Vilares", padre: "Padre Rafael" },
-
-
     { id: "83-2025-05-21-19h-MissaFamilias", data: "2025-05-21", horario: "19h", local: "Matriz - Missa pelas famílias", padre: "Padre Rafael" },
     { id: "83-2025-05-21-19h-Guabiraba", data: "2025-05-21", horario: "19h", local: "Guabiraba - Novenário de Santa Rita", padre: "Padre Ivan" },
 
