@@ -13,7 +13,7 @@ interface CardEscalaProps {
   horario: string;
   local: string;
   coroinhas: Coroinha[];
-  onAddCoroinha?: () => void; // Evento para abrir o modal
+  onAddCoroinha?: () => void; // abri o modA
   onDeleteCoroinha?: (id: string) => void;
   isPublicView?: boolean;
 }
@@ -104,7 +104,10 @@ const CardEscala: React.FC<CardEscalaProps> = ({
           const isSabado = diaSemana === 6;
           const isDomingo = diaSemana === 0;
 
-          const tunicaVermelha =
+          const isExcecaoTunicaBranca =
+            data === "2025-05-31" && horario === "19h" && local === "Matriz";
+
+          const tunicaVermelha = !isExcecaoTunicaBranca &&
             local === "Matriz" &&
             (
               (isSabado && horario === "19h") ||

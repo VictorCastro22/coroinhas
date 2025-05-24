@@ -37,17 +37,6 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "83-2025-05-21-19h-MissaFamilias", data: "2025-05-21", horario: "19h", local: "Matriz - Missa pelas famílias", padre: "Padre Rafael" },
-    { id: "83-2025-05-21-19h-Guabiraba", data: "2025-05-21", horario: "19h", local: "Guabiraba - Novenário de Santa Rita", padre: "Padre Ivan" },
-
-    { id: "83-2025-05-22-18h30-Guabiraba", data: "2025-05-22", horario: "18h30", local: "Guabiraba", padre: "Padre Eudásio" },
-    { id: "83-2025-05-22-19h-AreaSeca", data: "2025-05-22", horario: "19h", local: "Área Seca (CDD)", padre: "Padre Ivan" },
-    { id: "83-2025-05-22-19h-MaeRainha", data: "2025-05-22", horario: "19h", local: "Mãe Rainha", padre: "Padre Rafael" },
-
-    { id: "83-2025-05-23-18h-PqSaoJoao", data: "2025-05-23", horario: "18h", local: "Parque São João - Casamento de Ivanilson e Fabiane", padre: "Padre Eudásio" },
-    { id: "83-2025-05-23-19h-Rosario", data: "2025-05-23", horario: "19h", local: "Rosário", padre: "Padre Ivan" },
-    { id: "83-2025-05-23-19h-ConegoPinto", data: "2025-05-23", horario: "19h", local: "Cônego Pinto", padre: "Padre Rafael" },
-
     { id: "83-2025-05-24-17h-Abrigo", data: "2025-05-24", horario: "17h", local: "Abrigo", padre: "Padre Eudásio" },
     { id: "83-2025-05-24-17h-SantaDulce", data: "2025-05-24", horario: "17h", local: "Santa Dulce", padre: "Padre Ivan" },
     { id: "83-2025-05-24-17h-Shalom", data: "2025-05-24", horario: "17h", local: "Shalom", padre: "Padre Rafael" },
