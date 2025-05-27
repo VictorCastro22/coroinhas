@@ -19,7 +19,7 @@ const EscalaDivino: React.FC = () => {
     () => [
       { id: "80-2025-05-29-19h-Divino", data: "2025-05-29", horario: "19h", local: "Divino", padre: "Padre Ivan" },
       { id: "80-2025-05-30-19h-Divino", data: "2025-05-30", horario: "19h", local: "Divino", padre: "Padre William" },
-      { id: "80-2025-06-01-17h-Divino", data: "2025-06-01", horario: "17h", local: "Divino", padre: "Padre" },
+      { id: "80-2025-06-01-17h-Divino", data: "2025-06-01", horario: "17h", local: "Divino", padre: "Padre Rafael" },
       { id: "80-2025-06-02-19h-Divino", data: "2025-06-02", horario: "19h", local: "Divino", padre: "Padre João Paulo" },
       { id: "80-2025-06-03-19h-Divino", data: "2025-06-03", horario: "19h", local: "Divino", padre: "Padre Paulo" },
       { id: "80-2025-06-04-19h-Divino", data: "2025-06-04", horario: "19h", local: "Divino", padre: "Padre Nonato" },

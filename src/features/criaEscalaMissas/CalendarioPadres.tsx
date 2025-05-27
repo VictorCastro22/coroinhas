@@ -88,21 +88,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "78-2025-05-24-17h-Abrigo", data: "2025-05-24", horario: "17h", local: "Abrigo", padre: "Padre Eudásio" },
-    { id: "78-2025-05-24-17h-SantaDulce", data: "2025-05-24", horario: "17h", local: "Santa Dulce", padre: "Padre Ivan" },
-    { id: "78-2025-05-24-17h-Shalom", data: "2025-05-24", horario: "17h", local: "Shalom", padre: "Padre Rafael" },
-    { id: "78-2025-05-24-19h-OutraBanda", data: "2025-05-24", horario: "19h", local: "Outra Banda", padre: "Padre Ivan" },
-    { id: "78-2025-05-24-19h-Matriz", data: "2025-05-24", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-
-    { id: "78-2025-05-25-07h-Matriz", data: "2025-05-25", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-05-25-07h-Divino", data: "2025-05-25", horario: "07h", local: "Divino", padre: "Padre Ivan" },
-    { id: "78-2025-05-25-09h-Matriz", data: "2025-05-25", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-05-25-15h30-SantosDumont", data: "2025-05-25", horario: "15h30", local: "Santos Dumont", padre: "Padre Eudásio" },
-    { id: "78-2025-05-25-17h-Divino", data: "2025-05-25", horario: "17h", local: "Divino", padre: "Padre Eudásio" },
-    { id: "78-2025-05-25-17h-CentroPastoral", data: "2025-05-25", horario: "17h", local: "Centro Pastoral", padre: "Padre Rafael" },
-    { id: "78-2025-05-25-19h-Matriz", data: "2025-05-25", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-05-25-19h-NovoParqueIracema", data: "2025-05-25", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
-
     { id: "78-2025-05-27-19h-SerraPelada", data: "2025-05-27", horario: "19h", local: "Serra Pelada", padre: "Padre Eudásio" },
     { id: "78-2025-05-27-19h-SaoPedro", data: "2025-05-27", horario: "19h", local: "São Pedro", padre: "Padre Ivan" },
 

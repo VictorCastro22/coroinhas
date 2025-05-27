@@ -14,6 +14,7 @@ interface CardEscalaProps {
   local: string;
   coroinhas: Coroinha[];
   onAddCoroinha?: () => void; // abri o modA
+  
   onDeleteCoroinha?: (id: string) => void;
   isPublicView?: boolean;
 }
