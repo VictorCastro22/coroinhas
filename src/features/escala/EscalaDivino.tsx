@@ -25,7 +25,7 @@ const EscalaDivino: React.FC = () => {
       { id: "80-2025-06-04-19h-Divino", data: "2025-06-04", horario: "19h", local: "Divino", padre: "Padre Nonato" },
       { id: "80-2025-06-05-19h-Divino", data: "2025-06-05", horario: "19h", local: "Divino", padre: "Padre Aurênio" },
       { id: "80-2025-06-06-19h-Divino", data: "2025-06-07", horario: "19h", local: "Divino", padre: "Padre Rafhael" },
-      { id: "80-2025-06-08-17h-Divino", data: "2025-06-08", horario: "17h", local: "Divino", padre: "Padre" },
+      { id: "80-2025-06-08-17h-Divino", data: "2025-06-08", horario: "17h", local: "Divino", padre: "Padre Eudásio" },
     ],
     []
   );

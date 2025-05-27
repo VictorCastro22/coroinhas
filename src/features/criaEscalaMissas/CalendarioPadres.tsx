@@ -239,6 +239,54 @@ const CalendarioPadres: React.FC = () => {
     { id: "79-2025-06-29-17h-CentroPastoral", data: "2025-06-29", horario: "17h", local: "Centro de Pastoral", padre: "Padre Rafael" },
     { id: "79-2025-06-29-19h-Matriz", data: "2025-06-29", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
 
+    { id: "80-2025-06-01-07h-Divino", data: "2025-06-01", horario: "07h", local: "Divino", padre: "Padre Eudásio" },
+    { id: "80-2025-06-01-09h-Matriz", data: "2025-06-01", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
+    { id: "80-2025-06-01-17h-CentroPastoral", data: "2025-06-01", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
+    { id: "80-2025-06-01-19h-Matriz", data: "2025-06-01", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
+
+    { id: "80-2025-06-03-19h-Urucara", data: "2025-06-03", horario: "19h", local: "Urucará", padre: "Padre Eudásio" },
+
+    { id: "80-2025-06-04-08h-Secretaria", data: "2025-06-04", horario: "08h", local: "Secretaria Paroquial - Atendimento e Confissões", padre: "Padre Eudásio" },
+
+    { id: "80-2025-06-06-19h-CentroPastoral", data: "2025-06-06", horario: "19h", local: "Centro de Pastoral - Missa", padre: "Padre Eudásio" },
+
+    { id: "80-2025-06-07-19h-Matriz", data: "2025-06-07", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
+
+    { id: "80-2025-06-08-07h-Matriz", data: "2025-06-08", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
+    { id: "80-2025-06-08-09h-Matriz", data: "2025-06-08", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
+
+    { id: "80-2025-06-11-08h-Secretaria", data: "2025-06-11", horario: "08h", local: "Secretaria Paroquial - Atendimento e Confissões", padre: "Padre Eudásio" },
+
+    { id: "80-2025-06-12-19h-MaeRainha", data: "2025-06-12", horario: "19h", local: "Mãe Rainha", padre: "Padre Eudásio" },
+
+    { id: "80-2025-06-15-09h-Matriz", data: "2025-06-15", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
+    { id: "80-2025-06-15-11h-CentroPastoral", data: "2025-06-15", horario: "11h", local: "Centro de Pastoral (com a Mãe Rainha)", padre: "Padre Eudásio" },
+    { id: "80-2025-06-15-17h-Divino", data: "2025-06-15", horario: "17h", local: "Divino", padre: "Padre Eudásio" },
+
+    { id: "80-2025-06-17-19h-PlanaltoCajueiros", data: "2025-06-17", horario: "19h", local: "Planalto dos Cajueiros", padre: "Padre Eudásio" },
+
+    { id: "80-2025-06-18-08h-Secretaria", data: "2025-06-18", horario: "08h", local: "Secretaria Paroquial - Atendimento e Confissões", padre: "Padre Eudásio" },
+
+    { id: "80-2025-06-19-19h-Matriz", data: "2025-06-19", horario: "19h", local: "Matriz - Corpus Christi", padre: "Padre Eudásio" },
+
+    { id: "80-2025-06-20-17h-Matriz", data: "2025-06-20", horario: "17h", local: "Matriz - Confissões (Sexta Jubilar)", padre: "Padre Eudásio" },
+    { id: "80-2025-06-20-19h-Matriz", data: "2025-06-20", horario: "19h", local: "Matriz - Missa Jubilar", padre: "Padre Eudásio" },
+
+    { id: "80-2025-06-22-15h30-SantosDumont", data: "2025-06-22", horario: "15h30", local: "Santos Dumont", padre: "Padre Eudásio" },
+    { id: "80-2025-06-22-17h-CentroPastoral", data: "2025-06-22", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
+
+    { id: "80-2025-06-25-08h-Secretaria", data: "2025-06-25", horario: "08h", local: "Secretaria Paroquial - Atendimento e Confissões", padre: "Padre Eudásio" },
+    { id: "80-2025-06-25-19h-SantosDumont", data: "2025-06-25", horario: "19h", local: "Santos Dumont", padre: "Padre Eudásio" },
+
+    { id: "80-2025-06-27-19h-Coite", data: "2025-06-27", horario: "19h", local: "Coité - Encerramento dos Festejos do Sagrado Coração de Jesus", padre: "Padre Eudásio" },
+
+    { id: "80-2025-06-28-17h-SantaDulce", data: "2025-06-28", horario: "17h", local: "Santa Dulce", padre: "Padre Eudásio" },
+    { id: "80-2025-06-28-19h-Matriz", data: "2025-06-28", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
+
+    { id: "80-2025-06-29-07h-Matriz", data: "2025-06-29", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
+    { id: "80-2025-06-29-09h-Matriz", data: "2025-06-29", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
+    { id: "80-2025-06-29-17h-Divino", data: "2025-06-29", horario: "17h", local: "Divino", padre: "Padre Eudásio" }
+
   ];
 
   return (
