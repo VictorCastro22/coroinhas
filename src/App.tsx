@@ -14,8 +14,10 @@ import CriaCalendario from "./pages/CriaCalendario";
 import CoroinhasPage from "./pages/CoroinhasPage";
 
 import CriarEscalaFestejosDivino from "./features/criarEscalaFestejos/Divino/CriarEscalaDivino";
-
 import EscalaDivino from "./features/escala/EscalaDivino";
+
+import CriarEscalaFestejosSantoAntonio from "./features/criarEscalaFestejos/SantoAntonio/CriarEscalaSAntonio";
+import EscalaSantoAntonio from "./features/criarEscalaFestejos/SantoAntonio/CriarEscalaSAntonio";
 
 const App: React.FC = () => {
   return (
@@ -35,6 +37,9 @@ const App: React.FC = () => {
 
           <Route path="/criar-divino" element={<CriarEscalaFestejosDivino />} />
           <Route path="/escala-Divino" element={<EscalaDivino />} />
+
+          <Route path="/criar-santo_antonio" element={<CriarEscalaFestejosSantoAntonio />} />
+          <Route path="/escala-santo_antonio" element={<EscalaSantoAntonio />} />
 
           <Route
             path="/criar-escala"

@@ -25,6 +25,13 @@ const Mestres: React.FC = () => {
           </button>
 
           <button
+            className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full cursor-not-allowed"
+            onClick={() => navigate("/criar-santo_antonio")}
+          >
+            <FaChurch /> Criar Escala Festejos de Santo Antônio
+          </button>
+
+          <button
             className="flex items-center gap-2 bg-purple-500 text-white font-bold py-2 px-4 rounded w-full opacity-50 cursor-not-allowed"
             disabled
           >

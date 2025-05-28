@@ -105,7 +105,6 @@ const CalendarioPadres: React.FC = () => {
 
     { id: "78-2025-06-01-09h-SaoJose", data: "2025-06-01", horario: "09h", local: "São José", padre: "Padre Ivan" },
     { id: "78-2025-06-01-17h-PqSaoJoao", data: "2025-06-01", horario: "17h", local: "Parque São João", padre: "Padre Ivan" },
-    { id: "78-2025-06-01-19h-SantoAntonio", data: "2025-06-01", horario: "19h", local: "Santo Antônio - Bandeira da Festa", padre: "Padre Ivan" },
     
     { id: "78-2025-06-03-19h-VilaresDaSerra", data: "2025-06-03", horario: "19h", local: "Vilares da Serra", padre: "Padre Ivan" },
     
@@ -197,7 +196,6 @@ const CalendarioPadres: React.FC = () => {
 
     { id: "79-2025-06-12-18h-CentroPastoral", data: "2025-06-12", horario: "18h", local: "Centro de Pastoral - Pregação, Adoração, Terço Mariano e Luau com as relíquias", padre: "Padre Rafael" },
 
-    { id: "79-2025-06-13-09h-SantaFe", data: "2025-06-13", horario: "09h", local: "Parque Santa Fé", padre: "Padre Rafael" },
     { id: "79-2025-06-13-12h-Matriz", data: "2025-06-13", horario: "12h", local: "Matriz - Santa Missa", padre: "Padre Rafael" },
 
     { id: "79-2025-06-14-19h-OutraBanda", data: "2025-06-14", horario: "19h", local: "Outra Banda - Bandeira da Festa de São João Batista", padre: "Padre Rafael" },
