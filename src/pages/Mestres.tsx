@@ -18,17 +18,17 @@ const Mestres: React.FC = () => {
           </button>
 
           <button
-            className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full cursor-not-allowed"
+            className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
             onClick={() => navigate("/criar-divino")}
           >
-            <FaChurch /> Criar Escala Festejos de Divino
+            <FaChurch /> Criar Escala Divino
           </button>
 
           <button
-            className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full cursor-not-allowed"
+            className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
             onClick={() => navigate("/criar-santo_antonio")}
           >
-            <FaChurch /> Criar Escala Festejos de Santo Antônio
+            <FaChurch /> Criar Escala Santo Antônio
           </button>
 
           <button
