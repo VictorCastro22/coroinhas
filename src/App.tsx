@@ -17,7 +17,7 @@ import CriarEscalaFestejosDivino from "./features/criarEscalaFestejos/Divino/Cri
 import EscalaDivino from "./features/escala/EscalaDivino";
 
 import CriarEscalaFestejosSantoAntonio from "./features/criarEscalaFestejos/SantoAntonio/CriarEscalaSAntonio";
-import EscalaSantoAntonio from "./features/criarEscalaFestejos/SantoAntonio/CriarEscalaSAntonio";
+import EscalaSantoAntonio from "./features/escala/EscalaSantoAntonio";
 
 const App: React.FC = () => {
   return (
