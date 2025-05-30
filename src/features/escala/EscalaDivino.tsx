@@ -17,7 +17,6 @@ const EscalaDivino: React.FC = () => {
 
   const escalas = useMemo(
     () => [
-      { id: "80-2025-05-29-19h-Divino", data: "2025-05-29", horario: "19h", local: "Divino", padre: "Padre Ivan" },
       { id: "80-2025-05-30-19h-Divino", data: "2025-05-30", horario: "19h", local: "Divino", padre: "Padre William" },
       { id: "80-2025-06-01-17h-Divino", data: "2025-06-01", horario: "17h", local: "Divino", padre: "Padre Rafael" },
       { id: "80-2025-06-02-19h-Divino", data: "2025-06-02", horario: "19h", local: "Divino", padre: "Padre João Paulo" },
