@@ -4,7 +4,6 @@ import CriarEscala from "./features/criaEscalaMissas/CriarEscala";
 import ProtectedRoute from "./components/ProtectedRoute";
 import TelaInicial from "./pages/TelaInicial";
 import EscalaFixa from "./features/escala/EscalaFixa";
-import Festejos from "./features/escala/EscalaFestejos";
 import NoticiaDetalhe from "./features/noticias/NoticiaDetalhe";
 import Layout from "./components/Layout";
 import CalendarPadres from "./features/missas/CalendarioMissas";
@@ -31,7 +30,6 @@ const App: React.FC = () => {
           <Route path="/" element={<TelaInicial />} />
           <Route path="/noticias/:id" element={<NoticiaDetalhe />} />
           <Route path="/escala-fixa" element={<EscalaFixa />} />
-          <Route path="/festejos" element={<Festejos />} />
           <Route path="/calendario-missas" element={<CalendarPadres />} />
           <Route path="/calendario-confissoes" element={<CalendarConfissoes />} />
           <Route path="/mestres" element={<Mestres />} />
