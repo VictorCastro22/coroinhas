@@ -182,7 +182,16 @@ const Navbar: React.FC = () => {
                     Festejos Santo Antônio
                   </button>
                 </li>
-                
+
+                <li>
+                  <button
+                    onClick={() => handleNavigation("/escala-sj_batista")}
+                    className="text-left hover:underline"
+                  >
+                    Festejos São João Batista
+                  </button>
+                </li>
+               
               </ul>
             )}
           </div>

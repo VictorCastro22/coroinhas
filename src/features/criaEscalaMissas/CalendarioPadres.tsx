@@ -88,8 +88,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "78-2025-05-30-19h-Matriz-Sanfoneiros", data: "2025-05-30", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-
     { id: "78-2025-05-31-18h-CentroPastoral", data: "2025-05-31", horario: "18h", local: "Centro Pastoral - Procissão com as imagens peregrinas nas novenas", padre: "Padre Eudásio" },
     { id: "78-2025-05-31-18h-Procissao", data: "2025-05-31", horario: "18h", local: "Centro Pastoral (Procissão com as imagens peregrinas nas novenas)", padre: "Padre Rafael" },
     { id: "78-2025-05-31-19h-Matriz-Coroacao", data: "2025-05-31", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
@@ -104,7 +102,6 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-06-01-17h-Divino", data: "2025-06-01", horario: "17h", local: "Divino", padre: "Padre Rafael" },
     { id: "78-2025-06-01-17h-PqSaoJoao", data: "2025-06-01", horario: "17h", local: "Parque São João", padre: "Padre Ivan" },
     { id: "78-2025-06-01-19h-Matriz", data: "2025-06-01", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-06-01-19h-SantoAntonio", data: "2025-06-01", horario: "19h", local: "Santo Antônio - Bandeira da Festa", padre: "Padre Ivan" },
     { id: "78-2025-06-01-19h-NovoPqIracema", data: "2025-06-01", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Rafael" },
 
     { id: "78-2025-06-03-19h-Urucara", data: "2025-06-03", horario: "19h", local: "Urucará", padre: "Padre Eudásio" },
@@ -160,7 +157,6 @@ const CalendarioPadres: React.FC = () => {
 
     { id: "78-2025-06-17-19h-PlanaltoCajueiros", data: "2025-06-17", horario: "19h", local: "Planalto dos Cajueiros", padre: "Padre Eudásio" },
     { id: "78-2025-06-17-19h-Urucara", data: "2025-06-17", horario: "19h", local: "Urucará", padre: "Padre Rafael" },
-    { id: "78-2025-06-17-19h-Coite", data: "2025-06-17", horario: "19h", local: "Coité - Bandeira da Festa do Sagrado Coração de Jesus", padre: "Padre Ivan" },
 
     { id: "78-2025-06-18-19h-Matriz", data: "2025-06-18", horario: "19h", local: "Matriz - Missa pelas famílias", padre: "Padre Rafael" },
     { id: "78-2025-06-18-19h-Guabiraba", data: "2025-06-18", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
@@ -191,7 +187,6 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-06-24-19h-SerraPelada", data: "2025-06-24", horario: "19h", local: "Serra Pelada", padre: "Padre Rafael" },
 
     { id: "78-2025-06-25-19h-Matriz", data: "2025-06-25", horario: "19h", local: "Matriz - Missa pelas famílias", padre: "Padre Rafael" },
-    { id: "78-2025-06-25-19h-SaoPedro", data: "2025-06-25", horario: "19h", local: "São Pedro - Bandeira da Festa", padre: "Padre Ivan" },
     { id: "78-2025-06-25-19h-SantosDumont", data: "2025-06-25", horario: "19h", local: "Santos Dumont", padre: "Padre Eudásio" },
 
     { id: "78-2025-06-26-19h-MaeRainha", data: "2025-06-26", horario: "19h", local: "Mãe Rainha", padre: "Padre Rafael" },
@@ -213,7 +208,6 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-06-29-17h-PqSaoJoao", data: "2025-06-29", horario: "17h", local: "Parque São João", padre: "Padre Ivan" },
     { id: "78-2025-06-29-19h-Matriz", data: "2025-06-29", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
     { id: "78-2025-06-29-19h-NovoPqIracema", data: "2025-06-29", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
-
   ];
 
   return (

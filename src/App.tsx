@@ -19,6 +19,9 @@ import EscalaDivino from "./features/escala/EscalaDivino";
 import CriarEscalaFestejosSantoAntonio from "./features/criarEscalaFestejos/SantoAntonio/CriarEscalaSAntonio";
 import EscalaSantoAntonio from "./features/escala/EscalaSantoAntonio";
 
+import CalendarioPadresSJBatista from "./features/criarEscalaFestejos/SaoJoaoBatista/CalendarioSJBatista";
+import EscalaSJBatista from "./features/escala/EscalaSJBatista";
+
 const App: React.FC = () => {
   return (
     <Router>
@@ -40,6 +43,9 @@ const App: React.FC = () => {
 
           <Route path="/criar-santo_antonio" element={<CriarEscalaFestejosSantoAntonio />} />
           <Route path="/escala-santo_antonio" element={<EscalaSantoAntonio />} />
+
+          <Route path="/criar-sj_batista" element={<CalendarioPadresSJBatista />} />
+          <Route path="/escala-sj_batista" element={<EscalaSJBatista />} />
 
           <Route
             path="/criar-escala"

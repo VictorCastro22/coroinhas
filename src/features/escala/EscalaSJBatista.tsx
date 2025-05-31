@@ -10,19 +10,19 @@ interface Coroinha {
   foto: string;
 }
 
-const FestejosSJBatista: React.FC = () => {
+const EscalaSJBatista: React.FC = () => {
   const [coroinhasData, setCoroinhas] = useState<{ [key: string]: Coroinha[] }>({});
   const [coroinhas, setCoroinhasList] = useState<Coroinha[]>([]);
   const [searchTerm, setSearchTerm] = useState<string>("");
 
   const escalas = useMemo(
     () => [
-      { id: "80-2025-06-14-19h-SJBatista", data: "2025-06-14", horario: "19h", local: "São João Batista", padre: "Padre Rafael" },
-      { id: "80-2025-06-15-19h-SJBatista", data: "2025-06-15", horario: "19h", local: "São João Batista", padre: "Dom José Antônio" },
-      { id: "80-2025-06-16-19h-SJBatista", data: "2025-06-16", horario: "19h", local: "São João Batista", padre: "Padre João Paulo" },
-      { id: "80-2025-06-17-19h-SJBatista", data: "2025-06-17", horario: "19h", local: "São João Batista", padre: "Padre Roberto" },
-      { id: "80-2025-06-20-19h-SJBatista", data: "2025-06-20", horario: "19h", local: "São João Batista", padre: "Padre Rafhael" },
-      { id: "80-2025-06-24-19h-SJBatista", data: "2025-06-24", horario: "19h", local: "São João Batista", padre: "Padre Eudásio" },
+        { id: "80-2025-06-14-19h-SJBatista", data: "2025-06-14", horario: "19h", local: "São João Batista", padre: "Padre Rafael" },
+        { id: "80-2025-06-15-19h-SJBatista", data: "2025-06-15", horario: "19h", local: "São João Batista", padre: "Dom José Antônio" },
+        { id: "80-2025-06-16-19h-SJBatista", data: "2025-06-16", horario: "19h", local: "São João Batista", padre: "Padre João Paulo" },
+        { id: "80-2025-06-17-19h-SJBatista", data: "2025-06-17", horario: "19h", local: "São João Batista", padre: "Padre Roberto" },
+        { id: "80-2025-06-20-19h-SJBatista", data: "2025-06-20", horario: "19h", local: "São João Batista", padre: "Padre Rafhael" },
+        { id: "80-2025-06-24-19h-SJBatista", data: "2025-06-24", horario: "19h", local: "São João Batista", padre: "Padre Eudásio" },
     ],
     []
   );
@@ -63,7 +63,7 @@ const FestejosSJBatista: React.FC = () => {
     const doc = new jsPDF();
 
     doc.setFontSize(18);
-    doc.text("Escala São João Batista", 14, 22);
+    doc.text("São João Batista", 14, 22);
 
     filteredEscalas.forEach((escala, index) => {
       const y = 40 + index * 10;
@@ -121,4 +121,4 @@ const FestejosSJBatista: React.FC = () => {
   );
 };
 
-export default FestejosSJBatista;
+export default EscalaSJBatista;

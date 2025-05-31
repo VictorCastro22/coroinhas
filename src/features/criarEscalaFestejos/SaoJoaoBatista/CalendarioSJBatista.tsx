@@ -11,7 +11,7 @@ interface Coroinha {
   foto: string;
 }
 
-const CalendarioPadresDivino: React.FC = () => {
+const CalendarioPadresSJBatista: React.FC = () => {
   const [coroinhasData, setCoroinhas] = useState<{ [key: string]: Coroinha[] }>({});
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
   const [selectedCoroinha, setSelectedCoroinha] = useState<string>("");
@@ -87,15 +87,12 @@ const CalendarioPadresDivino: React.FC = () => {
   };
 
   const escalas = [
-    { id: "80-2025-05-29-19h-Divino", data: "2025-05-29", horario: "19h", local: "Divino", padre: "Padre Ivan" },
-    { id: "80-2025-05-30-19h-Divino", data: "2025-05-30", horario: "19h", local: "Divino", padre: "Padre William" },
-    { id: "80-2025-06-01-17h-Divino", data: "2025-06-01", horario: "17h", local: "Divino", padre: "Padre Rafael" },
-    { id: "80-2025-06-02-19h-Divino", data: "2025-06-02", horario: "19h", local: "Divino", padre: "Padre João Paulo" },
-    { id: "80-2025-06-03-19h-Divino", data: "2025-06-03", horario: "19h", local: "Divino", padre: "Padre Paulo" },
-    { id: "80-2025-06-04-19h-Divino", data: "2025-06-04", horario: "19h", local: "Divino", padre: "Padre Nonato" },
-    { id: "80-2025-06-05-19h-Divino", data: "2025-06-05", horario: "19h", local: "Divino", padre: "Padre Aurênio" },
-    { id: "80-2025-06-06-19h-Divino", data: "2025-06-07", horario: "19h", local: "Divino", padre: "Padre Rafhael" },
-    { id: "80-2025-06-08-17h-Divino", data: "2025-06-08", horario: "17h", local: "Divino", padre: "Padre Eudásio" },
+    { id: "80-2025-06-14-19h-SJBatista", data: "2025-06-14", horario: "19h", local: "São João Batista", padre: "Padre Rafael" },
+    { id: "80-2025-06-15-19h-SJBatista", data: "2025-06-15", horario: "19h", local: "São João Batista", padre: "Dom José Antônio" },
+    { id: "80-2025-06-16-19h-SJBatista", data: "2025-06-16", horario: "19h", local: "São João Batista", padre: "Padre João Paulo" },
+    { id: "80-2025-06-17-19h-SJBatista", data: "2025-06-17", horario: "19h", local: "São João Batista", padre: "Padre Roberto" },
+    { id: "80-2025-06-20-19h-SJBatista", data: "2025-06-20", horario: "19h", local: "São João Batista", padre: "Padre Rafhael" },
+    { id: "80-2025-06-24-19h-SJBatista", data: "2025-06-24", horario: "19h", local: "São João Batista", padre: "Padre Eudásio" },
   ];
 
   return (
@@ -132,4 +129,4 @@ const CalendarioPadresDivino: React.FC = () => {
   );
 };
 
-export default CalendarioPadresDivino;
+export default CalendarioPadresSJBatista;
