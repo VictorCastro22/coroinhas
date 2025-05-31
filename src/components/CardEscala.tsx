@@ -105,10 +105,7 @@ const CardEscala: React.FC<CardEscalaProps> = ({
           const isSabado = diaSemana === 6;
           const isDomingo = diaSemana === 0;
 
-          const isExcecaoTunicaBranca =
-            data === "2025-05-31" && horario === "19h" && local === "Matriz";
-
-          const tunicaVermelha = !isExcecaoTunicaBranca &&
+          const tunicaVermelha =
             local === "Matriz" &&
             (
               (isSabado && horario === "19h") ||
