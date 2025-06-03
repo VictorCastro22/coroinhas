@@ -8,14 +8,14 @@ interface Coroinha {
 
 interface Props {
   coroinhas: Coroinha[];
-  selectedIds: string[];
-  onApply: (selected: Coroinha[]) => void;
+  selectedId: string | null;
+  onApply: (selected: Coroinha | null) => void;
   onClose: () => void;
 }
 
-const SearchableSelect: React.FC<Props> = ({ coroinhas, selectedIds, onApply, onClose }) => {
+const SearchableSelect: React.FC<Props> = ({ coroinhas, selectedId, onApply, onClose }) => {
   const [search, setSearch] = useState("");
-  const [selected, setSelected] = useState<string[]>(selectedIds);
+  const [selected, setSelected] = useState<string | null>(selectedId);
 
   const filtered = useMemo(() => {
     return coroinhas.filter((c) =>
@@ -24,16 +24,12 @@ const SearchableSelect: React.FC<Props> = ({ coroinhas, selectedIds, onApply, on
   }, [search, coroinhas]);
 
   const toggleSelect = (id: string) => {
-    if (selected.includes(id)) {
-      setSelected(selected.filter((sid) => sid !== id));
-    } else {
-      setSelected([...selected, id]);
-    }
+    setSelected(selected === id ? null : id);
   };
 
   const handleApply = () => {
-    const selectedCoroinhas = coroinhas.filter((c) => selected.includes(c.id));
-    onApply(selectedCoroinhas);
+    const selectedCoroinha = coroinhas.find((c) => c.id === selected) || null;
+    onApply(selectedCoroinha);
     onClose();
   };
 
@@ -41,7 +37,7 @@ const SearchableSelect: React.FC<Props> = ({ coroinhas, selectedIds, onApply, on
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 p-4">
       <div className="bg-white rounded-lg w-full max-w-md p-6 shadow-lg max-h-[80vh] overflow-y-auto">
         <div className="flex justify-between items-center mb-4">
-          <h2 className="text-xl font-semibold">Selecione coroinhas</h2>
+          <h2 className="text-xl font-semibold">Selecione um coroinha</h2>
           <button
             onClick={onClose}
             className="text-gray-500 hover:text-gray-700 font-bold text-2xl"
@@ -65,14 +61,13 @@ const SearchableSelect: React.FC<Props> = ({ coroinhas, selectedIds, onApply, on
           {filtered.map((c) => (
             <li
               key={c.id}
-              className="p-2 cursor-pointer hover:bg-blue-100 rounded flex items-center gap-3"
+              className={`p-2 cursor-pointer hover:bg-blue-100 rounded flex items-center gap-3 ${selected === c.id ? "bg-blue-200" : ""}`}
               onClick={() => toggleSelect(c.id)}
             >
               <input
-                type="checkbox"
-                checked={selected.includes(c.id)}
+                type="radio"
+                checked={selected === c.id}
                 onChange={() => toggleSelect(c.id)}
-                onClick={(e) => e.stopPropagation()} 
               />
               <img
                 src={c.foto}

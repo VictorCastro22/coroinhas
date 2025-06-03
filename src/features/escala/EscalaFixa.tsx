@@ -5,7 +5,7 @@ import CardEscala from "../../components/CardEscala";
 import { escala as escalas } from "../../dados/escala";
 import { gerarPdfEscala } from "../../utils/pdf";
 import coroinhas from "../../dados/coroinhas";
-import SearchableSelect from "../../components/SearchableSelect"; // 🔹 Importando modal de seleção
+import SearchableSelect from "../../components/SearchableSelect";
 
 interface Coroinha {
   id: string;
@@ -16,7 +16,7 @@ interface Coroinha {
 const EscalaFixa: React.FC = () => {
   const [coroinhasData, setCoroinhasData] = useState<{ [key: string]: Coroinha[] }>({});
   const [allCoroinhas, setAllCoroinhas] = useState<Coroinha[]>([]);
-  const [selectedCoroinhas, setSelectedCoroinhas] = useState<Coroinha[]>([]);
+  const [selectedCoroinha, setSelectedCoroinha] = useState<Coroinha | null>(null);
   const [showModal, setShowModal] = useState(true);
 
   useEffect(() => {
@@ -50,13 +50,11 @@ const EscalaFixa: React.FC = () => {
   }, []);
 
   const filteredEscalas = useMemo(() => {
-    if (selectedCoroinhas.length === 0) return escalas;
+    if (!selectedCoroinha) return escalas;
     return escalas.filter(escala =>
-      selectedCoroinhas.some(c =>
-        coroinhasData[escala.id]?.some(data => data.nome === c.nome)
-      )
+      coroinhasData[escala.id]?.some(data => data.nome === selectedCoroinha.nome)
     );
-  }, [coroinhasData, selectedCoroinhas]);
+  }, [coroinhasData, selectedCoroinha]);
 
   return (
     <div className="container mx-auto p-4">
@@ -64,28 +62,24 @@ const EscalaFixa: React.FC = () => {
         Escala Fixa
       </h1>
 
-      {/* 🔹 Exibir Coroinhas Selecionados */}
       <div className="mb-6 flex justify-center items-center gap-4 bg-gray-100 p-4 rounded-lg cursor-pointer" onClick={() => setShowModal(true)}>
-        {selectedCoroinhas.length === 0 ? (
-          <span className="text-gray-500">Selecione coroinhas</span>
+        {!selectedCoroinha ? (
+          <span className="text-gray-500">Selecione um coroinha</span>
         ) : (
-          selectedCoroinhas.map(c => (
-            <div key={c.id} className="flex flex-col items-center">
-              <img src={c.foto} alt={c.nome} className="w-16 h-16 rounded-full object-cover border-2 border-gray-300" />
-              <span className="text-sm font-semibold">{c.nome}</span>
-            </div>
-          ))
+          <div className="flex flex-col items-center">
+            <img src={selectedCoroinha.foto} alt={selectedCoroinha.nome} className="w-16 h-16 rounded-full object-cover border-2 border-gray-300" />
+            <span className="text-sm font-semibold">{selectedCoroinha.nome}</span>
+          </div>
         )}
-        <span className="text-gray-500 text-xl">▼</span> {/* 🔹 Indicador de dropdown */}
+        <span className="text-gray-500 text-xl">▼</span> 
       </div>
 
-      {/* 🔹 Modal de Seleção */}
       {showModal && (
         <SearchableSelect
           coroinhas={coroinhasOrdenados}
-          selectedIds={selectedCoroinhas.map(c => c.id)}
+          selectedId={selectedCoroinha ? selectedCoroinha.id : null}
           onApply={(selected) => {
-            setSelectedCoroinhas(selected);
+            setSelectedCoroinha(selected);
             setShowModal(false);
           }}
           onClose={() => setShowModal(false)}
@@ -95,7 +89,7 @@ const EscalaFixa: React.FC = () => {
       <div className="flex justify-center mb-6">
         <button
           type="button"
-          onClick={() => gerarPdfEscala(filteredEscalas, allCoroinhas, selectedCoroinhas.map(c => c.nome).join(", "))}
+          onClick={() => gerarPdfEscala(filteredEscalas, allCoroinhas, selectedCoroinha ? selectedCoroinha.nome : "")}
           className="px-4 py-2 bg-blue-500 text-white rounded-md"
         >
           Imprimir Escala em PDF
@@ -110,7 +104,7 @@ const EscalaFixa: React.FC = () => {
           horario={escala.horario}
           local={escala.local}
           coroinhas={
-            coroinhasData[escala.id]?.filter(c => selectedCoroinhas.some(s => s.nome === c.nome)) || []
+            coroinhasData[escala.id]?.filter(c => selectedCoroinha && c.nome === selectedCoroinha.nome) || []
           }
           onAddCoroinha={() => {}}
           onDeleteCoroinha={() => {}}
