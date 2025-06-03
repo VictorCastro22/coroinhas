@@ -629,33 +629,6 @@ const coroinhas = [
    },
 
   { 
-    id: "41", 
-    nome: "Luiz Guilherme", 
-    foto: "/imagens/semfoto.jpg",
-    permissoes: [
-      "Centro Pastoral-18h30-Sexta",
-      "Centro Pastoral-17h-Domingo",
-      "Divino-07h-Domingo","Divino-17h-Domingo",
-      "Matriz-07h-Domingo","Matriz-09h-Domingo","Matriz-19h-Domingo",
-      "Matriz-19h-Segunda",
-      "Matriz-19h-Terça",
-      "Matriz-19h-Quarta",
-      "Matriz-19h-Quinta",
-      "Matriz-19h-Sexta",
-      "Matriz-19h-Sábado",
-      "Outra Banda-19h-Sábado",
-      "Parque das Rosas-19h-Quinta",
-      "São José-09h-Domingo",
-      "Santa Luzia-17h-Sábado",
-      "Rosário-19h-Sexta",
-      "Novo Parque Iracema-19h-Domingo",
-      "Rosário-19h-Sexta",
-      "Urucará-19h-Terça",
-      "Urucará-17h-Sábado","Urucará-19h-Sábado",  
-    ]
-   },
-
-  { 
     id: "42", 
     nome: "Marjory", 
     foto: "/imagens/marjory.png",

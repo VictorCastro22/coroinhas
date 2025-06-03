@@ -17,7 +17,6 @@ const EscalaSantoAntonio: React.FC = () => {
 
   const escalas = useMemo(
     () => [
-    { id: "80-2025-06-01-19h-SA", data: "2025-06-01", horario: "19h", local: "Santo Antônio", padre: "Padre Ivan" },
     { id: "80-2025-06-03-19h-SA", data: "2025-06-03", horario: "19h", local: "Santo Antônio", padre: "Padre Rafhael" },
     { id: "80-2025-06-04-19h-SA", data: "2025-06-04", horario: "19h", local: "Santo Antônio", padre: "Padre João Paulo" },
     { id: "80-2025-06-05-19h-SA", data: "2025-06-05", horario: "19h", local: "Santo Antônio", padre: "Padre Flávio" },

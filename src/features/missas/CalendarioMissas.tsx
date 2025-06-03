@@ -37,23 +37,6 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "83-2025-05-31-18h-CentroPastoral", data: "2025-05-31", horario: "18h", local: "Centro Pastoral - Procissão com as imagens peregrinas nas novenas", padre: "Padre Eudásio" },
-    { id: "83-2025-05-31-18h-Procissao", data: "2025-05-31", horario: "18h", local: "Centro Pastoral (Procissão com as imagens peregrinas nas novenas)", padre: "Padre Rafael" },
-    { id: "83-2025-05-31-19h-Matriz-Coroacao", data: "2025-05-31", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "83-2025-05-31-19h-MatrizCoroacao", data: "2025-05-31", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-
-    { id: "83-2025-06-01-07h-Matriz", data: "2025-06-01", horario: "07h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "83-2025-06-01-07h-Divino", data: "2025-06-01", horario: "07h", local: "Divino", padre: "Padre Eudásio" },
-    { id: "83-2025-06-01-09h-Matriz", data: "2025-06-01", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "83-2025-06-01-09h-SaoJose", data: "2025-06-01", horario: "09h", local: "São José", padre: "Padre Ivan" },
-    { id: "83-2025-06-01-10h30-CentroPastoral", data: "2025-06-01", horario: "10h30", local: "Centro de Pastoral - Coordenação dos MEPs", padre: "Padre Rafael" },
-    { id: "83-2025-06-01-17h-CentroPastoral", data: "2025-06-01", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
-    { id: "83-2025-06-01-17h-Divino", data: "2025-06-01", horario: "17h", local: "Divino", padre: "Padre Rafael" },
-    { id: "83-2025-06-01-17h-PqSaoJoao", data: "2025-06-01", horario: "17h", local: "Parque São João", padre: "Padre Ivan" },
-    { id: "83-2025-06-01-19h-Matriz", data: "2025-06-01", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "83-2025-06-01-19h-SantoAntonio", data: "2025-06-01", horario: "19h", local: "Santo Antônio - Bandeira da Festa", padre: "Padre Ivan" },
-    { id: "83-2025-06-01-19h-NovoPqIracema", data: "2025-06-01", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Rafael" },
-
     { id: "83-2025-06-03-19h-Urucara", data: "2025-06-03", horario: "19h", local: "Urucará", padre: "Padre Eudásio" },
     { id: "83-2025-06-03-19h-VilaresDaSerra", data: "2025-06-03", horario: "19h", local: "Vilares da Serra", padre: "Padre Ivan" },
     
