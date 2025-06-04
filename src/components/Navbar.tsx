@@ -159,48 +159,10 @@ const Navbar: React.FC = () => {
                     onClick={() => handleNavigation("/escala-fixa")}
                     className="text-left hover:underline"
                   >
-                    Escala Fixa
+                    Escala
                   </button>
                 </li>
 
-
-                <li>
-                  <button
-                    onClick={() => handleNavigation("/escala-Divino")}
-                    className="text-left hover:underline"
-                  >
-                    Festejos Divino
-                  </button>
-                </li>
-
-
-                <li>
-                  <button
-                    onClick={() => handleNavigation("/escala-santo_antonio")}
-                    className="text-left hover:underline"
-                  >
-                    Festejos Santo Antônio
-                  </button>
-                </li>
-
-                <li>
-                  <button
-                    onClick={() => handleNavigation("/escala-sj_batista")}
-                    className="text-left hover:underline"
-                  >
-                    Festejos São João Batista
-                  </button>
-                </li>
-
-                <li>
-                  <button
-                    onClick={() => handleNavigation("/escala-sagrado_coracao")}
-                    className="text-left hover:underline"
-                  >
-                    Festejos Sagrado Coração
-                  </button>
-                </li>
-               
               </ul>
             )}
           </div>

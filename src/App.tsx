@@ -13,16 +13,9 @@ import CriaCalendario from "./pages/CriaCalendario";
 import CoroinhasPage from "./pages/CoroinhasPage";
 
 import CriarEscalaFestejosDivino from "./features/criarEscalaFestejos/Divino/CriarEscalaDivino";
-import EscalaDivino from "./features/escala/EscalaDivino";
-
 import CriarEscalaFestejosSantoAntonio from "./features/criarEscalaFestejos/SantoAntonio/CriarEscalaSAntonio";
-import EscalaSantoAntonio from "./features/escala/EscalaSantoAntonio";
-
 import CalendarioPadresSJBatista from "./features/criarEscalaFestejos/SaoJoaoBatista/CalendarioSJBatista";
-import EscalaSJBatista from "./features/escala/EscalaSJBatista";
-
 import CalendarioPadresSagradoCoracao from "./features/criarEscalaFestejos/SagradoCoração/CalendarioSCoracao";
-import EscalaSagradoCoracao from "./features/escala/EscalaSagradoCoracao";
 
 const App: React.FC = () => {
   return (
@@ -40,16 +33,9 @@ const App: React.FC = () => {
           <Route path="/coroinhas" element={<CoroinhasPage />} />
 
           <Route path="/criar-divino" element={<CriarEscalaFestejosDivino />} />
-          <Route path="/escala-Divino" element={<EscalaDivino />} />
-
           <Route path="/criar-santo_antonio" element={<CriarEscalaFestejosSantoAntonio />} />
-          <Route path="/escala-santo_antonio" element={<EscalaSantoAntonio />} />
-
           <Route path="/criar-sj_batista" element={<CalendarioPadresSJBatista />} />
-          <Route path="/escala-sj_batista" element={<EscalaSJBatista />} />
-
           <Route path="/criar-sagrado_coracao" element={<CalendarioPadresSagradoCoracao />} />
-          <Route path="/escala-sagrado_coracao" element={<EscalaSagradoCoracao />} />
 
           <Route
             path="/criar-escala"

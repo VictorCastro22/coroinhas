@@ -13,10 +13,16 @@ interface Coroinha {
   foto: string;
 }
 
+const TODOS_COROINHAS: Coroinha = {
+  id: "todos",
+  nome: "Todos os Coroinhas",
+  foto: "/investidura-2024.jpg",
+};
+
 const EscalaFixa: React.FC = () => {
   const [coroinhasData, setCoroinhasData] = useState<{ [key: string]: Coroinha[] }>({});
   const [allCoroinhas, setAllCoroinhas] = useState<Coroinha[]>([]);
-  const [selectedCoroinha, setSelectedCoroinha] = useState<Coroinha | null>(null);
+  const [selectedCoroinha, setSelectedCoroinha] = useState<Coroinha>(TODOS_COROINHAS);
   const [showModal, setShowModal] = useState(true);
 
   useEffect(() => {
@@ -46,15 +52,19 @@ const EscalaFixa: React.FC = () => {
   }, []);
 
   const coroinhasOrdenados = useMemo(() => {
-    return [...coroinhas].sort((a, b) => a.nome.localeCompare(b.nome));
+    return [TODOS_COROINHAS, ...coroinhas.sort((a, b) => a.nome.localeCompare(b.nome))];
   }, []);
 
   const filteredEscalas = useMemo(() => {
-    if (!selectedCoroinha) return escalas;
+    if (selectedCoroinha.id === "todos") {
+      return escalas.filter(escala => (coroinhasData[escala.id] || []).length > 0);
+    }
+
     return escalas.filter(escala =>
       coroinhasData[escala.id]?.some(data => data.nome === selectedCoroinha.nome)
     );
   }, [coroinhasData, selectedCoroinha]);
+
 
   return (
     <div className="container mx-auto p-4">
@@ -77,19 +87,18 @@ const EscalaFixa: React.FC = () => {
       {showModal && (
         <SearchableSelect
           coroinhas={coroinhasOrdenados}
-          selectedId={selectedCoroinha ? selectedCoroinha.id : null}
+          selectedId={selectedCoroinha.id}
           onApply={(selected) => {
             setSelectedCoroinha(selected);
             setShowModal(false);
           }}
-          onClose={() => setShowModal(false)}
         />
       )}
 
       <div className="flex justify-center mb-6">
         <button
           type="button"
-          onClick={() => gerarPdfEscala(filteredEscalas, allCoroinhas, selectedCoroinha ? selectedCoroinha.nome : "")}
+          onClick={() => gerarPdfEscala(filteredEscalas, allCoroinhas, selectedCoroinha.nome)}
           className="px-4 py-2 bg-blue-500 text-white rounded-md"
         >
           Imprimir Escala em PDF
@@ -104,7 +113,9 @@ const EscalaFixa: React.FC = () => {
           horario={escala.horario}
           local={escala.local}
           coroinhas={
-            coroinhasData[escala.id]?.filter(c => selectedCoroinha && c.nome === selectedCoroinha.nome) || []
+            selectedCoroinha.id === "todos"
+              ? coroinhasData[escala.id] || []
+              : coroinhasData[escala.id]?.filter(c => c.nome === selectedCoroinha.nome) || []
           }
           onAddCoroinha={() => {}}
           onDeleteCoroinha={() => {}}

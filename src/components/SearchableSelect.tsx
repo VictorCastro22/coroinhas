@@ -9,11 +9,10 @@ interface Coroinha {
 interface Props {
   coroinhas: Coroinha[];
   selectedId: string | null;
-  onApply: (selected: Coroinha | null) => void;
-  onClose: () => void;
+  onApply: (selected: Coroinha) => void;
 }
 
-const SearchableSelect: React.FC<Props> = ({ coroinhas, selectedId, onApply, onClose }) => {
+const SearchableSelect: React.FC<Props> = ({ coroinhas, selectedId, onApply }) => {
   const [search, setSearch] = useState("");
   const [selected, setSelected] = useState<string | null>(selectedId);
 
@@ -24,27 +23,19 @@ const SearchableSelect: React.FC<Props> = ({ coroinhas, selectedId, onApply, onC
   }, [search, coroinhas]);
 
   const toggleSelect = (id: string) => {
-    setSelected(selected === id ? null : id);
+    setSelected(id);
   };
 
   const handleApply = () => {
-    const selectedCoroinha = coroinhas.find((c) => c.id === selected) || null;
+    const selectedCoroinha = coroinhas.find((c) => c.id === selected) || coroinhas[0];
     onApply(selectedCoroinha);
-    onClose();
   };
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50 p-4">
       <div className="bg-white rounded-lg w-full max-w-md p-6 shadow-lg max-h-[80vh] overflow-y-auto">
-        <div className="flex justify-between items-center mb-4">
+        <div className="flex justify-center items-center mb-4">
           <h2 className="text-xl font-semibold">Selecione um coroinha</h2>
-          <button
-            onClick={onClose}
-            className="text-gray-500 hover:text-gray-700 font-bold text-2xl"
-            aria-label="Fechar modal"
-          >
-            &times;
-          </button>
         </div>
         <input
           type="text"
@@ -78,18 +69,12 @@ const SearchableSelect: React.FC<Props> = ({ coroinhas, selectedId, onApply, onC
             </li>
           ))}
         </ul>
-        <div className="mt-4 flex justify-end gap-2">
-          <button
-            onClick={onClose}
-            className="px-4 py-2 rounded border border-gray-300 hover:bg-gray-100"
-          >
-            Cancelar
-          </button>
+        <div className="mt-4 flex justify-end">
           <button
             onClick={handleApply}
             className="px-4 py-2 bg-blue-500 text-white rounded"
           >
-            Aplicar filtro
+            Aplicar
           </button>
         </div>
       </div>

@@ -109,7 +109,8 @@ const CardEscala: React.FC<CardEscalaProps> = ({
             local === "Matriz" &&
             (
               (isSabado && horario === "19h") ||
-              (isDomingo && ["07h", "09h", "19h"].includes(horario))
+              (isDomingo && ["07h", "09h", "19h"].includes(horario)) ||
+              (data === "19-06-2025" && horario === "19h") // Corpus Christi
             );
 
           return (
