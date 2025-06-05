@@ -70,7 +70,6 @@ const EscalaFixa: React.FC = () => {
         Escala Fixa
       </h1>
 
-      {/* Dropdown Customizado */}
       <div className="flex justify-center mb-6">
         <div className="relative w-72">
           <button

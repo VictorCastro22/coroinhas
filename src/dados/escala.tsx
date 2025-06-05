@@ -1,5 +1,4 @@
 export const escala = [
-
     { id: "80-2025-06-04-19h-SA", data: "2025-06-04", horario: "19h", local: "Festejos - Santo Antônio", padre: "Padre João Paulo" },
     { id: "80-2025-06-04-19h-Divino", data: "2025-06-04", horario: "19h", local: "Festejos - Divino", padre: "Padre Nonato" },
     { id: "78-2025-06-04-19h-Matriz", data: "2025-06-04", horario: "19h", local: "Matriz - Missa pelas famílias", padre: "Padre Rafael" },  
