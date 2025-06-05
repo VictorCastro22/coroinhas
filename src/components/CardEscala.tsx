@@ -64,7 +64,6 @@ const CardEscala: React.FC<CardEscalaProps> = ({
         isTodayCard ? "bg-green-300" : "bg-white"
       }`}
     >
-      {/* Informações do Padre */}
       <div className="flex items-center mb-4">
         <div className="flex flex-col items-center mr-4">
           <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-200">
@@ -82,10 +81,8 @@ const CardEscala: React.FC<CardEscalaProps> = ({
             <span className="font-semibold">{diaSemana.charAt(0).toUpperCase() + diaSemana.slice(1)}</span>
             <span>{dataFormatada} - {horario}</span>
           </div>
-
-
           
-          {/* Botão para adicionar coroinha (abre o modal) */}
+        
           {!isPublicView && onAddCoroinha && (
             <button
               type="button"
@@ -98,20 +95,20 @@ const CardEscala: React.FC<CardEscalaProps> = ({
         </div>
       </div>
 
-      {/* Lista de coroinhas */}
       <ul className="mt-4">
         {coroinhas.map((coroinha) => {
           const diaSemana = new Date(`${data}T00:00:00`).getDay();
           const isSabado = diaSemana === 6;
           const isDomingo = diaSemana === 0;
+          const isQuinta = diaSemana === 4;
 
           const tunicaVermelha =
-            local === "Matriz" &&
-            (
-              (isSabado && horario === "19h") ||
-              (isDomingo && ["07h", "09h", "19h"].includes(horario)) ||
-              (data === "19-06-2025" && horario === "19h") // Corpus Christi
-            );
+          local === "Matriz" || local === "Matriz - Corpus Christi" &&
+          (
+            (isSabado && horario === "19h") ||
+            (isDomingo && ["07h", "09h", "19h"].includes(horario)) ||
+            (isQuinta && horario === "19h")
+          );
 
           return (
             <li
@@ -122,7 +119,7 @@ const CardEscala: React.FC<CardEscalaProps> = ({
                 <img
                   src={coroinha.foto}
                   alt={coroinha.nome}
-                  className="w-8 h-8 rounded-full mr-2"
+                  className="w-12 h-12 rounded-full mr-2"
                 />
                 <span className="flex flex-col">
                   <span>{coroinha.nome}</span>

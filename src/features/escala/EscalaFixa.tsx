@@ -1,11 +1,10 @@
 import { useState, useEffect, useMemo } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import db from "../../../firebaseConfig";
-import CardEscala from "../../components/CardEscala";
 import { escala as escalas } from "../../dados/escala";
 import { gerarPdfEscala } from "../../utils/pdf";
+import CardEscala from "../../components/CardEscala";
 import coroinhas from "../../dados/coroinhas";
-import SearchableSelect from "../../components/SearchableSelect";
 
 interface Coroinha {
   id: string;
@@ -23,7 +22,7 @@ const EscalaFixa: React.FC = () => {
   const [coroinhasData, setCoroinhasData] = useState<{ [key: string]: Coroinha[] }>({});
   const [allCoroinhas, setAllCoroinhas] = useState<Coroinha[]>([]);
   const [selectedCoroinha, setSelectedCoroinha] = useState<Coroinha>(TODOS_COROINHAS);
-  const [showModal, setShowModal] = useState(true);
+  const [open, setOpen] = useState(false);
 
   useEffect(() => {
     const fetchCoroinhas = async () => {
@@ -65,41 +64,69 @@ const EscalaFixa: React.FC = () => {
     );
   }, [coroinhasData, selectedCoroinha]);
 
-
   return (
     <div className="container mx-auto p-4">
       <h1 className="text-[30px] font-playfair font-semibold text-[#535043] text-center mb-6">
         Escala Fixa
       </h1>
 
-      <div className="mb-6 flex justify-center items-center gap-4 bg-gray-100 p-4 rounded-lg cursor-pointer" onClick={() => setShowModal(true)}>
-        {!selectedCoroinha ? (
-          <span className="text-gray-500">Selecione um coroinha</span>
-        ) : (
-          <div className="flex flex-col items-center">
-            <img src={selectedCoroinha.foto} alt={selectedCoroinha.nome} className="w-16 h-16 rounded-full object-cover border-2 border-gray-300" />
-            <span className="text-sm font-semibold">{selectedCoroinha.nome}</span>
-          </div>
-        )}
-        <span className="text-gray-500 text-xl">▼</span> 
-      </div>
+      {/* Dropdown Customizado */}
+      <div className="flex justify-center mb-6">
+        <div className="relative w-72">
+          <button
+            onClick={() => setOpen(!open)}
+            className="w-full flex items-center justify-between border border-gray-300 rounded-lg p-2 bg-white shadow-sm"
+          >
+            <div className="flex items-center gap-2">
+              <img
+                src={selectedCoroinha.foto}
+                alt={selectedCoroinha.nome}
+                className="w-8 h-8 rounded-full object-cover border border-gray-300"
+              />
+              <span className="text-gray-700">{selectedCoroinha.nome}</span>
+            </div>
+            <svg
+              className={`w-5 h-5 text-gray-500 transform transition-transform ${open ? "rotate-180" : ""
+                }`}
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
 
-      {showModal && (
-        <SearchableSelect
-          coroinhas={coroinhasOrdenados}
-          selectedId={selectedCoroinha.id}
-          onApply={(selected) => {
-            setSelectedCoroinha(selected);
-            setShowModal(false);
-          }}
-        />
-      )}
+          {open && (
+            <div className="absolute z-10 w-full bg-white border border-gray-300 rounded-lg shadow-lg mt-1 max-h-60 overflow-auto">
+              {coroinhasOrdenados.map(c => (
+                <div
+                  key={c.id}
+                  onClick={() => {
+                    setSelectedCoroinha(c);
+                    setOpen(false);
+                  }}
+                  className={`flex items-center gap-2 px-4 py-2 cursor-pointer hover:bg-gray-100 ${selectedCoroinha.id === c.id ? "bg-gray-100" : ""
+                    }`}
+                >
+                  <img
+                    src={c.foto}
+                    alt={c.nome}
+                    className="w-8 h-8 rounded-full object-cover border border-gray-300"
+                  />
+                  <span className="text-gray-700">{c.nome}</span>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
 
       <div className="flex justify-center mb-6">
         <button
           type="button"
           onClick={() => gerarPdfEscala(filteredEscalas, allCoroinhas, selectedCoroinha.nome)}
-          className="px-4 py-2 bg-blue-500 text-white rounded-md"
+          className="px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 transition"
         >
           Imprimir Escala em PDF
         </button>
@@ -117,8 +144,8 @@ const EscalaFixa: React.FC = () => {
               ? coroinhasData[escala.id] || []
               : coroinhasData[escala.id]?.filter(c => c.nome === selectedCoroinha.nome) || []
           }
-          onAddCoroinha={() => {}}
-          onDeleteCoroinha={() => {}}
+          onAddCoroinha={() => { }}
+          onDeleteCoroinha={() => { }}
           isPublicView={true}
         />
       ))}
