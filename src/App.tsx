@@ -12,8 +12,6 @@ import Mestres from "./pages/Mestres";
 import CriaCalendario from "./pages/CriaCalendario";
 import CoroinhasPage from "./pages/CoroinhasPage";
 
-import CriarEscalaFestejosDivino from "./features/criarEscalaFestejos/Divino/CriarEscalaDivino";
-import CriarEscalaFestejosSantoAntonio from "./features/criarEscalaFestejos/SantoAntonio/CriarEscalaSAntonio";
 import CalendarioPadresSJBatista from "./features/criarEscalaFestejos/SaoJoaoBatista/CalendarioSJBatista";
 import CalendarioPadresSagradoCoracao from "./features/criarEscalaFestejos/SagradoCoração/CalendarioSCoracao";
 
@@ -32,8 +30,6 @@ const App: React.FC = () => {
           <Route path="/admin" element={<CriaCalendario />} />
           <Route path="/coroinhas" element={<CoroinhasPage />} />
 
-          <Route path="/criar-divino" element={<CriarEscalaFestejosDivino />} />
-          <Route path="/criar-santo_antonio" element={<CriarEscalaFestejosSantoAntonio />} />
           <Route path="/criar-sj_batista" element={<CalendarioPadresSJBatista />} />
           <Route path="/criar-sagrado_coracao" element={<CalendarioPadresSagradoCoracao />} />
 
