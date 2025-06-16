@@ -87,8 +87,6 @@ const CalendarioPadresSJBatista: React.FC = () => {
   };
 
   const escalas = [
-    { id: "80-2025-06-14-19h-SJBatista", data: "2025-06-14", horario: "19h", local: "São João Batista", padre: "Padre Rafael" },
-    { id: "80-2025-06-15-19h-SJBatista", data: "2025-06-15", horario: "19h", local: "São João Batista", padre: "Dom José Antônio" },
     { id: "80-2025-06-16-19h-SJBatista", data: "2025-06-16", horario: "19h", local: "São João Batista", padre: "Padre João Paulo" },
     { id: "80-2025-06-17-19h-SJBatista", data: "2025-06-17", horario: "19h", local: "São João Batista", padre: "Padre Roberto" },
     { id: "80-2025-06-20-19h-SJBatista", data: "2025-06-20", horario: "19h", local: "São João Batista", padre: "Padre Rafhael" },

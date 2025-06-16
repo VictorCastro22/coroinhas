@@ -85,8 +85,7 @@ const EscalaFixa: React.FC = () => {
               <span className="text-gray-700">{selectedCoroinha.nome}</span>
             </div>
             <svg
-              className={`w-5 h-5 text-gray-500 transform transition-transform ${open ? "rotate-180" : ""
-                }`}
+              className={`w-5 h-5 text-gray-500 transform transition-transform ${open ? "rotate-180" : ""}`}
               fill="none"
               stroke="currentColor"
               strokeWidth="2"
@@ -105,8 +104,7 @@ const EscalaFixa: React.FC = () => {
                     setSelectedCoroinha(c);
                     setOpen(false);
                   }}
-                  className={`flex items-center gap-2 px-4 py-2 cursor-pointer hover:bg-gray-100 ${selectedCoroinha.id === c.id ? "bg-gray-100" : ""
-                    }`}
+                  className={`flex items-center gap-2 px-4 py-2 cursor-pointer hover:bg-gray-100 ${selectedCoroinha.id === c.id ? "bg-gray-100" : ""}`}
                 >
                   <img
                     src={c.foto}

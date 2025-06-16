@@ -88,54 +88,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "78-2025-06-04-19h-Matriz", data: "2025-06-04", horario: "19h", local: "Matriz - Missa pelas famílias", padre: "Padre Rafael" },  
-    { id: "78-2025-06-04-19h-Guabiraba", data: "2025-06-04", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
-    
-    { id: "78-2025-06-05-19h-Mororo", data: "2025-06-05", horario: "19h", local: "Mororó", padre: "Padre Rafael" },
-    { id: "78-2025-06-05-19h-PqDasRosas", data: "2025-06-05", horario: "19h", local: "Parque das Rosas", padre: "Padre Ivan" },
-
-    { id: "78-2025-06-06-18h30-CentroPastoral", data: "2025-06-06", horario: "18h30", local: "Centro de Pastoral - Adoração ao Santíssimo Sacramento", padre: "Padre Rafael" },
-    { id: "78-2025-06-06-19h-CentroPastoral", data: "2025-06-06", horario: "19h", local: "Centro de Pastoral - Missa", padre: "Padre Eudásio" },
-
-    { id: "78-2025-06-07-17h-SantaLuzia", data: "2025-06-07", horario: "17h", local: "Santa Luzia", padre: "Padre Ivan" },    
-    { id: "78-2025-06-07-19h-Matriz", data: "2025-06-07", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-06-07-19h-Coite", data: "2025-06-07", horario: "19h", local: "Coité", padre: "Padre Ivan" },
-
-    { id: "78-2025-06-08-07h-Matriz", data: "2025-06-08", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-06-08-07h-Divino", data: "2025-06-08", horario: "07h", local: "Divino", padre: "Padre Ivan" },
-    { id: "78-2025-06-08-07h-Abrigo", data: "2025-06-08", horario: "07h", local: "Abrigo", padre: "Padre Rafael" },
-    { id: "78-2025-06-08-09h-Matriz", data: "2025-06-08", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-06-08-17h-CentroPastoral", data: "2025-06-08", horario: "17h", local: "Centro de Pastoral", padre: "Padre Rafael" },
-    { id: "78-2025-06-08-17h-PqSaoJoao", data: "2025-06-08", horario: "17h", local: "Parque São João", padre: "Padre Ivan" },
-    { id: "78-2025-06-08-19h-Matriz", data: "2025-06-08", horario: "19h", local: "Matriz - Missa votiva de Nossa Senhora da Penha", padre: "Padre Rafael" },
-    { id: "78-2025-06-08-19h-NovoPqIracema", data: "2025-06-08", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
-
-    { id: "78-2025-06-10-19h-SantaDulce", data: "2025-06-10", horario: "19h", local: "Santa Dulce", padre: "Padre Ivan" },
-
-    { id: "78-2025-06-11-19h-Matriz", data: "2025-06-11", horario: "19h", local: "Matriz - Missa pelas famílias (Chegada das relíquias Carlo Acutis)", padre: "Padre Rafael" },
-    { id: "78-2025-06-11-19h-SantosDumont", data: "2025-06-11", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
-
-    { id: "78-2025-06-12-19h-MaeRainha", data: "2025-06-12", horario: "19h", local: "Mãe Rainha", padre: "Padre Eudásio" },
-    { id: "78-2025-06-12-19h-Pirapora", data: "2025-06-12", horario: "19h", local: "Pirapora", padre: "Padre Ivan" },
-
-    { id: "78-2025-06-13-12h-Matriz", data: "2025-06-13", horario: "12h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-06-13-17h-Vilares", data: "2025-06-13", horario: "17h", local: "Vilares da Serra", padre: "Padre Ivan" },
-    { id: "78-2025-06-13-19h-PqSaoJoao", data: "2025-06-13", horario: "19h", local: "Parque São João", padre: "Padre Ivan" }, 
-
-    { id: "78-2025-06-14-19h-Matriz", data: "2025-06-14", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-
-    { id: "78-2025-06-15-07h-Matriz", data: "2025-06-15", horario: "07h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-06-15-07h-Divino", data: "2025-06-15", horario: "07h", local: "Divino", padre: "Padre Ivan" },
-    { id: "78-2025-06-15-09h-Matriz", data: "2025-06-15", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-06-15-09h-SaoJose", data: "2025-06-15", horario: "09h", local: "São José", padre: "Padre Rafael" },
-    { id: "78-2025-06-15-10h-Tijuca", data: "2025-06-15", horario: "10h", local: "Tijuca", padre: "Padre Ivan" },
-    { id: "78-2025-06-15-11h-CentroPastoral", data: "2025-06-15", horario: "11h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
-    { id: "78-2025-06-15-17h-Divino", data: "2025-06-15", horario: "17h", local: "Divino", padre: "Padre Eudásio" },
-    { id: "78-2025-06-15-17h-CentroPastoral", data: "2025-06-15", horario: "17h", local: "Centro de Pastoral", padre: "Padre Ivan" },
-    { id: "78-2025-06-15-17h-PqSaoJoao", data: "2025-06-15", horario: "17h", local: "Parque São João", padre: "Padre Rafael" },
-    { id: "78-2025-06-15-19h-Matriz", data: "2025-06-15", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "78-2025-06-15-19h-NovoPqIracema", data: "2025-06-15", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Rafael" },
-
     { id: "78-2025-06-17-19h-PlanaltoCajueiros", data: "2025-06-17", horario: "19h", local: "Planalto dos Cajueiros", padre: "Padre Eudásio" },
     { id: "78-2025-06-17-19h-Urucara", data: "2025-06-17", horario: "19h", local: "Urucará", padre: "Padre Rafael" },
 
