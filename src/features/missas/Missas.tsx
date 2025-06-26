@@ -58,7 +58,7 @@ const Missas: React.FC = () => {
                 fontWeight: 600,
               }}
             >
-              <a href="/missas/horarios/">Missas</a>
+              <a href="/calendario-missas">Missas</a>
             </h2>
           </div>
         </div>

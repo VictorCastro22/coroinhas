@@ -37,13 +37,6 @@ const CalendarConfissoes: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "80-2025-06-18-08h-Secretaria", data: "2025-06-18", horario: "08h", local: "Secretaria", padre: "Padre Eudásio" },
-    { id: "79-2025-06-18-17h-Matriz", data: "2025-06-18", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "80-2025-06-20-17h-Matriz", data: "2025-06-20", horario: "17h", local: "Matriz (Sexta Jubilar)", padre: "Padre Eudásio" },
-    { id: "79-2025-06-20-17h-Matriz2", data: "2025-06-20", horario: "17h", local: "Matriz (Sexta Jubilar)", padre: "Padre Rafael" },
-    { id: "78-2025-06-20-17h-Matriz3", data: "2025-06-20", horario: "17h", local: "Matriz (Sexta Jubilar)", padre: "Padre Ivan" },
-    { id: "80-2025-06-25-08h-Secretaria", data: "2025-06-25", horario: "08h", local: "Secretaria", padre: "Padre Eudásio" },  
-    { id: "79-2025-06-25-17h-Matriz", data: "2025-06-25", horario: "17h", local: "Matriz", padre: "Padre Rafael" },
     { id: "78-2025-06-26-08h-Matriz", data: "2025-06-26", horario: "08h", local: "Matriz", padre: "Padre Ivan" },
   ];
 

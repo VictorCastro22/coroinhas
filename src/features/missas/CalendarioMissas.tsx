@@ -37,50 +37,6 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
   const escalas = [
-    { id: "83-2025-06-16-19h-SJBatista", data: "2025-06-16", horario: "19h", local: "Festejos - São João Batista", padre: "Padre João Paulo" },
-    { id: "83-2025-06-16-19h-SCoração", data: "2025-06-16", horario: "19h", local: "Festejos - Sagrado Coração", padre: "Padre Ivan" },
-
-    { id: "83-2025-06-17-19h-SJBatista", data: "2025-06-17", horario: "19h", local: "Festejos - São João Batista", padre: "Padre Roberto" },
-    { id: "83-2025-06-17-19h-SCoração", data: "2025-06-17", horario: "19h", local: "Festejos - Sagrado Coração", padre: "Padre Geisso" },
-    { id: "83-2025-06-17-19h-PlanaltoCajueiros", data: "2025-06-17", horario: "19h", local: "Planalto dos Cajueiros", padre: "Padre Eudásio" },
-    { id: "83-2025-06-17-19h-Urucara", data: "2025-06-17", horario: "19h", local: "Urucará", padre: "Padre Rafael" },
-
-    { id: "83-2025-06-18-19h-Matriz", data: "2025-06-18", horario: "19h", local: "Matriz - Missa pelas famílias", padre: "Padre Rafael" },
-    { id: "83-2025-06-18-19h-Guabiraba", data: "2025-06-18", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
-
-    { id: "83-2025-06-19-17h-Divino", data: "2025-06-19", horario: "17h", local: "Divino - Corpus Christi", padre: "Padre Rafael" },
-    { id: "83-2025-06-19-19h-Matriz", data: "2025-06-19", horario: "19h", local: "Matriz - Corpus Christi", padre: "Padre Eudásio" },
-    { id: "83-2025-06-19-19h-Matriz2", data: "2025-06-19", horario: "19h", local: "Matriz - Corpus Christi", padre: "Padre Ivan" },
-
-    { id: "83-2025-06-20-19h-SJBatista", data: "2025-06-20", horario: "19h", local: "Festejos - São João Batista", padre: "Padre Rafhael" },
-    { id: "83-2025-06-20-19h-Matriz", data: "2025-06-20", horario: "19h", local: "Matriz - Missa Jubilar", padre: "Padre Eudásio" },
-    { id: "83-2025-06-20-19h-Matriz2", data: "2025-06-20", horario: "19h", local: "Matriz - Missa Jubilar", padre: "Padre Rafael" },
-    { id: "83-2025-06-20-19h-Matriz3", data: "2025-06-20", horario: "19h", local: "Matriz - Missa Jubilar", padre: "Padre Ivan" },
-
-    { id: "83-2025-06-21-17h-SantaLuzia", data: "2025-06-21", horario: "17h", local: "Santa Luzia", padre: "Padre Rafael" },
-    { id: "83-2025-06-21-17h-SantoAntonio", data: "2025-06-21", horario: "17h", local: "Santo Antônio", padre: "Padre Ivan" },
-    { id: "83-2025-06-21-19h-SCoração", data: "2025-06-21", horario: "19h", local: "Festejos - Sagrado Coração", padre: "Padre Rafael" },
-    { id: "83-2025-06-21-19h-Matriz", data: "2025-06-21", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-
-    { id: "83-2025-06-22-07h-Matriz", data: "2025-06-22", horario: "07h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "83-2025-06-22-07h-Divino", data: "2025-06-22", horario: "07h", local: "Divino", padre: "Padre Ivan" },
-    { id: "83-2025-06-22-09h-Matriz", data: "2025-06-22", horario: "09h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "83-2025-06-22-15h30-SantosDumont", data: "2025-06-22", horario: "15h30", local: "Santos Dumont", padre: "Padre Eudásio" },
-    { id: "83-2025-06-22-17h-CentroPastoral", data: "2025-06-22", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
-    { id: "83-2025-06-22-17h-Divino", data: "2025-06-22", horario: "17h", local: "Divino", padre: "Padre Rafael" },
-    { id: "83-2025-06-22-17h-PqSaoJoao", data: "2025-06-22", horario: "17h", local: "Parque São João", padre: "Padre Ivan" },
-    { id: "83-2025-06-22-19h-Matriz", data: "2025-06-22", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "83-2025-06-22-19h-NovoPqIracema", data: "2025-06-22", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
-
-    { id: "83-2025-06-23-19h-SCoração", data: "2025-06-23", horario: "19h", local: "Festejos - Sagrado Coração", padre: "Padre João Paulo" },
-
-    { id: "83-2025-06-24-19h-SJBatista", data: "2025-06-24", horario: "19h", local: "Festejos - São João Batista", padre: "Padre Eudásio" },
-    { id: "83-2025-06-24-19h-SCoração", data: "2025-06-24", horario: "19h", local: "Festejos - Sagrado Coração", padre: "Padre Cosmo" },
-    { id: "83-2025-06-24-19h-SerraPelada", data: "2025-06-24", horario: "19h", local: "Serra Pelada", padre: "Padre Rafael" },
-
-    { id: "83-2025-06-25-19h-Matriz", data: "2025-06-25", horario: "19h", local: "Matriz - Missa pelas famílias", padre: "Padre Rafael" },
-    { id: "83-2025-06-25-19h-SantosDumont", data: "2025-06-25", horario: "19h", local: "Santos Dumont", padre: "Padre Eudásio" },
-
     { id: "83-2025-06-26-19h-MaeRainha", data: "2025-06-26", horario: "19h", local: "Mãe Rainha", padre: "Padre Rafael" },
     { id: "83-2025-06-26-19h-CampoDelta", data: "2025-06-26", horario: "19h", local: "Campo Delta", padre: "Padre Ivan" },
 

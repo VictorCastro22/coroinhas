@@ -17,12 +17,6 @@ const Mestres: React.FC = () => {
             <FaCalendarAlt /> Criar Escala Fixa
           </button>
 
-          <button
-            className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
-            onClick={() => navigate("/criar-sj_batista")}
-          >
-            <FaChurch /> Criar Escala São João Batista
-          </button>
 
           <button
             className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
@@ -38,6 +32,7 @@ const Mestres: React.FC = () => {
             <FaUsers /> Coroinhas
           </button>
         </div>
+
       </div>
     </div>
   );

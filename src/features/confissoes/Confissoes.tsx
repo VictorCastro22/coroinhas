@@ -58,7 +58,7 @@ const Confissoes: React.FC = () => {
                 fontWeight: 600,
               }}
             >
-              <a href="/confissoes/horarios/">Confissões</a>
+              <a href="/calendario-confissoes">Confissões</a>
             </h2>
           </div>
         </div>

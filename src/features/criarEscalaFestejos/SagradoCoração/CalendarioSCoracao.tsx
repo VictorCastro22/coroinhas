@@ -87,11 +87,6 @@ const CalendarioPadresSagradoCoracao: React.FC = () => {
   };
 
   const escalas = [
-    { id: "80-2025-06-16-19h-SCoração", data: "2025-06-16", horario: "19h", local: "Sagrado Coração", padre: "Padre Ivan" },
-    { id: "80-2025-06-17-19h-SCoração", data: "2025-06-17", horario: "19h", local: "Sagrado Coração", padre: "Padre Geisso" },
-    { id: "80-2025-06-21-19h-SCoração", data: "2025-06-21", horario: "19h", local: "Sagrado Coração", padre: "Padre Rafael" },
-    { id: "80-2025-06-23-19h-SCoração", data: "2025-06-23", horario: "19h", local: "Sagrado Coração", padre: "Padre João Paulo" },
-    { id: "80-2025-06-24-19h-SCoração", data: "2025-06-24", horario: "19h", local: "Sagrado Coração", padre: "Padre Cosmo" },
     { id: "80-2025-06-27-19h-SCoração", data: "2025-06-27", horario: "19h", local: "Sagrado Coração", padre: "Padre Eudásio" },    
   ];
 
