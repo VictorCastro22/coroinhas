@@ -96,19 +96,21 @@ const CardEscala: React.FC<CardEscalaProps> = ({
       </div>
 
       <ul className="mt-4">
-        {coroinhas.map((coroinha) => {
-          const diaSemana = new Date(`${data}T00:00:00`).getDay();
-          const isSabado = diaSemana === 6;
-          const isDomingo = diaSemana === 0;
-          const isQuinta = diaSemana === 4;
 
-          const tunicaVermelha =
-          local === "Matriz" || local === "Matriz - Corpus Christi" &&
-          (
-            (isSabado && horario === "19h") ||
-            (isDomingo && ["07h", "09h", "19h"].includes(horario)) ||
-            (isQuinta && horario === "19h")
-          );
+        {coroinhas.map((coroinha) => {
+          //const diaSemana = new Date(`${data}T00:00:00`).getDay();
+          //const isSabado = diaSemana === 6;
+          //const isDomingo = diaSemana === 0;
+          //const isQuinta = diaSemana === 4;
+
+          // Suspenso temporariamente o uso de túnica vermelha
+          // const tunicaVermelha =
+          //   (local === "Matriz" || local === "Matriz - Corpus Christi") &&
+          //   (
+          //     (isSabado && horario === "19h") ||
+          //     (isDomingo && ["07h", "09h", "19h"].includes(horario)) ||
+          //     (isQuinta && horario === "19h")
+          //   );
 
           return (
             <li
@@ -123,8 +125,8 @@ const CardEscala: React.FC<CardEscalaProps> = ({
                 />
                 <span className="flex flex-col">
                   <span>{coroinha.nome}</span>
-                  <span className={`text-xs ${tunicaVermelha ? 'text-red-600' : 'text-gray-500'}`}>
-                    ({tunicaVermelha ? 'Túnica Vermelha' : 'Túnica Branca'})
+                  <span className="text-xs text-gray-500">
+                    (Túnica Branca)
                   </span>
                 </span>
               </div>
@@ -142,6 +144,7 @@ const CardEscala: React.FC<CardEscalaProps> = ({
             </li>
           );
         })}
+
       </ul>
     </div>
   );

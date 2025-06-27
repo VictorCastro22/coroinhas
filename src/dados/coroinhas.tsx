@@ -71,7 +71,7 @@ const coroinhas = [
    },
 
   { 
-    id: "99", 
+    id: "7", 
     nome: "Bianca", 
     foto: "/imagens/bianca.jpeg",
     permissoes: [
@@ -91,7 +91,7 @@ const coroinhas = [
    },
 
   { 
-    id: "7", 
+    id: "8", 
     nome: "Carla", 
     foto: "/imagens/carla.png",
     permissoes: [
@@ -100,7 +100,7 @@ const coroinhas = [
    },
 
   { 
-    id: "8", 
+    id: "9", 
     nome: "Carlos André", 
     foto: "/imagens/carlos.png",
     permissoes: [
@@ -120,7 +120,7 @@ const coroinhas = [
    },
 
   { 
-    id: "9", 
+    id: "10", 
     nome: "Cecília", 
     foto: "/imagens/cecilia.png",
     permissoes: [
@@ -132,7 +132,7 @@ const coroinhas = [
    },
 
   { 
-    id: "10", 
+    id: "11", 
     nome: "Charlys", 
     foto: "/imagens/charlys.jpeg",
     permissoes: [
@@ -159,7 +159,7 @@ const coroinhas = [
    },
 
   { 
-    id: "11", 
+    id: "12", 
     nome: "Clarice", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -174,7 +174,7 @@ const coroinhas = [
    },
 
   { 
-    id: "12", 
+    id: "13", 
     nome: "Clara Albuquerque", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -194,7 +194,7 @@ const coroinhas = [
    },
 
   { 
-    id: "13", 
+    id: "14", 
     nome: "Clara Martins",
     foto: "/imagens/claramartins.png",
     permissoes: [
@@ -217,7 +217,7 @@ const coroinhas = [
    },
 
   { 
-    id: "14", 
+    id: "15", 
     nome: "Clara Santiago", 
     foto: "/imagens/clara_santiago.jpeg",
     permissoes: [
@@ -236,7 +236,7 @@ const coroinhas = [
    },
 
   {
-    id: "15", 
+    id: "16", 
     nome: "Dafny", 
     foto: "/imagens/dafny.png",
     permissoes: [
@@ -255,7 +255,7 @@ const coroinhas = [
    },
 
   { 
-    id: "16", 
+    id: "17", 
     nome: "Davi", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -265,7 +265,7 @@ const coroinhas = [
    },
 
   { 
-    id: "17", 
+    id: "18", 
     nome: "Eduarda Cavalcante", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -284,19 +284,19 @@ const coroinhas = [
   },
 
   { 
-    id: "18", 
+    id: "19", 
     nome: "Fernando", 
     foto: "/imagens/semfoto.jpg"
    },
 
   { 
-    id: "19", 
+    id: "20", 
     nome: "Francisco José", 
     foto: "/imagens/semfoto.jpg"
    },
 
   { 
-    id: "20", 
+    id: "21", 
     nome: "Gabriel de Andrade", 
     foto: "/imagens/joaogabriel.jpeg",
     permissoes: [
@@ -317,7 +317,7 @@ const coroinhas = [
   },
 
   { 
-    id: "21", 
+    id: "22", 
     nome: "Gabriel Christian", 
     foto: "/imagens/gabriel_christian.png",
     permissoes: [
@@ -336,7 +336,7 @@ const coroinhas = [
    },
 
   { 
-    id: "22", 
+    id: "23", 
     nome: "Gabriel Gomes", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -352,7 +352,7 @@ const coroinhas = [
   },
 
   { 
-    id: "23", 
+    id: "24", 
     nome: "Gabrielle", 
     foto: "/imagens/gabrielle.png",
     permissoes: [
@@ -368,14 +368,14 @@ const coroinhas = [
   },
 
   { 
-    id: "24", 
+    id: "25", 
     nome: "Gustavo", 
     foto: "/imagens/gustavo-mestre.png",
 
   },
 
   { 
-    id: "25", 
+    id: "26", 
     nome: "Isaías", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -402,7 +402,7 @@ const coroinhas = [
    },
 
   { 
-    id: "26", 
+    id: "27", 
     nome: "Isabelly Guedes", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -429,7 +429,7 @@ const coroinhas = [
   },
 
   { 
-    id: "27", 
+    id: "28", 
     nome: "Isadora Oliveira", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -450,7 +450,7 @@ const coroinhas = [
    },
 
   { 
-    id: "28", 
+    id: "29", 
     nome: "Isabelle", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -466,7 +466,7 @@ const coroinhas = [
    },
 
   { 
-    id: "29", 
+    id: "30", 
     nome: "João Pedro", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -475,13 +475,13 @@ const coroinhas = [
    },
 
   { 
-    id: "30", 
+    id: "31", 
     nome: "José Vitor", 
     foto: "/imagens/semfoto.jpg"
    },
 
   { 
-    id: "31", 
+    id: "32", 
     nome: "Jhonnata", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -495,7 +495,7 @@ const coroinhas = [
    },
 
   { 
-    id: "32", 
+    id: "33", 
     nome: "Júlia", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -506,7 +506,7 @@ const coroinhas = [
    },
 
   { 
-    id: "33", 
+    id: "34", 
     nome: "Kacilane", 
     foto: "/imagens/kacilane.png",
     permissoes: [
@@ -520,7 +520,7 @@ const coroinhas = [
    },
 
   { 
-    id: "34", 
+    id: "35", 
     nome: "Kaciele", 
     foto: "/imagens/kaciele.JPG",
     permissoes: [
@@ -534,7 +534,7 @@ const coroinhas = [
    },
 
   { 
-    id: "35", 
+    id: "36", 
     nome: "Kauan ", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -554,7 +554,7 @@ const coroinhas = [
   }, 
 
   { 
-    id: "36", 
+    id: "37", 
     nome: "Kaylane", 
     foto: "/imagens/kaylane.png",
     permissoes: [
@@ -581,7 +581,7 @@ const coroinhas = [
   },
 
   { 
-    id: "37", 
+    id: "38", 
     nome: "Larissa", 
     foto: "/imagens/larissa.png",
     permissoes: [
@@ -590,7 +590,7 @@ const coroinhas = [
    },
 
   { 
-    id: "38", 
+    id: "39", 
     nome: "Laura", 
     foto: "/imagens/laura.png",
     permissoes: [
@@ -607,29 +607,9 @@ const coroinhas = [
     ]
    },
 
-  { 
-    id: "39", 
-    nome: "Letícia", 
-    foto: "/imagens/leticia.png",
-    permissoes: [
-      "Coité-17h-Sábado", "Coité-19h-Sábado", 
-      "Coité-17h-Domingo", "Coité-19h-Domingo",
-      "Parque São João-17h-Sábado", "Parque São João-19h-Sábado",
-      "Parque São João-17h-Domingo", "Parque São João-19h-Domingo",
-    ] 
-  },
-  { id: "40", 
-    nome: "Liah", 
-    foto: "/imagens/liah.jpg",
-    permissoes: [
-      "Centro Pastoral-17h-Domingo",
-      "Divino-07h-Domingo","Divino-17h-Domingo",
-      "Matriz-07h-Domingo",
-    ]  
-   },
 
   { 
-    id: "42", 
+    id: "40", 
     nome: "Marjory", 
     foto: "/imagens/marjory.png",
     permissoes: [
@@ -641,7 +621,7 @@ const coroinhas = [
    },
 
   { 
-    id: "43", 
+    id: "41", 
     nome: "Mariana", 
     foto: "/imagens/mariana.png",
     permissoes: [
@@ -668,7 +648,7 @@ const coroinhas = [
    },
 
   { 
-    id: "44", 
+    id: "42", 
     nome: "Marina", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -677,7 +657,7 @@ const coroinhas = [
    },
 
   { 
-    id: "45", 
+    id: "43", 
     nome: "Maria Luiza", 
     foto: "/imagens/marialuiza.png",
     permissoes: [
@@ -695,7 +675,7 @@ const coroinhas = [
     ]
    },
   { 
-    id: "46", 
+    id: "44", 
     nome: "Maria Lara", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -722,7 +702,7 @@ const coroinhas = [
    },
 
   { 
-    id: "47", 
+    id: "45", 
     nome: "Maria Rita", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -731,7 +711,7 @@ const coroinhas = [
    },
 
   { 
-    id: "48", 
+    id: "46", 
     nome: "Martha", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -740,7 +720,7 @@ const coroinhas = [
    },
 
   { 
-     id: "49", 
+     id: "47", 
      nome: "Melissa", 
      foto: "/imagens/melissa.png",
      permissoes: [
@@ -757,7 +737,7 @@ const coroinhas = [
      },
 
   { 
-    id: "50", 
+    id: "48", 
     nome: "Miguel Anselmo", 
     foto: "/imagens/miguel_anselmo.jpeg",
     permissoes: [
@@ -779,7 +759,7 @@ const coroinhas = [
    },
 
   { 
-    id: "51", 
+    id: "49", 
     nome: "Miguel Dourado", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -791,7 +771,7 @@ const coroinhas = [
    },
 
   { 
-    id: "52", 
+    id: "50", 
     nome: "Nalberto", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -818,7 +798,7 @@ const coroinhas = [
    },
 
   { 
-    id: "53", 
+    id: "51", 
     nome: "Pedro Guilherme", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -834,29 +814,8 @@ const coroinhas = [
     ]
    },
 
-  {
-    id: "54",
-    nome: "Ramon",
-    foto: "/imagens/ramon.png",
-    permissoes: [
-      "Abrigo-17h-Sábado", "Abrigo-07h-Domingo",
-      "Centro Pastoral-17h-Domingo",
-      "Centro Pastoral-18h30-Sexta",
-      "Coité-17h-Sábado","Coité-19h-Sábado",
-      "Coité-17h-Domingo","Coité-19h-Domingo",
-      "Matriz-07h-Domingo","Matriz-19h-Domingo",
-      "Matriz-19h-Segunda",
-      "Matriz-19h-Terça",
-      "Matriz-19h-Quinta",
-      "Matriz-19h-Sexta",
-      "Matriz-19h-Sábado",
-      "Parque São João-17h-Sábado", "Parque São João-19h-Sábado",
-      "Parque São João-17h-Domingo", "Parque São João-19h-Domingo",
-    ]
-  },
-
   { 
-    id: "56", 
+    id: "52", 
     nome: "Samyra", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -872,7 +831,7 @@ const coroinhas = [
     ]
    },
   { 
-    id: "57", 
+    id: "53", 
     nome: "Sophia", 
     foto: "/imagens/sophia.jpeg",
     permissoes: [
@@ -886,7 +845,7 @@ const coroinhas = [
    },
 
   { 
-    id: "58", 
+    id: "54", 
     nome: "Stefhany", 
     foto: "/imagens/ste.png",
     permissoes: [
@@ -914,7 +873,7 @@ const coroinhas = [
     ]
    },
   { 
-    id: "59", 
+    id: "55", 
     nome: "Taylania", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
@@ -925,7 +884,7 @@ const coroinhas = [
    },
 
   { 
-    id: "60", 
+    id: "56", 
     nome: "Thaissa", 
     foto: "/imagens/thaissa.png",
     permissoes: [
@@ -947,7 +906,7 @@ const coroinhas = [
    },
 
   { 
-    id: "61", 
+    id: "57", 
     nome: "Victor Martins", 
     foto: "/imagens/victor_martins.png",
     permissoes: [
@@ -958,7 +917,7 @@ const coroinhas = [
   },
 
   {
-    id: "62",
+    id: "58",
     nome: "Victor Manuel",
     foto: "/imagens/Victor.jfif",
     permissoes: [
@@ -969,7 +928,7 @@ const coroinhas = [
   },
 
   { 
-    id: "63", 
+    id: "59", 
     nome: "Victoria", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
