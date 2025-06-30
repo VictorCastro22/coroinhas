@@ -1,21 +1,11 @@
 
   { id: "78-2025-07-02-17h-ConfissoesMatriz", data: "2025-07-02", horario: "17h", local: "Matriz - Confissões", padre: "Padre Rafael" },
-
-
-
-
   { id: "78-2025-07-09-17h-ConfissoesMatriz", data: "2025-07-09", horario: "17h", local: "Matriz - Confissões", padre: "Padre Rafael" },
-  { id: "78-2025-07-09-19h-MissaFamilias", data: "2025-07-09", horario: "19h", local: "Missa pelas Famílias", padre: "Padre Rafael" },
-
-  { id: "78-2025-07-10-19h-Pirapora", data: "2025-07-10", horario: "19h", local: "Pirapora", padre: "Padre Rafael" },
-
   { id: "78-2025-07-11-17h-ConfissoesMatrizJubilar", data: "2025-07-11", horario: "17h", local: "Matriz - Confissões (sexta-feira Jubilar)", padre: "Padre Rafael" },
 
-  { id: "78-2025-07-12-19h-Matriz", data: "2025-07-12", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
 
-  { id: "78-2025-07-13-07h-Abrigo", data: "2025-07-13", horario: "07h", local: "Abrigo", padre: "Padre Rafael" },
-  { id: "78-2025-07-13-12h-Matriz", data: "2025-07-13", horario: "12h", local: "Matriz", padre: "Padre Rafael" },
-  { id: "78-2025-07-13-17h-CentroPastoral", data: "2025-07-13", horario: "17h", local: "Centro de Pastoral", padre: "Padre Rafael" },
+
+
   { id: "78-2025-07-13-19h-Matriz", data: "2025-07-13", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
 
   { id: "78-2025-07-15-19h-Urucara", data: "2025-07-15", horario: "19h", local: "Urucará", padre: "Padre Rafael" },
