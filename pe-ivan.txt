@@ -2,40 +2,5 @@
   { id: "78-2025-07-04-17h-ConfissoesCentroPastoral", data: "2025-07-04", horario: "17h", local: "Centro de Pastoral - Confissões", padre: "Padre Ivan" },
   { id: "78-2025-07-10-08h-ConfissoesMatriz", data: "2025-07-10", horario: "08h", local: "Matriz - Confissões", padre: "Padre Ivan" },
   { id: "78-2025-07-11-17h-ConfissoesMatriz", data: "2025-07-11", horario: "17h", local: "Matriz - (Sexta-feira Jubilar)", padre: "Padre Ivan" },
-
-
-
-
-
-  { id: "78-2025-07-15-19h-PlanaltoCajueiros", data: "2025-07-15", horario: "19h", local: "Planalto dos Cajueiros", padre: "Padre Ivan" },
-
-  { id: "78-2025-07-16-19h-Guabiraba", data: "2025-07-16", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
-
   { id: "78-2025-07-17-08h-ConfissoesMatriz", data: "2025-07-17", horario: "08h", local: "Matriz - Confissões", padre: "Padre Ivan" },
-  { id: "78-2025-07-17-19h-AreaSeca", data: "2025-07-17", horario: "19h", local: "Área Seca", padre: "Padre Ivan" },
-
-  { id: "78-2025-07-18-19h-AreaVerde", data: "2025-07-18", horario: "19h", local: "Área Verde (Areninha)", padre: "Padre Ivan" },
-
-  { id: "78-2025-07-19-17h-SantaLuzia", data: "2025-07-19", horario: "17h", local: "Santa Luzia", padre: "Padre Ivan" },
-  { id: "78-2025-07-19-19h-Matriz", data: "2025-07-19", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-
-  { id: "78-2025-07-20-07h-Divino", data: "2025-07-20", horario: "07h", local: "Divino", padre: "Padre Ivan" },
-  { id: "78-2025-07-20-09h-Matriz", data: "2025-07-20", horario: "09h", local: "Matriz", padre: "Padre Ivan" },
-  { id: "78-2025-07-20-17h-CentroPastoral", data: "2025-07-20", horario: "17h", local: "Centro de Pastoral", padre: "Padre Ivan" },
-  { id: "78-2025-07-20-19h-Matriz", data: "2025-07-20", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-
-  { id: "78-2025-07-22-19h-SerraPelada", data: "2025-07-22", horario: "19h", local: "Serra Pelada", padre: "Padre Ivan" },
-
-  { id: "78-2025-07-23-19h-SantosDumont", data: "2025-07-23", horario: "19h", local: "Santos Dumont", padre: "Padre Ivan" },
-
   { id: "78-2025-07-24-08h-ConfissoesMatriz", data: "2025-07-24", horario: "08h", local: "Matriz - Confissões", padre: "Padre Ivan" },
-  { id: "78-2025-07-24-19h-CampoDelta", data: "2025-07-24", horario: "19h", local: "Campo Delta", padre: "Padre Ivan" },
-
-  { id: "78-2025-07-25-19h-ConegoPinto", data: "2025-07-25", horario: "19h", local: "Cônego Pinto", padre: "Padre Ivan" },
-
-  { id: "78-2025-07-26-17h-Abrigo", data: "2025-07-26", horario: "17h", local: "Abrigo", padre: "Padre Ivan" },
-  { id: "78-2025-07-26-19h-OutraBanda", data: "2025-07-26", horario: "19h", local: "Outra Banda", padre: "Padre Ivan" },
-
-  { id: "78-2025-07-27-07h-Matriz", data: "2025-07-27", horario: "07h", local: "Matriz", padre: "Padre Ivan" },
-  { id: "78-2025-07-27-17h-Divino", data: "2025-07-27", horario: "17h", local: "Divino", padre: "Padre Ivan" },
-  { id: "78-2025-07-27-19h-NovoPqIracema", data: "2025-07-27", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" }
