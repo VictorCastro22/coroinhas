@@ -1,0 +1,24 @@
+
+
+  { id: "80-2025-07-02-08h-Secretaria", data: "2025-07-02", horario: "08h", local: "Secretaria Paroquial - Atendimento", padre: "Padre Eudásio" },
+
+
+  { id: "80-2025-07-11-17h-ConfissoesMatriz", data: "2025-07-11", horario: "17h", local: "Matriz - Confissões (Missa Jubilar)", padre: "Padre Eudásio" },
+
+  { id: "80-2025-07-12-07h30-DiaDMissionarioUrucara", data: "2025-07-12", horario: "17h", local: "Urucará - Dia 'D' Missionário", padre: "Padre Eudásio" },
+
+  { id: "80-2025-07-13-07h-Matriz", data: "2025-07-13", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
+
+  { id: "80-2025-07-13-09h-Matriz", data: "2025-07-13", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
+
+  { id: "80-2025-07-13-16h-Vilares", data: "2025-07-13", horario: "16h", local: "Vilares", padre: "Padre Eudásio" },
+
+  { id: "80-2025-07-13-17h-Divino", data: "2025-07-13", horario: "17h", local: "Divino", padre: "Padre Eudásio" },
+
+  { id: "80-2025-07-26-17h-SantaDulce", data: "2025-07-26", horario: "17h", local: "Santa Dulce", padre: "Padre Eudásio" },
+
+  { id: "80-2025-07-27-09h-Matriz", data: "2025-07-27", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
+
+  { id: "80-2025-07-27-15h30-SantosDumont", data: "2025-07-27", horario: "15h30", local: "Santos Dumont", padre: "Padre Eudásio" },
+  
+  { id: "80-2025-07-27-17h-CentroPastoral", data: "2025-07-27", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" }

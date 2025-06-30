@@ -1,4 +1,3 @@
-export const escala = [
   { id: "80-2025-07-01-19h-Matriz", data: "2025-07-01", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
   { id: "78-2025-07-01-19h-Urucara", data: "2025-07-01", horario: "19h", local: "Urucará", padre: "Padre Ivan" },
   { id: "78-2025-07-01-19h-Vilares", data: "2025-07-01", horario: "19h", local: "Vilares", padre: "Padre Rafael" },
@@ -16,6 +15,7 @@ export const escala = [
   { id: "78-2025-07-05-19h-Matriz", data: "2025-07-05", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
   { id: "78-2025-07-05-19h-Coite", data: "2025-07-05", horario: "19h", local: "Coité", padre: "Padre Rafael" },
 
+
   { id: "78-2025-07-06-07h-Matriz", data: "2025-07-06", horario: "07h", local: "Matriz", padre: "Padre Rafael" },
   { id: "78-2025-07-06-07h-Divino", data: "2025-07-06", horario: "07h", local: "Divino", padre: "Padre Ivan" },
   { id: "80-2025-07-06-09h-Matriz", data: "2025-07-06", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
@@ -23,7 +23,6 @@ export const escala = [
   { id: "80-2025-07-06-17h-PqSaoJoao", data: "2025-07-06", horario: "17h", local: "Parque São João", padre: "Padre Eudásio" },
   { id: "78-2025-07-06-17h-CentroPastoral", data: "2025-07-06", horario: "17h", local: "Centro de Pastoral", padre: "Padre Ivan" },
   { id: "78-2025-07-06-17h-Divino", data: "2025-07-06", horario: "17h", local: "Divino", padre: "Padre Rafael" },
-  { id: "80-2025-07-06-19h-SaoPedro", data: "2025-07-06", horario: "19h", local: "São Pedro - Festa de São Pedro", padre: "Padre Eudásio" },
+  { id: "80-2025-07-06-19h-SaoPedro", data: "2025-07-06", horario: "19h", local: "São Pedro - Festa de São Pedro", padre: "Padre Eudásio" }
   { id: "78-2025-07-06-19h-Matriz", data: "2025-07-06", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
   { id: "78-2025-07-06-19h-NovoPqIracema", data: "2025-07-06", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" }
-];
