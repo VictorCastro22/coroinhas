@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import { FaCalendarAlt, FaChurch, FaUsers } from "react-icons/fa";
+import { FaCalendarAlt, FaUsers } from "react-icons/fa";
 
 const Mestres: React.FC = () => {
   const navigate = useNavigate();
@@ -15,14 +15,6 @@ const Mestres: React.FC = () => {
             onClick={() => navigate("/criar-escala")}
           >
             <FaCalendarAlt /> Criar Escala Fixa
-          </button>
-
-
-          <button
-            className="flex items-center gap-2 bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded w-full"
-            onClick={() => navigate("/criar-sagrado_coracao")}
-          >
-            <FaChurch /> Criar Escala Sagrado Coração
           </button>
 
           <button

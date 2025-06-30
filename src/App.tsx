@@ -12,8 +12,6 @@ import Mestres from "./pages/Mestres";
 import CriaCalendario from "./pages/CriaCalendario";
 import CoroinhasPage from "./pages/CoroinhasPage";
 
-import CalendarioPadresSagradoCoracao from "./features/criarEscalaFestejos/SagradoCoração/CalendarioSCoracao";
-
 const App: React.FC = () => {
   return (
     <Router>
@@ -28,8 +26,6 @@ const App: React.FC = () => {
           <Route path="/mestres" element={<Mestres />} />
           <Route path="/admin" element={<CriaCalendario />} />
           <Route path="/coroinhas" element={<CoroinhasPage />} />
-
-          <Route path="/criar-sagrado_coracao" element={<CalendarioPadresSagradoCoracao />} />
 
           <Route
             path="/criar-escala"
