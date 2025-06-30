@@ -36,6 +36,8 @@ export const escala = [
   { id: "78-2025-07-10-19h-Pirapora", data: "2025-07-10", horario: "19h", local: "Pirapora", padre: "Padre Rafael" },
   { id: "78-2025-07-10-19h-MaeRainha", data: "2025-07-10", horario: "19h", local: "Mãe Rainha", padre: "Padre Ivan" },
 
+  { id: "78-2025-07-11-19h-MatrizJubilar", data: "2025-07-11", horario: "19h", local: "Matriz - Jubilar", padre: "Padre" },
+
   { id: "80-2025-07-12-07h30-DiaDMissionarioUrucara", data: "2025-07-12", horario: "17h", local: "Urucará - Dia 'D' Missionário", padre: "Padre Eudásio" },
   { id: "78-2025-07-12-19h-Matriz", data: "2025-07-12", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
   { id: "78-2025-07-12-19h-OutraBanda", data: "2025-07-12", horario: "19h", local: "Outra Banda", padre: "Padre Ivan" },
