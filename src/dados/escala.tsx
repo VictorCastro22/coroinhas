@@ -1,10 +1,4 @@
 export const escala = [
-  { id: "80-2025-07-01-19h-Matriz", data: "2025-07-01", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-  { id: "78-2025-07-01-19h-Urucara", data: "2025-07-01", horario: "19h", local: "Urucará", padre: "Padre Ivan" },
-  { id: "78-2025-07-01-19h-Vilares", data: "2025-07-01", horario: "19h", local: "Vilares", padre: "Padre Rafael" },
-
-  { id: "78-2025-07-02-19h-MissaFamilias", data: "2025-07-02", horario: "19h", local: "Missa pelas Famílias", padre: "Padre Rafael" },
-  { id: "78-2025-07-02-19h-Guabiraba", data: "2025-07-02", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
 
   { id: "78-2025-07-03-19h-PqRosas", data: "2025-07-03", horario: "19h", local: "Parque das Rosas", padre: "Padre Rafael" },
   { id: "78-2025-07-03-19h-Mororo", data: "2025-07-03", horario: "19h", local: "Mororó", padre: "Padre Ivan" },
