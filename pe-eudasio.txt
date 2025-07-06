@@ -1,2 +1,0 @@
-  { id: "80-2025-07-02-08h-Secretaria", data: "2025-07-02", horario: "08h", local: "Secretaria Paroquial - Atendimento", padre: "Padre Eudásio" },
-  { id: "80-2025-07-11-17h-ConfissoesMatriz", data: "2025-07-11", horario: "17h", local: "Matriz - Confissões (Missa Jubilar)", padre: "Padre Eudásio" },
