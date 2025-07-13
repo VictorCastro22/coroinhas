@@ -1,6 +1,0 @@
-
-  { id: "78-2025-07-02-17h-ConfissoesMatriz", data: "2025-07-02", horario: "17h", local: "Matriz - Confissões", padre: "Padre Rafael" },
-  { id: "78-2025-07-09-17h-ConfissoesMatriz", data: "2025-07-09", horario: "17h", local: "Matriz - Confissões", padre: "Padre Rafael" },
-  { id: "78-2025-07-11-17h-ConfissoesMatrizJubilar", data: "2025-07-11", horario: "17h", local: "Matriz - Confissões (sexta-feira Jubilar)", padre: "Padre Rafael" },
-  { id: "78-2025-07-23-17h-ConfissoesMatriz", data: "2025-07-23", horario: "17h", local: "Matriz - Confissões", padre: "Padre Rafael" },
-  { id: "78-2025-07-30-17h-ConfissoesMatriz", data: "2025-07-30", horario: "17h", local: "Matriz - Confissões", padre: "Padre Rafael" },

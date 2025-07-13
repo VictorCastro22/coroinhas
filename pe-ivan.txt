@@ -1,6 +1,0 @@
-  { id: "78-2025-07-03-08h-ConfissoesMatriz", data: "2025-07-03", horario: "08h", local: "Matriz - Confissões", padre: "Padre Ivan" },
-  { id: "78-2025-07-04-17h-ConfissoesCentroPastoral", data: "2025-07-04", horario: "17h", local: "Centro de Pastoral - Confissões", padre: "Padre Ivan" },
-  { id: "78-2025-07-10-08h-ConfissoesMatriz", data: "2025-07-10", horario: "08h", local: "Matriz - Confissões", padre: "Padre Ivan" },
-  { id: "78-2025-07-11-17h-ConfissoesMatriz", data: "2025-07-11", horario: "17h", local: "Matriz - (Sexta-feira Jubilar)", padre: "Padre Ivan" },
-  { id: "78-2025-07-17-08h-ConfissoesMatriz", data: "2025-07-17", horario: "08h", local: "Matriz - Confissões", padre: "Padre Ivan" },
-  { id: "78-2025-07-24-08h-ConfissoesMatriz", data: "2025-07-24", horario: "08h", local: "Matriz - Confissões", padre: "Padre Ivan" },
