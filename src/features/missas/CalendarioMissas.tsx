@@ -37,11 +37,7 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
   const escalas = [
-
-    { id: "83-2025-07-15-19h-Urucara", data: "2025-07-15", horario: "19h", local: "Urucará", padre: "Padre Rafael" },
-    { id: "83-2025-07-15-19h-PlanaltoCajueiros", data: "2025-07-15", horario: "19h", local: "Planalto dos Cajueiros", padre: "Padre Ivan" },
-
-    { id: "83-2025-07-16-19h-Matriz", data: "2025-07-16", horario: "19h", local: "Matriz", padre: "Padre Flávio" },
+    { id: "78-2025-07-16-19h-Matriz", data: "2025-07-16", horario: "19h", local: "Matriz", padre: "Padre Flávio" },
     { id: "83-2025-07-16-19h-Guabiraba", data: "2025-07-16", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
 
     { id: "83-2025-07-17-19h-Tangueira", data: "2025-07-17", horario: "19h", local: "Tangueira", padre: "Padre Rafael" },
