@@ -167,11 +167,10 @@ const Navbar: React.FC = () => {
             )}
           </div>
 
-          <button onClick={() => handleNavigation("/")} className="text-left hover:underline">COMUNIDADES</button>
+          <button onClick={() => handleNavigation("/")} className="text-left hover:underline">AGENDAMENTOS</button>
           <button onClick={() => handleNavigation("/")} className="text-left hover:underline">AÇÃO PASTORAL</button>
           <button onClick={() => handleNavigation("/")} className="text-left hover:underline">COMUNICAÇÃO</button>
           <button onClick={() => handleNavigation("/")} className="text-left hover:underline">SEJA DIZIMISTA</button>
-          <button onClick={() => handleNavigation("/")} className="text-left hover:underline">LOJA</button>
           <button onClick={() => handleNavigation("/")} className="text-left hover:underline">CONTATO</button>
         </div>
       </div>
