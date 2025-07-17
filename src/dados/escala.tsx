@@ -14,6 +14,7 @@ export const escala = [
   { id: "78-2025-07-20-07h-Divino", data: "2025-07-20", horario: "07h", local: "Divino", padre: "Padre Ivan" },
   { id: "78-2025-07-20-09h-Matriz", data: "2025-07-20", horario: "09h", local: "Matriz", padre: "Padre Ivan" },
   { id: "78-2025-07-20-09h-SaoJose", data: "2025-07-20", horario: "09h", local: "São José", padre: "Padre Rafael" },
+  { id: "78-2025-07-20-11h-CentroPastoral", data: "2025-07-20", horario: "11h", local: "Centro de Pastoral", padre: "Padre" },  
   { id: "78-2025-07-20-17h-CentroPastoral", data: "2025-07-20", horario: "17h", local: "Centro de Pastoral", padre: "Padre Ivan" },
   { id: "78-2025-07-20-19h-Matriz", data: "2025-07-20", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
 
