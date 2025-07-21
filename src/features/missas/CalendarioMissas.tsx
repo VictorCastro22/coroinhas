@@ -37,31 +37,6 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
   const escalas = [
-
-    { id: "83-2025-07-15-19h-Urucara", data: "2025-07-15", horario: "19h", local: "Urucará", padre: "Padre Rafael" },
-    { id: "83-2025-07-15-19h-PlanaltoCajueiros", data: "2025-07-15", horario: "19h", local: "Planalto dos Cajueiros", padre: "Padre Ivan" },
-
-    { id: "83-2025-07-16-19h-Matriz", data: "2025-07-16", horario: "19h", local: "Matriz", padre: "Padre Flávio" },
-    { id: "83-2025-07-16-19h-Guabiraba", data: "2025-07-16", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
-
-    { id: "83-2025-07-17-19h-Tangueira", data: "2025-07-17", horario: "19h", local: "Tangueira", padre: "Padre Rafael" },
-    { id: "83-2025-07-17-19h-AreaSeca", data: "2025-07-17", horario: "19h", local: "Área Seca", padre: "Padre Ivan" },
-
-    { id: "83-2025-07-18-19h-Rosario", data: "2025-07-18", horario: "19h", local: "Rosário", padre: "Padre Rafael" },
-    { id: "83-2025-07-18-19h-AreaVerde", data: "2025-07-18", horario: "19h", local: "Área Verde (Areninha)", padre: "Padre Ivan" },
-
-    { id: "83-2025-07-19-08h-RetiroCoroinhas", data: "2025-07-19", horario: "08h", local: "Coroinhas - Retiro", padre: "Padre Rafael" },
-    { id: "83-2025-07-19-17h-SantaLuzia", data: "2025-07-19", horario: "17h", local: "Santa Luzia", padre: "Padre Ivan" },
-    { id: "83-2025-07-19-19h-Coite", data: "2025-07-19", horario: "19h", local: "Coité", padre: "Padre Rafael" },
-    { id: "83-2025-07-19-19h-Matriz", data: "2025-07-19", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-
-    { id: "83-2025-07-20-07h-Matriz", data: "2025-07-20", horario: "07h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "83-2025-07-20-07h-Divino", data: "2025-07-20", horario: "07h", local: "Divino", padre: "Padre Ivan" },
-    { id: "83-2025-07-20-09h-Matriz", data: "2025-07-20", horario: "09h", local: "Matriz", padre: "Padre Ivan" },
-    { id: "83-2025-07-20-09h-SaoJose", data: "2025-07-20", horario: "09h", local: "São José", padre: "Padre Rafael" },
-    { id: "83-2025-07-20-17h-CentroPastoral", data: "2025-07-20", horario: "17h", local: "Centro de Pastoral", padre: "Padre Ivan" },
-    { id: "83-2025-07-20-19h-Matriz", data: "2025-07-20", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-
     { id: "83-2025-07-22-19h-SerraPelada", data: "2025-07-22", horario: "19h", local: "Serra Pelada", padre: "Padre Ivan" },
     { id: "83-2025-07-22-20h-MissaECC", data: "2025-07-22", horario: "20h", local: "Missa de Entrega do ECC", padre: "Padre Rafael" },
 
