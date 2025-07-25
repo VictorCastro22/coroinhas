@@ -1,6 +1,6 @@
 export const escala = [
   { id: "78-2025-07-25-19h-ConegoPinto", data: "2025-07-25", horario: "19h", local: "Cônego Pinto", padre: "Padre Ivan" },
-
+  
   { id: "80-2025-07-26-17h-SantaDulce", data: "2025-07-26", horario: "17h", local: "Santa Dulce", padre: "Padre Eudásio" },
   { id: "78-2025-07-26-17h-Abrigo", data: "2025-07-26", horario: "17h", local: "Abrigo", padre: "Padre Ivan" },
   { id: "78-2025-07-26-19h-Matriz", data: "2025-07-26", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
