@@ -13,8 +13,7 @@ interface CardEscalaProps {
   horario: string;
   local: string;
   coroinhas: Coroinha[];
-  onAddCoroinha?: () => void; // abri o modA
-  
+  onAddCoroinha?: () => void;
   onDeleteCoroinha?: (id: string) => void;
   isPublicView?: boolean;
 }
@@ -29,14 +28,10 @@ const CardEscala: React.FC<CardEscalaProps> = ({
   onDeleteCoroinha,
   isPublicView = false,
 }) => {
-  
   const dataFormatada = format(new Date(`${data}T00:00:00`), "dd-MM-yyyy");
-
   const diaSemana = format(new Date(`${data}T00:00:00`), "EEEE", { locale: ptBR });
-
   const isTodayCard = isToday(parseISO(`${data}T00:00:00`));
 
-  
   const getFotoPadre = (padre: string) => {
     switch (padre) {
       case "Padre Eudásio":
@@ -58,6 +53,16 @@ const CardEscala: React.FC<CardEscalaProps> = ({
     }
   };
 
+  const cerimoniarios = [
+    "José Vitor",
+    "Fernando",
+    "Adrian",
+    "Victor Manuel",
+    "Kauan",
+    "Gustavo",
+    "Francisco José",
+  ];
+
   return (
     <div
       className={`flex flex-col border p-4 rounded-md shadow-md mb-4 ${
@@ -78,11 +83,14 @@ const CardEscala: React.FC<CardEscalaProps> = ({
         <div className="flex-1 text-center">
           <p className="font-bold text-lg">{local}</p>
           <div className="flex flex-col items-center text-gray-700 text-base">
-            <span className="font-semibold">{diaSemana.charAt(0).toUpperCase() + diaSemana.slice(1)}</span>
-            <span>{dataFormatada} - {horario}</span>
+            <span className="font-semibold">
+              {diaSemana.charAt(0).toUpperCase() + diaSemana.slice(1)}
+            </span>
+            <span>
+              {dataFormatada} - {horario}
+            </span>
           </div>
-          
-        
+
           {!isPublicView && onAddCoroinha && (
             <button
               type="button"
@@ -96,21 +104,12 @@ const CardEscala: React.FC<CardEscalaProps> = ({
       </div>
 
       <ul className="mt-4">
-
         {coroinhas.map((coroinha) => {
-          //const diaSemana = new Date(`${data}T00:00:00`).getDay();
-          //const isSabado = diaSemana === 6;
-          //const isDomingo = diaSemana === 0;
-          //const isQuinta = diaSemana === 4;
+          const isInvestiduraRosario =
+            local === "Rosário - Investidura Coroinhas" && data === "2025-08-16" && horario === "19h";
 
-          // Suspenso temporariamente o uso de túnica vermelha
-          // const tunicaVermelha =
-          //   (local === "Matriz" || local === "Matriz - Corpus Christi") &&
-          //   (
-          //     (isSabado && horario === "19h") ||
-          //     (isDomingo && ["07h", "09h", "19h"].includes(horario)) ||
-          //     (isQuinta && horario === "19h")
-          //   );
+          const isCerimoniario =
+            isInvestiduraRosario && cerimoniarios.includes(coroinha.nome);
 
           return (
             <li
@@ -125,8 +124,8 @@ const CardEscala: React.FC<CardEscalaProps> = ({
                 />
                 <span className="flex flex-col">
                   <span>{coroinha.nome}</span>
-                  <span className="text-xs text-gray-500">
-                    (Túnica Branca)
+                  <span className={`text-xs ${isCerimoniario ? "text-black font-semibold" : "text-gray-500"}`}>
+                    ({isCerimoniario ? "Cerimoniário" : "Túnica Branca"})
                   </span>
                 </span>
               </div>
@@ -144,7 +143,6 @@ const CardEscala: React.FC<CardEscalaProps> = ({
             </li>
           );
         })}
-
       </ul>
     </div>
   );

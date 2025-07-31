@@ -535,7 +535,7 @@ const coroinhas = [
 
   { 
     id: "36", 
-    nome: "Kauan ", 
+    nome: "Kauan", 
     foto: "/imagens/semfoto.jpg",
     permissoes: [
       "Mãe Rainha-19h-Quinta",

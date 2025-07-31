@@ -3,8 +3,8 @@ import { Escala } from "../../types/escala";
 
 function gerarDiasDeJunho(ano: number = 2025) {
   const dias: Date[] = [];
-  for (let d = 1; d <= 30; d++) {
-    dias.push(new Date(ano, 5, d)); // mês 5 = junho
+  for (let d = 1; d <= 31; d++) {
+    dias.push(new Date(ano, 7, d)); // mês 5 = junho
   }
   return dias;
 }
