@@ -88,9 +88,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-
-    { id: "78-2025-07-30-19h-MissaFamilias", data: "2025-07-30", horario: "19h", local: "Missa pelas Famílias", padre: "Padre Rafael" },
-
     { id: "80-2025-08-01-05h-PreFestaSaoBenedito", data: "2025-08-01", horario: "05h", local: "Pré Festa - Comunidade São Benedito", padre: "Padre Eudásio" },
     { id: "80-2025-08-01-18h30-CentroPastoral1", data: "2025-08-01", horario: "18h30", local: "Centro de Pastoral", padre: "Padre Eudásio" },
     { id: "78-2025-08-01-18h30-CentroPastoral2", data: "2025-08-01", horario: "18h30", local: "Centro de Pastoral", padre: "Padre Rafael" },
