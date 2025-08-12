@@ -7,13 +7,15 @@ interface Coroinha {
 }
 
 interface ModalAddCoroinhaProps {
-  isOpen: boolean; // Controle de abertura do modal
+  isOpen: boolean;
   coroinhas: Coroinha[];
-  onSubmit: () => void;
+  onSubmit: (data: { id: string; funcao: string }) => void;
   onClose: () => void;
   selectedCoroinha: string;
   setSelectedCoroinha: (value: string) => void;
   selectionCounts: { [key: string]: number };
+  selectedFuncao: string;
+  setSelectedFuncao: React.Dispatch<React.SetStateAction<string>>;
 }
 
 const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
@@ -24,6 +26,8 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
   selectedCoroinha,
   setSelectedCoroinha,
   selectionCounts,
+  selectedFuncao,
+  setSelectedFuncao,
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -31,12 +35,19 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
 
   const coroinhaSelecionado = coroinhas.find((c) => c.id === selectedCoroinha);
 
+  const handleConfirmar = () => {
+    if (selectedCoroinha && selectedFuncao) {
+      onSubmit({ id: selectedCoroinha, funcao: selectedFuncao });
+      setSelectedFuncao("");
+      setSelectedCoroinha("");
+    }
+  };
+
   return (
     <div className="modal fixed inset-0 flex items-center justify-center bg-gray-800 bg-opacity-50">
       <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full">
         <h2 className="text-xl font-bold mb-4">Adicionar Coroinha</h2>
         <div className="relative">
-         
           <button
             type="button"
             className="w-full text-left bg-gray-200 py-2 px-4 rounded-md"
@@ -45,7 +56,6 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
             {coroinhaSelecionado ? coroinhaSelecionado.nome : "Selecionar Coroinha"}
           </button>
 
-         
           {isExpanded && (
             <ul className="absolute z-10 w-full bg-white shadow-lg max-h-48 overflow-y-auto mt-1 rounded-md">
               {coroinhas.length === 0 ? (
@@ -53,44 +63,63 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
                   Nenhum coroinha disponível.
                 </li>
               ) : (
-                coroinhas.map((coroinha) => (
-                  <li key={coroinha.id}>
-                    <button
-                      type="button"
-                      className={`w-full text-left py-2 px-4 ${
-                        selectedCoroinha === coroinha.id ? "bg-gray-300" : ""
-                      }`}
-                      onClick={() => {
-                        setSelectedCoroinha(coroinha.id);
-                        setIsExpanded(false); 
-                      }}
-                      onKeyUp={(e) => {
-                        if (e.key === "Enter" || e.key === " ") {
-                          setSelectedCoroinha(coroinha.id);
-                          setIsExpanded(false);
-                        }
-                      }}
-                      onKeyDown={(e) => {
-                        if (e.key === "Enter" || e.key === " ") {
-                          e.preventDefault();
-                        }
-                      }}
-                    >
-                      {coroinha.nome} ({selectionCounts[coroinha.nome] || 0})
-                    </button>
-                  </li>
-                ))
+                coroinhas.map((coroinha) => {
+                  const jaAdicionado = selectionCounts[coroinha.nome] > 0;
+
+                  return (
+                    <li key={coroinha.id}>
+                      <button
+                        type="button"
+                        disabled={jaAdicionado}
+                        className={`w-full text-left py-2 px-4 ${
+                          selectedCoroinha === coroinha.id ? "bg-gray-300" : ""
+                        } ${jaAdicionado ? "text-gray-400 cursor-not-allowed" : ""}`}
+                        onClick={() => {
+                          if (!jaAdicionado) {
+                            setSelectedCoroinha(coroinha.id);
+                            setIsExpanded(false);
+                          }
+                        }}
+                      >
+                        {coroinha.nome} ({selectionCounts[coroinha.nome] || 0})
+                      </button>
+                    </li>
+                  );
+                })
               )}
             </ul>
           )}
         </div>
 
-        
+        {coroinhaSelecionado && (
+          <div className="mt-4">
+            <label className="block text-sm font-medium mb-1">Função</label>
+            <select
+              className="w-full border border-gray-300 rounded-md px-3 py-2"
+              value={selectedFuncao}
+              onChange={(e) => setSelectedFuncao(e.target.value)}
+            >
+              <option value="">Selecione a função</option>
+              <option value="Túnica Branca">Túnica Branca</option>
+              <option value="Cerimoniário">Cerimoniário</option>
+              <option value="Turíbulo">Turíbulo</option>
+              <option value="Naveta">Naveta</option>
+              <option value="Livro">Missal</option>
+              <option value="Outros">Outros</option>
+            </select>
+          </div>
+        )}
+
         <div className="flex justify-end mt-4">
           <button
             type="button"
-            onClick={onSubmit} // Chama a função para confirmar o coroinha selecionado
-            className="bg-green-500 text-white px-4 py-2 rounded-md mr-2"
+            onClick={handleConfirmar}
+            disabled={!selectedCoroinha || !selectedFuncao}
+            className={`px-4 py-2 rounded-md mr-2 text-white ${
+              !selectedCoroinha || !selectedFuncao
+                ? "bg-gray-400 cursor-not-allowed"
+                : "bg-green-500 hover:bg-green-600"
+            }`}
           >
             Confirmar
           </button>

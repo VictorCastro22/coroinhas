@@ -10,6 +10,7 @@ interface Coroinha {
   id: string;
   nome: string;
   foto: string;
+  funcao: string;
 }
 
 const CalendarioPadres: React.FC = () => {
@@ -17,6 +18,8 @@ const CalendarioPadres: React.FC = () => {
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
   const [selectedCoroinha, setSelectedCoroinha] = useState<string>("");
   const [selectionCounts, setSelectionCounts] = useState<{ [key: string]: number }>({});
+  const [selectedFuncao, setSelectedFuncao] = useState<string>("");
+
 
   useEffect(() => {
     const fetchCoroinhas = async () => {
@@ -32,6 +35,7 @@ const CalendarioPadres: React.FC = () => {
           id: doc.id,
           nome: data.nome,
           foto: data.foto,
+          funcao: data.funcao || "", 
         });
         counts[data.nome] = (counts[data.nome] || 0) + 1;
       }
@@ -54,11 +58,13 @@ const CalendarioPadres: React.FC = () => {
         nome: coroinha.nome,
         cardId: selectedCard,
         foto: coroinha.foto,
+        funcao: selectedFuncao,
       });
+
 
       const novosCoroinhas = [
         ...(coroinhasData[selectedCard] || []),
-        { id: docRef.id, nome: coroinha.nome, foto: coroinha.foto },
+      { id: docRef.id, nome: coroinha.nome, foto: coroinha.foto, funcao: selectedFuncao }
       ];
       setCoroinhas({ ...coroinhasData, [selectedCard]: novosCoroinhas });
 
@@ -69,6 +75,7 @@ const CalendarioPadres: React.FC = () => {
 
       setSelectedCard(null);
       setSelectedCoroinha("");
+      setSelectedFuncao("");
     } catch (error) {
       console.error("Erro ao adicionar coroinha:", error);
     }
@@ -88,38 +95,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "80-2025-08-01-05h-PreFestaSaoBenedito", data: "2025-08-01", horario: "05h", local: "Pré Festa - Comunidade São Benedito", padre: "Padre Eudásio" },
-    { id: "80-2025-08-01-18h30-CentroPastoral1", data: "2025-08-01", horario: "18h30", local: "Centro de Pastoral", padre: "Padre Eudásio" },
-    { id: "78-2025-08-01-18h30-CentroPastoral2", data: "2025-08-01", horario: "18h30", local: "Centro de Pastoral", padre: "Padre Rafael" },
-
-    { id: "78-2025-08-02-17h-SantaLuzia", data: "2025-08-02", horario: "17h", local: "Santa Luzia", padre: "Padre Ivan" },
-    { id: "78-2025-08-02-17h-SantoAntonio", data: "2025-08-02", horario: "17h", local: "Santo Antônio", padre: "Padre Rafael" },
-    { id: "80-2025-08-02-19h-Matriz", data: "2025-08-02", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-08-02-19h-Coite", data: "2025-08-02", horario: "19h", local: "Coité", padre: "Padre Rafael" },
-    { id: "78-2025-08-02-19h-BandeiraSantaDulce", data: "2025-08-02", horario: "19h", local: "Bandeira da Festa de Santa Dulce", padre: "Padre Ivan" },
-
-    { id: "80-2025-08-03-07h-Matriz", data: "2025-08-03", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-08-03-07h-Divino", data: "2025-08-03", horario: "07h", local: "Divino", padre: "Padre Ivan" },
-    { id: "80-2025-08-03-09h-Matriz", data: "2025-08-03", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-08-03-09h-SaoJose", data: "2025-08-03", horario: "09h", local: "São José", padre: "Padre Rafael" },
-    { id: "78-2025-08-03-10h-MatrizBatizados", data: "2025-08-03", horario: "10h", local: "Matriz - Batizado", padre: "Padre Rafael" },
-    { id: "80-2025-08-03-17h-CentroPastoral", data: "2025-08-03", horario: "17h", local: "Centro de Pastoral", padre: "Padre Eudásio" },
-    { id: "78-2025-08-03-17h-Divino", data: "2025-08-03", horario: "17h", local: "Divino", padre: "Padre Rafael" },
-    { id: "78-2025-08-03-17h-PqSaoJoao", data: "2025-08-03", horario: "17h", local: "Parque São João", padre: "Padre Ivan" },
-    { id: "78-2025-08-03-19h-NovoPqIracema", data: "2025-08-03", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Rafael" },
-    { id: "78-2025-08-03-19h-Matriz", data: "2025-08-03", horario: "19h", local: "Matriz", padre: "Padre Ivan" },
-
-    { id: "80-2025-08-04-19h-Matriz1", data: "2025-08-04", horario: "19h", local: "Matriz - Dia do Católico Municipal", padre: "Padre Eudásio" },
-    { id: "78-2025-08-04-19h-Matriz2", data: "2025-08-04", horario: "19h", local: "Matriz - Dia do Católico Municipal", padre: "Padre Rafael" },
-
-    { id: "80-2025-08-05-05h-PreFestaRuaJaimeAbreu", data: "2025-08-05", horario: "05h", local: "Pré Festa - Rua Jaime Abreu, 105", padre: "Padre Eudásio" },
-    { id: "80-2025-08-05-19h-Urucara", data: "2025-08-05", horario: "19h", local: "Urucará", padre: "Padre Eudásio" },
-    { id: "78-2025-08-05-19h-Vilares", data: "2025-08-05", horario: "19h", local: "Vilares", padre: "Padre Ivan" },
-
-    { id: "80-2025-08-06-05h-PreFestaAvJoaquimLopes", data: "2025-08-06", horario: "05h", local: "Pré Festa - Av. Joaquim Lopes (Urucará)", padre: "Padre Eudásio" },
-    { id: "78-2025-08-06-19h-MatrizMissaFamilias", data: "2025-08-06", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-08-06-19h-Guabiraba", data: "2025-08-06", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
-
     { id: "80-2025-08-07-05h-PreFestaRuaJoseFlavio", data: "2025-08-07", horario: "05h", local: "Pré Festa - Rua José Flávio Ramos", padre: "Padre Eudásio" },
     { id: "80-2025-08-07-19h-PqDasRosas", data: "2025-08-07", horario: "19h", local: "Parque das Rosas", padre: "Padre Eudásio" },
     { id: "78-2025-08-07-19h-Mororo", data: "2025-08-07", horario: "19h", local: "Mororó", padre: "Padre Ivan" },
@@ -186,6 +161,7 @@ const CalendarioPadres: React.FC = () => {
 
   ];
 
+  
   return (
     <div>
       <h1 className="text-[30px] font-playfair font-semibold text-[#535043] text-center mb-6">
@@ -214,6 +190,8 @@ const CalendarioPadres: React.FC = () => {
               selectedCoroinha={selectedCoroinha}
               setSelectedCoroinha={setSelectedCoroinha}
               selectionCounts={selectionCounts}
+              selectedFuncao={selectedFuncao}
+              setSelectedFuncao={setSelectedFuncao}
             />
       
           </div>

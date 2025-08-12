@@ -5,6 +5,7 @@ interface Coroinha {
   id: string;
   nome: string;
   foto: string;
+  funcao: string;
 }
 
 interface CardEscalaProps {
@@ -124,8 +125,8 @@ const CardEscala: React.FC<CardEscalaProps> = ({
                 />
                 <span className="flex flex-col">
                   <span>{coroinha.nome}</span>
-                  <span className={`text-xs ${isCerimoniario ? "text-black font-semibold" : "text-gray-500"}`}>
-                    ({isCerimoniario ? "Cerimoniário" : "Túnica Branca"})
+                  <span className="text-xs text-gray-600">
+                    ({coroinha.funcao || (isCerimoniario ? "Cerimoniário" : "Túnica Branca")})
                   </span>
                 </span>
               </div>
