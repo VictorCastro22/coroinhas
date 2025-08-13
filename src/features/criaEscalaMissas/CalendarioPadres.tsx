@@ -95,36 +95,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { id: "80-2025-08-07-05h-PreFestaRuaJoseFlavio", data: "2025-08-07", horario: "05h", local: "Pré Festa - Rua José Flávio Ramos", padre: "Padre Eudásio" },
-    { id: "80-2025-08-07-19h-PqDasRosas", data: "2025-08-07", horario: "19h", local: "Parque das Rosas", padre: "Padre Eudásio" },
-    { id: "78-2025-08-07-19h-Mororo", data: "2025-08-07", horario: "19h", local: "Mororó", padre: "Padre Ivan" },
-
-
-    { id: "78-2025-08-08-19h-MatrizSetorI", data: "2025-08-08", horario: "19h", local: "Matriz - Jubilar", padre: "Padre Rafael" },
-    { id: "80-2025-08-08-19h-MissaPenhaJubilar", data: "2025-08-08", horario: "19h", local: "Matriz - Missa Votiva e Missa Jubilar", padre: "Padre Eudásio" },
-    { id: "78-2025-08-08-19h-Cajazeiras", data: "2025-08-08", horario: "19h", local: "Cajazeiras", padre: "Padre Ivan" },
-
-    { id: "80-2025-08-09-17h-NPI", data: "2025-08-09", horario: "17h", local: "Nossa Senhora Aparecida", padre: "Padre Eudásio" },
-    { id: "80-2025-08-09-19h-Matriz", data: "2025-08-09", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-08-09-19h-SantaDulce", data: "2025-08-09", horario: "19h", local: "Santa Dulce", padre: "Padre Rafael" },
-    { id: "78-2025-08-09-19h-OutraBanda", data: "2025-08-09", horario: "19h", local: "Outra Banda", padre: "Padre Ivan" },
-
-    { id: "80-2025-08-10-07h-Matriz", data: "2025-08-10", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-08-10-07h-Divino", data: "2025-08-10", horario: "07h", local: "Divino", padre: "Padre Rafael" },
-    { id: "78-2025-08-10-07h-Abrigo", data: "2025-08-10", horario: "07h", local: "Abrigo", padre: "Padre Ivan" },
-    { id: "80-2025-08-10-09h-Matriz", data: "2025-08-10", horario: "09h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "80-2025-08-10-10h-BatismoMatriz", data: "2025-08-10", horario: "10h", local: "Batismo - Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-08-10-17h-CentroPastoral", data: "2025-08-10", horario: "17h", local: "Centro de Pastoral", padre: "Padre Rafael" },
-    { id: "80-2025-08-10-17h-Divino", data: "2025-08-10", horario: "17h", local: "Divino", padre: "Padre Eudásio" },
-    { id: "78-2025-08-10-17h-PqSaoJoao", data: "2025-08-10", horario: "17h", local: "Parque São João", padre: "Padre Ivan" },
-    { id: "78-2025-08-10-19h-Matriz", data: "2025-08-10", horario: "19h", local: "Matriz", padre: "Padre Rafael" },
-    { id: "78-2025-08-10-19h-NovoPqIracema", data: "2025-08-10", horario: "19h", local: "Novo Parque Iracema", padre: "Padre Ivan" },
-
-    { id: "80-2025-08-11-19h-Cajueiro", data: "2025-08-11", horario: "19h", local: "Cajueiro", padre: "Padre Eudásio" },
-
-    { id: "80-2025-08-12-05h-PreFestaRuaGontran", data: "2025-08-12", horario: "05h", local: "Pré Festa - Rua Gontran Nascimento, 49", padre: "Padre Eudásio" },
-    { id: "78-2025-08-12-19h-SaoPedro", data: "2025-08-12", horario: "19h", local: "São Pedro", padre: "Padre Rafael" },
-    { id: "78-2025-08-12-19h-SantaDulce", data: "2025-08-12", horario: "19h", local: "Santa Dulce", padre: "Padre Ivan" },
 
     { id: "80-2025-08-13-05h-PreFestaRuaRobert", data: "2025-08-13", horario: "05h", local: "Pré Festa - Rua Robert Braquihais, 1181", padre: "Padre Eudásio" },
     { id: "78-2025-08-13-12h-Matriz", data: "2025-08-13", horario: "12h", local: "Matriz", padre: "Padre Ivan" },
@@ -146,7 +116,7 @@ const CalendarioPadres: React.FC = () => {
     { id: "78-2025-08-16-17h-SantaLuzia", data: "2025-08-16", horario: "17h", local: "Santa Luzia", padre: "Padre Rafael" },
     { id: "78-2025-08-16-17h-SantoAntonio", data: "2025-08-16", horario: "17h", local: "Santo Antônio", padre: "Padre Ivan" },
     { id: "80-2025-08-16-19h-Matriz", data: "2025-08-16", horario: "19h", local: "Matriz", padre: "Padre Eudásio" },
-    { id: "78-2025-08-16-19h-RosarioInvestidura", data: "2025-08-16", horario: "19h", local: "Rosário - Investidura Coroinhas", padre: "Padre Rafael" },
+    { id: "78-2025-08-16-19h-RosarioInvestidura", data: "2025-08-16", horario: "19h", local: "Divino - Investidura Coroinhas", padre: "Padre Rafael" },
     { id: "78-2025-08-16-19h-Coite", data: "2025-08-16", horario: "19h", local: "Coité", padre: "Padre Ivan" },
 
     { id: "80-2025-08-17-07h-Matriz", data: "2025-08-17", horario: "07h", local: "Matriz", padre: "Padre Eudásio" },
