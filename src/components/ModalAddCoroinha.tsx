@@ -1,11 +1,5 @@
 import { useState } from "react";
-
-interface Coroinha {
-  id: string;
-  nome: string;
-  foto: string;
-  funcao?: string
-}
+import { Coroinha } from "../types/coroinhas";
 
 interface ModalAddCoroinhaProps {
   coroinhasDaMissa: Coroinha[];

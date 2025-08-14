@@ -1,12 +1,6 @@
 import { format, isToday, parseISO } from "date-fns";
 import { ptBR } from "date-fns/locale";
-
-interface Coroinha {
-  id: string;
-  nome: string;
-  foto: string;
-  funcao: string;
-}
+import { Coroinha } from "../types/coroinhas";
 
 interface CardEscalaProps {
   padre: string;

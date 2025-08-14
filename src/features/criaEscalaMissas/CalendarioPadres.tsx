@@ -4,14 +4,10 @@ import db from "../../../firebaseConfig";
 import CardEscala from "../../components/CardEscala";
 import ModalAddCoroinha from "../../components/ModalAddCoroinha";
 import coroinhas from "../../dados/coroinhas";
+import { Coroinha } from "../../types/coroinhas";
 
 
-interface Coroinha {
-  id: string;
-  nome: string;
-  foto: string;
-  funcao: string;
-}
+
 
 const CalendarioPadres: React.FC = () => {
   const [coroinhasData, setCoroinhas] = useState<{ [key: string]: Coroinha[] }>({});
