@@ -95,6 +95,8 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
+    { id: "80-2025-08-13-TESTE", data: "2999-08-13", horario: "00H", local: "TESTE", padre: "TESTE" },
+
 
     { id: "80-2025-08-13-05h-PreFestaRuaRobert", data: "2025-08-13", horario: "05h", local: "Pré Festa - Rua Robert Braquihais, 1181", padre: "Padre Eudásio" },
     { id: "78-2025-08-13-12h-Matriz", data: "2025-08-13", horario: "12h", local: "Matriz", padre: "Padre Ivan" },
@@ -155,14 +157,16 @@ const CalendarioPadres: React.FC = () => {
             <ModalAddCoroinha
               isOpen={!!selectedCard}
               coroinhas={coroinhas}
+              coroinhasDaMissa={selectedCard ? (coroinhasData[selectedCard] || []) : []} 
               onSubmit={handleSubmitCoroinha}
               onClose={() => setSelectedCard(null)}
               selectedCoroinha={selectedCoroinha}
               setSelectedCoroinha={setSelectedCoroinha}
-              selectionCounts={selectionCounts}
               selectedFuncao={selectedFuncao}
               setSelectedFuncao={setSelectedFuncao}
+              selectionCounts={selectionCounts} 
             />
+
       
           </div>
         );

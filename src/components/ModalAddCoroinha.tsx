@@ -4,19 +4,20 @@ interface Coroinha {
   id: string;
   nome: string;
   foto: string;
-  funcao: string
+  funcao?: string
 }
 
 interface ModalAddCoroinhaProps {
+  coroinhasDaMissa: Coroinha[];
   isOpen: boolean;
   coroinhas: Coroinha[];
   onSubmit: (data: { id: string; funcao: string }) => void;
   onClose: () => void;
   selectedCoroinha: string;
   setSelectedCoroinha: (value: string) => void;
-  selectionCounts: { [key: string]: number };
   selectedFuncao: string;
   setSelectedFuncao: React.Dispatch<React.SetStateAction<string>>;
+  selectionCounts: { [key: string]: number }; //contagem
 }
 
 const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
@@ -26,9 +27,10 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
   onClose,
   selectedCoroinha,
   setSelectedCoroinha,
-  selectionCounts,
+  coroinhasDaMissa,
   selectedFuncao,
   setSelectedFuncao,
+  selectionCounts,
 }) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
@@ -65,24 +67,27 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
                 </li>
               ) : (
                 coroinhas.map((coroinha) => {
-                  const jaAdicionado = selectionCounts[coroinha.nome] > 0;
+                  const jaAdicionado = coroinhasDaMissa.some(c => c.nome === coroinha.nome);
+                  const count = selectionCounts[coroinha.nome] || 0; // contagem
+
 
                   return (
                     <li key={coroinha.id}>
                       <button
                         type="button"
                         disabled={jaAdicionado}
-                        className={`w-full text-left py-2 px-4 ${
-                          selectedCoroinha === coroinha.id ? "bg-gray-300" : ""
-                        } ${jaAdicionado ? "text-gray-400 cursor-not-allowed" : ""}`}
-                        onClick={() => {
-                          if (!jaAdicionado) {
-                            setSelectedCoroinha(coroinha.id);
-                            setIsExpanded(false);
-                          }
-                        }}
-                      >
-                        {coroinha.nome} ({selectionCounts[coroinha.nome] || 0})
+                        className={`w-full text-left py-2 px-4 flex justify-between items-center ${
+                        selectedCoroinha === coroinha.id ? "bg-gray-300" : ""
+                            } ${jaAdicionado ? "text-gray-400 cursor-not-allowed" : ""}`}
+                            onClick={() => {
+                              if (!jaAdicionado) {
+                                setSelectedCoroinha(coroinha.id);
+                                setIsExpanded(false);
+                              }
+                            }}
+                          >
+                            <span>{coroinha.nome}</span>
+                          {count > 0 && <span className="text-gray-500 text-sm">({count})</span>}
                       </button>
                     </li>
                   );
