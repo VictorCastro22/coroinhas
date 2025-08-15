@@ -3,7 +3,7 @@ import { Escala } from "../../types/escala";
 interface CardDiaProps {
   date: Date;
   escalas: Escala[];
-  onAdd: (data: string) => void;
+  onAdd: (data: string, horario: string, local: string) => void;
 }
 
 export default function CardDia({ date, escalas, onAdd }: CardDiaProps) {
@@ -20,20 +20,22 @@ export default function CardDia({ date, escalas, onAdd }: CardDiaProps) {
           <div className="text-lg font-bold">{dia}</div>
           <div className="text-xs text-gray-500 uppercase">{diaSemana}</div>
         </div>
-        <button
-          onClick={() => onAdd(dataStr)}
-          className="bg-blue-500 hover:bg-blue-600 text-white rounded-full w-6 h-6 flex items-center justify-center text-sm"
-        >
-          +
-        </button>
       </div>
 
       {escalasDoDia.length > 0 ? (
         <div className="text-xs mt-2">
-          {escalasDoDia.map((e, idx) => (
-            <div key={idx} className="border-t pt-1 mt-1">
-              <strong>{e.horario}</strong> - {e.local} <br />
-              <span className="text-gray-600">{e.padre}</span>
+          {escalasDoDia.map((e) => (
+            <div key={e.id} className="border-t pt-1 mt-1 flex justify-between items-center">
+              <div>
+                <strong>{e.horario}</strong> - {e.local} <br />
+                <span className="text-gray-600">{e.padre || "Sem padre"}</span>
+              </div>
+              <button
+                onClick={() => onAdd(e.data, e.horario, e.local)}
+                className="text-blue-600 text-sm"
+              >
+                Atribuir Padre
+              </button>
             </div>
           ))}
         </div>
