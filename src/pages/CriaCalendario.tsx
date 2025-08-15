@@ -26,7 +26,7 @@ export default function CalendarioPadres() {
 
   return (
     <div className="p-4 max-w-6xl mx-auto">
-      <h1 className="text-2xl font-bold text-center mb-6">Calendário dos Padres - Junho</h1>
+      <h1 className="text-2xl font-bold text-center mb-6">Calendário dos Padres - Agosto</h1>
 
       <GradeJunho escalas={escalas} onAdd={(data) => {
         setDataSelecionada(data);

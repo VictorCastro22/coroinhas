@@ -104,7 +104,7 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
               <option value="Cerimoniário">Cerimoniário</option>
               <option value="Turíbulo">Turíbulo</option>
               <option value="Naveta">Naveta</option>
-              <option value="Livro">Missal</option>
+              <option value="Missal">Missal</option>
               <option value="Outros">Outros</option>
             </select>
           </div>
