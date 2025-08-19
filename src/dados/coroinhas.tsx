@@ -54,7 +54,7 @@ const coroinhas = [
   { id: "53", nome: "João Carlos", foto: "/imagens/semfoto.jpg" },
   { id: "54", nome: "João Gabriel", foto: "/imagens/joaogabriel.jpeg" },
   { id: "55", nome: "João Pedro", foto: "/imagens/semfoto.jpg" },
-  { id: "56", nome: "João Rafael", foto: "/imagens/semfoto.jpg" },
+  { id: "56", nome: "João Rafael", foto: "/imagens/joao-rafael.jpeg" },
   { id: "57", nome: "João Victor", foto: "/imagens/semfoto.jpg" },
   { id: "58", nome: "José Vitor", foto: "/imagens/semfoto.jpg" },
   { id: "59", nome: "Joyce", foto: "/imagens/semfoto.jpg" },
@@ -101,7 +101,7 @@ const coroinhas = [
   { id: "100", nome: "Thaissa", foto: "/imagens/thaissa.png" },
   { id: "101", nome: "Theo", foto: "/imagens/theo.jpg" },
   { id: "102", nome: "Thiago", foto: "/imagens/thiago.jpg" },
-  { id: "103", nome: "Vívian", foto: "/imagens/semfoto.jpg" },
+  { id: "103", nome: "Vívian", foto: "/imagens/vivian.jpeg" },
   { id: "104", nome: "Wesley", foto: "/imagens/semfoto.jpg" },
   { id: "105", nome: "Yasmin", foto: "/imagens/yasmin.jpg" }
 ];
