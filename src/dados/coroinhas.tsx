@@ -76,7 +76,7 @@ const coroinhas = [
   { id: "75", nome: "Maria Lara", foto: "/imagens/semfoto.jpg" },
   { id: "76", nome: "Maria Laura", foto: "/imagens/semfoto.jpg" },
   { id: "77", nome: "Maria Luíza", foto: "/imagens/semfoto.jpg" },
-  { id: "78", nome: "Maria RIta", foto: "/imagens/semfoto.jpg" },
+  { id: "78", nome: "Maria Rita", foto: "/imagens/semfoto.jpg" },
   { id: "79", nome: "Maria Sophia", foto: "/imagens/semfoto.jpg" },
   { id: "80", nome: "Mariana Travassos", foto: "/imagens/semfoto.jpg" },
   { id: "81", nome: "Marina", foto: "/imagens/semfoto.jpg" },
