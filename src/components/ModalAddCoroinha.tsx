@@ -100,7 +100,7 @@ const ModalAddCoroinha: React.FC<ModalAddCoroinhaProps> = ({
               onChange={(e) => setSelectedFuncao(e.target.value)}
             >
               <option value="">Selecione a função</option>
-              <option value="Função definida no dia">Função definida no dia</option>
+              <option value="Definida no dia">Definida no dia</option>
               <option value="Cruz - Sineta">Cruz - Sineta</option>
               <option value="Missal">Missal</option>
               <option value="Ofertório">Ofertório</option>              

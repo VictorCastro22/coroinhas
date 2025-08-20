@@ -119,12 +119,12 @@ const CardEscala: React.FC<CardEscalaProps> = ({
                 <img
                   src={coroinha.foto}
                   alt={coroinha.nome}
-                  className="w-12 h-12 rounded-full mr-2"
+                  className="w-14 h-14 rounded-full mr-2"
                 />
-                <span className="flex flex-col">
-                  <span>{coroinha.nome}</span>
-                  <span className="text-xs text-gray-600">
-                    ({coroinha.funcao || (isCerimoniario ? "Cerimoniário" : "Túnica Branca")})
+                <span className="text-base">
+                  {coroinha.nome}{" "}
+                  <span className="text-sm text-gray-600">
+                    - {coroinha.funcao || (isCerimoniario ? "Cerimoniário" : "Túnica Branca")}
                   </span>
                 </span>
               </div>
