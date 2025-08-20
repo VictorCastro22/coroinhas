@@ -7,8 +7,6 @@ import coroinhas from "../../dados/coroinhas";
 import { Coroinha } from "../../types/coroinhas";
 
 
-
-
 const CalendarioPadres: React.FC = () => {
   const [coroinhasData, setCoroinhas] = useState<{ [key: string]: Coroinha[] }>({});
   const [selectedCard, setSelectedCard] = useState<string | null>(null);
@@ -91,10 +89,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-
-    { id: "80-2025-08-19-19h-Urucara", data: "2025-08-19", horario: "19h", local: "Urucará", padre: "Padre Eudásio" },
-    { id: "80-2025-08-19-19h-PlanaltoCajueiros", data: "2025-08-19", horario: "19h", local: "Planalto dos Cajueiros", padre: "Padre Ivan" },
-    { id: "80-2025-08-19-19h-Matriz", data: "2025-08-19", horario: "19h", local: "Matriz", padre: "Padre Nonato" },
 
     { id: "80-2025-08-20-19h-Guabiraba", data: "2025-08-20", horario: "19h", local: "Guabiraba", padre: "Padre Ivan" },
     { id: "80-2025-08-20-19h-MissaFamilias", data: "2025-08-20", horario: "19h", local: "Matriz", padre: "Padre Rafael" },

@@ -5,12 +5,7 @@ import { escala as escalas } from "../../dados/escala";
 import { gerarPdfEscala } from "../../utils/pdf";
 import CardEscala from "../../components/CardEscala";
 import coroinhas from "../../dados/coroinhas";
-
-interface Coroinha {
-  id: string;
-  nome: string;
-  foto: string;
-}
+import { Coroinha } from "../../types/coroinhas";
 
 const TODOS_COROINHAS: Coroinha = {
   id: "todos",
@@ -23,6 +18,7 @@ const EscalaFixa: React.FC = () => {
   const [allCoroinhas, setAllCoroinhas] = useState<Coroinha[]>([]);
   const [selectedCoroinha, setSelectedCoroinha] = useState<Coroinha>(TODOS_COROINHAS);
   const [open, setOpen] = useState(false);
+
 
   useEffect(() => {
     const fetchCoroinhas = async () => {
@@ -38,6 +34,7 @@ const EscalaFixa: React.FC = () => {
           id: doc.id,
           nome: data.nome,
           foto: data.foto,
+          funcao: data.funcao || "", 
         };
         dataMap[cardId].push(coroinha);
         allList.push(coroinha);
