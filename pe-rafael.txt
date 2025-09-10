@@ -1,10 +1,5 @@
 CALENDÁRIO DE PE. RAFAEL PARA O MÊS DE SETEMBRO/2025:
 
-{ id: "305-2025-09-12-17h-ConfissoesMatrizJubilar", data: "2025-09-12", horario: "17hs", local: "Matriz (Sexta-feira Jubilar)", padre: "Padre Rafael" },
-{ id: "315-2025-09-17-17h-ConfissoesMatriz", data: "2025-09-17", horario: "17hs", local: "Confissões na Matriz", padre: "Padre Rafael" },
-{ id: "324-2025-09-24-17h-ConfissoesMatriz", data: "2025-09-24", horario: "17hs", local: "Confissões na Matriz", padre: "Padre Rafael" },
-
-
 
 export const escala = [
     { id: "302-2025-09-10-19h-MissaFamilias", data: "2025-09-10", horario: "19hs", local: "Missa pelas famílias", padre: "Padre Rafael" },

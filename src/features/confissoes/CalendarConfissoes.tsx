@@ -37,8 +37,15 @@ const CalendarConfissoes: React.FC = () => {
   }, []);
 
   const escalas = [
+    { id: "301-2025-09-10-17h-ConfissoesMatriz", data: "2025-09-10", horario: "17hs", local: "Confissões na Matriz", padre: "Padre Rafael" },
+    { id: "204-2025-09-11-08h-ConfissoesMatriz", data: "2025-09-11", horario: "08hs", local: "Confissões na Matriz", padre: "Padre Ivan" },
+    { id: "305-2025-09-12-17h-ConfissoesMatrizJubilar", data: "2025-09-12", horario: "17hs", local: "Matriz (Sexta-feira Jubilar)", padre: "Padre Rafael" },
+    { id: "206-2025-09-12-17h-ConfissoesMatriz", data: "2025-09-12", horario: "17hs", local: "Matriz (Sexta-feira Jubilar)", padre: "Padre Ivan" },
+    { id: "315-2025-09-17-17h-ConfissoesMatriz", data: "2025-09-17", horario: "17hs", local: "Confissões na Matriz", padre: "Padre Rafael" },
+    { id: "216-2025-09-18-08h-ConfissoesMatriz", data: "2025-09-18", horario: "08hs", local: "Confissões na Matriz", padre: "Padre Ivan" }, 
+    { id: "324-2025-09-24-17h-ConfissoesMatriz", data: "2025-09-24", horario: "17hs", local: "Confissões na Matriz", padre: "Padre Rafael" },
+    { id: "227-2025-09-25-08h-ConfissoesMatriz", data: "2025-09-25", horario: "08hs", local: "Confissões na Matriz", padre: "Padre Ivan" },
 
-    { id: "78-2025-08-14-08h-ConfissoesMatriz", data: "2025-08-14", horario: "08h", local: "Matriz", padre: "Padre Ivan" },
   ];
 
   const getUniquePadres = () => Array.from(new Set(escalas.map((escala) => escala.padre)));
