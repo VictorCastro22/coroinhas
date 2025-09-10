@@ -1,37 +1,45 @@
-CALENDÁRIO PE. RAFAEL PARA O MÊS DE AGOSTO/2025:
+CALENDÁRIO DE PE. RAFAEL PARA O MÊS DE SETEMBRO/2025:
 
-19/08: 19hs - Encontro com os Mestres de Cerimônia;
-20/08: 17hs - Confissões na Matriz;
-             19hs - Missa pelas famílias;
-21/08: 05hs - Pré Festa na casa de Maria Lúcia Nunes, Rua 13 de Maio, 258;
-            19hs - Tangueira;
-22/08: 08hs - Visita aos Enfermos;
-             19hs - Cônego Pinto;
-23/08: 17hs - Santa Dulce;
-             19hs - Rosário com Reinvestidura dos coroinhas veteranos da Paróquia;
-24/08: 07hs - Matriz;
-             09hs - Confissões com o ECC;
-             17hs - Divino;
-             19hs - N. Pq. Iracema;
-26/08: 19hs - São Pedro;
-27/08: 17hs - Confissões na Matriz;
-             19hs - Missa pelas famílias;
-28/08: 05hs - Pré Festa de Socorro do Gilson, na Rua Professor Nogueira Machado, 839 na Travessa Gama;
-             19hs - Campo do Asa Delta;
-29/08: 18hs - Procissão da Bandeira e abertura da Festa de N. Sra. da Penha;
-30/08: 19hs - Santa Missa com Pe. Guedes;
-31/08: 07hs - Divino;
-             19hs - Missa com Pe. Diego Felix;
-01/09: 19hs - Missa com Pe. Edmilton;
-02/09: 19hs - Missa com Pe. João Paulo;
-03/09: 19hs - Missa com Pe. Ítalo Dias e Pe. Rafael;
-04/09: 19hs - Missa com Pe. Aurênio;
-05/09: 18hs - Adoração ao SS. Sacramento;
-            19hs - Missa com Pe. Edmilson e Pe. Rafael;
-06/09: 19hs - Missa com Pe. Francisco;
-07/09: 07hs - Divino;
-             19hs - Missa com Dom Gregório;
-08/09: 09hs - Missa Solene da Festa;
-             18hs - Procissão e Missa Encerrando os festejos.
+{ id: "305-2025-09-12-17h-ConfissoesMatrizJubilar", data: "2025-09-12", horario: "17hs", local: "Matriz (Sexta-feira Jubilar)", padre: "Padre Rafael" },
+{ id: "315-2025-09-17-17h-ConfissoesMatriz", data: "2025-09-17", horario: "17hs", local: "Confissões na Matriz", padre: "Padre Rafael" },
+{ id: "324-2025-09-24-17h-ConfissoesMatriz", data: "2025-09-24", horario: "17hs", local: "Confissões na Matriz", padre: "Padre Rafael" },
 
-OBS: Todas as noites haverá confissões na matriz, com quem puder atender.
+
+
+export const escala = [
+    { id: "302-2025-09-10-19h-MissaFamilias", data: "2025-09-10", horario: "19hs", local: "Missa pelas famílias", padre: "Padre Rafael" },
+
+    { id: "303-2025-09-11-19h-Pirapora", data: "2025-09-11", horario: "19hs", local: "Pirapora", padre: "Padre Rafael" },
+
+    { id: "306-2025-09-12-19h-MatrizMissaJubilar", data: "2025-09-12", horario: "19hs", local: "Matriz (Missa Jubilar)", padre: "Padre Rafael" },
+
+    { id: "307-2025-09-13-12h-Matriz", data: "2025-09-13", horario: "12hs", local: "Matriz", padre: "Padre Rafael" },
+
+    { id: "309-2025-09-13-19h-PqDasRosasFesta", data: "2025-09-13", horario: "19hs", local: "Parque das Rosas (Festa de Nossa Sra. das Dores)", padre: "Padre Rafael" },
+
+    { id: "310-2025-09-14-07h-Divino", data: "2025-09-14", horario: "07hs", local: "Divino", padre: "Padre Rafael" },
+    { id: "312-2025-09-14-17h-CentroPastoralAdmissao", data: "2025-09-14", horario: "17hs", local: "Centro de Pastoral (Admissão dos adultos na Catequese)", padre: "Padre Rafael" },
+    { id: "313-2025-09-14-19h-MatrizReinvestidura", data: "2025-09-14", horario: "19hs", local: "Matriz (Reinvestidura dos Coroinhas veteranos)", padre: "Padre Rafael" },
+
+    { id: "316-2025-09-17-19h-MissaFamilias", data: "2025-09-17", horario: "19hs", local: "Missa pelas famílias", padre: "Padre Rafael" },
+
+    { id: "317-2025-09-18-19h-TangueiraFesta", data: "2025-09-18", horario: "19hs", local: "Tangueira (Festa de Nossa Sra. da Piedade)", padre: "Padre Rafael" },
+    
+    { id: "319-2025-09-19-19h-Rosario", data: "2025-09-19", horario: "19hs", local: "Rosário", padre: "Padre Rafael" },
+    
+    { id: "320-2025-09-21-07h-Matriz", data: "2025-09-21", horario: "07hs", local: "Matriz", padre: "Padre Rafael" },
+    { id: "321-2025-09-21-17h-Divino", data: "2025-09-21", horario: "17hs", local: "Divino", padre: "Padre Rafael" },
+    { id: "322-2025-09-21-19h-NPqIracema", data: "2025-09-21", horario: "19hs", local: "Novo Parque Iracema", padre: "Padre Rafael" },
+    
+    { id: "325-2025-09-24-19h-MissaFamilias", data: "2025-09-24", horario: "19hs", local: "Missa pelas famílias", padre: "Padre Rafael" },
+
+    { id: "328-2025-09-26-19h-TangueiraFesta", data: "2025-09-26", horario: "19hs", local: "Tangueira (Festa de Nossa Sra. da Piedade)", padre: "Padre Rafael" },
+  
+    { id: "329-2025-09-27-19h-SaoBeneditoFesta", data: "2025-09-27", horario: "19hs", local: "São Benedito (Festa)", padre: "Padre Rafael" },
+  
+    { id: "330-2025-09-28-07h-Divino", data: "2025-09-28", horario: "07hs", local: "Divino", padre: "Padre Rafael" },
+    { id: "331-2025-09-28-17h-CentroPastoral", data: "2025-09-28", horario: "17hs", local: "Centro de Pastoral", padre: "Padre Rafael" },
+    { id: "332-2025-09-28-19h-Matriz", data: "2025-09-28", horario: "19hs", local: "Matriz", padre: "Padre Rafael" },
+
+    { id: "333-2025-09-30-19h-AbrigoTriduo", data: "2025-09-30", horario: "19hs", local: "Abrigo (Tríduo de São Francisco)", padre: "Padre Rafael" },
+];
