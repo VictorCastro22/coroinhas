@@ -89,6 +89,7 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
+  { "id": "333-2025-09-30-19h-AbrigoTriduo", "data": "2025-09-30", "horario": "19hs", "local": "Abrigo (Tríduo de São Francisco)", "padre": "Padre Rafael" },
   { "id": "1-2025-10-01-08h-Atendimentonasecretaria", "data": "2025-10-01", "horario": "08hs", "local": "Atendimento na secretaria", "padre": "Padre Eudásio" },
   { "id": "2-2025-10-01-08h-ConfissoesnaMatriz", "data": "2025-10-01", "horario": "08hs", "local": "Confissões na Matriz", "padre": "Padre Ivan" },
   { "id": "3-2025-10-01-19h-SerraPeladaFesta", "data": "2025-10-01", "horario": "19hs", "local": "Serra Pelada (Festa de Santa Terezinha do Menino Jesus)", "padre": "Padre Eudásio" },
@@ -236,8 +237,7 @@ const CalendarioPadres: React.FC = () => {
   { "id": "145-2025-11-02-17h-CentrodePastoral", "data": "2025-11-02", "horario": "17hs", "local": "Centro de Pastoral", "padre": "Padre Rafael" },
   { "id": "146-2025-11-02-19h-Matriz", "data": "2025-11-02", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
   { "id": "147-2025-11-02-19h-PqSaoJoao", "data": "2025-11-02", "horario": "19hs", "local": "Pq. São João", "padre": "Padre Ivan" },
-  { "id": "148-2025-11-02-19h-NPqIracema", "data": "2025-11-02", "horario": "19hs", "local": "N. Pq. Iracema", "padre": "Padre Rafael" }
-
+  { "id": "148-2025-11-02-19h-NPqIracema", "data": "2025-11-02", "horario": "19hs", "local": "N. Pq. Iracema", "padre": "Padre Rafael" }      
   ];
 
   
