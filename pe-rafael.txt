@@ -1,40 +1,56 @@
-CALENDÁRIO DE PE. RAFAEL PARA O MÊS DE SETEMBRO/2025:
+CALENDÁRIO DE PE. RAFAEL PARA O MÊS DE OUTUBRO/2025:
 
-
-export const escala = [
-    { id: "302-2025-09-10-19h-MissaFamilias", data: "2025-09-10", horario: "19hs", local: "Missa pelas famílias", padre: "Padre Rafael" },
-
-    { id: "303-2025-09-11-19h-Pirapora", data: "2025-09-11", horario: "19hs", local: "Pirapora", padre: "Padre Rafael" },
-
-    { id: "306-2025-09-12-19h-MatrizMissaJubilar", data: "2025-09-12", horario: "19hs", local: "Matriz (Missa Jubilar)", padre: "Padre Rafael" },
-
-    { id: "307-2025-09-13-12h-Matriz", data: "2025-09-13", horario: "12hs", local: "Matriz", padre: "Padre Rafael" },
-
-    { id: "309-2025-09-13-19h-PqDasRosasFesta", data: "2025-09-13", horario: "19hs", local: "Parque das Rosas (Festa de Nossa Sra. das Dores)", padre: "Padre Rafael" },
-
-    { id: "310-2025-09-14-07h-Divino", data: "2025-09-14", horario: "07hs", local: "Divino", padre: "Padre Rafael" },
-    { id: "312-2025-09-14-17h-CentroPastoralAdmissao", data: "2025-09-14", horario: "17hs", local: "Centro de Pastoral (Admissão dos adultos na Catequese)", padre: "Padre Rafael" },
-    { id: "313-2025-09-14-19h-MatrizReinvestidura", data: "2025-09-14", horario: "19hs", local: "Matriz (Reinvestidura dos Coroinhas veteranos)", padre: "Padre Rafael" },
-
-    { id: "316-2025-09-17-19h-MissaFamilias", data: "2025-09-17", horario: "19hs", local: "Missa pelas famílias", padre: "Padre Rafael" },
-
-    { id: "317-2025-09-18-19h-TangueiraFesta", data: "2025-09-18", horario: "19hs", local: "Tangueira (Festa de Nossa Sra. da Piedade)", padre: "Padre Rafael" },
-    
-    { id: "319-2025-09-19-19h-Rosario", data: "2025-09-19", horario: "19hs", local: "Rosário", padre: "Padre Rafael" },
-    
-    { id: "320-2025-09-21-07h-Matriz", data: "2025-09-21", horario: "07hs", local: "Matriz", padre: "Padre Rafael" },
-    { id: "321-2025-09-21-17h-Divino", data: "2025-09-21", horario: "17hs", local: "Divino", padre: "Padre Rafael" },
-    { id: "322-2025-09-21-19h-NPqIracema", data: "2025-09-21", horario: "19hs", local: "Novo Parque Iracema", padre: "Padre Rafael" },
-    
-    { id: "325-2025-09-24-19h-MissaFamilias", data: "2025-09-24", horario: "19hs", local: "Missa pelas famílias", padre: "Padre Rafael" },
-
-    { id: "328-2025-09-26-19h-TangueiraFesta", data: "2025-09-26", horario: "19hs", local: "Tangueira (Festa de Nossa Sra. da Piedade)", padre: "Padre Rafael" },
-  
-    { id: "329-2025-09-27-19h-SaoBeneditoFesta", data: "2025-09-27", horario: "19hs", local: "São Benedito (Festa)", padre: "Padre Rafael" },
-  
-    { id: "330-2025-09-28-07h-Divino", data: "2025-09-28", horario: "07hs", local: "Divino", padre: "Padre Rafael" },
-    { id: "331-2025-09-28-17h-CentroPastoral", data: "2025-09-28", horario: "17hs", local: "Centro de Pastoral", padre: "Padre Rafael" },
-    { id: "332-2025-09-28-19h-Matriz", data: "2025-09-28", horario: "19hs", local: "Matriz", padre: "Padre Rafael" },
-
-    { id: "333-2025-09-30-19h-AbrigoTriduo", data: "2025-09-30", horario: "19hs", local: "Abrigo (Tríduo de São Francisco)", padre: "Padre Rafael" },
-];
+01/10: Seminário Maior;
+02/10: 19hs - Mororó;
+03/10: 08hs - Visita aos Enfermos;
+            19hs - Centro de Pastoral (Missa da Adoração);
+04/10: 07:30 - CPP;
+            17:30 - Matrimônio na Matriz;
+            19hs - Pirapora (Festa de São Francisco de Assis);
+05/10: 07hs - Divino;
+            14hs - Pré DNJ da Região Episcopal Sagrada Família no Centro de Pastoral;
+            17hs - Centro de  Pastoral;
+            19hs - N. Pq. Iracema;
+06/10: Compromisso fora;
+07/10: Compromisso fora;
+08/10: 17hs - Confissões na Matriz;
+            19hs - Missa Votiva a N. Sra. da Penha e pelas famílias, na Matriz;
+09/10: Compromisso fora;
+10/10: 08hs - Visita aos Enfermos;
+            17hs - Confissões na Matriz para a Missa Jubilar;
+11/10: 07:30 - Dia "D" Missionário;
+            19hs - Mãe Rainha em Festa;
+12/10: 07hs - Divino;
+            11hs - Fazenda da Esperança (Eucaristia);
+            17hs - Pq. São João;
+            19hs - Santos Dumont em Festa;
+13/10: Compromisso fora
+14/10: 19hs - São Pedro;
+15/10: 17hs - Confissões na Matriz; 
+            19hs - Missa pelas famílias;
+16/10: 19hs - Tangueira;
+17/10: Fortaleza;
+18/10: 17hs - Santo Antônio;
+            19hs - Coité;
+19/10: 07hs - Matriz;
+            09hs - São José;
+            17hs - Divino;
+20 a 24/10: RETIRO DO CLERO;
+24/10: 18h - Matrimônio na Matriz 
+25/10: 08:30 - CPP da Região;
+            17hs - Santa Dulce;
+            19hs - Outra Banda;
+26/10: 07 às 12hs - Espiritualidade dos MEPs da Região Episcopal Sagrada Família;
+            17hs - Divino;
+            19hs - Matriz;
+27/10: 19hs - Ordenação Presbiteral do Diácono João Pedro, na Catedral;
+28/10: 19hs - São Pedro;
+29/10: 17hs - Confissões na Matriz;
+             19hs - Missa pelas famílias;
+30/10: 19hs - Matriz (Primeira Missa do Neo Sacerdote Pe. João Pedro);
+01/11: 07:30 - CPP;
+            17hs - Santa Luzia;
+            19hs - Matriz;
+02/11: 07hs - Divino;
+            17hs - Centro de Pastoral;
+            19hs - N. Pq. Iracema.
