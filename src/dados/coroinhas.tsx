@@ -50,6 +50,7 @@ const coroinhas = [
   { id: "49", nome: "Isaias", foto: "/imagens/semfoto.jpg" },
   { id: "50", nome: "Ivina", foto: "/imagens/semfoto.jpg" },
   { id: "51", nome: "Izabelle Mesquita", foto: "/imagens/izabelle.jpg" },
+  { id: "1000", nome: "Jéssica", foto: "/imagens/jessica.jpeg" },
   { id: "52", nome: "Jhonnata", foto: "/imagens/semfoto.jpg" },
   { id: "53", nome: "João Carlos", foto: "/imagens/semfoto.jpg" },
   { id: "54", nome: "João Gabriel", foto: "/imagens/joaogabriel.jpeg" },
