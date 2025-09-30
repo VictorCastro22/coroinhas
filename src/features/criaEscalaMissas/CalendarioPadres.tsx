@@ -91,6 +91,7 @@ const CalendarioPadres: React.FC = () => {
   const escalas = [
     { "id": "333-2025-09-30-19h-AbrigoTriduo", "data": "2025-09-30", "horario": "19hs", "local": "Abrigo (Tríduo de São Francisco)", "padre": "Padre Rafael" },
 
+    { "id": "3-2025-10-01-19h-Matriz", "data": "2025-10-01", "horario": "19hs", "local": "Matriz", "padre": "Padre de Fora" },
     { "id": "3-2025-10-01-19h-SerraPeladaFesta", "data": "2025-10-01", "horario": "19hs", "local": "Serra Pelada (Festa de Santa Terezinha do Menino Jesus)", "padre": "Padre Eudásio" },
     { "id": "4-2025-10-01-19h-Guabiraba", "data": "2025-10-01", "horario": "19hs", "local": "Guabiraba", "padre": "Padre Ivan" },
     { "id": "4-2025-10-01-19h-npiracema", "data": "2025-10-01", "horario": "19hs", "local": "Novo Parque Iracema (Festa)", "padre": "Padre Flávio" },
