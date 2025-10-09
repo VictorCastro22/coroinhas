@@ -37,10 +37,6 @@ const CalendarConfissoes: React.FC = () => {
   }, []);
 
   const escalas = [
-    { "id": "1-2025-10-01-08h-Atendimentonasecretaria", "data": "2025-10-01", "horario": "08hs", "local": "Secretaria Paroquial", "padre": "Padre Eudásio" },
-    { "id": "2-2025-10-01-08h-ConfissoesnaMatriz", "data": "2025-10-01", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "36-2025-10-08-08h-AtendimentonaSecretaria", "data": "2025-10-08", "horario": "08hs", "local": "Secretaria Paroquial", "padre": "Padre Eudásio" },
-    { "id": "37-2025-10-08-17h-ConfissoesnaMatriz", "data": "2025-10-08", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael" },
     { "id": "41-2025-10-09-08h-ConfissoesnaMatriz", "data": "2025-10-09", "horario": "08hs", "local": "Confissões na Matriz", "padre": "Padre Ivan" },  
     { "id": "46-2025-10-10-17h-ConfissoesMissaJubilar", "data": "2025-10-10", "horario": "17hs", "local": "Matriz (Sexta Jubilar)", "padre": "Padre Eudásio" },
     { "id": "47-2025-10-10-17h-ConfissoesMissaJubilar", "data": "2025-10-10", "horario": "17hs", "local": "Matriz (Sexta Jubilar)", "padre": "Padre Ivan" },

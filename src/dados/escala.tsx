@@ -1,54 +1,11 @@
 export const escala = [
-  { "id": "333-2025-09-30-19h-AbrigoTriduo", "data": "2025-09-30", "horario": "19hs", "local": "Abrigo (Tríduo de São Francisco)", "padre": "Padre Rafael" },
-
-    { "id": "3-2025-10-01-19h-Matriz", "data": "2025-10-01", "horario": "19hs", "local": "Matriz", "padre": "Padre de Fora" },
-    { "id": "3-2025-10-01-19h-SerraPeladaFesta", "data": "2025-10-01", "horario": "19hs", "local": "Serra Pelada (Festa de Santa Terezinha do Menino Jesus)", "padre": "Padre Eudásio" },
-    { "id": "4-2025-10-01-19h-Guabiraba", "data": "2025-10-01", "horario": "19hs", "local": "Guabiraba", "padre": "Padre Ivan" },
-    { "id": "4-2025-10-01-19h-npiracema", "data": "2025-10-01", "horario": "19hs", "local": "Novo Parque Iracema (Festa)", "padre": "Padre Flávio" },
-
-    { "id": "5-2025-10-02-19h-Abrigo", "data": "2025-10-02", "horario": "19hs", "local": "Abrigo", "padre": "Padre Flávio" },
-    { "id": "5-2025-10-02-19h-PqdasRosas", "data": "2025-10-02", "horario": "19hs", "local": "Parque das Rosas", "padre": "Padre Eudásio" },
-    { "id": "6-2025-10-02-19h-BandeiraNSraAparecida", "data": "2025-10-02", "horario": "19hs", "local": "Bandeira de N. Sra. Aparecida, no Novo Parque Iracema", "padre": "Padre Ivan" },
-    { "id": "7-2025-10-02-19h-Mororo", "data": "2025-10-02", "horario": "19hs", "local": "Mororó", "padre": "Padre Rafael" },
-
-    { "id": "10-2025-10-03-18h30-AdoracaoaoSSSACRAMENTO", "data": "2025-10-03", "horario": "18:30", "local": "Centro de Pastoral (Adoração)", "padre": "Padre Eudásio" },
-    { "id": "5-2025-10-03-19h-Abrigo", "data": "2025-10-02", "horario": "19hs", "local": "Abrigo", "padre": "Padre Josimar" },    
-    { "id": "11-2025-10-03-19h-Columijuba", "data": "2025-10-03", "horario": "19hs", "local": "Columijuba", "padre": "Padre Ivan" },
-    { "id": "12-2025-10-03-19h-CentroPastoralMissaAdoracao", "data": "2025-10-03", "horario": "19hs", "local": "Centro de Pastoral (Adoração)", "padre": "Padre Rafael" },
-
-    { "id": "16-2025-10-04-17h-AbrigoFestaSaoFrancisco", "data": "2025-10-04", "horario": "17hs", "local": "Abrigo (Festa de São Francisco de Assis)", "padre": "Padre Eudásio" },
-    { "id": "17-2025-10-04-17h30-MatrimonionaMatriz", "data": "2025-10-04", "horario": "17:30", "local": "Matrimônio na Matriz", "padre": "Padre Rafael" },
-    { "id": "18-2025-10-04-19h-MororoFestaSaoFrancisco", "data": "2025-10-04", "horario": "19hs", "local": "Mororó (Festa de São Francisco de Assis)", "padre": "Padre Eudásio" },
-    { "id": "19-2025-10-04-19h-CANINDE", "data": "2025-10-04", "horario": "19hs", "local": "Canindé", "padre": "Padre Ivan" },
-    { "id": "20-2025-10-04-19h-PiraporaFestaSaoFrancisco", "data": "2025-10-04", "horario": "19hs", "local": "Pirapora (Festa de São Francisco de Assis)", "padre": "Padre Rafael" },
-
-    { "id": "21-2025-10-05-07h-Matriz", "data": "2025-10-05", "horario": "07hs", "local": "Matriz", "padre": "Padre Eudásio" },
-    { "id": "22-2025-10-05-07h-Divino", "data": "2025-10-05", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
-    { "id": "23-2025-10-05-09h-Matriz", "data": "2025-10-05", "horario": "09hs", "local": "Matriz", "padre": "Padre Eudásio" },
-    { "id": "24-2025-10-05-09h-SaoJose", "data": "2025-10-05", "horario": "09hs", "local": "São José", "padre": "Padre Ivan" },
-    { "id": "25-2025-10-05-14h-PreDNJ", "data": "2025-10-05", "horario": "14hs", "local": "Centro de Pastoral (Pré DNJ)", "padre": "Padre Rafael" },
-    { "id": "26-2025-10-05-17h-Divino", "data": "2025-10-05", "horario": "17hs", "local": "Divino", "padre": "Padre Eudásio" },
-    { "id": "27-2025-10-05-17h-PqSaoJoao", "data": "2025-10-05", "horario": "17hs", "local": "Parque São João", "padre": "Padre Ivan" },
-    { "id": "28-2025-10-05-17h-CentrodePastoral", "data": "2025-10-05", "horario": "17hs", "local": "Centro de Pastoral", "padre": "Padre Rafael" },
-    { "id": "29-2025-10-05-19h-SaoBeneditoFesta", "data": "2025-10-05", "horario": "19hs", "local": "São Benedito (Festa)", "padre": "Padre Eudásio" },
-    { "id": "30-2025-10-05-19h-Matriz", "data": "2025-10-05", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "31-2025-10-05-19h-NPqIracema", "data": "2025-10-05", "horario": "19hs", "local": "Novo Parque Iracema (Festa)", "padre": "Padre Rafael" },
-
-    { "id": "31-2025-10-06-19h-NPqIracema", "data": "2025-10-06", "horario": "19hs", "local": "Novo Parque Iracema (Festa)", "padre": "Padre Diego" },
-    { "id": "33-2025-10-06-19h-BandeiradaFestadeSaoBenedito", "data": "2025-10-06", "horario": "19hs", "local": "Bandeira da Festa de São Benedito", "padre": "Padre Ivan" },
-
-    { "id": "31-2025-10-07-19h-NPqIracema", "data": "2025-10-07", "horario": "19hs", "local": "Novo Parque Iracema (Festa)", "padre": "Padre Washington" },
-    { "id": "34-2025-10-07-19h-RosarioFesta", "data": "2025-10-07", "horario": "19hs", "local": "Rosário (Festa de N. Sra. do Rosário)", "padre": "Padre Eudásio" },
-    { "id": "35-2025-10-07-19h-Urucara", "data": "2025-10-07", "horario": "19hs", "local": "Urucará", "padre": "Padre Ivan" },
-
-    { "id": "38-2025-10-08-19h-MatrizMissaVotiva", "data": "2025-10-08", "horario": "19hs", "local": "Matriz (Missa Votiva de N. Sra. da Penha e pelas famílias)", "padre": "Padre Eudásio" },
-    { "id": "39-2025-10-08-19h-MissaVotivaNSraPenha", "data": "2025-10-08", "horario": "19hs", "local": "Matriz (Missa Votiva de N. Sra. da Penha e pelas famílias)", "padre": "Padre Ivan" },
-    { "id": "40-2025-10-08-19h-MissaVotivaNSraPenha", "data": "2025-10-08", "horario": "19hs", "local": "Matriz (Missa Votiva de N. Sra. da Penha e pelas famílias)", "padre": "Padre Rafael" },
-
     { "id": "42-2025-10-09-19h-Pirapora", "data": "2025-10-09", "horario": "19hs", "local": "Pirapora", "padre": "Padre Eudásio" },
     { "id": "43-2025-10-09-19h-BandeiradaFestaMaeRainha", "data": "2025-10-09", "horario": "19hs", "local": "Bandeira da Festa da Mãe Rainha", "padre": "Padre Ivan" },
 
+    { "id": "31-2025-10-10-19h-Matriz", "data": "2025-10-10", "horario": "19hs", "local": "Matriz (Sexta Jubilar)", "padre": "Padre" },
     { "id": "31-2025-10-10-19h-NPqIracema", "data": "2025-10-10", "horario": "19hs", "local": "Novo Parque Iracema (Festa)", "padre": "Padre Edmilton" },
+    { "id": "76-2025-10-10-19h-SantosDumontFesta", "data": "2025-10-10", "horario": "19hs", "local": "Santos Dumont (Festa de Santa Edwiges)", "padre": "Padre Pompeu" },
+
 
     { "id": "49-2025-10-11-07h30-DiaDMissionario", "data": "2025-10-11", "horario": "17hs", "local": "Dia 'D' Missionário", "padre": "Padre Eudásio" },
     { "id": "31-2025-10-11-19h-NPqIracema", "data": "2025-10-11", "horario": "19hs", "local": "Novo Parque Iracema (Festa)", "padre": "Padre Glailson" },   
@@ -65,17 +22,21 @@ export const escala = [
     { "id": "62-2025-10-12-17h-PqSaoJoao", "data": "2025-10-12", "horario": "17hs", "local": "Parque São João", "padre": "Padre Rafael" },
     { "id": "63-2025-10-12-19h-NPqIracemaFesta", "data": "2025-10-12", "horario": "19hs", "local": "Novo Parque Iracema (Festa de N. Sra. Aparecida)", "padre": "Padre Eudásio" },
     { "id": "64-2025-10-12-19h-Matriz", "data": "2025-10-12", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "65-2025-10-12-19h-SantosDumontemFesta", "data": "2025-10-12", "horario": "19hs", "local": "Santos Dumont em Festa", "padre": "Padre Rafael" },
+    { "id": "65-2025-10-12-19h-SantosDumontemFesta", "data": "2025-10-12", "horario": "19hs", "local": "Santos Dumont (Festa)", "padre": "Padre Rafael" },
 
     { "id": "66-2025-10-13-12h-Matriz", "data": "2025-10-13", "horario": "12hs", "local": "Matriz", "padre": "Padre Eudásio" },
     { "id": "67-2025-10-13-17h-Vilares", "data": "2025-10-13", "horario": "17hs", "local": "Vilares", "padre": "Padre Ivan" },
     { "id": "69-2025-10-13-19h-PqSaoJoao", "data": "2025-10-13", "horario": "19hs", "local": "Parque São João", "padre": "Padre Ivan" },
+    
     { "id": "70-2025-10-14-19h-SantaDulce", "data": "2025-10-14", "horario": "19hs", "local": "Santa Dulce", "padre": "Padre Ivan" },
     { "id": "71-2025-10-14-19h-SaoPedro", "data": "2025-10-14", "horario": "19hs", "local": "São Pedro", "padre": "Padre Rafael" },
 
     { "id": "73-2025-10-15-19h-SantosDumont", "data": "2025-10-15", "horario": "19hs", "local": "Santos Dumont", "padre": "Padre Eudásio" },
     { "id": "74-2025-10-15-19h-Guabirada", "data": "2025-10-15", "horario": "19hs", "local": "Guabirada", "padre": "Padre Ivan" },
     { "id": "75-2025-10-15-19h-Missapelasfamilias", "data": "2025-10-15", "horario": "19hs", "local": "Missa pelas famílias", "padre": "Padre Rafael" },
+    { "id": "76-2025-10-15-19h-SantosDumontFesta", "data": "2025-10-15", "horario": "19hs", "local": "Santos Dumont (Festa de Santa Edwiges)", "padre": "Padre Aurênio" },
+
+
     { "id": "76-2025-10-16-19h-SantosDumontFesta", "data": "2025-10-16", "horario": "19hs", "local": "Santos Dumont (Festa de Santa Edwiges)", "padre": "Padre Eudásio" },
 
     { "id": "77-2025-10-16-19h-PqdasRosas", "data": "2025-10-16", "horario": "19hs", "local": "Parque das Rosas", "padre": "Padre Ivan" },
@@ -148,5 +109,5 @@ export const escala = [
     { "id": "145-2025-11-02-17h-CentrodePastoral", "data": "2025-11-02", "horario": "17hs", "local": "Centro de Pastoral", "padre": "Padre Rafael" },
     { "id": "146-2025-11-02-19h-Matriz", "data": "2025-11-02", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
     { "id": "147-2025-11-02-19h-PqSaoJoao", "data": "2025-11-02", "horario": "19hs", "local": "Parque São João", "padre": "Padre Ivan" },
-    { "id": "148-2025-11-02-19h-NPqIracema", "data": "2025-11-02", "horario": "19hs", "local": "Novo Parque Iracema", "padre": "Padre Rafael" }      
+    { "id": "148-2025-11-02-19h-NPqIracema", "data": "2025-11-02", "horario": "19hs", "local": "Novo Parque Iracema", "padre": "Padre Rafael" }     
 ];
