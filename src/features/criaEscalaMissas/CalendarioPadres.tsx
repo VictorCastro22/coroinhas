@@ -89,15 +89,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    { "id": "42-2025-10-09-19h-Pirapora", "data": "2025-10-09", "horario": "19hs", "local": "Pirapora", "padre": "Padre Eudásio" },
-    { "id": "43-2025-10-09-19h-BandeiradaFestaMaeRainha", "data": "2025-10-09", "horario": "19hs", "local": "Bandeira da Festa da Mãe Rainha", "padre": "Padre Ivan" },
-
-    { "id": "31-2025-10-10-19h-Matriz", "data": "2025-10-10", "horario": "19hs", "local": "Matriz (Sexta Jubilar)", "padre": "Padre" },
-    { "id": "31-2025-10-10-19h-NPqIracema", "data": "2025-10-10", "horario": "19hs", "local": "Novo Parque Iracema (Festa)", "padre": "Padre Edmilton" },
-    { "id": "76-2025-10-10-19h-SantosDumontFesta", "data": "2025-10-10", "horario": "19hs", "local": "Santos Dumont (Festa de Santa Edwiges)", "padre": "Padre Pompeu" },
-
-
-    { "id": "49-2025-10-11-07h30-DiaDMissionario", "data": "2025-10-11", "horario": "17hs", "local": "Dia 'D' Missionário", "padre": "Padre Eudásio" },
     { "id": "31-2025-10-11-19h-NPqIracema", "data": "2025-10-11", "horario": "19hs", "local": "Novo Parque Iracema (Festa)", "padre": "Padre Glailson" },   
     { "id": "52-2025-10-11-19h-Matriz", "data": "2025-10-11", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
     { "id": "53-2025-10-11-19h-OutraBanda", "data": "2025-10-11", "horario": "19hs", "local": "Outra Banda", "padre": "Padre Ivan" },

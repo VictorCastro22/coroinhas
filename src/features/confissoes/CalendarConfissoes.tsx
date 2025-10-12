@@ -37,11 +37,7 @@ const CalendarConfissoes: React.FC = () => {
   }, []);
 
   const escalas = [
-    { "id": "41-2025-10-09-08h-ConfissoesnaMatriz", "data": "2025-10-09", "horario": "08hs", "local": "Confissões na Matriz", "padre": "Padre Ivan" },  
-    { "id": "46-2025-10-10-17h-ConfissoesMissaJubilar", "data": "2025-10-10", "horario": "17hs", "local": "Matriz (Sexta Jubilar)", "padre": "Padre Eudásio" },
-    { "id": "47-2025-10-10-17h-ConfissoesMissaJubilar", "data": "2025-10-10", "horario": "17hs", "local": "Matriz (Sexta Jubilar)", "padre": "Padre Ivan" },
-    { "id": "48-2025-10-10-17h-ConfissoesMissaJubilar", "data": "2025-10-10", "horario": "17hs", "local": "Matriz (Sexta Jubilar)", "padre": "Padre Rafael" },
-    { "id": "72-2025-10-15-17h-ConfissoesnaMatriz", "data": "2025-10-15", "horario": "17hs", "local": "Confissões na Matriz", "padre": "Padre Rafael" },
+    { "id": "72-2025-10-15-17h-ConfissoesnaMatriz", "data": "2025-10-15", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael" },
     { "id": "100-2025-10-22-08h-Atendimentonasecretaria", "data": "2025-10-22", "horario": "08hs", "local": "Atendimento na secretaria", "padre": "Padre Eudásio" },
     { "id": "101-2025-10-22-17h-ConfissoesnaMatriz", "data": "2025-10-22", "horario": "17hs", "local": "Confissões na Matriz", "padre": "Padre Eudásio" },
     { "id": "125-2025-10-29-17h-ConfissoesnaMatriz", "data": "2025-10-29", "horario": "17hs", "local": "Confissões na Matriz", "padre": "Padre Rafael" },
