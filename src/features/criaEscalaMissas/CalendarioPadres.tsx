@@ -101,7 +101,6 @@ const CalendarioPadres: React.FC = () => {
     { "id": "142-2025-11-02-09h-SaoJose", "data": "2025-11-02", "horario": "09hs", "local": "São José", "padre": "Padre Ivan" },
     { "id": "143-2025-11-02-17h-Cemiterio", "data": "2025-11-02", "horario": "17hs", "local": "Cemitério", "padre": "Padre Eudásio" },
     { "id": "144-2025-11-02-17h-Divino", "data": "2025-11-02", "horario": "17hs", "local": "Divino", "padre": "Padre Ivan" },
-    { "id": "145-2025-11-02-17h-CentrodePastoral", "data": "2025-11-02", "horario": "17hs", "local": "Centro de Pastoral", "padre": "Padre Rafael" },
     { "id": "146-2025-11-02-19h-Matriz", "data": "2025-11-02", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
     { "id": "147-2025-11-02-19h-PqSaoJoao", "data": "2025-11-02", "horario": "19hs", "local": "Parque São João", "padre": "Padre Ivan" },
     { "id": "148-2025-11-02-19h-NPqIracema", "data": "2025-11-02", "horario": "19hs", "local": "Novo Parque Iracema", "padre": "Padre Rafael" },
@@ -148,7 +147,7 @@ const CalendarioPadres: React.FC = () => {
   { "id": "173-2025-11-16-17hs-CentrodePastoral", "data": "2025-11-16", "horario": "17hs", "local": "Centro de Pastoral", "padre": "Padre Eudásio" },
   { "id": "174-2025-11-16-17hs-Divino", "data": "2025-11-16", "horario": "17hs", "local": "Divino", "padre": "Padre Ivan" },
   { "id": "175-2025-11-16-19hs-Matriz", "data": "2025-11-16", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
-  { "id": "176-2025-11-16-19hs-NPqIracema", "data": "2025-11-16", "horario": "19hs", "local": "N. Pq. Iracema", "padre": "Padre Ivan" },
+  { "id": "176-2025-11-16-19hs-NPqIracema", "data": "2025-11-16", "horario": "19hs", "local": "Novo Parque Iracema", "padre": "Padre Ivan" },
   { "id": "177-2025-11-17-19hs-ConegoPinto", "data": "2025-11-17", "horario": "19hs", "local": "Cônego Pinto", "padre": "Padre Ivan" },
   { "id": "178-2025-11-18-19hs-PlanaltoDosCajueiros", "data": "2025-11-18", "horario": "19hs", "local": "Planalto dos Cajueiros", "padre": "Padre Eudásio" },
   { "id": "179-2025-11-18-19hs-Urucara", "data": "2025-11-18", "horario": "19hs", "local": "Urucará", "padre": "Padre Ivan" },
@@ -174,7 +173,7 @@ const CalendarioPadres: React.FC = () => {
   { "id": "199-2025-11-23-17hs-CentrodePastoral", "data": "2025-11-23", "horario": "17hs", "local": "Centro de Pastoral", "padre": "Padre Rafael" },
   { "id": "200-2025-11-23-18hs-Rosario", "data": "2025-11-23", "horario": "18hs", "local": "Rosário", "padre": "Padre Rafael" },
   { "id": "201-2025-11-23-19hs-Matriz", "data": "2025-11-23", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
-  { "id": "202-2025-11-23-19hs-NPqIracema", "data": "2025-11-23", "horario": "19hs", "local": "N. Pq. Iracema", "padre": "Padre Ivan" },
+  { "id": "202-2025-11-23-19hs-NPqIracema", "data": "2025-11-23", "horario": "19hs", "local": "Novo Parque Iracema", "padre": "Padre Ivan" },
   { "id": "203-2025-11-25-19hs-SerraPelada", "data": "2025-11-25", "horario": "19hs", "local": "Serra Pelada", "padre": "Padre Ivan" },
   { "id": "204-2025-11-26-19hs-SantosDumont", "data": "2025-11-26", "horario": "19hs", "local": "Santos Dumont", "padre": "Padre Ivan" },
   { "id": "205-2025-11-26-19hs-Matriz", "data": "2025-11-26", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
@@ -191,7 +190,7 @@ const CalendarioPadres: React.FC = () => {
   { "id": "216-2025-11-30-17hs-PqSaoJoao", "data": "2025-11-30", "horario": "17hs", "local": "Pq. São João", "padre": "Padre Ivan" },
   { "id": "217-2025-11-30-17hs-Divino", "data": "2025-11-30", "horario": "17hs", "local": "Divino", "padre": "Padre Rafael" },
   { "id": "218-2025-11-30-19hs-Matriz", "data": "2025-11-30", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
-  { "id": "219-2025-11-30-19hs-NPqIracema", "data": "2025-11-30", "horario": "19hs", "local": "N. Pq. Iracema", "padre": "Padre Rafael" }
+  { "id": "219-2025-11-30-19hs-NPqIracema", "data": "2025-11-30", "horario": "19hs", "local": "Novo Parque Iracema", "padre": "Padre Rafael" }
   
   ];
 
