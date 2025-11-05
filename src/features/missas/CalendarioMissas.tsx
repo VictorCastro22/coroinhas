@@ -37,9 +37,6 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
 const escalas = [
-    { "id": "13-2025-11-03-19hs-PatoSelvagem", "data": "2025-11-03", "horario": "19hs", "local": "Pato Selvagem", "padre": "Padre Ivan" },
-    { "id": "13-2025-11-04-19hs-Vilares", "data": "2025-11-04", "horario": "19hs", "local": "Vilares", "padre": "Padre Ivan" },
-    { "id": "13-2025-11-04-19hs-Urucara", "data": "2025-11-04", "horario": "19hs", "local": "Urucará", "padre": "Padre Rafael" },
     { "id": "13-2025-11-05-19hs-Guabiraba", "data": "2025-11-05", "horario": "19hs", "local": "Guabiraba", "padre": "Padre Ivan" },
     { "id": "13-2025-11-05-19hs-Matriz", "data": "2025-11-05", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
     { "id": "13-2025-11-06-19hs-Mororo", "data": "2025-11-06", "horario": "19hs", "local": "Mororó", "padre": "Padre Ivan" },
