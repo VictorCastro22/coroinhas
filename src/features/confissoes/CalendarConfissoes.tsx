@@ -37,11 +37,6 @@ const CalendarConfissoes: React.FC = () => {
   }, []);
 
 const escalas = [
-  { "id": "1-2025-11-06-08h-ConfissoesnaMatriz", "data": "2025-11-06", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "3-2025-11-12-08h-Atendimentonasecretaria", "data": "2025-11-12", "horario": "08hs", "local": "Secretaria", "padre": "Padre Eudásio" },
-  { "id": "99-2025-13-20-08h-ConfissoesnaMatriz", "data": "2025-11-13", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "4-2025-11-14-17h-ConfissoesnaMatriz", "data": "2025-11-14", "horario": "17hs", "local": "Matriz (Jubilar)", "padre": "Padre Eudásio" },
-  { "id": "5-2025-11-14-17h-ConfissoesnaMatriz", "data": "2025-11-14", "horario": "17hs", "local": "Matriz (Jubilar)", "padre": "Padre Ivan" },
   { "id": "6-2025-11-19-08h-Atendimentonasecretaria", "data": "2025-11-19", "horario": "08hs", "local": "Secretaria", "padre": "Padre Eudásio" },
   { "id": "7-2025-11-20-08h-ConfissoesnaMatriz", "data": "2025-11-20", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan" },
   { "id": "8-2025-11-26-08h-Atendimentonasecretaria", "data": "2025-11-26", "horario": "08hs", "local": "Secretaria", "padre": "Padre Eudásio" },
