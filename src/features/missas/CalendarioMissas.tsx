@@ -37,20 +37,6 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
 const escalas = [
-    { "id": "16-2025-11-15-17hs-SantoAntonio", "data": "2025-11-15", "horario": "17hs", "local": "Santo Antônio", "padre": "Padre Eudásio" },
-    { "id": "16-2025-11-15-17hs-SantaLuzia", "data": "2025-11-15", "horario": "17hs", "local": "Santa Luzia", "padre": "Padre Ivan" },
-    { "id": "16-2025-11-15-19hs-Matriz", "data": "2025-11-15", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
-    { "id": "16-2025-11-15-19hs-Coite", "data": "2025-11-15", "horario": "19hs", "local": "Coité", "padre": "Padre Ivan" },
-    { "id": "16-2025-11-16-07hs-Divino", "data": "2025-11-16", "horario": "07hs", "local": "Divino", "padre": "Padre Eudásio" },
-    { "id": "16-2025-11-16-07hs-Matriz", "data": "2025-11-16", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "17-2025-11-16-09hs-Matriz", "data": "2025-11-16", "horario": "09hs", "local": "Matriz", "padre": "Padre Eudásio" },
-    { "id": "17-2025-11-16-09hs-SaoJose", "data": "2025-11-16", "horario": "09hs", "local": "São José", "padre": "Padre Ivan" },
-    { "id": "17-2025-11-16-10hs-Matriz", "data": "2025-11-16", "horario": "10hs", "local": "Matriz", "padre": "Padre Eudásio" },
-    { "id": "17-2025-11-16-17hs-CentrodePastoral", "data": "2025-11-16", "horario": "17hs", "local": "Centro de Pastoral", "padre": "Padre Eudásio" },
-    { "id": "17-2025-11-16-17hs-Divino", "data": "2025-11-16", "horario": "17hs", "local": "Divino", "padre": "Padre Ivan" },
-    { "id": "17-2025-11-16-19hs-Matriz", "data": "2025-11-16", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
-    { "id": "17-2025-11-16-19hs-NPqIracema", "data": "2025-11-16", "horario": "19hs", "local": "Novo Parque Iracema", "padre": "Padre Ivan" },
-    { "id": "17-2025-11-17-19hs-ConegoPinto", "data": "2025-11-17", "horario": "19hs", "local": "Cônego Pinto", "padre": "Padre Ivan" },
     { "id": "17-2025-11-18-19hs-PlanaltoDosCajueiros", "data": "2025-11-18", "horario": "19hs", "local": "Planalto dos Cajueiros", "padre": "Padre Eudásio" },
     { "id": "17-2025-11-18-19hs-Urucara", "data": "2025-11-18", "horario": "19hs", "local": "Urucará", "padre": "Padre Ivan" },
     { "id": "18-2025-11-19-19hs-Matriz", "data": "2025-11-19", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
