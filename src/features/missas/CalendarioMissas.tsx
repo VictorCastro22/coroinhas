@@ -37,19 +37,19 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
 const escalas = [
-    { "id": "20-2025-11-28-19hs-ConegoPinto", "data": "2025-11-28", "horario": "19hs", "local": "Cônego Pinto", "padre": "Padre Ivan" },
-    { "id": "20-2025-11-28-19hs-Rosario", "data": "2025-11-28", "horario": "19hs", "local": "Rosário", "padre": "Padre Rafael" },
-    { "id": "21-2025-11-29-19hs-Matriz", "data": "2025-11-29", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "21-2025-11-29-19hs-SaoBenedito", "data": "2025-11-29", "horario": "19hs", "local": "São Benedito", "padre": "Padre Rafael" },
-    { "id": "21-2025-11-30-07hs-Divino", "data": "2025-11-30", "horario": "07hs", "local": "Divino", "padre": "Padre Ivan" },
-    { "id": "21-2025-11-30-07hs-Matriz", "data": "2025-11-30", "horario": "07hs", "local": "Matriz", "padre": "Padre Rafael" },
-    { "id": "21-2025-11-30-09hs-Matriz", "data": "2025-11-30", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "21-2025-11-30-17hs-CentrodePastoral", "data": "2025-11-30", "horario": "17hs", "local": "Centro de Pastoral", "padre": "Padre Eudásio" },
-    { "id": "21-2025-11-30-17hs-PqSaoJoao", "data": "2025-11-30", "horario": "17hs", "local": "Parque São João", "padre": "Padre Ivan" },
-    { "id": "21-2025-11-30-17hs-Divino", "data": "2025-11-30", "horario": "17hs", "local": "Divino", "padre": "Padre Rafael" },
-    { "id": "21-2025-11-30-19hs-Matriz", "data": "2025-11-30", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
-    { "id": "21-2025-11-30-19hs-NPqIracema", "data": "2025-11-30", "horario": "19hs", "local": "Novo Parque Iracema", "padre": "Padre Rafael" },
-
+   { "id": "208-2025-11-28-19hs-ConegoPinto", "data": "2025-11-28", "horario": "19hs", "local": "Cônego Pinto", "padre": "Padre Ivan" },
+    { "id": "209-2025-11-28-19hs-Rosario", "data": "2025-11-28", "horario": "19hs", "local": "Rosário", "padre": "Padre Rafael" },
+    { "id": "210-2025-11-29-19hs-Matriz", "data": "2025-11-29", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
+    { "id": "211-2025-11-29-19hs-SaoBenedito", "data": "2025-11-29", "horario": "19hs", "local": "São Benedito", "padre": "Padre Rafael" },
+    { "id": "212-2025-11-30-07hs-Divino", "data": "2025-11-30", "horario": "07hs", "local": "Divino", "padre": "Padre Ivan" },
+    { "id": "213-2025-11-30-07hs-Matriz", "data": "2025-11-30", "horario": "07hs", "local": "Matriz", "padre": "Padre Rafael" },
+    { "id": "214-2025-11-30-09hs-Matriz", "data": "2025-11-30", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
+    { "id": "215-2025-11-30-17hs-CentrodePastoral", "data": "2025-11-30", "horario": "17hs", "local": "Centro de Pastoral", "padre": "Padre Eudásio" },
+    { "id": "216-2025-11-30-17hs-PqSaoJoao", "data": "2025-11-30", "horario": "17hs", "local": "Parque São João", "padre": "Padre Ivan" },
+    { "id": "217-2025-11-30-17hs-Divino", "data": "2025-11-30", "horario": "17hs", "local": "Divino", "padre": "Padre Rafael" },
+    { "id": "218-2025-11-30-19hs-Matriz", "data": "2025-11-30", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
+    { "id": "219-2025-11-30-19hs-NPqIracema", "data": "2025-11-30", "horario": "19hs", "local": "Novo Parque Iracema", "padre": "Padre Rafael" },
+    
     // --- 01/12/2025 ---
     { "id": "ivan-2025-12-01-19hs-columijuba", "data": "2025-12-01", "horario": "19hs", "local": "Columijuba", "padre": "Padre Ivan" },
     { "id": "eudasio-2025-12-01-19hs-serpa", "data": "2025-12-01", "horario": "19hs", "local": "Serpa (N. Sra. da Conceição)", "padre": "Padre Eudásio" },
@@ -62,7 +62,7 @@ const escalas = [
     { "id": "eudasio-2025-12-03-08hs-secretaria", "data": "2025-12-03", "horario": "08hs", "local": "Secretaria Paroquial", "padre": "Padre Eudásio" },
     { "id": "rafael-2025-12-03-17hs-matriz", "data": "2025-12-03", "horario": "17hs", "local": "Matriz (Confissões)", "padre": "Padre Rafael" },
     { "id": "rafael-2025-12-03-19hs-matriz", "data": "2025-12-03", "horario": "19hs", "local": "Matriz (Missa pelas famílias)", "padre": "Padre Rafael" },
-    { "id": "ivan-2025-12-03-19hs-santaluzia", "data": "2025-12-03", "horario": "19hs", "local": "Santa Luzia (Bandeira da Festa)", "padre": "Padre Ivan" },
+    { "id": "ivan-2025-12-03-19hs-santaluzia", "data": "2025-12-03", "horario": "19hs", "local": "Santa Luzia (Festa)", "padre": "Padre Ivan" },
     { "id": "eudasio-2025-12-03-19hs-pavuna", "data": "2025-12-03", "horario": "19hs", "local": "Pavuna", "padre": "Padre Eudásio" },
 
     // --- 04/12/2025 ---
@@ -78,10 +78,7 @@ const escalas = [
     { "id": "ivan-2025-12-05-19hs-lages", "data": "2025-12-05", "horario": "19hs", "local": "Lages", "padre": "Padre Ivan" },
 
     // --- 06/12/2025 ---
-    { "id": "ivan-2025-12-06-0730hs-cpp", "data": "2025-12-06", "horario": "07:30hs", "local": "CPP", "padre": "Padre Ivan" },
-    { "id": "eudasio-2025-12-06-0730hs-cpp", "data": "2025-12-06", "horario": "07:30hs", "local": "CPP", "padre": "Padre Eudásio" },
-    { "id": "rafael-2025-12-06-08hs-conselho", "data": "2025-12-06", "horario": "08hs", "local": "Conselho Região Episcopal", "padre": "Padre Rafael" },
-    { "id": "rafael-2025-12-06-17hs-santaluzia", "data": "2025-12-06", "horario": "17hs", "local": "Santa Luzia", "padre": "Padre Rafael" },
+    { "id": "rafael-2025-12-06-17hs-santaluzia", "data": "2025-12-06", "horario": "17hs", "local": "Santa Luzia (Festa)", "padre": "Padre Rafael" },
     { "id": "ivan-2025-12-06-17hs-santoantonio", "data": "2025-12-06", "horario": "17hs", "local": "Santo Antônio", "padre": "Padre Ivan" },
     { "id": "eudasio-2025-12-06-17hs-conselho", "data": "2025-12-06", "horario": "17hs", "local": "Conselho Econômico", "padre": "Padre Eudásio" },
     { "id": "rafael-2025-12-06-19hs-coite", "data": "2025-12-06", "horario": "19hs", "local": "Coité", "padre": "Padre Rafael" },
@@ -93,6 +90,7 @@ const escalas = [
     { "id": "eudasio-2025-12-07-07hs-matriz", "data": "2025-12-07", "horario": "07hs", "local": "Matriz", "padre": "Padre Eudásio" },
     { "id": "ivan-2025-12-07-09hs-saojose", "data": "2025-12-07", "horario": "09hs", "local": "São José", "padre": "Padre Ivan" },
     { "id": "eudasio-2025-12-07-09hs-matriz", "data": "2025-12-07", "horario": "09hs", "local": "Matriz", "padre": "Padre Eudásio" },
+    { "id": "rino-2025-12-07-17hs-santaluzia", "data": "2025-12-06", "horario": "17hs", "local": "Santa Luzia (Festa)", "padre": "Padre Rino" },
     { "id": "rafael-2025-12-07-17hs-pqsaojoao", "data": "2025-12-07", "horario": "17hs", "local": "Parque São João", "padre": "Padre Rafael" },
     { "id": "ivan-2025-12-07-17hs-divino", "data": "2025-12-07", "horario": "17hs", "local": "Divino", "padre": "Padre Ivan" },
     { "id": "eudasio-2025-12-07-17hs-centropastoral", "data": "2025-12-07", "horario": "17hs", "local": "Centro de Pastoral", "padre": "Padre Eudásio" },
@@ -107,17 +105,20 @@ const escalas = [
 
     // --- 09/12/2025 ---
     { "id": "ivan-2025-12-09-00hs-caninde", "data": "2025-12-09", "horario": "00hs", "local": "Canindé", "padre": "Padre Ivan" },
+    { "id": "jp-2025-12-09-19hs-santaluzia", "data": "2025-12-09", "horario": "19hs", "local": "Santa Luzia (Festa)", "padre": "Padre João Pedro" },
     { "id": "rafael-2025-12-09-19hs-baixagrande", "data": "2025-12-09", "horario": "19hs", "local": "Baixa Grande de Ocara", "padre": "Padre Rafael" },
     { "id": "eudasio-2025-12-09-19hs-santaluziamucuna", "data": "2025-12-09", "horario": "19hs", "local": "Santa Luzia (Mucunã)", "padre": "Padre Eudásio" },
 
     // --- 10/12/2025 ---
     { "id": "rafael-2025-12-10-17hs-matriz", "data": "2025-12-10", "horario": "17hs", "local": "Matriz (Confissões)", "padre": "Padre Rafael" },
+    { "id": "flavio-2025-12-10-19hs-santaluzia", "data": "2025-12-10", "horario": "19hs", "local": "Santa Luzia (Festa)", "padre": "Padre Flávio" },
     { "id": "rafael-2025-12-10-19hs-matriz", "data": "2025-12-10", "horario": "19hs", "local": "Matriz (Missa pelas famílias)", "padre": "Padre Rafael" },
     { "id": "ivan-2025-12-10-19hs-santosdumont", "data": "2025-12-10", "horario": "19hs", "local": "Santos Dumont", "padre": "Padre Ivan" },
     { "id": "eudasio-2025-12-10-19hs-santaluziacarrapato", "data": "2025-12-10", "horario": "19hs", "local": "Santa Luzia (Carrapato)", "padre": "Padre Eudásio" },
 
     // --- 11/12/2025 ---
     { "id": "ivan-2025-12-11-08hs-matriz", "data": "2025-12-11", "horario": "08hs", "local": "Matriz (Confissões)", "padre": "Padre Ivan" },
+    { "id": "john-2025-12-11-19hs-santaluzia", "data": "2025-12-11", "horario": "19hs", "local": "Santa Luzia (Festa)", "padre": "Padre John Lennon" },
     { "id": "rafael-2025-12-11-19hs-lagesmpe", "data": "2025-12-11", "horario": "19hs", "local": "Lages MPE", "padre": "Padre Rafael" },
     { "id": "ivan-2025-12-11-19hs-pirapora", "data": "2025-12-11", "horario": "19hs", "local": "Pirapora", "padre": "Padre Ivan" },
     { "id": "eudasio-2025-12-11-19hs-maerainha", "data": "2025-12-11", "horario": "19hs", "local": "Mãe Rainha", "padre": "Padre Eudásio" },
@@ -134,12 +135,11 @@ const escalas = [
     { "id": "eudasio-2025-12-12-19hs-matriz", "data": "2025-12-12", "horario": "19hs", "local": "Matriz (Co-celebração Jubilar)", "padre": "Padre Eudásio" },
 
     // --- 13/12/2025 ---
-    { "id": "rafael-2025-12-13-0730hs-diad", "data": "2025-12-13", "horario": "07:30hs", "local": "Dia 'D' Missionário", "padre": "Padre Rafael" },
-    { "id": "ivan-2025-12-13-0730hs-saojose", "data": "2025-12-13", "horario": "07:30hs", "local": "São José (Dia 'D' Missionário)", "padre": "Padre Ivan" },
-    { "id": "eudasio-2025-12-13-0730hs-saojose", "data": "2025-12-13", "horario": "07:30hs", "local": "São José (Dia 'D' Missionário)", "padre": "Padre Eudásio" },
+    { "id": "padre-2025-12-13-09hs-santaluzia", "data": "2025-12-13", "horario": "09hs", "local": "Santa Luzia", "padre": "Padre" },
     { "id": "ivan-2025-12-13-12hs-matriz", "data": "2025-12-13", "horario": "12hs", "local": "Matriz", "padre": "Padre Ivan" },
     { "id": "rafael-2025-12-13-17hs-vilares", "data": "2025-12-13", "horario": "17hs", "local": "Vilares", "padre": "Padre Rafael" },
     { "id": "eudasio-2025-12-13-17hs-saojose", "data": "2025-12-13", "horario": "17hs", "local": "São José", "padre": "Padre Eudásio" },
+    { "id": "eudasio-2025-12-13-19hs-santaluzia", "data": "2025-12-13", "horario": "19hs", "local": "Santa Luzia", "padre": "Padre Eudásio" },
     { "id": "rafael-2025-12-13-19hs-matriz", "data": "2025-12-13", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
     { "id": "ivan-2025-12-13-19hs-outrabanda", "data": "2025-12-13", "horario": "19hs", "local": "Outra Banda", "padre": "Padre Ivan" },
     { "id": "rafael-2025-12-13-20hs-matriz", "data": "2025-12-13", "horario": "20hs", "local": "Matriz (Matrimônio)", "padre": "Padre Rafael" },
@@ -231,7 +231,6 @@ const escalas = [
     { "id": "eudasio-2025-12-25-09hs-saojose", "data": "2025-12-25", "horario": "09hs", "local": "São José", "padre": "Padre Eudásio" },
     { "id": "rafael-2025-12-25-17hs-divino", "data": "2025-12-25", "horario": "17hs", "local": "Divino", "padre": "Padre Rafael" },
     { "id": "ivan-2025-12-25-17hs-pqsaojoao", "data": "2025-12-25", "horario": "17hs", "local": "Parque São João", "padre": "Padre Ivan" },
-    { "id": "rafael-2025-12-25-19hs-npqiracema", "data": "2025-12-25", "horario": "19hs", "local": "Novo Parque Iracema", "padre": "Padre Rafael" },
     { "id": "eudasio-2025-12-25-19hs-matriz", "data": "2025-12-25", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
 
     // --- 26/12/2025 ---
@@ -274,6 +273,8 @@ const escalas = [
     { "id": "ivan-2026-01-01-17hs-pqsaojoao", "data": "2026-01-01", "horario": "17hs", "local": "Parque São João", "padre": "Padre Ivan" },
     { "id": "ivan-2026-01-01-19hs-divino", "data": "2026-01-01", "horario": "19hs", "local": "Divino", "padre": "Padre Ivan" },
     { "id": "eudasio-2026-01-01-19hs-matriz", "data": "2026-01-01", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
+    { "id": "rafael-2026-01-01-19hs-npqiracema", "data": "2026-01-01", "horario": "19hs", "local": "Novo Parque Iracema", "padre": "Padre Rafael" },
+
 
     // --- 02/01/2026 ---
     { "id": "ivan-2026-01-02-18hs-centropastoral", "data": "2026-01-02", "horario": "18hs", "local": "Centro de Pastoral (Confissões)", "padre": "Padre Ivan" },
@@ -327,7 +328,7 @@ const escalas = [
     { "id": "rafael-2026-01-20-18hs-festa", "data": "2026-01-20", "horario": "18hs", "local": "Festa de São Sebastião", "padre": "Padre Rafael" },
     { "id": "ivan-2026-01-20-18hs-festa", "data": "2026-01-20", "horario": "18hs", "local": "Festa de São Sebastião", "padre": "Padre Ivan" },
     { "id": "eudasio-2026-01-20-18hs-festa", "data": "2026-01-20", "horario": "18hs", "local": "Festa de São Sebastião", "padre": "Padre Eudásio" }
-
+    
 ];
 
 
