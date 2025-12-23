@@ -1,4 +1,4 @@
-import { format, isToday, parseISO } from "date-fns";
+import { format, isToday, parseISO, getMonth } from "date-fns";
 import { ptBR } from "date-fns/locale";
 import { Coroinha } from "../types/coroinhas";
 
@@ -26,40 +26,28 @@ const CardEscala: React.FC<CardEscalaProps> = ({
   const dataFormatada = format(new Date(`${data}T00:00:00`), "dd-MM-yyyy");
   const diaSemana = format(new Date(`${data}T00:00:00`), "EEEE", { locale: ptBR });
   const isTodayCard = isToday(parseISO(`${data}T00:00:00`));
+  
+  // Verifica se estamos em Dezembro
+  const isNatal = getMonth(new Date()) === 11;
+  const caminhoChapeu = "/chapeu-natal.png";
 
   const getFotoPadre = (padre: string) => {
     switch (padre) {
-      case "Padre Eudásio":
-        return "/paroco.jpg";
-      case "Padre Ivan":
-        return "/vigario.png";
-      case "Padre Rafael":
-        return "/pe-rafael.png";
-      case "Padre William":
-        return "/padre-william.png";
-      case "Padre Rafhael":
-        return "/padre-rafhael.png";
-      case "Padre João Paulo":
-        return "/padre-joaop.png";
-      case "Padre Aurênio":
-        return "/pe-aurenio.png";
-      case "Dom Gregório":
-        return "/dom-gregorio.png";  
-      case "Padre Diego":
-        return "/pe-diego.jpeg"; 
-      default:
-        return "/imagens/semfoto.jpg";
+      case "Padre Eudásio": return "/paroco.jpg";
+      case "Padre Ivan": return "/vigario.png";
+      case "Padre Rafael": return "/pe-rafael.png";
+      case "Padre William": return "/padre-william.png";
+      case "Padre Rafhael": return "/padre-rafhael.png";
+      case "Padre João Paulo": return "/padre-joaop.png";
+      case "Padre Aurênio": return "/pe-aurenio.png";
+      case "Dom Gregório": return "/dom-gregorio.png";
+      case "Padre Diego": return "/pe-diego.jpeg";
+      default: return "/imagens/semfoto.jpg";
     }
   };
 
   const cerimoniarios = [
-    "José Vitor",
-    "Fernando",
-    "Adrian",
-    "Victor Manuel",
-    "Kauan",
-    "Gustavo",
-    "Francisco José",
+    "José Vitor", "Fernando", "Adrian", "Victor Manuel", "Kauan", "Gustavo", "Francisco José",
   ];
 
   return (
@@ -70,15 +58,25 @@ const CardEscala: React.FC<CardEscalaProps> = ({
     >
       <div className="flex items-center mb-4">
         <div className="flex flex-col items-center mr-4">
-          <div className="w-16 h-16 rounded-full overflow-hidden bg-gray-200">
+          {/* FOTO DO PADRE - AJUSTADA */}
+          <div className="w-16 h-16 relative bg-gray-200 rounded-full">
             <img
               src={getFotoPadre(padre)}
               alt={padre}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-full"
             />
+            {isNatal && (
+              <img 
+                src={caminhoChapeu} 
+                alt="Natal" 
+                // Mudado de -right-2 para -left-2 e rotate positivo para negativo
+                className="absolute -top-4 -left-2 w-10 h-10 -rotate-[15deg] z-10"
+              />
+            )}
           </div>
           <p className="mt-2 font-medium text-gray-800 text-center">{padre}</p>
         </div>
+
         <div className="flex-1 text-center">
           <p className="font-bold text-lg">{local}</p>
           <div className="flex flex-col items-center text-gray-700 text-base">
@@ -116,11 +114,21 @@ const CardEscala: React.FC<CardEscalaProps> = ({
               className="flex items-center justify-between border-b py-2"
             >
               <div className="flex items-center">
-                <img
-                  src={coroinha.foto}
-                  alt={coroinha.nome}
-                  className="w-14 h-14 rounded-full mr-2"
-                />
+                {/* FOTO DO COROINHA - MANTIDA (PERFEITA) */}
+                <div className="relative mr-2">
+                  <img
+                    src={coroinha.foto}
+                    alt={coroinha.nome}
+                    className="w-14 h-14 rounded-full object-cover"
+                  />
+                  {isNatal && (
+                    <img 
+                      src={caminhoChapeu} 
+                      alt="Natal" 
+                      className="absolute -top-3 -left-2 w-8 h-8 -rotate-[15deg] z-10"
+                    />
+                  )}
+                </div>
                 <span className="text-base">
                   {coroinha.nome}{" "}
                   <span className="text-sm text-gray-600">
