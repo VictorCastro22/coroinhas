@@ -89,21 +89,6 @@ const CalendarioPadres: React.FC = () => {
   };
 
   const escalas = [
-    // --- 23/12/2025 ---
-    { "id": "rafael-2025-12-23-19hs-saopedro", "data": "2025-12-23", "horario": "19hs", "local": "São Pedro", "padre": "Padre Rafael" },
-    { "id": "ivan-2025-12-23-19hs-fortaleza", "data": "2025-12-23", "horario": "19hs", "local": "Fortaleza", "padre": "Padre Ivan" },
-    { "id": "eudasio-2025-12-23-19hs-serrapelada", "data": "2025-12-23", "horario": "19hs", "local": "Serra Pelada", "padre": "Padre Eudásio" },
-
-    // --- 24/12/2025 ---
-    { "id": "rafael-2025-12-24-07hs-penedompe", "data": "2025-12-24", "horario": "07hs", "local": "Penedo MPE", "padre": "Padre Rafael" },
-    { "id": "rafael-2025-12-24-17hs-matriz", "data": "2025-12-24", "horario": "17hs", "local": "Matriz (Confissões)", "padre": "Padre Rafael" },
-    { "id": "rafael-2025-12-24-19hs-matriz", "data": "2025-12-24", "horario": "19hs", "local": "Matriz (Missa de Natal)", "padre": "Padre Rafael" },
-    { "id": "ivan-2025-12-24-19hs-santosdumont", "data": "2025-12-24", "horario": "19hs", "local": "Santos Dumont", "padre": "Padre Ivan" },
-    { "id": "eudasio-2025-12-24-19hs-divino", "data": "2025-12-24", "horario": "19hs", "local": "Divino", "padre": "Padre Eudásio" },
-    { "id": "rafael-2025-12-24-21hs-npqiracema", "data": "2025-12-24", "horario": "21hs", "local": "Novo Parque Iracema", "padre": "Padre Rafael" },
-    { "id": "ivan-2025-12-24-21hs-pqsaojoao", "data": "2025-12-24", "horario": "21hs", "local": "Parque São João", "padre": "Padre Ivan" },
-    { "id": "eudasio-2025-12-24-24hs-matriz", "data": "2025-12-24", "horario": "24hs", "local": "Matriz", "padre": "Padre Eudásio" },
-
     // --- 25/12/2025 ---
     { "id": "ivan-2025-12-25-07hs-matriz", "data": "2025-12-25", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
     { "id": "eudasio-2025-12-25-09hs-saojose", "data": "2025-12-25", "horario": "09hs", "local": "São José", "padre": "Padre Eudásio" },
