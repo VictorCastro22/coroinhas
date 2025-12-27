@@ -4,10 +4,6 @@ import {
   FiHome,
   FiBook,
   FiUsers,
-  FiCalendar,
-  FiActivity,
-  FiHeart,
-  FiPhone,
 } from "react-icons/fi";
 
 // Ícones do menu e fechar
@@ -176,31 +172,6 @@ const Navbar: React.FC = () => {
               </ul>
             )}
           </div>
-
-          <button
-            onClick={() => handleNavigation("/")}
-            className="text-left flex items-center gap-3 hover:underline"
-          >
-            <FiCalendar className="text-lg" /> AGENDAMENTOS
-          </button>
-          <button
-            onClick={() => handleNavigation("/")}
-            className="text-left flex items-center gap-3 hover:underline"
-          >
-            <FiActivity className="text-lg" /> AÇÃO PASTORAL
-          </button>
-          <button
-            onClick={() => handleNavigation("/")}
-            className="text-left flex items-center gap-3 hover:underline"
-          >
-            <FiHeart className="text-lg" /> SEJA DIZIMISTA
-          </button>
-          <button
-            onClick={() => handleNavigation("/")}
-            className="text-left flex items-center gap-3 hover:underline"
-          >
-            <FiPhone className="text-lg" /> CONTATO
-          </button>
         </div>
       </div>
     </nav>
