@@ -37,19 +37,6 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
 const escalas = [
-    // --- 25/12/2025 ---
-    { "id": "01-ivan-2025-12-25-07hs-matriz", "data": "2025-12-25", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "02-eudasio-2025-12-25-09hs-saojose", "data": "2025-12-25", "horario": "09hs", "local": "São José", "padre": "Padre Eudásio" },
-    { "id": "03-rafael-2025-12-25-17hs-divino", "data": "2025-12-25", "horario": "17hs", "local": "Divino", "padre": "Padre Rafael" },
-    { "id": "04-ivan-2025-12-25-17hs-pqsaojoao", "data": "2025-12-25", "horario": "17hs", "local": "Parque São João", "padre": "Padre Ivan" },
-    { "id": "05-eudasio-2025-12-25-19hs-matriz", "data": "2025-12-25", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
-
-    // --- 26/12/2025 ---
-    { "id": "06-rafael-2025-12-26-08hs-visita", "data": "2025-12-26", "horario": "08hs", "local": "Visita aos Enfermos", "padre": "Padre Rafael" },
-    { "id": "07-eudasio-2025-12-26-08hs-visita", "data": "2025-12-26", "horario": "08hs", "local": "Visita aos Enfermos", "padre": "Padre Eudásio" },
-    { "id": "08-rafael-2025-12-26-19hs-conegopinto", "data": "2025-12-26", "horario": "19hs", "local": "Cônego Pinto", "padre": "Padre Rafael" },
-    { "id": "09-ivan-2025-12-26-19hs-rosario", "data": "2025-12-26", "horario": "19hs", "local": "Rosário", "padre": "Padre Ivan" },
-
     // --- 27/12/2025 ---
     { "id": "10-rafael-2025-12-27-17hs-santadulce", "data": "2025-12-27", "horario": "17hs", "local": "Santa Dulce", "padre": "Padre Rafael" },
     { "id": "11-ivan-2025-12-27-17hs-abrigo", "data": "2025-12-27", "horario": "17hs", "local": "Abrigo", "padre": "Padre Ivan" },
