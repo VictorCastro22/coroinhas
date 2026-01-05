@@ -37,7 +37,15 @@ const CalendarConfissoes: React.FC = () => {
   }, []);
 
 const escalas = [
-  { "id": "7-2025-12-24-19h-ConfissoesnaMatriz", "data": "2025-12-24", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael" },
+  { "id": "7-2026-01-11-19h-ConfissoesnaMatriz", "data": "2026-01-11", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
+  { "id": "7-2026-01-12-19h-ConfissoesnaMatriz", "data": "2026-01-12", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
+  { "id": "7-2026-01-13-19h-ConfissoesnaMatriz", "data": "2026-01-13", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
+  { "id": "7-2026-01-14-19h-ConfissoesnaMatriz", "data": "2026-01-14", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
+  { "id": "7-2026-01-15-19h-ConfissoesnaMatriz", "data": "2026-01-15", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
+  { "id": "7-2026-01-16-19h-ConfissoesnaMatriz", "data": "2026-01-16", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
+  { "id": "7-2026-01-17-19h-ConfissoesnaMatriz", "data": "2026-01-17", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
+  { "id": "7-2026-01-18-19h-ConfissoesnaMatriz", "data": "2026-01-18", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
+  { "id": "7-2026-01-19-19h-ConfissoesnaMatriz", "data": "2026-01-19", "horario": "19hs", "local": "Matriz", "padre": "Padre Eudásio" },
 ];
 
   const getUniquePadres = () => Array.from(new Set(escalas.map((escala) => escala.padre)));
