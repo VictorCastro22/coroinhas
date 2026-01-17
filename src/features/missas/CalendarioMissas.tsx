@@ -37,34 +37,16 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
 const escalas = [
-    // --- 10/01/2026 ---
-    { "id": "54-rafael-2026-01-10-18hs-procissao", "data": "2026-01-10", "horario": "18hs", "local": "Procissão Bandeira São Sebastião", "padre": "Padre Rafael" },
-    { "id": "55-ivan-2026-01-10-18hs-procissao", "data": "2026-01-10", "horario": "18hs", "local": "Procissão Bandeira São Sebastião", "padre": "Padre Ivan" },
-    { "id": "56-eudasio-2026-01-10-18hs-procissao", "data": "2026-01-10", "horario": "18hs", "local": "Procissão Bandeira São Sebastião", "padre": "Padre Eudásio" },
-    { "id": "57-rafael-2026-01-10-19hs-abertura", "data": "2026-01-10", "horario": "19hs", "local": "Abertura Festa São Sebastião", "padre": "Padre Rafael" },
-    { "id": "58-ivan-2026-01-10-19hs-abertura", "data": "2026-01-10", "horario": "19hs", "local": "Abertura Festa São Sebastião", "padre": "Padre Ivan" },
-    { "id": "59-eudasio-2026-01-10-19hs-abertura", "data": "2026-01-10", "horario": "19hs", "local": "Abertura Festa São Sebastião", "padre": "Padre Eudásio" },
-
-    // --- 11/01/2026 ---
-    { "id": "60-rafael-2026-01-11-07hs-matriz", "data": "2026-01-11", "horario": "07hs", "local": "Matriz", "padre": "Padre Rafael" },
-    { "id": "61-ivan-2026-01-11-07hs-divino", "data": "2026-01-11", "horario": "07hs", "local": "Divino", "padre": "Padre Ivan" },
-    { "id": "62-eudasio-2026-01-11-09hs-matriz", "data": "2026-01-11", "horario": "09hs", "local": "Matriz", "padre": "Padre Eudásio" },
-
-    { "id": "60-2026-01-11-19hs-matriz", "data": "2026-01-11", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafhael" },
-    { "id": "61-2026-01-12-19hs-matriz", "data": "2026-01-12", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" },
-    { "id": "62-2026-01-13-19hs-matriz", "data": "2026-01-13", "horario": "19hs", "local": "Matriz", "padre": "Padre Flávio" },
-    { "id": "63-2026-01-14-19hs-matriz", "data": "2026-01-14", "horario": "19hs", "local": "Matriz", "padre": "Padre Washington" },
-    { "id": "64-2026-01-15-19hs-matriz", "data": "2026-01-15", "horario": "19hs", "local": "Matriz", "padre": "Padre Antônio Júnior" },
     { "id": "65-2026-01-16-19hs-matriz", "data": "2026-01-16", "horario": "19hs", "local": "Matriz", "padre": "Padre João Pedro" },
     { "id": "66-2026-01-17-19hs-matriz", "data": "2026-01-17", "horario": "19hs", "local": "Matriz", "padre": "Frei Gilmar" },
 
 
-    // --- 18/01/2026 ---
     { "id": "63-rafael-2026-01-18-07hs-divino", "data": "2026-01-18", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
     { "id": "64-ivan-2026-01-18-07hs-matriz", "data": "2026-01-18", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
     { "id": "65-eudasio-2026-01-18-09hs-matriz", "data": "2026-01-18", "horario": "09hs", "local": "Matriz", "padre": "Padre Eudásio" },
     { "id": "66-ivan-2026-01-18-17hs-divino", "data": "2026-01-18", "horario": "17hs", "local": "Divino", "padre": "Padre Ivan" },
 
+    
     { "id": "70-2026-01-18-19hs-matriz", "data": "2026-01-18", "horario": "19hs", "local": "Matriz", "padre": "Padre João Paulo" },
     { "id": "71-2026-01-19-19hs-matriz", "data": "2026-01-19", "horario": "19hs", "local": "Matriz", "padre": "Padre Roberto" },
 
