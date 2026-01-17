@@ -6,95 +6,23 @@
     <meta name="description" content="Bem-Vindos ao Site dos Coroinhas!" />
     <link rel="apple-touch-icon" href="/public/logo192.jpg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Site em Manutenção - Paróquia N. Sra. da Penha</title>
+    <title>Paróquia Nossa Senhora da Penha</title>
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
 
     <meta property="og:title" content="Paróquia Nossa Senhora da Penha" />
-    <meta property="og:description" content="Site em manutenção temporária!" />
+    <meta property="og:description" content="Bem-Vindos ao Site dos Coroinhas!" />
     <meta property="og:image" content="https://coroinhas.vercel.app/logo192.jpg" />
     <meta property="og:url" content="https://coroinhas.vercel.app/" />
     <meta property="og:type" content="website" />
 
-    <style>
-      /* Reset básico para evitar surpresas */
-      * {
-        box-sizing: border-box;
-      }
-
-      body {
-        margin: 0;
-        padding: 20px; /* Margem para não colar na borda do celular */
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #2c3e50;
-        color: #ecf0f1;
-        font-family: 'Playfair Display', serif;
-        text-align: center;
-      }
-
-      .aviso-container {
-        border: 2px dashed #e74c3c;
-        padding: 40px;
-        background: rgba(0, 0, 0, 0.3);
-        border-radius: 10px;
-        
-        /* Responsividade */
-        width: 100%;
-        max-width: 500px; /* Trava a largura no PC */
-      }
-
-      h1 { 
-        font-size: 3rem; 
-        margin: 0 0 15px 0; 
-        color: #e74c3c;
-        line-height: 1.1;
-      }
-
-      p { 
-        font-size: 1.2rem; 
-        line-height: 1.6;
-        margin: 0;
-      }
-
-      .emoji { 
-        font-size: 4rem; 
-        display: block; 
-        margin-bottom: 20px; 
-      }
-
-      /* AJUSTES PARA CELULAR (Telas pequenas) */
-      @media (max-width: 600px) {
-        .aviso-container {
-          padding: 25px;
-        }
-        h1 {
-          font-size: 2rem; /* Título menor */
-        }
-        .emoji {
-          font-size: 3rem; /* Emoji menor */
-          margin-bottom: 10px;
-        }
-        p {
-          font-size: 1rem; /* Texto legível, mas menor */
-        }
-      }
-    </style>
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Paróquia Nossa Senhora da Penha" />
+    <meta name="twitter:description" content="Bem-Vindos ao Site dos Coroinhas!" />
+    <meta name="twitter:image" content="https://coroinhas.vercel.app/logo192.jpg" />
   </head>
   <body>
-    
-    <div class="aviso-container">
-        <span class="emoji">⚠️</span>
-        <h1>EM MANUTENÇÃO</h1>
-        <p>
-            Estamos reformando a sacristia digital.<br>
-            Os coroinhas foram tomar uma água.<br><br>
-            <strong>Voltamos em breve!</strong>
-        </p>
-    </div>
-
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

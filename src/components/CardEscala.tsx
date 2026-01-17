@@ -1,6 +1,20 @@
+import React from "react"; 
 import { format, isToday, parseISO, getMonth } from "date-fns";
 import { ptBR } from "date-fns/locale";
 import { Coroinha } from "../types/coroinhas";
+
+const linksLocais: Record<string, string> = {
+  "Matriz": "https://maps.app.goo.gl/wdCowWAsnpkRkzJ59",
+  "Divino": "https://maps.app.goo.gl/TCVVegRcGQMUg6ys9",
+  "Novo Parque Iracema": "https://maps.app.goo.gl/UWKamvDX46zU85ut9",
+  "Santa Luzia": "https://maps.app.goo.gl/yBbUwFJgdQZKL6LN7",
+  "Coité": "https://maps.app.goo.gl/R7i5ewDzoiKdrdmh7",
+  "Outra Banda": "https://maps.app.goo.gl/LmRpW9y7Pqmq1QPH9",
+  "Festa de São Sebastião": "https://maps.app.goo.gl/wdCowWAsnpkRkzJ59",
+  "Mãe Rainha": "https://maps.app.goo.gl/ytpFjJwJHuBSFhuH6",
+  "Urucará": "https://maps.app.goo.gl/yph5tbRAgTNSdEaY9",
+  "São Pedro": "https://maps.app.goo.gl/to2g7KGCH6aSjSYL9",
+};
 
 interface CardEscalaProps {
   padre: string;
@@ -26,7 +40,7 @@ const CardEscala: React.FC<CardEscalaProps> = ({
   const dataFormatada = format(new Date(`${data}T00:00:00`), "dd-MM-yyyy");
   const diaSemana = format(new Date(`${data}T00:00:00`), "EEEE", { locale: ptBR });
   const isTodayCard = isToday(parseISO(`${data}T00:00:00`));
-  
+
   // Verifica se estamos em Dezembro
   const isNatal = getMonth(new Date()) === 11;
   const caminhoChapeu = "/chapeu-natal.png";
@@ -47,7 +61,6 @@ const CardEscala: React.FC<CardEscalaProps> = ({
       case "Padre Washington": return "/pe-washington.jpg";
       case "Padre João Pedro": return "/padre-joao-pedro.jpg";
       case "Frei Gilmar": return "/frei-gilmar.jpeg";
-
       default: return "/imagens/semfoto.jpg";
     }
   };
@@ -55,6 +68,13 @@ const CardEscala: React.FC<CardEscalaProps> = ({
   const cerimoniarios = [
     "José Vitor", "Fernando", "Adrian", "Victor Manuel", "Kauan", "Gustavo", "Francisco José",
   ];
+
+  const getMapLink = (nomeLocal: string) => {
+    if (linksLocais[nomeLocal]) {
+      return linksLocais[nomeLocal];
+    }
+    return `https://www.google.com/maps/search/?api=1&query=Igreja+Católica+${encodeURIComponent(nomeLocal)}`;
+  };
 
   return (
     <div
@@ -64,7 +84,7 @@ const CardEscala: React.FC<CardEscalaProps> = ({
     >
       <div className="flex items-center mb-4">
         <div className="flex flex-col items-center mr-4">
-          {/* FOTO DO PADRE - AJUSTADA */}
+          {/* FOTO DO PADRE */}
           <div className="w-16 h-16 relative bg-gray-200 rounded-full">
             <img
               src={getFotoPadre(padre)}
@@ -75,7 +95,6 @@ const CardEscala: React.FC<CardEscalaProps> = ({
               <img 
                 src={caminhoChapeu} 
                 alt="Natal" 
-                // Mudado de -right-2 para -left-2 e rotate positivo para negativo
                 className="absolute -top-4 -left-2 w-10 h-10 -rotate-[15deg] z-10"
               />
             )}
@@ -84,7 +103,31 @@ const CardEscala: React.FC<CardEscalaProps> = ({
         </div>
 
         <div className="flex-1 text-center">
-          <p className="font-bold text-lg">{local}</p>
+          
+          {/* --- LOCALIZAÇÃO (LINK PURO SEM EFEITOS DE COR) --- */}
+          <a 
+            href={getMapLink(local)}
+            target="_blank"
+            rel="noopener noreferrer"
+            // Removi "hover:bg-gray-100" e mantive apenas classes de layout e cursor
+            className="group flex items-center justify-center gap-2 p-1 rounded cursor-pointer"
+            title="Ver localização no mapa"
+          >
+            {/* Removi "group-hover:text-blue-600" e "transition-colors" */}
+            <p className="font-bold text-lg">
+              {local}
+            </p>
+            {/* Ícone SVG - Mantive apenas o scale no hover, removendo cores se houvesse */}
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" 
+              viewBox="0 0 24 24" 
+              fill="currentColor" 
+              className="w-5 h-5 text-red-500 group-hover:scale-110 transition-transform"
+            >
+              <path fillRule="evenodd" d="M11.54 22.351l.07.04.028.016a.76.76 0 00.723 0l.028-.015.071-.041a16.975 16.975 0 001.144-.742 19.58 19.58 0 002.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 00-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 002.682 2.282 16.975 16.975 0 001.145.742zM12 13.5a3 3 0 100-6 3 3 0 000 6z" clipRule="evenodd" />
+            </svg>
+          </a>
+          
           <div className="flex flex-col items-center text-gray-700 text-base">
             <span className="font-semibold">
               {diaSemana.charAt(0).toUpperCase() + diaSemana.slice(1)}
@@ -120,7 +163,6 @@ const CardEscala: React.FC<CardEscalaProps> = ({
               className="flex items-center justify-between border-b py-2"
             >
               <div className="flex items-center">
-                {/* FOTO DO COROINHA - MANTIDA (PERFEITA) */}
                 <div className="relative mr-2">
                   <img
                     src={coroinha.foto}
