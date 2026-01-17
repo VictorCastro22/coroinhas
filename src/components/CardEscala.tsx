@@ -5,6 +5,7 @@ import { Coroinha } from "../types/coroinhas";
 
 const linksLocais: Record<string, string> = {
   "Matriz": "https://maps.app.goo.gl/wdCowWAsnpkRkzJ59",
+  "Matriz (Missa pelas famílias)": "https://maps.app.goo.gl/wdCowWAsnpkRkzJ59",
   "Divino": "https://maps.app.goo.gl/TCVVegRcGQMUg6ys9",
   "Novo Parque Iracema": "https://maps.app.goo.gl/UWKamvDX46zU85ut9",
   "Santa Luzia": "https://maps.app.goo.gl/yBbUwFJgdQZKL6LN7",
