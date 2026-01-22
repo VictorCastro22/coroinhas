@@ -37,58 +37,73 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
 const escalas = [
-    // --- 17/01 ---
-    { "id": "66-2026-01-17-19hs-matriz", "data": "2026-01-17", "horario": "19hs", "local": "Matriz", "padre": "Frei Gilmar" },
-
-    // --- 18/01 ---
-    { "id": "63-rafael-2026-01-18-07hs-divino", "data": "2026-01-18", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
-    { "id": "64-ivan-2026-01-18-07hs-matriz", "data": "2026-01-18", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "65-eudasio-2026-01-18-09hs-matriz", "data": "2026-01-18", "horario": "09hs", "local": "Matriz", "padre": "Padre Eudásio" },
-    { "id": "66-ivan-2026-01-18-17hs-divino", "data": "2026-01-18", "horario": "17hs", "local": "Divino", "padre": "Padre Ivan" },
-    { "id": "70-2026-01-18-19hs-matriz", "data": "2026-01-18", "horario": "19hs", "local": "Matriz", "padre": "Padre João Paulo" },
-
-    // --- 19/01 ---
-    { "id": "71-2026-01-19-19hs-matriz", "data": "2026-01-19", "horario": "19hs", "local": "Matriz", "padre": "Padre Roberto" },
-
-    // --- 20/01 ---
-    { "id": "67-rafael-2026-01-20-09hs-festa", "data": "2026-01-20", "horario": "09hs", "local": "Festa de São Sebastião", "padre": "Padre Rafael" },
-    { "id": "68-ivan-2026-01-20-09hs-festa", "data": "2026-01-20", "horario": "09hs", "local": "Festa de São Sebastião", "padre": "Padre Ivan" },
-    { "id": "69-eudasio-2026-01-20-09hs-festa", "data": "2026-01-20", "horario": "09hs", "local": "Festa de São Sebastião", "padre": "Padre Eudásio" },
-    { "id": "70-rafael-2026-01-20-18hs-festa", "data": "2026-01-20", "horario": "18hs", "local": "Festa de São Sebastião", "padre": "Padre Rafael" },
-    { "id": "71-ivan-2026-01-20-18hs-festa", "data": "2026-01-20", "horario": "18hs", "local": "Festa de São Sebastião", "padre": "Padre Ivan" },
-    { "id": "72-eudasio-2026-01-20-18hs-festa", "data": "2026-01-20", "horario": "18hs", "local": "Festa de São Sebastião", "padre": "Padre Eudásio" },
-
-    // --- 21/01 ---
-    { "id": "73-ivan-2026-01-21-19hs-matriz", "data": "2026-01-21", "horario": "19hs", "local": "Matriz (Missa pelas famílias)", "padre": "Padre Ivan" },
+// --- 21/01 ---
+    { "id": "1-ivan-2026-01-21-19hs-matriz", "data": "2026-01-21", "horario": "19hs", "local": "Matriz (Missa pelas famílias)", "padre": "Padre Ivan" },
 
     // --- 22/01 ---
-    { "id": "74-ivan-2026-01-22-19hs-maerainha", "data": "2026-01-22", "horario": "19hs", "local": "Mãe Rainha", "padre": "Padre Ivan" },
+    { "id": "2-ivan-2026-01-22-19hs-maerainha", "data": "2026-01-22", "horario": "19hs", "local": "Mãe Rainha", "padre": "Padre Ivan" },
 
     // --- 23/01 ---
-    { "id": "75-ivan-2026-01-23-19hs-urucara", "data": "2026-01-23", "horario": "19hs", "local": "Urucará", "padre": "Padre Ivan" },
+    { "id": "3-ivan-2026-01-23-19hs-candeias", "data": "2026-01-23", "horario": "19hs", "local": "Nossa Senhora das Candeias (Festa)", "padre": "Padre Ivan" },
 
     // --- 24/01 ---
-    { "id": "76-ivan-2026-01-24-19hs-matriz", "data": "2026-01-24", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
+    { "id": "4-ivan-2026-01-24-19hs-matriz", "data": "2026-01-24", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
 
-    // --- 25/01 ---
-    { "id": "77-ivan-2026-01-25-07hs-matriz", "data": "2026-01-25", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "78-rafael-2026-01-25-07hs-divino", "data": "2026-01-25", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
-    { "id": "79-ivan-2026-01-25-09hs-matriz", "data": "2026-01-25", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "80-rafael-2026-01-25-10hs-matriz", "data": "2026-01-25", "horario": "10hs", "local": "Matriz (Investidura)", "padre": "Padre Rafael" },
-    { "id": "81-ivan-2026-01-25-17hs-divino", "data": "2026-01-25", "horario": "17hs", "local": "Divino", "padre": "Padre Ivan" },
-    { "id": "82-rafael-2026-01-25-17hs-pastoral", "data": "2026-01-25", "horario": "17hs", "local": "Centro de Pastoral", "padre": "Padre Rafael" },
-    { "id": "83-ivan-2026-01-25-19hs-pqiracema", "data": "2026-01-25", "horario": "19hs", "local": "Novo Parque Iracema", "padre": "Padre Ivan" },
-    { "id": "84-rafael-2026-01-25-19hs-matriz", "data": "2026-01-25", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
+    // --- 25/01 (Domingo) ---
+    { "id": "5-antoniolima-2026-01-25-07hs-matriz", "data": "2026-01-25", "horario": "07hs", "local": "Matriz", "padre": "Padre Antonio" },
+    { "id": "6-ivan-2026-01-25-07hs-divino", "data": "2026-01-25", "horario": "07hs", "local": "Divino", "padre": "Padre Ivan" },
+    { "id": "7-ivan-2026-01-25-09hs-matriz", "data": "2026-01-25", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
+    { "id": "8-aurenio-2026-01-25-10hs-matriz", "data": "2026-01-25", "horario": "10hs", "local": "Matriz (Investidura MESC-MEPA)", "padre": "Padre Aurênio" },
+    { "id": "9-antoniolima-2026-01-25-17hs-pastoral", "data": "2026-01-25", "horario": "17hs", "local": "Centro de Pastoral", "padre": "Padre Antonio" },
+    { "id": "10-ivan-2026-01-25-17hs-divino", "data": "2026-01-25", "horario": "17hs", "local": "Divino", "padre": "Padre Ivan" },
+    { "id": "11-rafael-2026-01-25-17hs-pqsaojoao", "data": "2026-01-25", "horario": "17hs", "local": "Nossa Senhora de Fátima", "padre": "Padre Rafael" },
+    { "id": "12-antoniolima-2026-01-25-19hs-matriz", "data": "2026-01-25", "horario": "19hs", "local": "Matriz", "padre": "Padre Antonio" },
+    { "id": "13-rafael-2026-01-25-19hs-aparecida", "data": "2026-01-25", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Rafael" },
 
     // --- 27/01 ---
-    { "id": "85-ivan-2026-01-27-19hs-saopedro", "data": "2026-01-27", "horario": "19hs", "local": "São Pedro", "padre": "Padre Ivan" },
+    { "id": "14-ivan-2026-01-27-19hs-saopedro", "data": "2026-01-27", "horario": "19hs", "local": "São Pedro", "padre": "Padre Ivan" },
 
     // --- 28/01 ---
-    { "id": "86-ivan-2026-01-28-19hs-matriz", "data": "2026-01-28", "horario": "19hs", "local": "Matriz (Missa pelas famílias)", "padre": "Padre Ivan" },
+    { "id": "15-ivan-2026-01-28-19hs-matriz", "data": "2026-01-28", "horario": "19hs", "local": "Matriz (Missa pelas famílias)", "padre": "Padre Ivan" },
 
     // --- 31/01 ---
-    { "id": "87-ivan-2026-01-31-19hs-matriz", "data": "2026-01-31", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "88-rafael-2026-01-31-19hs-outrabanda", "data": "2026-01-31", "horario": "19hs", "local": "Outra Banda", "padre": "Padre Rafael" }
+    { "id": "16-rafael-2026-01-31-17hs-saobenedito", "data": "2026-01-31", "horario": "17hs", "local": "São Benedito", "padre": "Padre Rafael" },
+    { "id": "17-rafael-2026-01-31-19hs-saojoaobatista", "data": "2026-01-31", "horario": "19hs", "local": "São João Batista", "padre": "Padre Rafael" },
+    { "id": "18-ivan-2026-01-31-19hs-matriz", "data": "2026-01-31", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
+
+    // --- 01/02 (Domingo) ---
+    { "id": "19-ivan-2026-02-01-07hs-matriz", "data": "2026-02-01", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
+    { "id": "20-rafael-2026-02-01-07hs-divino", "data": "2026-02-01", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
+    { "id": "21-ivan-2026-02-01-09hs-matriz", "data": "2026-02-01", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
+    { "id": "22-rafael-2026-02-01-09hs-saojose", "data": "2026-02-01", "horario": "09hs", "local": "São José", "padre": "Padre Rafael" },
+    { "id": "23-ivan-2026-02-01-17hs-pastoral", "data": "2026-02-01", "horario": "17hs", "local": "Centro de Pastoral", "padre": "Padre Ivan" },
+    { "id": "24-rafael-2026-02-01-17hs-divino", "data": "2026-02-01", "horario": "17hs", "local": "Divino", "padre": "Padre Rafael" },
+    { "id": "25-alexandre-2026-02-01-17hs-pqsaojoao", "data": "2026-02-01", "horario": "17hs", "local": "Nossa Senhora de Fátima", "padre": "Diácono Alexandre" },
+    { "id": "26-rafael-2026-02-01-19hs-matriz", "data": "2026-02-01", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
+    { "id": "27-ivan-2026-02-01-19hs-aparecida", "data": "2026-02-01", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Ivan" },
+
+    // --- 02/02 ---
+    { "id": "28-rafael-2026-02-02-19hs-candeias", "data": "2026-02-02", "horario": "19hs", "local": "Nossa Senhora Candeias (Festa)", "padre": "Padre Rafael" },
+
+    // --- 04/02 ---
+    { "id": "29-ivan-2026-02-04-19hs-matriz", "data": "2026-02-04", "horario": "19hs", "local": "Matriz (Missa pelas famílias)", "padre": "Padre Ivan" },
+
+    // --- 07/02 ---
+    { "id": "30-rafael-2026-02-07-19hs-matriz", "data": "2026-02-07", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
+    { "id": "31-ivan-2026-02-07-19hs-sagrado", "data": "2026-02-07", "horario": "19hs", "local": "Sagrado Coração de Jesus", "padre": "Padre Ivan" },
+
+    // --- 08/02 (Domingo) ---
+    { "id": "32-ivan-2026-02-08-07hs-matriz", "data": "2026-02-08", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
+    { "id": "33-rafael-2026-02-08-07hs-divino", "data": "2026-02-08", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
+    { "id": "34-domjose-2026-02-08-09hs-matriz", "data": "2026-02-08", "horario": "09hs", "local": "Matriz (Posse Pe. Adair)", "padre": "Dom José Antonio" },
+    { "id": "35-rafael-2026-02-08-17hs-pastoral", "data": "2026-02-08", "horario": "17hs", "local": "Centro de Pastoral", "padre": "Padre Rafael" },
+    { "id": "36-adair-2026-02-08-17hs-divino", "data": "2026-02-08", "horario": "17hs", "local": "Divino", "padre": "Padre Adair" },
+    { "id": "37-ivan-2026-02-08-17hs-pqsaojoao", "data": "2026-02-08", "horario": "17hs", "local": "Nossa Senhora de Fátima", "padre": "Padre Ivan" },
+    { "id": "38-adair-2026-02-08-19hs-matriz", "data": "2026-02-08", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" },
+    { "id": "39-rafael-2026-02-08-19hs-aparecida", "data": "2026-02-08", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Rafael" },
+
+    // --- 11/02 ---
+    { "id": "40-adair-2026-02-11-19hs-matriz", "data": "2026-02-11", "horario": "19hs", "local": "Matriz (Missa pelas famílias)", "padre": "Padre Adair" }
 ];
 
 

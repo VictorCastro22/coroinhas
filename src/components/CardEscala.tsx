@@ -6,15 +6,20 @@ import { Coroinha } from "../types/coroinhas";
 const linksLocais: Record<string, string> = {
   "Matriz": "https://maps.app.goo.gl/wdCowWAsnpkRkzJ59",
   "Matriz (Missa pelas famílias)": "https://maps.app.goo.gl/wdCowWAsnpkRkzJ59",
+  "Centro de Pastoral": "https://maps.app.goo.gl/odRaEWko8oJospxZA",
   "Divino": "https://maps.app.goo.gl/TCVVegRcGQMUg6ys9",
-  "Novo Parque Iracema": "https://maps.app.goo.gl/UWKamvDX46zU85ut9",
+  "Nossa Senhora Aparecida": "https://maps.app.goo.gl/kyntkv5C4pam1Eit7",
   "Santa Luzia": "https://maps.app.goo.gl/yBbUwFJgdQZKL6LN7",
-  "Coité": "https://maps.app.goo.gl/R7i5ewDzoiKdrdmh7",
-  "Outra Banda": "https://maps.app.goo.gl/LmRpW9y7Pqmq1QPH9",
+  "Sagrado Coração de Jesus": "https://maps.app.goo.gl/R7i5ewDzoiKdrdmh7",
+  "São João Batista": "https://maps.app.goo.gl/LmRpW9y7Pqmq1QPH9",
   "Festa de São Sebastião": "https://maps.app.goo.gl/wdCowWAsnpkRkzJ59",
   "Mãe Rainha": "https://maps.app.goo.gl/ytpFjJwJHuBSFhuH6",
   "Urucará": "https://maps.app.goo.gl/yph5tbRAgTNSdEaY9",
-  "São Pedro": "https://maps.app.goo.gl/to2g7KGCH6aSjSYL9",
+  "São Pedro": "https://maps.app.goo.gl/QCnjNLk5Rj4XiXqL8",
+  "Matriz (Posse Pe. Adair)": "https://maps.app.goo.gl/wdCowWAsnpkRkzJ59", 
+  "Nossa Senhora das Candeias (Festa)": "https://maps.app.goo.gl/yph5tbRAgTNSdEaY9",
+  "Nossa Senhora das Candeias": "https://maps.app.goo.gl/yph5tbRAgTNSdEaY9",
+
 };
 
 interface CardEscalaProps {
@@ -62,6 +67,9 @@ const CardEscala: React.FC<CardEscalaProps> = ({
       case "Padre Washington": return "/pe-washington.jpg";
       case "Padre João Pedro": return "/padre-joao-pedro.jpg";
       case "Frei Gilmar": return "/frei-gilmar.jpeg";
+      case "Padre Antonio": return "pe-antonio.png";
+      case "Diácono Alexandre": return "diac-alexandre.png";
+      case "Dom José Antonio": return "dom-jose.jpg";
       default: return "/imagens/semfoto.jpg";
     }
   };
