@@ -19,6 +19,7 @@ const linksLocais: Record<string, string> = {
   "Matriz (Posse Pe. Adair)": "https://maps.app.goo.gl/wdCowWAsnpkRkzJ59", 
   "Nossa Senhora das Candeias (Festa)": "https://maps.app.goo.gl/yph5tbRAgTNSdEaY9",
   "Nossa Senhora das Candeias": "https://maps.app.goo.gl/yph5tbRAgTNSdEaY9",
+  "São Benedito": "https://maps.app.goo.gl/5pYSKE6ZWRXh3wGW6",
 
 };
 
