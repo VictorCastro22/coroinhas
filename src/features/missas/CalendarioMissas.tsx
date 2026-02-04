@@ -37,19 +37,6 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
 const escalas = [
-    // --- 01/02 (Domingo) ---
-    { "id": "19-ivan-2026-02-01-07hs-matriz", "data": "2026-02-01", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "20-rafael-2026-02-01-07hs-divino", "data": "2026-02-01", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
-    { "id": "21-ivan-2026-02-01-09hs-matriz", "data": "2026-02-01", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "22-rafael-2026-02-01-09hs-saojose", "data": "2026-02-01", "horario": "09hs", "local": "São José", "padre": "Padre Rafael" },
-    { "id": "23-ivan-2026-02-01-17hs-pastoral", "data": "2026-02-01", "horario": "17hs", "local": "Centro de Pastoral", "padre": "Padre Ivan" },
-    { "id": "24-rafael-2026-02-01-17hs-divino", "data": "2026-02-01", "horario": "17hs", "local": "Divino", "padre": "Padre Rafael" },
-    { "id": "25-alexandre-2026-02-01-17hs-pqsaojoao", "data": "2026-02-01", "horario": "17hs", "local": "Nossa Senhora de Fátima", "padre": "Diácono Alexandre" },
-    { "id": "26-rafael-2026-02-01-19hs-matriz", "data": "2026-02-01", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
-    { "id": "27-ivan-2026-02-01-19hs-aparecida", "data": "2026-02-01", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Ivan" },
-
-    // --- 02/02 ---
-    { "id": "28-rafael-2026-02-02-19hs-candeias", "data": "2026-02-02", "horario": "19hs", "local": "Nossa Senhora Candeias (Festa)", "padre": "Padre Rafael" },
 
     // --- 04/02 ---
     { "id": "29-ivan-2026-02-04-19hs-matriz", "data": "2026-02-04", "horario": "19hs", "local": "Matriz (Missa pelas famílias)", "padre": "Padre Ivan" },
