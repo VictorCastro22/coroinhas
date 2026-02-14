@@ -37,28 +37,9 @@ const CalendarioMissas: React.FC = () => {
   }, []);
 
 const escalas = [
+    // --- 14/02 ---
+    { "id": "adair-2026-02-14-17hs-santadulce", "data": "2026-02-14", "horario": "17hs", "local": "Santa Dulce", "padre": "Padre Adair" }, // [cite: 1]
 
-    // --- 04/02 ---
-    { "id": "29-ivan-2026-02-04-19hs-matriz", "data": "2026-02-04", "horario": "19hs", "local": "Matriz (Missa pelas famílias)", "padre": "Padre Ivan" },
-
-    { "id": "99-rafael-2026-02-06-18hs-matriz", "data": "2026-02-06", "horario": "18h30", "local": "Centro de Pastoral (Adoração e Missa)", "padre": "Padre Rafael" },
-
-    // --- 07/02 ---
-    { "id": "30-rafael-2026-02-07-19hs-matriz", "data": "2026-02-07", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
-    { "id": "31-ivan-2026-02-07-19hs-sagrado", "data": "2026-02-07", "horario": "19hs", "local": "Sagrado Coração de Jesus", "padre": "Padre Ivan" },
-
-    // --- 08/02 (Domingo) ---
-    { "id": "32-ivan-2026-02-08-07hs-matriz", "data": "2026-02-08", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "33-rafael-2026-02-08-07hs-divino", "data": "2026-02-08", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
-    { "id": "34-domjose-2026-02-08-09hs-matriz", "data": "2026-02-08", "horario": "09hs", "local": "Matriz (Posse Pe. Adair)", "padre": "Dom José Antonio" },
-    { "id": "35-rafael-2026-02-08-17hs-pastoral", "data": "2026-02-08", "horario": "17hs", "local": "Centro de Pastoral", "padre": "Padre Rafael" },
-    { "id": "36-adair-2026-02-08-17hs-divino", "data": "2026-02-08", "horario": "17hs", "local": "Divino", "padre": "Padre Adair" },
-    { "id": "37-ivan-2026-02-08-17hs-pqsaojoao", "data": "2026-02-08", "horario": "17hs", "local": "Nossa Senhora de Fátima", "padre": "Padre Ivan" },
-    { "id": "38-adair-2026-02-08-19hs-matriz", "data": "2026-02-08", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" },
-    { "id": "39-rafael-2026-02-08-19hs-aparecida", "data": "2026-02-08", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Rafael" },
-
-    // --- 11/02 ---
-    { "id": "40-adair-2026-02-11-19hs-matriz", "data": "2026-02-11", "horario": "19hs", "local": "Matriz (Missa pelas famílias)", "padre": "Padre Adair" }
 ];
 
 
