@@ -114,8 +114,8 @@ const escalas = [
     { "id": "adair-2026-02-18-17hs-divino", "data": "2026-02-18", "horario": "17hs", "local": "Divino", "padre": "Padre Adair" }, // [cite: 3]
     { "id": "rafael-2026-02-18-19hs-matriz", "data": "2026-02-18", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" }, // [cite: 3]
     { "id": "adair-2026-02-18-19hs-rosario", "data": "2026-02-18", "horario": "19hs", "local": "Rosário", "padre": "Padre Adair" }, // [cite: 3]
-    { "id": "rafael-2026-02-18-19hs-matriz", "data": "2026-02-18", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Ivam" }, // [cite: 3]
-    { "id": "adair-2026-02-18-19hs-rosario", "data": "2026-02-18", "horario": "19hs", "local": "Santa Rita", "padre": "Padre Rafael" }, // [cite: 3]
+    { "id": "ivan-2026-02-18-19hs-matriz", "data": "2026-02-18", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Ivan" }, // [cite: 3]
+    { "id": "rafael-2026-02-18-19hs-rosario", "data": "2026-02-18", "horario": "19hs", "local": "Santa Rita", "padre": "Padre Rafael" }, // [cite: 3]
 
 
     // --- 21/02 ---
