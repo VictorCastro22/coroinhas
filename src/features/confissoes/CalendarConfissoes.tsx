@@ -37,7 +37,7 @@ const CalendarConfissoes: React.FC = () => {
   }, []);
 
 const escalas = [
-  { "id": "52-ivan-2026-02-18-08hs-matriz", "data": "2026-02-18", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "52-ivan-2026-02-18-08hs-matriz", "data": "2026-02-19", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan" },
   { "id": "53-ivan-2026-02-24-17hs-matriz", "data": "2026-02-24", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan" },
   { "id": "54-rafael-2026-02-25-17hs-matriz", "data": "2026-02-25", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael" }, 
   { "id": "55-ivan-2026-02-26-08hs-matriz", "data": "2026-02-26", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan" }
