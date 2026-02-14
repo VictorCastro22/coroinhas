@@ -37,8 +37,13 @@ const CalendarConfissoes: React.FC = () => {
   }, []);
 
 const escalas = [
-    { "id": "ivan-2026-02-05-08hs-matriz", "data": "2026-02-05", "horario": "08hs", "local": "Matriz (Confissões)", "padre": "Padre Ivan" },
-    { "id": "rafael-2026-02-11-17hs-matriz", "data": "2026-02-11", "horario": "17hs", "local": "Matriz (Confissões)", "padre": "Padre Rafael" },
+  { "id": "52-ivan-2026-02-18-08hs-matriz", "data": "2026-02-18", "horario": "08hs", "local": "Matriz (Confissões)", "padre": "Padre Ivan" },
+
+  { "id": "53-ivan-2026-02-24-17hs-matriz", "data": "2026-02-24", "horario": "17hs", "local": "Matriz (Confissões)", "padre": "Padre Ivan" },
+
+  { "id": "54-rafael-2026-02-25-17hs-matriz", "data": "2026-02-25", "horario": "17hs", "local": "Matriz (Confissões)", "padre": "Padre Rafael" }, 
+
+  { "id": "55-ivan-2026-02-26-08hs-matriz", "data": "2026-02-26", "horario": "08hs", "local": "Matriz (Confissões)", "padre": "Padre Ivan" }
 
 ];
 
