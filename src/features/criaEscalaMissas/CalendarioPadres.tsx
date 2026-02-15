@@ -97,6 +97,7 @@ const escalas = [
     // --- 15/02 (Domingo) ---
     { "id": "adair-2026-02-15-07hs-matriz", "data": "2026-02-15", "horario": "07hs", "local": "Matriz", "padre": "Padre Adair" }, // [cite: 3]
     { "id": "adair-2026-02-15-09hs-matriz", "data": "2026-02-15", "horario": "09hs", "local": "Matriz", "padre": "Padre Adair" }, // [cite: 3]
+    { "id": "adair-2026-02-15-17hs-cp", "data": "2026-02-15", "horario": "17hs", "local": "Centro de Pastoral", "padre": "Padre Adair" }, // [cite: 3]
     { "id": "rafael-2026-02-15-17hs-divino", "data": "2026-02-15", "horario": "17hs", "local": "Divino", "padre": "Padre Rafael" }, // [cite: 3]
     { "id": "rafael-2026-02-15-19hs-matriz", "data": "2026-02-15", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" }, // [cite: 3]
     { "id": "adair-2026-02-15-19hs-aparecida", "data": "2026-02-15", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Adair" }, // [cite: 3]

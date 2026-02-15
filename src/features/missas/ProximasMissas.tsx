@@ -9,7 +9,6 @@ import { escalas } from "../../dados/escalaPadres";
 const ProximasMissas: React.FC = () => {
   const navigate = useNavigate();
   
-  // Estado para controlar qual dia estamos vendo (0 = Hoje, 1 = Amanhã, etc)
   const [offsetDia, setOffsetDia] = useState(0);
 
   const dataSelecionada = addDays(new Date(), offsetDia);
@@ -21,7 +20,6 @@ const ProximasMissas: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto p-4 flex flex-col gap-6">
       
-      {/* SELETOR DE DATA SIMPLES (Navegação por Setas) */}
       <div className="flex items-center justify-between bg-white p-2 rounded-2xl shadow-sm border border-gray-100">
         <button 
           onClick={() => setOffsetDia(prev => prev - 1)}
@@ -47,7 +45,6 @@ const ProximasMissas: React.FC = () => {
         </button>
       </div>
 
-      {/* CARD DINÂMICO DE MISSAS */}
       <div className="bg-white border-t-4 border-[#D4AF37] shadow-lg rounded-xl p-6 min-h-[200px] transition-all">
         <div className="space-y-5">
           {missasDoDia.length > 0 ? missasDoDia.map(m => (
@@ -69,7 +66,6 @@ const ProximasMissas: React.FC = () => {
         </div>
       </div>
 
-      {/* BOTÃO GRANDE (ACESSIBILIDADE PARA IDOSOS) */}
       <button 
         onClick={() => navigate("/calendario-missas")}
         className="flex items-center justify-center gap-3 bg-[#535043] text-white py-5 rounded-2xl font-bold shadow-md hover:bg-[#3d3a31] active:scale-95 transition-all group"
