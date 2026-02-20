@@ -1,5 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
+import LoginCoordenacao from "./pages/LoginCoordenacao";
+import PainelCoordenacao from "./pages/PainelCoordenacao";
 import CriarEscala from "./features/criaEscalaMissas/CriarEscala";
 import ProtectedRoute from "./components/ProtectedRoute";
 import TelaInicial from "./pages/TelaInicial";
@@ -33,12 +35,20 @@ const App: React.FC = () => {
               </ProtectedRoute>
             }
           />
+
+          <Route
+            path="/painel-coordenacao"
+            element={
+              <ProtectedRoute tipoAuth="coordenacao">
+                <PainelCoordenacao />
+              </ProtectedRoute>
+            }
+          />
         </Route>
 
-        
         <Route path="/login" element={<Login />} />
+        <Route path="/login-coordenacao" element={<LoginCoordenacao />} />
 
-        
         <Route path="*" element={<Login />} />
       </Routes>
     </Router>
