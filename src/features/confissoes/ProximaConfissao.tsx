@@ -21,10 +21,27 @@ const linksLocais: Record<string, string> = {
 };
 
 const escalas = [
-  { "id": "52-ivan-2026-02-18-08hs-matriz", "data": "2026-02-19", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "53-ivan-2026-02-24-17hs-matriz", "data": "2026-02-24", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "54-rafael-2026-02-25-17hs-matriz", "data": "2026-02-25", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael" }, 
-  { "id": "55-ivan-2026-02-26-08hs-matriz", "data": "2026-02-26", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan" }
+// --- SEMANA 1 ---
+    { "id": "56-ivan-2026-03-03-17hs-matriz", "data": "2026-03-03", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan" }, // [cite: 1]
+    { "id": "57-rafael-2026-03-04-17hs-matriz", "data": "2026-03-04", "horario": "17hs-20h", "local": "Matriz", "padre": "Padre Rafael" }, // [cite: 1]
+    { "id": "58-ivan-2026-03-05-08hs-matriz", "data": "2026-03-05", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan" }, // [cite: 1]
+
+    // --- SEMANA 2 ---
+    { "id": "59-ivan-2026-03-10-17hs-matriz", "data": "2026-03-10", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan" }, // [cite: 1]
+    { "id": "60-rafael-2026-03-11-17hs-matriz", "data": "2026-03-11", "horario": "17hs-20h", "local": "Matriz", "padre": "Padre Rafael" }, // [cite: 1]
+    { "id": "61-ivan-2026-03-12-08hs-matriz", "data": "2026-03-12", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan" }, // [cite: 1]
+
+    // --- SEMANA 3 ---
+    { "id": "62-ivan-2026-03-17-17hs-matriz", "data": "2026-03-17", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan" }, // 
+    { "id": "63-rafael-2026-03-18-17hs-matriz", "data": "2026-03-18", "horario": "17hs-20h", "local": "Matriz", "padre": "Padre Rafael" }, // 
+    { "id": "64-ivan-2026-03-19-08hs-matriz", "data": "2026-03-19", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan" }, // 
+
+    // --- SEMANA 4 (Mutirão e Feriado) ---
+    { "id": "65-ivan-2026-03-20-08hs-matriz", "data": "2026-03-20", "horario": "08hs-11:30", "local": "Matriz", "padre": "Padre Ivan" }, // 
+    { "id": "66-ivan-2026-03-20-14hs-cp", "data": "2026-03-20", "horario": "14hs-21h", "local": "Centro de Pastoral", "padre": "Padre Ivan" }, // 
+    { "id": "67-ivan-2026-03-24-17hs-matriz", "data": "2026-03-24", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan" }, // 
+    { "id": "68-adair-2026-03-25-17hs-matriz", "data": "2026-03-25", "horario": "17hs", "local": "Matriz", "padre": "Padre Adair" }, // 
+    { "id": "69-ivan-2026-03-26-08hs-matriz", "data": "2026-03-26", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan" } //
 ];
 
 const ProximaConfissao: React.FC = () => {
