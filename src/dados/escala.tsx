@@ -1,23 +1,25 @@
 export const escala = [
-    // --- 02/04 (Quinta-feira) ---
+   // --- 02/04 (Quinta-feira) ---
+    { "id": "adair-2026-04-02-19hs-matriz-1", "data": "2026-04-02", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" },
+    { "id": "ivan-2026-04-02-19hs-urucara-1", "data": "2026-04-02", "horario": "19hs", "local": "Urucará", "padre": "Padre Ivan" },
     { "id": "rafael-2026-04-02-1930hs-divino-1", "data": "2026-04-02", "horario": "19:30hs", "local": "Divino", "padre": "Padre Rafael" },
 
-    // --- 03/04 (Sexta-feira) ---
-    { "id": "ivan-2026-04-03-19hs-matriz-1", "data": "2026-04-03", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "adair-2026-04-03-19hs-piedade-1", "data": "2026-04-03", "horario": "19hs", "local": "Nossa Sra. da Piedade", "padre": "Padre Adair" },
+    // --- 03/04 (Sexta-feira Santa) ---
+    { "id": "adair-2026-04-03-15hs-matriz-1", "data": "2026-04-03", "horario": "15hs", "local": "Matriz (Paixão)", "padre": "Padre Adair" },
+    { "id": "ivan-2026-04-03-15hs-aparecida-1", "data": "2026-04-03", "horario": "15hs", "local": "Nossa Senhora Aparecida (Paixão)", "padre": "Padre Ivan" },
+    { "id": "rafael-2026-04-03-15hs-divino-1", "data": "2026-04-03", "horario": "15hs", "local": "Divino (Paixão)", "padre": "Padre Rafael" },
 
-    // --- 04/04 (Sábado) ---
-    { "id": "adair-2026-04-04-19hs-matriz-1", "data": "2026-04-04", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" },
+    // --- 04/04 (Sábado Santo) ---
+    { "id": "adair-2026-04-04-19hs-matriz-1", "data": "2026-04-04", "horario": "19hs", "local": "Matriz (Vigília Pascal)", "padre": "Padre Adair" },
     { "id": "ivan-2026-04-04-19hs-aparecida-1", "data": "2026-04-04", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Ivan" },
     { "id": "rafael-2026-04-04-18hs-divino-1", "data": "2026-04-04", "horario": "18hs", "local": "Divino", "padre": "Padre Rafael" },
 
-    // --- 05/04 (Domingo) ---
+    // --- 05/04 (Domingo de Páscoa) ---
     { "id": "adair-2026-04-05-07hs-matriz-1", "data": "2026-04-05", "horario": "07hs", "local": "Matriz", "padre": "Padre Adair" },
     { "id": "rafael-2026-04-05-07hs-divino-1", "data": "2026-04-05", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
     { "id": "ivan-2026-04-05-07hs-abrigo-1", "data": "2026-04-05", "horario": "07hs", "local": "Abrigo", "padre": "Padre Ivan" },
-    { "id": "ivan-2026-04-05-09hs-saojose-1", "data": "2026-04-05", "horario": "09hs", "local": "São José", "padre": "Padre Ivan" },
+    { "id": "ivan-2026-04-05-09hs-matriz-1", "data": "2026-04-05", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
     { "id": "rafael-2026-04-05-09hs-aparecida-1", "data": "2026-04-05", "horario": "09hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Rafael" },
-    { "id": "adair-2026-04-05-09hs-matriz-1", "data": "2026-04-05", "horario": "09hs", "local": "Matriz", "padre": "Padre Adair" },
     { "id": "ivan-2026-04-05-17hs-saojoao-1", "data": "2026-04-05", "horario": "17hs", "local": "São João", "padre": "Padre Ivan" },
     { "id": "rafael-2026-04-05-17hs-divino-1", "data": "2026-04-05", "horario": "17hs", "local": "Divino", "padre": "Padre Rafael" },
     { "id": "adair-2026-04-05-17hs-rosario-1", "data": "2026-04-05", "horario": "17hs", "local": "Rosário", "padre": "Padre Adair" },
@@ -31,29 +33,34 @@ export const escala = [
     { "id": "adair-2026-04-08-19hs-matriz-1", "data": "2026-04-08", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" },
 
     // --- 09/04 (Quinta-feira) ---
-    { "id": "adair-2026-04-09-19hs-matriz-1", "data": "2026-04-09", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" },
-    { "id": "ivan-2026-04-09-19hs-urucara-1", "data": "2026-04-09", "horario": "19hs", "local": "Urucará", "padre": "Padre Ivan" },
+    { "id": "ivan-2026-04-09-19hs-matriz-1", "data": "2026-04-09", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
+    { "id": "adair-2026-04-09-19hs-mororo-1", "data": "2026-04-09", "horario": "19hs", "local": "Mororó", "padre": "Padre Adair" },
 
     // --- 10/04 (Sexta-feira) ---
-    { "id": "adair-2026-04-10-15hs-matriz-1", "data": "2026-04-10", "horario": "15hs", "local": "Matriz", "padre": "Padre Adair" },
-    { "id": "ivan-2026-04-10-15hs-aparecida-1", "data": "2026-04-10", "horario": "15hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Ivan" },
-    { "id": "rafael-2026-04-10-15hs-divino-1", "data": "2026-04-10", "horario": "15hs", "local": "Divino", "padre": "Padre Rafael" },
+    { "id": "ivan-2026-04-10-19hs-matriz-1", "data": "2026-04-10", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
+    { "id": "adair-2026-04-10-19hs-piedade-1", "data": "2026-04-10", "horario": "19hs", "local": "Nossa Sra. da Piedade", "padre": "Padre Adair" },
 
     // --- 11/04 (Sábado) ---
     { "id": "adair-2026-04-11-17hs-santadulce-1", "data": "2026-04-11", "horario": "17hs", "local": "Santa Dulce", "padre": "Padre Adair" },
+    { "id": "adefinir-2026-04-11-19hs-outrabanda-1", "data": "2026-04-11", "horario": "19hs", "local": "Outra Banda", "padre": "A Definir" },
     { "id": "adair-2026-04-11-19hs-matriz-1", "data": "2026-04-11", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" },
 
     // --- 12/04 (Domingo) ---
     { "id": "ivan-2026-04-12-07hs-matriz-1", "data": "2026-04-12", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
     { "id": "adair-2026-04-12-07hs-divino-1", "data": "2026-04-12", "horario": "07hs", "local": "Divino", "padre": "Padre Adair" },
-    { "id": "ivan-2026-04-12-09hs-matriz-1", "data": "2026-04-12", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "adair-2026-04-12-09hs-aparecida-1", "data": "2026-04-12", "horario": "09hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Adair" },
+    { "id": "adair-2026-04-12-09hs-matriz-1", "data": "2026-04-12", "horario": "09hs", "local": "Matriz", "padre": "Padre Adair" },
+    { "id": "ivan-2026-04-12-09hs-aparecida-1", "data": "2026-04-12", "horario": "09hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Ivan" },
+    { "id": "adair-2026-04-12-1530hs-santosdumont-1", "data": "2026-04-12", "horario": "15:30hs", "local": "Santos Dumont", "padre": "Padre Adair" },
     { "id": "rafael-2026-04-12-17hs-rosario-1", "data": "2026-04-12", "horario": "17hs", "local": "Rosário", "padre": "Padre Rafael" },
     { "id": "ivan-2026-04-12-17hs-saojoao-1", "data": "2026-04-12", "horario": "17hs", "local": "São João", "padre": "Padre Ivan" },
     { "id": "adair-2026-04-12-17hs-divino-1", "data": "2026-04-12", "horario": "17hs", "local": "Divino", "padre": "Padre Adair" },
-    { "id": "adair-2026-04-12-12hs-matriz-1", "data": "2026-04-12", "horario": "12hs", "local": "Matriz", "padre": "Padre Adair" },
-    { "id": "ivan-2026-04-12-19hs-saojoao-1", "data": "2026-04-12", "horario": "19hs", "local": "São João", "padre": "Padre Ivan" },
-    { "id": "adair-2026-04-12-19hs-vilares-1", "data": "2026-04-12", "horario": "19hs", "local": "Vilares", "padre": "Padre Adair" },
+    { "id": "adair-2026-04-12-19hs-matriz-1", "data": "2026-04-12", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" },
+    { "id": "ivan-2026-04-12-19hs-urucara-1", "data": "2026-04-12", "horario": "19hs", "local": "Urucará", "padre": "Padre Ivan" },
+
+    // --- 13/04 (Segunda-feira) ---
+    { "id": "adair-2026-04-13-12hs-matriz-1", "data": "2026-04-13", "horario": "12hs", "local": "Matriz", "padre": "Padre Adair" },
+    { "id": "ivan-2026-04-13-19hs-saojoao-1", "data": "2026-04-13", "horario": "19hs", "local": "São João", "padre": "Padre Ivan" },
+    { "id": "adair-2026-04-13-19hs-vilares-1", "data": "2026-04-13", "horario": "19hs", "local": "Vilares", "padre": "Padre Adair" },
 
     // --- 14/04 (Terça-feira) ---
     { "id": "ivan-2026-04-14-19hs-matriz-1", "data": "2026-04-14", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
@@ -64,10 +71,11 @@ export const escala = [
 
     // --- 16/04 (Quinta-feira) ---
     { "id": "ivan-2026-04-16-19hs-matriz-1", "data": "2026-04-16", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "adair-2026-04-16-19hs-mororo-1", "data": "2026-04-16", "horario": "19hs", "local": "Mororó", "padre": "Padre Adair" },
+    { "id": "adair-2026-04-16-19hs-maerainha-1", "data": "2026-04-16", "horario": "19hs", "local": "Mãe Rainha", "padre": "Padre Adair" },
 
     // --- 17/04 (Sexta-feira) ---
     { "id": "ivan-2026-04-17-19hs-matriz-1", "data": "2026-04-17", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
+    { "id": "adefinir-2026-04-17-19hs-santarita-1", "data": "2026-04-17", "horario": "19hs", "local": "Santa Rita", "padre": "A Definir" },
 
     // --- 18/04 (Sábado) ---
     { "id": "adair-2026-04-18-17hs-santaluzia-1", "data": "2026-04-18", "horario": "17hs", "local": "Santa Luzia", "padre": "Padre Adair" },
@@ -80,6 +88,7 @@ export const escala = [
     { "id": "ivan-2026-04-19-07hs-divino-1", "data": "2026-04-19", "horario": "07hs", "local": "Divino", "padre": "Padre Ivan" },
     { "id": "ivan-2026-04-19-09hs-aparecida-1", "data": "2026-04-19", "horario": "09hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Ivan" },
     { "id": "adair-2026-04-19-09hs-matriz-1", "data": "2026-04-19", "horario": "09hs", "local": "Matriz", "padre": "Padre Adair" },
+    { "id": "adefinir-2026-04-19-17hs-saojoao-1", "data": "2026-04-19", "horario": "17hs", "local": "São João", "padre": "A Definir" },
     { "id": "adair-2026-04-19-17hs-divino-1", "data": "2026-04-19", "horario": "17hs", "local": "Divino", "padre": "Padre Adair" },
     { "id": "ivan-2026-04-19-17hs-rosario-1", "data": "2026-04-19", "horario": "17hs", "local": "Rosário", "padre": "Padre Ivan" },
     { "id": "adair-2026-04-19-19hs-matriz-1", "data": "2026-04-19", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" },
@@ -87,8 +96,6 @@ export const escala = [
 
     // --- 21/04 (Terça-feira) ---
     { "id": "ivan-2026-04-21-19hs-matriz-1", "data": "2026-04-21", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-    { "id": "adair-2026-04-21-19hs-santaterezinha-1", "data": "2026-04-21", "horario": "19hs", "local": "Santa Terezinha", "padre": "Padre Adair" },
-    { "id": "rafael-2026-04-21-19hs-tangueira-1", "data": "2026-04-21", "horario": "19hs", "local": "Tangueira", "padre": "Padre Rafael" },
 
     // --- 22/04 (Quarta-feira) ---
     { "id": "adair-2026-04-22-19hs-matriz-1", "data": "2026-04-22", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" },
@@ -126,6 +133,8 @@ export const escala = [
 
     // --- 28/04 (Terça-feira) ---
     { "id": "ivan-2026-04-28-19hs-matriz-1", "data": "2026-04-28", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
+    { "id": "adair-2026-04-28-19hs-santaterezinha-1", "data": "2026-04-28", "horario": "19hs", "local": "Santa Terezinha", "padre": "Padre Adair" },
+    { "id": "rafael-2026-04-28-19hs-tangueira-1", "data": "2026-04-28", "horario": "19hs", "local": "Tangueira", "padre": "Padre Rafael" },
 
     // --- 29/04 (Quarta-feira) ---
     { "id": "adair-2026-04-29-19hs-matriz-1", "data": "2026-04-29", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" },
