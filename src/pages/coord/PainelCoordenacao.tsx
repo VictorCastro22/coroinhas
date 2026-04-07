@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
-import db from "../../firebaseConfig";
-import { escalas } from "../dados/escalaPadres";
-import coroinhasLista from "../dados/coroinhas";
-import { Coroinha } from "../types/coroinhas";
+import db from "../../../firebaseConfig";
+import { escalas } from "../../dados/escalaPadres";
+import coroinhasLista from "../../dados/coroinhas";
+import { Coroinha } from "../../types/coroinhas";
 
 // Ícones para a barra inferior
 import { 

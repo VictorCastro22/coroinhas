@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./pages/Login";
-import LoginCoordenacao from "./pages/LoginCoordenacao";
-import PainelCoordenacao from "./pages/PainelCoordenacao";
+import LoginCoordenacao from "./pages/coord/LoginCoordenacao";
+import PainelCoordenacao from "./pages/coord/PainelCoordenacao";
 import CriarEscala from "./features/criaEscalaMissas/CriarEscala";
 import ProtectedRoute from "./components/ProtectedRoute";
 import TelaInicial from "./pages/TelaInicial";
