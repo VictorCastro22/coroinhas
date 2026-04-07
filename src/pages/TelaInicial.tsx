@@ -1,16 +1,12 @@
 import React from "react";
 import ProximasMissas from "../features/missas/ProximasMissas";
 import ProximaConfissao from "../features/confissoes/ProximaConfissao";
-import BannerQuaresma from "../components/BannerQuaresma";
+
 
 const TelaInicial: React.FC = () => {
   return (
     <div className="bg-gray-50 min-h-screen">
-      
-      {/* 1. BANNER DA QUARESMA (TOPO ABSOLUTO) */}
-      <section className="pt-6">
-        <BannerQuaresma />
-      </section>
+    
 
       {/* 2. SEÇÃO DE MISSAS DO DIA */}
       <section className="py-6 bg-gradient-to-b from-gray-50 to-white">
