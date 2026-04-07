@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 // Centralização dos links de localização
 const linksLocais: Record<string, string> = {
   "Matriz": "https://maps.app.goo.gl/wdCowWAsnpkRkzJ59",
+  "Secretaria Paroquial": "https://maps.app.goo.gl/wdCowWAsnpkRkzJ59", // Link da secretaria
   "Matriz (Confissões)": "https://maps.app.goo.gl/wdCowWAsnpkRkzJ59",
   "Centro de Pastoral": "https://maps.app.goo.gl/odRaEWko8oJospxZA",
   "Divino": "https://maps.app.goo.gl/TCVVegRcGQMUg6ys9",
@@ -22,13 +23,13 @@ const linksLocais: Record<string, string> = {
 
 const escalas = [
     // --- SEMANA 2 ---
-    { "id": "70-adair-2026-04-08-0830hs-matriz", "data": "2026-04-08", "horario": "08:30hs", "local": "Matriz", "padre": "Padre Adair", "tipo": "Atendimento" }, 
+    { "id": "70-adair-2026-04-08-0830hs-sec", "data": "2026-04-08", "horario": "08:30hs", "local": "Secretaria Paroquial", "padre": "Padre Adair", "tipo": "Atendimento" }, 
     { "id": "71-ivan-2026-04-09-08hs-matriz", "data": "2026-04-09", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, 
     { "id": "72-adair-2026-04-09-16hs-matriz", "data": "2026-04-09", "horario": "16hs", "local": "Matriz", "padre": "Padre Adair", "tipo": "Confissões" }, 
 
     // --- SEMANA 3 ---
     { "id": "73-ivan-2026-04-14-17hs-matriz", "data": "2026-04-14", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, 
-    { "id": "74-adair-2026-04-15-0830hs-matriz", "data": "2026-04-15", "horario": "08:30hs", "local": "Matriz", "padre": "Padre Adair", "tipo": "Atendimento" }, 
+    { "id": "74-adair-2026-04-15-0830hs-sec", "data": "2026-04-15", "horario": "08:30hs", "local": "Secretaria Paroquial", "padre": "Padre Adair", "tipo": "Atendimento" }, 
     { "id": "75-ivan-2026-04-16-08hs-matriz", "data": "2026-04-16", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, 
     { "id": "76-adair-2026-04-16-16hs-matriz", "data": "2026-04-16", "horario": "16hs", "local": "Matriz", "padre": "Padre Adair", "tipo": "Confissões" }, 
 
@@ -41,7 +42,7 @@ const escalas = [
 
     // --- SEMANA 5 ---
     { "id": "82-ivan-2026-04-28-17hs-matriz", "data": "2026-04-28", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, 
-    { "id": "83-adair-2026-04-29-0830hs-matriz", "data": "2026-04-29", "horario": "08:30hs", "local": "Matriz", "padre": "Padre Adair", "tipo": "Atendimento" }, 
+    { "id": "83-adair-2026-04-29-0830hs-sec", "data": "2026-04-29", "horario": "08:30hs", "local": "Secretaria Paroquial", "padre": "Padre Adair", "tipo": "Atendimento" }, 
     { "id": "84-rafael-2026-04-29-17hs-matriz", "data": "2026-04-29", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" }, 
     { "id": "85-ivan-2026-04-30-08hs-matriz", "data": "2026-04-30", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, 
     { "id": "86-adair-2026-04-30-16hs-matriz", "data": "2026-04-30", "horario": "16hs", "local": "Matriz", "padre": "Padre Adair", "tipo": "Confissões" } 
@@ -51,34 +52,24 @@ const ProximaConfissao: React.FC = () => {
   const agora = new Date();
   
   const proxima = escalas.find(e => {
-    // 1. Tira o "hs" do texto (Ex: de "08:30hs" vira "08:30", de "16hs" vira "16")
     const tempoLimpo = e.horario.replace("hs", "");
-    
-    // 2. Separa a string onde tem os dois pontos (usando const para a hora)
     const partesTempo = tempoLimpo.split(":");
     const hora = partesTempo[0];
-    
-    // 3. Usa const também para o minuto (se não existir a parte 1, usa "00")
     const minuto = partesTempo[1] || "00";
     
-    // 4. Monta uma data real juntando o YYYY-MM-DD com a Hora e o Minuto
-    // O padStart garante que horas como "8" fiquem "08" para não quebrar o formato
     const dataHoraCompleta = new Date(`${e.data}T${hora.padStart(2, '0')}:${minuto}:00`);
     
-    // 5. Ele só pula para a próxima confissão se o relógio de hoje passar do horário exato.
     return isAfter(dataHoraCompleta, agora);
-  }) || escalas[0]; // Se todas passaram, volta a mostrar a primeira por segurança
+  }) || escalas[0];
 
   const dataExibicao = format(parseISO(proxima.data), "dd 'de' MMMM", { locale: ptBR });
-  
-  // Busca o link do mapa baseado no local ou usa a Matriz como padrão
   const linkMapa = linksLocais[proxima.local] || "https://maps.app.goo.gl/wdCowWAsnpkRkzJ59";
 
   return (
     <div className="max-w-4xl mx-auto p-4">
       <div className="bg-white border-t-4 border-[#D4AF37] shadow-xl rounded-xl p-8 text-center">
         <span className="bg-amber-100 text-amber-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
-          Próxima Confissão
+          Próxima Confissão / Atendimento
         </span>
         
         <h2 className="text-3xl md:text-4xl font-playfair font-bold text-gray-800 mt-4 mb-2">
