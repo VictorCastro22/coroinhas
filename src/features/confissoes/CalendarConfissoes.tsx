@@ -37,27 +37,35 @@ const CalendarConfissoes: React.FC = () => {
   }, []);
 
 const escalas = [
+    { "id": "rafael-2026-06-05-17hs-matriz", "data": "2026-06-05", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" }, //
+
+    // --- SEMANA 2 ---
+    { "id": "ivan-2026-06-09-17hs-matriz", "data": "2026-06-09", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, //
+    { "id": "adair-2026-06-10-0830hs-sec", "data": "2026-06-10", "horario": "08:30hs", "local": "Secretaria Paroquial", "padre": "Padre Adair", "tipo": "Atendimento" }, //
+    { "id": "rafael-2026-06-10-17hs-matriz", "data": "2026-06-10", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" }, //
+    { "id": "ivan-2026-06-11-08hs-matriz", "data": "2026-06-11", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, //
+    { "id": "rafael-2026-06-12-17hs-matriz", "data": "2026-06-12", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" }, //
 
     // --- SEMANA 3 ---
-    { "id": "106-ivan-2026-05-12-17hs-matriz", "data": "2026-05-12", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, //
-    { "id": "107-rafael-2026-05-13-1630hs-matriz", "data": "2026-05-13", "horario": "16:30hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" }, //
-    { "id": "108-ivan-2026-05-14-08hs-matriz", "data": "2026-05-14", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, //
-    { "id": "109-adair-2026-05-14-16hs-matriz", "data": "2026-05-14", "horario": "16hs", "local": "Matriz", "padre": "Padre Adair", "tipo": "Confissões" }, //
-    { "id": "110-rafael-2026-05-15-17hs-matriz", "data": "2026-05-15", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" }, //
+    { "id": "ivan-2026-06-16-17hs-matriz", "data": "2026-06-16", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, //
+    { "id": "adair-2026-06-17-0830hs-sec", "data": "2026-06-17", "horario": "08:30hs", "local": "Secretaria Paroquial", "padre": "Padre Adair", "tipo": "Atendimento" }, //
+    { "id": "rafael-2026-06-17-17hs-matriz", "data": "2026-06-17", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" }, //
+    { "id": "ivan-2026-06-18-08hs-matriz", "data": "2026-06-18", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, //
+    { "id": "rafael-2026-06-19-17hs-matriz", "data": "2026-06-19", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" }, //
 
     // --- SEMANA 4 ---
-    { "id": "111-ivan-2026-05-19-17hs-matriz", "data": "2026-05-19", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, //
-    { "id": "112-adair-2026-05-20-0830hs-sec", "data": "2026-05-20", "horario": "08:30hs", "local": "Secretaria Paroquial", "padre": "Padre Adair", "tipo": "Atendimento" }, //
-    { "id": "113-rafael-2026-05-20-1630hs-matriz", "data": "2026-05-20", "horario": "16:30hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" }, //
-    { "id": "114-adair-2026-05-21-16hs-matriz", "data": "2026-05-21", "horario": "16hs", "local": "Matriz", "padre": "Padre Adair", "tipo": "Confissões" }, //
-    { "id": "115-rafael-2026-05-22-17hs-matriz", "data": "2026-05-22", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" }, //
+    { "id": "ivan-2026-06-23-17hs-matriz", "data": "2026-06-23", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, //
+    { "id": "adair-2026-06-24-0830hs-sec", "data": "2026-06-24", "horario": "08:30hs", "local": "Secretaria Paroquial", "padre": "Padre Adair", "tipo": "Atendimento" }, //
+    { "id": "rafael-2026-06-24-17hs-matriz", "data": "2026-06-24", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" }, //
+    { "id": "ivan-2026-06-25-08hs-matriz", "data": "2026-06-25", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, //
+    { "id": "rafael-2026-06-26-17hs-matriz", "data": "2026-06-26", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" }, //
 
-    // --- SEMANA 5 ---
-    { "id": "116-ivan-2026-05-26-17hs-matriz", "data": "2026-05-26", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, //
-    { "id": "117-adair-2026-05-27-0830hs-sec", "data": "2026-05-27", "horario": "08:30hs", "local": "Secretaria Paroquial", "padre": "Padre Adair", "tipo": "Atendimento" }, //
-    { "id": "118-rafael-2026-05-27-1630hs-matriz", "data": "2026-05-27", "horario": "16:30hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" }, //
-    { "id": "119-adair-2026-05-28-16hs-matriz", "data": "2026-05-28", "horario": "16hs", "local": "Matriz", "padre": "Padre Adair", "tipo": "Confissões" }, //
-    { "id": "120-rafael-2026-05-29-17hs-matriz", "data": "2026-05-29", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" } //
+    // --- SEMANA 5 / JULHO ---
+    { "id": "ivan-2026-06-30-17hs-matriz", "data": "2026-06-30", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, //
+    { "id": "adair-2026-07-01-0830hs-sec", "data": "2026-07-01", "horario": "08:30hs", "local": "Secretaria Paroquial", "padre": "Padre Adair", "tipo": "Atendimento" }, //
+    { "id": "rafael-2026-07-01-17hs-matriz", "data": "2026-07-01", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" }, //
+    { "id": "ivan-2026-07-02-08hs-matriz", "data": "2026-07-02", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, //
+    { "id": "rafael-2026-07-03-17hs-matriz", "data": "2026-07-03", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" } //
 ];
 
   const getUniquePadres = () => Array.from(new Set(escalas.map((escala) => escala.padre)));
