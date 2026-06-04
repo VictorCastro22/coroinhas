@@ -1,4 +1,5 @@
 export const escala = [
+
     { "id": "rafael-2026-06-04-1530hs-matriz", "data": "2026-06-04", "horario": "15:30hs", "local": "Matriz", "padre": "Padre Rafael" }, //
     { "id": "adair-2026-06-03-18hs-sec", "data": "2026-06-04", "horario": "18hs", "local": "Centro de Pastoral", "padre": "Padre Adair" }, //
 
@@ -72,14 +73,15 @@ export const escala = [
     { "id": "adair-2026-06-14-19hs-matriz", "data": "2026-06-14", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" }, //
     { "id": "ivan-2026-06-14-19hs-urucara", "data": "2026-06-14", "horario": "19hs", "local": "Urucará", "padre": "Padre Ivan" }, //
 
+    { "id": "roberto-2026-06-15-19hs-sjoaobatista", "data": "2026-06-15", "horario": "19hs", "local": "São João Batista", "padre": "Padre Roberto" }, //
+
     // --- 16/06 (Terça-feira) ---
+    { "id": "john-2026-06-16-19hs-sjoaobatista", "data": "2026-06-16", "horario": "19hs", "local": "São João Batista", "padre": "Padre John Lennon" }, //
     { "id": "ivan-2026-06-16-17hs-matriz", "data": "2026-06-16", "horario": "17hs", "local": "Matriz (Confissões)", "padre": "Padre Ivan" }, //
     { "id": "rafael-2026-06-16-19hs-matriz", "data": "2026-06-16", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" }, //
 
-    // --- 17/06 (Quarta-feira) ---
-    { "id": "adair-2026-06-17-0830hs-sec", "data": "2026-06-17", "horario": "08:30hs", "local": "Secretaria Paroquial (Atendimento)", "padre": "Padre Adair" }, //
-    { "id": "rafael-2026-06-17-17hs-matriz", "data": "2026-06-17", "horario": "17hs", "local": "Matriz (Confissões)", "padre": "Padre Rafael" }, //
     { "id": "adair-2026-06-17-19hs-matriz", "data": "2026-06-17", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" }, //
+    { "id": "maxwell-2026-06-17-19hs-sjoaobatista", "data": "2026-06-17", "horario": "19hs", "local": "São João Batista", "padre": "Padre Maxwell" }, //
 
     // --- 18/06 (Quinta-feira) ---
     { "id": "ivan-2026-06-18-08hs-matriz", "data": "2026-06-18", "horario": "08hs", "local": "Matriz (Confissões)", "padre": "Padre Ivan" }, //
@@ -94,7 +96,7 @@ export const escala = [
     // --- 20/06 (Sábado) ---
     { "id": "ivan-2026-06-20-17hs-staluzia", "data": "2026-06-20", "horario": "17hs", "local": "Santa Luzia", "padre": "Padre Ivan" }, //
     { "id": "rafael-2026-06-20-17hs-pqsfe", "data": "2026-06-20", "horario": "17hs", "local": "Pq. Sta. Fé", "padre": "Padre Rafael" }, //
-    { "id": "ivan-2026-06-20-19hs-outrabanda", "data": "2026-06-20", "horario": "19hs", "local": "Outra Banda", "padre": "Padre Ivan" }, //
+    { "id": "ivan-2026-06-20-19hs-outrabanda", "data": "2026-06-20", "horario": "19hs", "local": "São João Batista", "padre": "Padre Ivan" }, //
     { "id": "rafael-2026-06-20-19hs-scjcoite", "data": "2026-06-20", "horario": "19hs", "local": "SCJ Coité", "padre": "Padre Rafael" }, //
     { "id": "adair-2026-06-20-19hs-matriz", "data": "2026-06-20", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" }, //
 
@@ -110,13 +112,12 @@ export const escala = [
     { "id": "adair-2026-06-21-19hs-matriz", "data": "2026-06-21", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" }, //
     { "id": "rafael-2026-06-21-19hs-urucara", "data": "2026-06-21", "horario": "19hs", "local": "Urucará", "padre": "Padre Rafael" }, //
 
+    { "id": "jpedro-2026-06-22-19hs-sjoaobatista", "data": "2026-06-22", "horario": "19hs", "local": "São João Batista", "padre": "Padre João Pedro" }, //
     // --- 23/06 (Terça-feira) ---
-    { "id": "ivan-2026-06-23-17hs-matriz", "data": "2026-06-23", "horario": "17hs", "local": "Matriz (Confissões)", "padre": "Padre Ivan" }, //
     { "id": "ivan-2026-06-23-19hs-matriz", "data": "2026-06-23", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" }, //
 
     // --- 24/06 (Quarta-feira) ---
-    { "id": "adair-2026-06-24-0830hs-sec", "data": "2026-06-24", "horario": "08:30hs", "local": "Secretaria Paroquial (Atendimento)", "padre": "Padre Adair" }, //
-    { "id": "rafael-2026-06-24-17hs-matriz", "data": "2026-06-24", "horario": "17hs", "local": "Matriz (Confissões)", "padre": "Padre Rafael" }, //
+    { "id": "adair-2026-06-22-19hs-sjoaobatista", "data": "2026-06-22", "horario": "19hs", "local": "São João Batista", "padre": "Padre Adair" }, //
     { "id": "rafael-2026-06-24-19hs-matriz", "data": "2026-06-24", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" }, //
 
     // --- 25/06 (Quinta-feira) ---
