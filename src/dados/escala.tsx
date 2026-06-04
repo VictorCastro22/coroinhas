@@ -1,21 +1,6 @@
 export const escala = [
-
-    // --- 01/06 (Segunda-feira) ---
-    { "id": "rafael-2026-06-01-19hs-coracaojesus", "data": "2026-06-01", "horario": "19hs", "local": "Coração de Jesus", "padre": "Padre Rafael" }, //
-    { "id": "ivan-2026-06-01-18hs-santoantonio", "data": "2026-06-01", "horario": "18hs", "local": "Santo Antônio", "padre": "Padre Ivan" }, //
-
-    // --- 02/06 (Terça-feira) ---
-    { "id": "ivan-2026-06-02-17hs-matriz", "data": "2026-06-02", "horario": "17hs", "local": "Matriz (Confissões)", "padre": "Padre Ivan" }, //
-    { "id": "rafael-2026-06-02-19hs-matriz", "data": "2026-06-02", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" }, //
-
-    // --- 03/06 (Quarta-feira) ---
-    { "id": "adair-2026-06-03-0830hs-sec", "data": "2026-06-03", "horario": "08:30hs", "local": "Secretaria Paroquial (Atendimento)", "padre": "Padre Adair" }, //
-    { "id": "rafael-2026-06-03-17hs-matriz", "data": "2026-06-03", "horario": "17hs", "local": "Matriz (Confissões)", "padre": "Padre Rafael" }, //
-    { "id": "ivan-2026-06-03-19hs-nsdores", "data": "2026-06-03", "horario": "19hs", "local": "Nossa Senhora das Dores", "padre": "Padre Ivan" }, //
-    { "id": "adair-2026-06-03-19hs-matriz", "data": "2026-06-03", "horario": "19hs", "local": "Matriz", "padre": "Padre Adair" }, //
-
-    // --- 04/06 (Quinta-feira) ---
     { "id": "rafael-2026-06-04-1530hs-matriz", "data": "2026-06-04", "horario": "15:30hs", "local": "Matriz", "padre": "Padre Rafael" }, //
+    { "id": "adair-2026-06-03-18hs-sec", "data": "2026-06-04", "horario": "18hs", "local": "Centro de Pastoral", "padre": "Padre Adair" }, //
 
     // --- 05/06 (Sexta-feira) ---
     { "id": "rafael-2026-06-05-17hs-matriz", "data": "2026-06-05", "horario": "17hs", "local": "Matriz (Confissões)", "padre": "Padre Rafael" }, //
