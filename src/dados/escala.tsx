@@ -5,6 +5,7 @@ export const escala = [
 
     // --- 05/06 (Sexta-feira) ---
     { "id": "rafael-2026-06-05-17hs-matriz", "data": "2026-06-05", "horario": "17hs", "local": "Matriz (Confissões)", "padre": "Padre Rafael" }, //
+    { "id": "adair-2026-06-05-18hs-cp", "data": "2026-06-05", "horario": "18hs", "local": "Centro de Pastoral", "padre": "Padre Adair" }, //
 
     // --- 06/06 (Sábado) ---
     { "id": "adair-2026-06-06-17hs-sluzia", "data": "2026-06-06", "horario": "17hs", "local": "S. Luzia", "padre": "Padre Adair" }, //
