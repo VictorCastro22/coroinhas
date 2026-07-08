@@ -22,12 +22,25 @@ const linksLocais: Record<string, string> = {
 };
 
 const escalas = [
+  { "id": "ivan-2026-07-08-17hs-confissoes-1", "data": "2026-07-08", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "ivan-2026-07-09-08hs-confissoes-1", "data": "2026-07-09", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "Padre Rafael-2026-07-10-17hs-confissoes-1", "data": "2026-07-10", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael" },
+  { "id": "Padre Rafael-2026-07-14-17hs-confissoes-1", "data": "2026-07-14", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael" },
+  { "id": "Padre Rafael-2026-07-15-08hs-Secretaria-1", "data": "2026-07-15", "horario": "08hs", "local": "Secretaria", "padre": "Padre Rafael" },
+  { "id": "ivan-2026-07-15-17hs-confissoes-1", "data": "2026-07-15", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "ivan-2026-07-16-08hs-confissoes-1", "data": "2026-07-16", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "Padre Rafael-2026-07-17-17hs-confissoes-1", "data": "2026-07-17", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael" },
+  { "id": "Padre Rafael-2026-07-21-17hs-confissoes-1", "data": "2026-07-21", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael" },
+  { "id": "Padre Rafael-2026-07-22-08hs-Secretaria-1", "data": "2026-07-22", "horario": "08hs", "local": "Secretaria", "padre": "Padre Rafael" },
+  { "id": "Padre Rafael-2026-07-22-17hs-confissoes-1", "data": "2026-07-22", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael" },
+  { "id": "ivan-2026-07-23-08hs-confissoes-1", "data": "2026-07-23", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "Padre Rafael-2026-07-24-17hs-confissoes-1", "data": "2026-07-24", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael" },
+  { "id": "ivan-2026-07-28-17hs-confissoes-1", "data": "2026-07-28", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "Padre Rafael-2026-07-29-08hs-Secretaria-1", "data": "2026-07-29", "horario": "08hs", "local": "Secretaria", "padre": "Padre Rafael" },
+  { "id": "Padre Rafael-2026-07-29-17hs-confissoes-1", "data": "2026-07-29", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael" },
+  { "id": "ivan-2026-07-30-08hs-confissoes-1", "data": "2026-07-30", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "Padre Rafael-2026-07-31-17hs-confissoes-1", "data": "2026-07-31", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael" },
 
-    { "id": "ivan-2026-06-30-17hs-matriz", "data": "2026-06-30", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, //
-    { "id": "adair-2026-07-01-0830hs-sec", "data": "2026-07-01", "horario": "08:30hs", "local": "Secretaria Paroquial", "padre": "Padre Adair", "tipo": "Atendimento" }, //
-    { "id": "rafael-2026-07-01-17hs-matriz", "data": "2026-07-01", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" }, //
-    { "id": "ivan-2026-07-02-08hs-matriz", "data": "2026-07-02", "horario": "08hs", "local": "Matriz", "padre": "Padre Ivan", "tipo": "Confissões" }, //
-    { "id": "rafael-2026-07-03-17hs-matriz", "data": "2026-07-03", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael", "tipo": "Confissões" } //
 ];
 
 const ProximaConfissao: React.FC = () => {
