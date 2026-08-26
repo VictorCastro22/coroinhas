@@ -22,44 +22,7 @@ const linksLocais: Record<string, string> = {
 };
 
 const escalas = [
-// --- 04/08 (Terça-feira) ---
-  { "id": "escalaagosto-ivan-2026-08-04-17hs-confissoes-1", "data": "2026-08-04", "horario": "17hs", "local": "Confissões", "padre": "Padre Ivan" },
 
-  // --- 05/08 (Quarta-feira) ---
-  { "id": "escalaagosto-pr-2026-08-05-08h30-atendimento-1", "data": "2026-08-05", "horario": "08h30", "local": "Atendimento", "padre": "Padre Rafael" },
-
-  // --- 06/08 (Quinta-feira) ---
-  { "id": "escalaagosto-ivan-2026-08-06-08hs-confissoes-1", "data": "2026-08-06", "horario": "08hs", "local": "Confissões", "padre": "Padre Ivan" },
-
-  // --- 07/08 (Sexta-feira) ---
-  { "id": "escalaagosto-confissoes-2026-08-07-17hs-confissoes-1", "data": "2026-08-07", "horario": "17hs", "local": "Confissões", "padre": "Não especificado" },
-
-  // --- 11/08 (Terça-feira) ---
-  { "id": "escalaagosto-ivan-2026-08-11-17hs-confissoes-1", "data": "2026-08-11", "horario": "17hs", "local": "Confissões", "padre": "Padre Ivan" },
-
-  // --- 12/08 (Quarta-feira) ---
-  { "id": "escalaagosto-pr-2026-08-12-08h30-atendimento-1", "data": "2026-08-12", "horario": "08h30", "local": "Atendimento", "padre": "Padre Rafael" },
-
-  // --- 13/08 (Quinta-feira) ---
-  { "id": "escalaagosto-ivan-2026-08-13-08hs-confissoes-1", "data": "2026-08-13", "horario": "08hs", "local": "Confissões", "padre": "Padre Ivan" },
-
-  // --- 14/08 (Sexta-feira) ---
-  { "id": "escalaagosto-pr-2026-08-14-17hs-confissoes-1", "data": "2026-08-14", "horario": "17hs", "local": "Confissões", "padre": "Padre Rafael" },
-
-  // --- 18/08 (Terça-feira) ---
-  { "id": "escalaagosto-ivan-2026-08-18-17hs-confissoes-1", "data": "2026-08-18", "horario": "17hs", "local": "Confissões", "padre": "Padre Ivan" },
-
-  // --- 19/08 (Quarta-feira) ---
-  { "id": "escalaagosto-pr-2026-08-19-08h30-atendimento-1", "data": "2026-08-19", "horario": "08h30", "local": "Atendimento", "padre": "Padre Rafael" },
-
-  // --- 20/08 (Quinta-feira) ---
-  { "id": "escalaagosto-ivan-2026-08-20-08hs-confissoes-1", "data": "2026-08-20", "horario": "08hs", "local": "Confissões", "padre": "Padre Ivan" },
-
-  // --- 21/08 (Sexta-feira) ---
-  { "id": "escalaagosto-pr-2026-08-21-17hs-confissoes-1", "data": "2026-08-21", "horario": "17hs", "local": "Confissões", "padre": "Padre Rafael" },
-
-  // --- 25/08 (Terça-feira) ---
-  { "id": "escalaagosto-ivan-2026-08-25-17hs-confissoes-1", "data": "2026-08-25", "horario": "17hs", "local": "Confissões", "padre": "Padre Ivan" },
 
   // --- 26/08 (Quarta-feira) ---
   { "id": "escalaagosto-pr-2026-08-26-08h30-atendimento-1", "data": "2026-08-26", "horario": "08h30", "local": "Atendimento", "padre": "Padre Rafael" },
