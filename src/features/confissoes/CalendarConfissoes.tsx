@@ -37,14 +37,18 @@ const CalendarConfissoes: React.FC = () => {
   }, []);
 
 const escalas = [
-  // --- 26/08 (Quarta-feira) ---
-  { "id": "escalaagosto-pr-2026-08-26-08h30-atendimento-1", "data": "2026-08-26", "horario": "08h30", "local": "Atendimento", "padre": "Padre Rafael" },
-
-  // --- 27/08 (Quinta-feira) ---
-  { "id": "escalaagosto-ivan-2026-08-27-08hs-confissoes-1", "data": "2026-08-27", "horario": "08hs", "local": "Confissões", "padre": "Padre Ivan" },
-
-  // --- 28/08 (Sexta-feira) ---
-  { "id": "escalaagosto-pr-2026-08-28-17hs-confissoes-1", "data": "2026-08-28", "horario": "17hs", "local": "Confissões", "padre": "Padre Rafael" }
+  { "id": "escalasetembro-rafael-2026-09-15-17hs-confissoes-1", "data": "2026-09-15", "horario": "17hs", "local": "Confissões", "padre": "Padre Rafael" },
+  { "id": "escalasetembro-rafael-2026-09-16-0830hs-secretaria-1", "data": "2026-09-16", "horario": "08:30hs", "local": "Secretaria", "padre": "Padre Rafael" },
+  { "id": "escalasetembro-ivan-2026-09-17-08hs-confissoes-1", "data": "2026-09-17", "horario": "08hs", "local": "Confissões", "padre": "Padre Ivan" },
+  { "id": "escalasetembro-ivan-2026-09-18-17hs-confissoes-1", "data": "2026-09-18", "horario": "17hs", "local": "Confissões", "padre": "Padre Ivan" },
+  { "id": "escalasetembro-ivan-2026-09-22-17hs-confissoes-1", "data": "2026-09-22", "horario": "17hs", "local": "Confissões", "padre": "Padre Ivan" },
+  { "id": "escalasetembro-rafael-2026-09-23-0830hs-secretaria-1", "data": "2026-09-23", "horario": "08:30hs", "local": "Secretaria", "padre": "Padre Rafael" },
+  { "id": "escalasetembro-ivan-2026-09-24-08hs-confissoes-1", "data": "2026-09-24", "horario": "08hs", "local": "Confissões", "padre": "Padre Ivan" },
+  { "id": "escalasetembro-rafael-2026-09-25-17hs-confissoes-1", "data": "2026-09-25", "horario": "17hs", "local": "Confissões", "padre": "Padre Rafael" },
+  { "id": "escalasetembro-ivan-2026-09-29-17hs-confissoes-1", "data": "2026-09-29", "horario": "17hs", "local": "Confissões", "padre": "Padre Ivan" },
+  { "id": "escalasetembro-rafael-2026-09-30-0830hs-secretaria-1", "data": "2026-09-30", "horario": "08:30hs", "local": "Secretaria", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-01-08hs-confissoes-1", "data": "2026-10-01", "horario": "08hs", "local": "Confissões", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-adefinir-2026-10-02-17hs-rosario-1", "data": "2026-10-02", "horario": "17hs", "local": "Rosário", "padre": "A definir" },
 
 ];
 
