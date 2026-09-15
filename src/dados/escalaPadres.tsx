@@ -1,50 +1,4 @@
 export const escalas = [
-{ "id": "escalasetembro-joaobatista-2026-09-05-19hs-matriz-1", "data": "2026-09-05", "horario": "19hs", "local": "Matriz", "padre": "Padre João Batista" },
-
-  // --- 06/09 (Domingo) ---
-  { "id": "escalasetembro-rafael-2026-09-06-07hs-matriz-2", "data": "2026-09-06", "horario": "07hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-joaopedro-2026-09-06-07hs-divino-3", "data": "2026-09-06", "horario": "07hs", "local": "Divino", "padre": "Padre João Pedro" },
-  { "id": "escalasetembro-joaopedro-2026-09-06-19hs-matriz-4", "data": "2026-09-06", "horario": "19hs", "local": "Matriz", "padre": "Padre João Pedro" },
-
-  // --- 07/09 (Segunda-feira) ---
-  { "id": "escalasetembro-edergilson-2026-09-07-19hs-matriz-5", "data": "2026-09-07", "horario": "19hs", "local": "Matriz", "padre": "Padre Edergilson" },
-
-  // --- 08/09 (Terça-feira) ---
-  { "id": "escalasetembro-eudasio-2026-09-08-09hs-matriz-6", "data": "2026-09-08", "horario": "09hs", "local": "Matriz", "padre": "Padre Eudásio" },
-  { "id": "escalasetembro-rafhael-2026-09-08-19hs-matriz-7", "data": "2026-09-08", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafhael" },
-
-  // --- 09/09 (Quarta-feira) ---
-  { "id": "escalasetembro-ivan-2026-09-09-19hs-nsdores-8", "data": "2026-09-09", "horario": "19hs", "local": "NS Dores", "padre": "Padre Ivan" },
-
-  // --- 10/09 (Quinta-feira) ---
-  { "id": "escalasetembro-ivan-2026-09-10-17hs-matriz-9", "data": "2026-09-10", "horario": "17hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-ivan-2026-09-10-19hs-matriz-10", "data": "2026-09-10", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-10-19hs-maerainha-11", "data": "2026-09-10", "horario": "19hs", "local": "Mãe Rainha", "padre": "Padre Rafael" },
-
-  // --- 11/09 (Sexta-feira) ---
-  { "id": "escalasetembro-ivan-2026-09-11-19hs-matriz-12", "data": "2026-09-11", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-11-19hs-nsgracas-13", "data": "2026-09-11", "horario": "19hs", "local": "NS Graças", "padre": "Padre Rafael" },
-
-  // --- 12/09 (Sábado) ---
-  { "id": "escalasetembro-rafael-2026-09-12-16hs-tvgama-14", "data": "2026-09-12", "horario": "16hs", "local": "Tv. Gama", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-rafael-2026-09-12-17hs-tvgama-15", "data": "2026-09-12", "horario": "17hs", "local": "Tv. Gama", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-12-17hs-saobenedito-16", "data": "2026-09-12", "horario": "17hs", "local": "São Benedito", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-ivan-2026-09-12-19hs-matriz-17", "data": "2026-09-12", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-12-19hs-sjbatista-18", "data": "2026-09-12", "horario": "19hs", "local": "São João Batista", "padre": "Padre Rafael" },
-
-  // --- 13/09 (Domingo) ---
-  { "id": "escalasetembro-ivan-2026-09-13-07hs-matriz-19", "data": "2026-09-13", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-13-07hs-divino-20", "data": "2026-09-13", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-13-09hs-matriz-21", "data": "2026-09-13", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-13-09hs-aparecida-22", "data": "2026-09-13", "horario": "09hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-13-11hs-vilares-23", "data": "2026-09-13", "horario": "11hs", "local": "Vilares", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-13-12hs-matriz-24", "data": "2026-09-13", "horario": "12hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-13-1530hs-staedwiges-25", "data": "2026-09-13", "horario": "15:30hs", "local": "Sta. Edwiges", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-13-16hs-matriz-26", "data": "2026-09-13", "horario": "16hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-13-17hs-divino-27", "data": "2026-09-13", "horario": "17hs", "local": "Divino", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-13-17hs-nsfatima-28", "data": "2026-09-13", "horario": "17hs", "local": "NS Fátima PSJ", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-13-19hs-nscandeias-29", "data": "2026-09-13", "horario": "19hs", "local": "NS Candeias", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-13-19hs-matriz-30", "data": "2026-09-13", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
 
   // --- 15/09 (Terça-feira) ---
   { "id": "escalasetembro-ivan-2026-09-15-19hs-matriz-31", "data": "2026-09-15", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
@@ -133,5 +87,9 @@ export const escalas = [
   { "id": "escalaoutubro-rafael-2026-10-01-19hs-staterezinha-81", "data": "2026-10-01", "horario": "19hs", "local": "Sta. Terezinha", "padre": "Padre Rafael" },
 
   // --- 02/10 (Sexta-feira) ---
-  { "id": "escalaoutubro-adefinir-2026-10-02-19hs-cp-82", "data": "2026-10-02", "horario": "19hs", "local": "CP", "padre": "A definir" }
+  { "id": "escalaoutubro-adefinir-2026-10-02-19hs-cp-82", "data": "2026-10-02", "horario": "19hs", "local": "CP", "padre": "A definir" },
+  { "id": "escalaoutubro-vladian-2026-10-08-19hs-abrigodospobres-83", "data": "2026-10-08", "horario": "19:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" },
+  { "id": "escalaoutubro-vladian-2026-10-09-19hs-abrigodospobres-844", "data": "2026-10-09", "horario": "19:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" },
+  { "id": "escalaoutubro-vladian-2026-10-10-19hs-abrigodospobres-85", "data": "2026-10-10", "horario": "19:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" },
+  { "id": "escalaoutubro-vladian-2026-10-11-17hs-abrigodospobres-86", "data": "2026-10-11", "horario": "17:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" }
 ];
