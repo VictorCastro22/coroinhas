@@ -1,27 +1,5 @@
 export const escala = [
 
-  // --- 15/09 (Terça-feira) ---
-  { "id": "escalasetembro-ivan-2026-09-15-19hs-matriz-1", "data": "2026-09-15", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-15-19hs-nsdores-1", "data": "2026-09-15", "horario": "19hs", "local": "NS Dores", "padre": "Padre Rafael" },
-
-  // --- 16/09 (Quarta-feira) ---
-  { "id": "escalasetembro-rafael-2026-09-16-19hs-nspiedade-1", "data": "2026-09-16", "horario": "19hs", "local": "NS Piedade", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-16-19hs-matriz-1", "data": "2026-09-16", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-
-  // --- 17/09 (Quinta-feira) ---
-  { "id": "escalasetembro-ivan-2026-09-17-19hs-matriz-1", "data": "2026-09-17", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-
-  // --- 18/09 (Sexta-feira) ---
-  { "id": "escalasetembro-ivan-2026-09-18-19hs-matriz-1", "data": "2026-09-18", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-
-  // --- 19/09 (Sábado) ---
-  { "id": "escalasetembro-eudasio-2026-09-19-10hs-staluzia-1", "data": "2026-09-19", "horario": "10hs", "local": "Sta. Luzia", "padre": "Padre Eudásio" },
-  { "id": "escalasetembro-alexandre-2026-09-19-17hs-matriz-1", "data": "2026-09-19", "horario": "17hs", "local": "Matriz", "padre": "Diácono Alexandre" },
-  { "id": "escalasetembro-rafael-2026-09-19-17hs-stoantonio-1", "data": "2026-09-19", "horario": "17hs", "local": "Sto. Antônio", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-19-17hs-staluzia-1", "data": "2026-09-19", "horario": "17hs", "local": "Santa Luzia", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-ivan-2026-09-19-19hs-matriz-1", "data": "2026-09-19", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-19-19hs-scdejesus-1", "data": "2026-09-19", "horario": "19hs", "local": "Sagrado Coração de Jesus", "padre": "Padre Rafael" },
-
   // --- 20/09 (Domingo) ---
   { "id": "escalasetembro-ivan-2026-09-20-07hs-matriz-1", "data": "2026-09-20", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
   { "id": "escalasetembro-rafael-2026-09-20-07hs-divino-1", "data": "2026-09-20", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
