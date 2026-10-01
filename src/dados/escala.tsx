@@ -16,6 +16,7 @@ export const escala = [
   { "id": "escalaoutubro-ivan-2026-10-03-17hs-stoantonio-1", "data": "2026-10-03", "horario": "17hs", "local": "Santo Antonio", "padre": "Padre Ivan" },
   { "id": "escalaoutubro-ivan-2026-10-03-19hs-matriz-1", "data": "2026-10-03", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
   { "id": "escalaoutubro-rafael-2026-10-03-19hs-enCentro Pastoralirapora-1", "data": "2026-10-03", "horario": "19hs", "local": "Enc. Pirapora", "padre": "Padre Rafael" },
+  { "id": "festaNossa Senhora Aparecida-roberto-2026-10-03-19hs-Nossa Senhora Aparecida-1", "data": "2026-10-03", "horario": "19H", "local": "Nossa Senhora Aparecida", "padre": "Padre Roberto Araújo" },
 
   // --- 04/10 (Domingo) ---
   { "id": "escalaoutubro-rafael-2026-10-04-07hs-matriz-1", "data": "2026-10-04", "horario": "07hs", "local": "Matriz", "padre": "Padre Rafael" },
@@ -25,38 +26,45 @@ export const escala = [
   { "id": "escalaoutubro-rafael-2026-10-04-16hs-matriz-1", "data": "2026-10-04", "horario": "16hs", "local": "Matriz", "padre": "Padre Rafael" },
   { "id": "escalaoutubro-joaopaulo-2026-10-04-17hs-divino-1", "data": "2026-10-04", "horario": "17hs", "local": "Divino", "padre": "Padre João Paulo" },
   { "id": "escalaoutubro-ivan-2026-10-04-17hs-psjoao-1", "data": "2026-10-04", "horario": "17hs", "local": "Parque São João", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-04-18hs-aparecida-1", "data": "2026-10-04", "horario": "18hs", "local": "Aparecida", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-rafael-2026-10-04-18hs-Nossa Senhora Aparecida-1", "data": "2026-10-04", "horario": "18hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Rafael" },
   { "id": "escalaoutubro-joaopaulo-2026-10-04-19hs-candeias-1", "data": "2026-10-04", "horario": "19hs", "local": "Candeias", "padre": "Padre João Paulo" },
   { "id": "escalaoutubro-rafael-2026-10-04-19hs-matriz-2", "data": "2026-10-04", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
 
   // --- 05/10 (Segunda-feira) ---
+  { "id": "festaaparecida-diego-2026-10-05-19hs-aparecida-1", "data": "2026-10-05", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Diego Felix" },
   { "id": "escalaoutubro-ivan-2026-10-05-19hs-saobenedito-1", "data": "2026-10-05", "horario": "19hs", "local": "São Benedito", "padre": "Padre Ivan" },
 
   // --- 06/10 (Terça-feira) ---
+  { "id": "festaaparecida-joaopaulo-2026-10-06-19hss-aparecida-1", "data": "2026-10-06", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre João Paulo" },
   { "id": "escalaoutubro-ivan-2026-10-06-19hs-rosario-1", "data": "2026-10-06", "horario": "19hs", "local": "Rosário", "padre": "Padre Ivan" },
   { "id": "escalaoutubro-rafael-2026-10-06-19hs-santaedwiges-1", "data": "2026-10-06", "horario": "19hs", "local": "Santa Edwiges", "padre": "Padre Rafael" },
 
   // --- 07/10 (Quarta-feira) ---
+  { "id": "festaaparecida-washington-2026-10-07-19hss-aparecida-1", "data": "2026-10-07", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Washington" },
   { "id": "escalaoutubro-rafael-2026-10-07-19hs-nsrosario-1", "data": "2026-10-07", "horario": "19hs", "local": "Rosário", "padre": "Padre Rafael" },
 
   // --- 08/10 (Quinta-feira) ---
+  { "id": "festaaparecida-henrique-2026-10-08-19hss-aparecida-1", "data": "2026-10-08", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Henrique Bezerra" },
   { "id": "escalaoutubro-rafael-2026-10-08-0615-irmas-1", "data": "2026-10-08", "horario": "06:15", "local": "Irmãs", "padre": "Padre Rafael" },
   { "id": "escalaoutubro-vladian-2026-10-08-19hs-abrigodospobres-1", "data": "2026-10-08", "horario": "19:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" },
   { "id": "escalaoutubro-ivan-2026-10-08-19hs-maerainha-1", "data": "2026-10-08", "horario": "19hs", "local": "Mãe Rainha", "padre": "Padre Ivan" },
   { "id": "escalaoutubro-rafael-2026-10-08-19hs-matriz-1", "data": "2026-10-08", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
 
   // --- 09/10 (Sexta-feira) ---
+  { "id": "festaaparecida-joaopedro-2026-10-09-19hss-aparecida-1", "data": "2026-10-09", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre João Pedro" },
   { "id": "escalaoutubro-vladian-2026-10-09-19hs-abrigodospobres-1", "data": "2026-10-09", "horario": "19:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" },
   { "id": "escalaoutubro-edgle-2026-10-09-19hs-matriz-1", "data": "2026-10-09", "horario": "19hs", "local": "Matriz", "padre": "Frei Edglê" },
   { "id": "escalaoutubro-ivan-2026-10-09-19hs-mororo-1", "data": "2026-10-09", "horario": "19hs", "local": "Mororó", "padre": "Padre Ivan" },
 
   // --- 10/10 (Sábado) ---
+  { "id": "festaaparecida-edgle-2026-10-10-19hss-aparecida-1", "data": "2026-10-10", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Frei Edglê" },
   { "id": "escalaoutubro-ivan-2026-10-10-17hs-stadulce-1", "data": "2026-10-10", "horario": "17hs", "local": "Sta Dulce", "padre": "Padre Ivan" },
   { "id": "escalaoutubro-vladian-2026-10-10-19hs-abrigodospobres-1", "data": "2026-10-10", "horario": "19:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" },
   { "id": "escalaoutubro-rafael-2026-10-10-19hs-matriz-1", "data": "2026-10-10", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
   { "id": "escalaoutubro-ivan-2026-10-10-19hs-sjbatista-1", "data": "2026-10-10", "horario": "19hs", "local": "São João Batista", "padre": "Padre Ivan" },
 
   // --- 11/10 (Domingo) ---
+  
   { "id": "escalaoutubro-ivan-2026-10-11-07hs-matriz-1", "data": "2026-10-11", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
   { "id": "escalaoutubro-rafael-2026-10-11-07hs-divino-1", "data": "2026-10-11", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
   { "id": "escalaoutubro-ivan-2026-10-11-09hs-matriz-1", "data": "2026-10-11", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
@@ -64,14 +72,14 @@ export const escala = [
   { "id": "escalaoutubro-vladian-2026-10-11-17hs-abrigodospobres-1", "data": "2026-10-11", "horario": "17:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" },
   { "id": "escalaoutubro-rafael-2026-10-11-17hs-divino-1", "data": "2026-10-11", "horario": "17hs", "local": "Divino", "padre": "Padre Rafael" },
   { "id": "escalaoutubro-ivan-2026-10-11-17hs-psjoao-1", "data": "2026-10-11", "horario": "17hs", "local": "Parque São João", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-ivan-2026-10-11-18hs-aparecida-1", "data": "2026-10-11", "horario": "18hs", "local": "Aparecida", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-ivan-2026-10-11-18hs-Nossa Senhora Aparecida-1", "data": "2026-10-11", "horario": "18hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Ivan" },
   { "id": "escalaoutubro-ivan-2026-10-11-19hs-candeias-1", "data": "2026-10-11", "horario": "19hs", "local": "Candeias", "padre": "Padre Ivan" },
   { "id": "escalaoutubro-rafael-2026-10-11-19hs-matriz-1", "data": "2026-10-11", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
 
   // --- 12/10 (Segunda-feira) ---
   { "id": "escalaoutubro-rafael-2026-10-12-11hs-divino-1", "data": "2026-10-12", "horario": "11hs", "local": "Divino", "padre": "Padre Rafael" },
   { "id": "escalaoutubro-rafael-2026-10-12-17hs-matriz-1", "data": "2026-10-12", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-rafael-2026-10-12-19hs-aparecida-1", "data": "2026-10-12", "horario": "19hs", "local": "Aparecida", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-rafael-2026-10-12-19hs-Nossa Senhora Aparecida-1", "data": "2026-10-12", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Rafael" },
 
   // --- 13/10 (Terça-feira) ---
   { "id": "escalaoutubro-ivan-2026-10-13-12hs-matriz-1", "data": "2026-10-13", "horario": "12hs", "local": "Matriz", "padre": "Padre Ivan" },
@@ -103,7 +111,7 @@ export const escala = [
   { "id": "escalaoutubro-rafael-2026-10-18-07hs-matriz-1", "data": "2026-10-18", "horario": "07hs", "local": "Matriz", "padre": "Padre Rafael" },
   { "id": "escalaoutubro-ivan-2026-10-18-07hs-divino-1", "data": "2026-10-18", "horario": "07hs", "local": "Divino", "padre": "Padre Ivan" },
   { "id": "escalaoutubro-ivan-2026-10-18-09hs-matriz-1", "data": "2026-10-18", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-18-09hs-aparecida-1", "data": "2026-10-18", "horario": "09hs", "local": "Aparecida", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-rafael-2026-10-18-09hs-Nossa Senhora Aparecida-1", "data": "2026-10-18", "horario": "09hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Rafael" },
   { "id": "escalaoutubro-rafael-2026-10-18-11hs-saojose-1", "data": "2026-10-18", "horario": "11hs", "local": "São José", "padre": "Padre Rafael" },
   { "id": "escalaoutubro-ivan-2026-10-18-16hs-matriz-1", "data": "2026-10-18", "horario": "16hs", "local": "Matriz", "padre": "Padre Ivan" },
   { "id": "escalaoutubro-rafael-2026-10-18-17hs-divino-1", "data": "2026-10-18", "horario": "17hs", "local": "Divino", "padre": "Padre Rafael" },
@@ -137,7 +145,7 @@ export const escala = [
   { "id": "escalaoutubro-ivan-2026-10-25-07hs-matriz-1", "data": "2026-10-25", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
   { "id": "escalaoutubro-rafael-2026-10-25-07hs-divino-1", "data": "2026-10-25", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
   { "id": "escalaoutubro-ivan-2026-10-25-09hs-matriz-1", "data": "2026-10-25", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-25-09hs-aparecida-1", "data": "2026-10-25", "horario": "09hs", "local": "Aparecida", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-rafael-2026-10-25-09hs-Nossa Senhora Aparecida-1", "data": "2026-10-25", "horario": "09hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Rafael" },
   { "id": "escalaoutubro-ivan-2026-10-25-1530-staedwiges-1", "data": "2026-10-25", "horario": "15:30", "local": "Santa Edwiges", "padre": "Padre Ivan" },
   { "id": "escalaoutubro-rafael-2026-10-25-16hs-matriz-1", "data": "2026-10-25", "horario": "16hs", "local": "Matriz", "padre": "Padre Rafael" },
   { "id": "escalaoutubro-ivan-2026-10-25-17hs-divino-1", "data": "2026-10-25", "horario": "17hs", "local": "Divino", "padre": "Padre Ivan" },
