@@ -106,7 +106,7 @@ const escalas = [
   { "id": "escalaoutubro-ivan-2026-10-03-17hs-stoantonio-1", "data": "2026-10-03", "horario": "17hs", "local": "Santo Antonio", "padre": "Padre Ivan" },
   { "id": "escalaoutubro-ivan-2026-10-03-19hs-matriz-1", "data": "2026-10-03", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
   { "id": "escalaoutubro-rafael-2026-10-03-19hs-enCentro Pastoralirapora-1", "data": "2026-10-03", "horario": "19hs", "local": "Enc. Pirapora", "padre": "Padre Rafael" },
-  { "id": "festaNossa Senhora Aparecida-roberto-2026-10-03-19hs-Nossa Senhora Aparecida-1", "data": "2026-10-03", "horario": "19H", "local": "Nossa Senhora Aparecida", "padre": "Padre Roberto Araújo" },
+  { "id": "festaNossa Senhora Aparecida-roberto-2026-10-03-19hs-Nossa Senhora Aparecida-1", "data": "2026-10-03", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Roberto Araújo" },
 
   // --- 04/10 (Domingo) ---
   { "id": "escalaoutubro-rafael-2026-10-04-07hs-matriz-1", "data": "2026-10-04", "horario": "07hs", "local": "Matriz", "padre": "Padre Rafael" },
