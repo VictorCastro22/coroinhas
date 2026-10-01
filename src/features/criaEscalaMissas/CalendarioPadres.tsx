@@ -89,101 +89,172 @@ const CalendarioPadres: React.FC = () => {
   };
 
 const escalas = [
-
-  // --- 15/09 (Terça-feira) ---
-  { "id": "escalasetembro-ivan-2026-09-15-19hs-matriz-1", "data": "2026-09-15", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-15-19hs-nsdores-1", "data": "2026-09-15", "horario": "19hs", "local": "NS Dores", "padre": "Padre Rafael" },
-
-  // --- 16/09 (Quarta-feira) ---
-  { "id": "escalasetembro-rafael-2026-09-16-19hs-nspiedade-1", "data": "2026-09-16", "horario": "19hs", "local": "NS Piedade", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-16-19hs-matriz-1", "data": "2026-09-16", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-
-  // --- 17/09 (Quinta-feira) ---
-  { "id": "escalasetembro-ivan-2026-09-17-19hs-matriz-1", "data": "2026-09-17", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-
-  // --- 18/09 (Sexta-feira) ---
-  { "id": "escalasetembro-ivan-2026-09-18-19hs-matriz-1", "data": "2026-09-18", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-
-  // --- 19/09 (Sábado) ---
-  { "id": "escalasetembro-eudasio-2026-09-19-10hs-staluzia-1", "data": "2026-09-19", "horario": "10hs", "local": "Sta. Luzia", "padre": "Padre Eudásio" },
-  { "id": "escalasetembro-alexandre-2026-09-19-17hs-matriz-1", "data": "2026-09-19", "horario": "17hs", "local": "Matriz", "padre": "Diácono Alexandre" },
-  { "id": "escalasetembro-rafael-2026-09-19-17hs-stoantonio-1", "data": "2026-09-19", "horario": "17hs", "local": "Sto. Antônio", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-19-17hs-staluzia-1", "data": "2026-09-19", "horario": "17hs", "local": "Santa Luzia", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-ivan-2026-09-19-19hs-matriz-1", "data": "2026-09-19", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-19-19hs-scdejesus-1", "data": "2026-09-19", "horario": "19hs", "local": "Sagrado Coração de Jesus", "padre": "Padre Rafael" },
-
-  // --- 20/09 (Domingo) ---
-  { "id": "escalasetembro-ivan-2026-09-20-07hs-matriz-1", "data": "2026-09-20", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-20-07hs-divino-1", "data": "2026-09-20", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-20-09hs-matriz-1", "data": "2026-09-20", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-20-09hs-aparecida-1", "data": "2026-09-20", "horario": "09hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-20-11hs-saojose-1", "data": "2026-09-20", "horario": "11hs", "local": "São José", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-20-16hs-matriz-1", "data": "2026-09-20", "horario": "16hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-20-17hs-divino-1", "data": "2026-09-20", "horario": "17hs", "local": "Divino", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-20-17hs-nsfatima-1", "data": "2026-09-20", "horario": "17hs", "local": "NS Fátima PSJ", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-rafael-2026-09-20-19hs-nscandeias-1", "data": "2026-09-20", "horario": "19hs", "local": "NS Candeias", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-20-19hs-matriz-1", "data": "2026-09-20", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-
-  // --- 21/09 (Segunda-feira) ---
-  { "id": "escalasetembro-ivan-2026-09-21-19hs-staterezinha-1", "data": "2026-09-21", "horario": "19hs", "local": "Sta. Terezinha", "padre": "Padre Ivan" },
-
-  // --- 22/09 (Terça-feira) ---
-  { "id": "escalasetembro-ivan-2026-09-22-19hs-matriz-1", "data": "2026-09-22", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-
-  // --- 23/09 (Quarta-feira) ---
-  { "id": "escalasetembro-adefinir-2026-09-23-19hs-matriz-1", "data": "2026-09-23", "horario": "19hs", "local": "Matriz", "padre": "A definir" },
-  { "id": "escalasetembro-ivan-2026-09-23-19hs-nspiedade-1", "data": "2026-09-23", "horario": "19hs", "local": "NS Piedade", "padre": "Padre Ivan" },
-
-  // --- 24/09 (Quinta-feira) ---
-  { "id": "escalasetembro-rafael-2026-09-24-19hs-matriz-1", "data": "2026-09-24", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-24-19hs-pirapora-1", "data": "2026-09-24", "horario": "19hs", "local": "Pirapora", "padre": "Padre Ivan" },
-
-  // --- 25/09 (Sexta-feira) ---
-  { "id": "escalasetembro-rafael-2026-09-25-19hs-matriz-1", "data": "2026-09-25", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
-
-  // --- 26/09 (Sábado) ---
-  { "id": "escalasetembro-rafhael-2026-09-26-10hs-matriz-1", "data": "2026-09-26", "horario": "10hs", "local": "Matriz", "padre": "Padre Rafhael" },
-  { "id": "escalasetembro-rafael-2026-09-26-16hs-matriz-1", "data": "2026-09-26", "horario": "16hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-26-16hs-tvgama-1", "data": "2026-09-26", "horario": "16hs", "local": "Tv. Gama", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-ivan-2026-09-26-17hs-guabiraba-1", "data": "2026-09-26", "horario": "17hs", "local": "Guabiraba", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-26-19hs-matriz-1", "data": "2026-09-26", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-26-19hs-sjbatista-1", "data": "2026-09-26", "horario": "19hs", "local": "São João Batista", "padre": "Padre Ivan" },
-
-  // --- 27/09 (Domingo) ---
-  { "id": "escalasetembro-ivan-2026-09-27-07hs-matriz-1", "data": "2026-09-27", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-27-07hs-divino-1", "data": "2026-09-27", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-27-09hs-matriz-1", "data": "2026-09-27", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-27-09hs-aparecida-1", "data": "2026-09-27", "horario": "09hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-27-1530hs-staedwiges-1", "data": "2026-09-27", "horario": "15:30hs", "local": "Sta. Edwiges", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-27-16hs-matriz-1", "data": "2026-09-27", "horario": "16hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-27-17hs-divino-1", "data": "2026-09-27", "horario": "17hs", "local": "Divino", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-27-17hs-nsfatima-1", "data": "2026-09-27", "horario": "17hs", "local": "NS Fátima PSJ", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-27-19hs-nscandeias-1", "data": "2026-09-27", "horario": "19hs", "local": "NS Candeias", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-27-19hs-matriz-1", "data": "2026-09-27", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
-
-  // --- 28/09 (Segunda-feira) ---
-  // Sem liturgias com padre listado
-
-  // --- 29/09 (Terça-feira) ---
-  { "id": "escalasetembro-ivan-2026-09-29-19hs-matriz-1", "data": "2026-09-29", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalasetembro-rafael-2026-09-29-19hs-saopedro-1", "data": "2026-09-29", "horario": "19hs", "local": "São Pedro", "padre": "Padre Rafael" },
-
   // --- 30/09 (Quarta-feira) ---
   { "id": "escalasetembro-rafael-2026-09-30-19hs-matriz-1", "data": "2026-09-30", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
   { "id": "escalasetembro-ivan-2026-09-30-19hs-mororo-1", "data": "2026-09-30", "horario": "19hs", "local": "Mororó", "padre": "Padre Ivan" },
 
   // --- 01/10 (Quinta-feira) ---
+
   { "id": "escalaoutubro-ivan-2026-10-01-19hs-matriz-1", "data": "2026-10-01", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-01-19hs-staterezinha-1", "data": "2026-10-01", "horario": "19hs", "local": "Sta. Terezinha", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-rafael-2026-10-01-19hs-staterezinha-1", "data": "2026-10-01", "horario": "19hs", "local": "Santa Terezinha", "padre": "Padre Rafael" },
 
   // --- 02/10 (Sexta-feira) ---
-  { "id": "escalaoutubro-adefinir-2026-10-02-19hs-cp-1", "data": "2026-10-02", "horario": "19hs", "local": "CP", "padre": "A definir" },
+  { "id": "escalaoutubro-adefinir-2026-10-02-19hs-Centro Pastoral-1", "data": "2026-10-02", "horario": "19hs", "local": "Centro Pastoral", "padre": "A definir" },
 
+  // --- 03/10 (Sábado) ---
+  { "id": "escalaoutubro-rafael-2026-10-03-17hs-staluzia-1", "data": "2026-10-03", "horario": "17hs", "local": "Santa Luzia", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-03-17hs-stoantonio-1", "data": "2026-10-03", "horario": "17hs", "local": "Santo Antonio", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-ivan-2026-10-03-19hs-matriz-1", "data": "2026-10-03", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-03-19hs-enCentro Pastoralirapora-1", "data": "2026-10-03", "horario": "19hs", "local": "Enc. Pirapora", "padre": "Padre Rafael" },
+
+  // --- 04/10 (Domingo) ---
+  { "id": "escalaoutubro-rafael-2026-10-04-07hs-matriz-1", "data": "2026-10-04", "horario": "07hs", "local": "Matriz", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-04-07hs-divino-1", "data": "2026-10-04", "horario": "07hs", "local": "Divino", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-ivan-2026-10-04-09hs-matriz-1", "data": "2026-10-04", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-ivan-2026-10-04-11hs-saojose-1", "data": "2026-10-04", "horario": "11hs", "local": "São José", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-04-16hs-matriz-1", "data": "2026-10-04", "horario": "16hs", "local": "Matriz", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-joaopaulo-2026-10-04-17hs-divino-1", "data": "2026-10-04", "horario": "17hs", "local": "Divino", "padre": "Padre João Paulo" },
+  { "id": "escalaoutubro-ivan-2026-10-04-17hs-psjoao-1", "data": "2026-10-04", "horario": "17hs", "local": "Parque São João", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-04-18hs-aparecida-1", "data": "2026-10-04", "horario": "18hs", "local": "Aparecida", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-joaopaulo-2026-10-04-19hs-candeias-1", "data": "2026-10-04", "horario": "19hs", "local": "Candeias", "padre": "Padre João Paulo" },
+  { "id": "escalaoutubro-rafael-2026-10-04-19hs-matriz-2", "data": "2026-10-04", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
+
+  // --- 05/10 (Segunda-feira) ---
+  { "id": "escalaoutubro-ivan-2026-10-05-19hs-saobenedito-1", "data": "2026-10-05", "horario": "19hs", "local": "São Benedito", "padre": "Padre Ivan" },
+
+  // --- 06/10 (Terça-feira) ---
+  { "id": "escalaoutubro-ivan-2026-10-06-19hs-rosario-1", "data": "2026-10-06", "horario": "19hs", "local": "Rosário", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-06-19hs-santaedwiges-1", "data": "2026-10-06", "horario": "19hs", "local": "Santa Edwiges", "padre": "Padre Rafael" },
+
+  // --- 07/10 (Quarta-feira) ---
+  { "id": "escalaoutubro-rafael-2026-10-07-19hs-nsrosario-1", "data": "2026-10-07", "horario": "19hs", "local": "Rosário", "padre": "Padre Rafael" },
+
+  // --- 08/10 (Quinta-feira) ---
+  { "id": "escalaoutubro-rafael-2026-10-08-0615-irmas-1", "data": "2026-10-08", "horario": "06:15", "local": "Irmãs", "padre": "Padre Rafael" },
   { "id": "escalaoutubro-vladian-2026-10-08-19hs-abrigodospobres-1", "data": "2026-10-08", "horario": "19:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" },
-  { "id": "escalaoutubro-vladian-2026-10-09-19hs-abrigodospobres-1", "data": "2026-10-09", "horario": "19:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" },
-  { "id": "escalaoutubro-vladian-2026-10-10-19hs-abrigodospobres-1", "data": "2026-10-10", "horario": "19:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" },
-  { "id": "escalaoutubro-vladian-2026-10-11-17hs-abrigodospobres-1", "data": "2026-10-11", "horario": "17:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" }
+  { "id": "escalaoutubro-ivan-2026-10-08-19hs-maerainha-1", "data": "2026-10-08", "horario": "19hs", "local": "Mãe Rainha", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-08-19hs-matriz-1", "data": "2026-10-08", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
 
+  // --- 09/10 (Sexta-feira) ---
+  { "id": "escalaoutubro-vladian-2026-10-09-19hs-abrigodospobres-1", "data": "2026-10-09", "horario": "19:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" },
+  { "id": "escalaoutubro-edgle-2026-10-09-19hs-matriz-1", "data": "2026-10-09", "horario": "19hs", "local": "Matriz", "padre": "Frei Edglê" },
+  { "id": "escalaoutubro-ivan-2026-10-09-19hs-mororo-1", "data": "2026-10-09", "horario": "19hs", "local": "Mororó", "padre": "Padre Ivan" },
+
+  // --- 10/10 (Sábado) ---
+  { "id": "escalaoutubro-ivan-2026-10-10-17hs-stadulce-1", "data": "2026-10-10", "horario": "17hs", "local": "Sta Dulce", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-vladian-2026-10-10-19hs-abrigodospobres-1", "data": "2026-10-10", "horario": "19:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" },
+  { "id": "escalaoutubro-rafael-2026-10-10-19hs-matriz-1", "data": "2026-10-10", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-10-19hs-sjbatista-1", "data": "2026-10-10", "horario": "19hs", "local": "São João Batista", "padre": "Padre Ivan" },
+
+  // --- 11/10 (Domingo) ---
+  { "id": "escalaoutubro-ivan-2026-10-11-07hs-matriz-1", "data": "2026-10-11", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-11-07hs-divino-1", "data": "2026-10-11", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-11-09hs-matriz-1", "data": "2026-10-11", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-11-16hs-matriz-1", "data": "2026-10-11", "horario": "16hs", "local": "Matriz", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-vladian-2026-10-11-17hs-abrigodospobres-1", "data": "2026-10-11", "horario": "17:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" },
+  { "id": "escalaoutubro-rafael-2026-10-11-17hs-divino-1", "data": "2026-10-11", "horario": "17hs", "local": "Divino", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-11-17hs-psjoao-1", "data": "2026-10-11", "horario": "17hs", "local": "Parque São João", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-ivan-2026-10-11-18hs-aparecida-1", "data": "2026-10-11", "horario": "18hs", "local": "Aparecida", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-ivan-2026-10-11-19hs-candeias-1", "data": "2026-10-11", "horario": "19hs", "local": "Candeias", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-11-19hs-matriz-1", "data": "2026-10-11", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
+
+  // --- 12/10 (Segunda-feira) ---
+  { "id": "escalaoutubro-rafael-2026-10-12-11hs-divino-1", "data": "2026-10-12", "horario": "11hs", "local": "Divino", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-rafael-2026-10-12-17hs-matriz-1", "data": "2026-10-12", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-rafael-2026-10-12-19hs-aparecida-1", "data": "2026-10-12", "horario": "19hs", "local": "Aparecida", "padre": "Padre Rafael" },
+
+  // --- 13/10 (Terça-feira) ---
+  { "id": "escalaoutubro-ivan-2026-10-13-12hs-matriz-1", "data": "2026-10-13", "horario": "12hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-13-17hs-vilares-1", "data": "2026-10-13", "horario": "17hs", "local": "Vilares", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-rafael-2026-10-13-19hs-pqsjoao-1", "data": "2026-10-13", "horario": "19hs", "local": "Parque São João", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-13-19hs-matriz-1", "data": "2026-10-13", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
+
+  // --- 14/10 (Quarta-feira) ---
+  { "id": "escalaoutubro-ivan-2026-10-14-19hs-nsprovidencia-1", "data": "2026-10-14", "horario": "19hs", "local": "NS Providência", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-14-19hs-matriz-1", "data": "2026-10-14", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
+
+  // --- 15/10 (Quinta-feira) ---
+  { "id": "escalaoutubro-rafael-2026-10-15-0615-irmas-1", "data": "2026-10-15", "horario": "06:15", "local": "Irmãs", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-rafael-2026-10-15-19hs-shalom-1", "data": "2026-10-15", "horario": "19hs", "local": "Shalom", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-15-19hs-matriz-1", "data": "2026-10-15", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
+
+  // --- 16/10 (Sexta-feira) ---
+  { "id": "escalaoutubro-ivan-2026-10-16-19hs-nsgracas-1", "data": "2026-10-16", "horario": "19hs", "local": "NS Graças", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-flavio-2026-10-16-19hs-staedwiges-1", "data": "2026-10-16", "horario": "19hs", "local": "Santa Edwiges", "padre": "Padre Flávio" },
+  { "id": "escalaoutubro-rafael-2026-10-16-19hs-matriz-1", "data": "2026-10-16", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
+
+  // --- 17/10 (Sábado) ---
+  { "id": "escalaoutubro-ivan-2026-10-17-17hs-staluzia-1", "data": "2026-10-17", "horario": "17hs", "local": "Santa Luzia", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-17-17hs-stoantonio-1", "data": "2026-10-17", "horario": "17hs", "local": "Santo Antonio", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-antoniocarlos-2026-10-17-19hs-matriz-1", "data": "2026-10-17", "horario": "19hs", "local": "Matriz", "padre": "Dom Antônio" },
+  { "id": "escalaoutubro-ivan-2026-10-17-19hs-scjesus-1", "data": "2026-10-17", "horario": "19hs", "local": "Sagrado Coração de Jesus", "padre": "Padre Ivan" },
+
+  // --- 18/10 (Domingo) ---
+  { "id": "escalaoutubro-rafael-2026-10-18-07hs-matriz-1", "data": "2026-10-18", "horario": "07hs", "local": "Matriz", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-18-07hs-divino-1", "data": "2026-10-18", "horario": "07hs", "local": "Divino", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-ivan-2026-10-18-09hs-matriz-1", "data": "2026-10-18", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-18-09hs-aparecida-1", "data": "2026-10-18", "horario": "09hs", "local": "Aparecida", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-rafael-2026-10-18-11hs-saojose-1", "data": "2026-10-18", "horario": "11hs", "local": "São José", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-18-16hs-matriz-1", "data": "2026-10-18", "horario": "16hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-18-17hs-divino-1", "data": "2026-10-18", "horario": "17hs", "local": "Divino", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-18-17hs-psjoao-1", "data": "2026-10-18", "horario": "17hs", "local": "Parque São João", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-18-18hs-maerainha-1", "data": "2026-10-18", "horario": "18hs", "local": "Mãe Rainha", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-18-19hs-candeias-1", "data": "2026-10-18", "horario": "19hs", "local": "Candeias", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-18-19hs-matriz-2", "data": "2026-10-18", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
+
+  // --- 20/10 (Terça-feira) ---
+  { "id": "escalaoutubro-ivan-2026-10-20-19hs-matriz-1", "data": "2026-10-20", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-20-19hs-saopedro-1", "data": "2026-10-20", "horario": "19hs", "local": "São Pedro", "padre": "Padre Rafael" },
+
+  // --- 21/10 (Quarta-feira) ---
+  { "id": "escalaoutubro-rafael-2026-10-21-19hs-matriz-1", "data": "2026-10-21", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-21-19hs-nsdores-1", "data": "2026-10-21", "horario": "19hs", "local": "NS Dores", "padre": "Padre Ivan" },
+
+  // --- 22/10 (Quinta-feira) ---
+  { "id": "escalaoutubro-rafael-2026-10-22-0615-irmas-1", "data": "2026-10-22", "horario": "06:15", "local": "Irmãs", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-22-19hs-matriz-1", "data": "2026-10-22", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
+
+  // --- 23/10 (Sexta-feira) ---
+  { "id": "escalaoutubro-aurenio-2026-10-23-19hs-matriz-1", "data": "2026-10-23", "horario": "19hs", "local": "Matriz", "padre": "Padre Aurênio" },
+  { "id": "escalaoutubro-rafael-2026-10-23-19hs-staterezinha-1", "data": "2026-10-23", "horario": "19hs", "local": "Santa Terezinha", "padre": "Padre Rafael" },
+
+  // --- 24/10 (Sábado) ---
+  { "id": "escalaoutubro-rafael-2026-10-24-17hs-starita-1", "data": "2026-10-24", "horario": "17hs", "local": "Santa Rita", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-24-19hs-matriz-1", "data": "2026-10-24", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-24-19hs-sjbatista-1", "data": "2026-10-24", "horario": "19hs", "local": "São João Batista", "padre": "Padre Rafael" },
+
+  // --- 25/10 (Domingo) ---
+  { "id": "escalaoutubro-ivan-2026-10-25-07hs-matriz-1", "data": "2026-10-25", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-25-07hs-divino-1", "data": "2026-10-25", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-25-09hs-matriz-1", "data": "2026-10-25", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-25-09hs-aparecida-1", "data": "2026-10-25", "horario": "09hs", "local": "Aparecida", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-25-1530-staedwiges-1", "data": "2026-10-25", "horario": "15:30", "local": "Santa Edwiges", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-25-16hs-matriz-1", "data": "2026-10-25", "horario": "16hs", "local": "Matriz", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-25-17hs-divino-1", "data": "2026-10-25", "horario": "17hs", "local": "Divino", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-25-17hs-psjoao-1", "data": "2026-10-25", "horario": "17hs", "local": "Parque São João", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-rafael-2026-10-25-19hs-candeias-1", "data": "2026-10-25", "horario": "19hs", "local": "Candeias", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-25-19hs-matriz-2", "data": "2026-10-25", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
+
+  // --- 27/10 (Terça-feira) ---
+  { "id": "escalaoutubro-ivan-2026-10-27-19hs-matriz-1", "data": "2026-10-27", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-rafael-2026-10-27-19hs-delta-1", "data": "2026-10-27", "horario": "19hs", "local": "Delta", "padre": "Padre Rafael" },
+
+  // --- 28/10 (Quarta-feira) ---
+  { "id": "escalaoutubro-ivan-2026-10-28-19hs-matriz-1", "data": "2026-10-28", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
+
+  // --- 29/10 (Quinta-feira) ---
+  { "id": "escalaoutubro-rafael-2026-10-29-0615-irmas-1", "data": "2026-10-29", "horario": "06:15", "local": "Irmãs", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-rafael-2026-10-29-0830-visitas-1", "data": "2026-10-29", "horario": "08:30", "local": "Visitas", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-rafael-2026-10-29-19hs-matriz-1", "data": "2026-10-29", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
+  { "id": "escalaoutubro-ivan-2026-10-29-19hs-nspiedade-1", "data": "2026-10-29", "horario": "19hs", "local": "NS Piedade", "padre": "Padre Ivan" },
+
+  // --- 30/10 (Sexta-feira) ---
+  { "id": "escalaoutubro-ivanerafael-2026-10-30-19hs-amanari-1", "data": "2026-10-30", "horario": "19hs", "local": "Amanari", "padre": "Padre Ivan e Padre Rafael" },
+
+  // --- 31/10 (Sábado) ---
+  { "id": "escalaoutubro-ivan-2026-10-31-17hs-saobenedito-1", "data": "2026-10-31", "horario": "17hs", "local": "São Benedito", "padre": "Padre Ivan" },
+  { "id": "escalaoutubro-antoniocarlos-2026-10-31-19hs-matriz-1", "data": "2026-10-31", "horario": "19hs", "local": "Matriz", "padre": "Dom Antônio" },
+  { "id": "escalaoutubro-rafael-2026-10-31-19hs-scjesus-1", "data": "2026-10-31", "horario": "19hs", "local": "Sagrado Coração de Jesus", "padre": "Padre Rafael" }
 ];
 
   
