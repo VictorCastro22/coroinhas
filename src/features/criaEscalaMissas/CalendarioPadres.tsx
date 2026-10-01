@@ -121,7 +121,7 @@ const escalas = [
   { "id": "escalaoutubro-rafael-2026-10-04-19hs-matriz-2", "data": "2026-10-04", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
 
   // --- 05/10 (Segunda-feira) ---
-  { "id": "festaaparecida-diego-2026-10-05-19hs-aparecida-1", "data": "2026-10-05", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Diego Felix" },
+  { "id": "festaaparecida-diego-2026-10-05-19hs-aparecida-1", "data": "2026-10-05", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Diego" },
   { "id": "escalaoutubro-ivan-2026-10-05-19hs-saobenedito-1", "data": "2026-10-05", "horario": "19hs", "local": "São Benedito", "padre": "Padre Ivan" },
 
   // --- 06/10 (Terça-feira) ---
