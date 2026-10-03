@@ -2,14 +2,13 @@ import { useState, useEffect } from "react";
 import { collection, getDocs } from "firebase/firestore";
 import db from "../../../firebaseConfig";
 import CardEscala from "../../components/CardEscala";
-
-// 1. Importe a escala do novo arquivo que você criou
 import { escalas } from "../../dados/escalaPadres"; 
 
 interface Coroinha {
   id: string;
   nome: string;
   foto: string;
+  funcao?: string;
 }
 
 const CalendarioMissas: React.FC = () => {
@@ -30,6 +29,7 @@ const CalendarioMissas: React.FC = () => {
           id: doc.id,
           nome: data.nome,
           foto: data.foto,
+          funcao: data.funcao || "",
         });
       }
 
@@ -39,7 +39,6 @@ const CalendarioMissas: React.FC = () => {
     fetchCoroinhas();
   }, []);
 
-  // 2. Os métodos agora usam a constante 'escalas' importada automaticamente
   const getUniquePadres = () => Array.from(new Set(escalas.map((escala) => escala.padre)));
   const getUniqueLocais = () => Array.from(new Set(escalas.map((escala) => escala.local)));
 
@@ -87,7 +86,10 @@ const CalendarioMissas: React.FC = () => {
           data={escala.data}
           horario={escala.horario}
           local={escala.local}
-          coroinhas={coroinhasData[escala.id] || []}
+          coroinhasEscalados={(coroinhasData[escala.id] || []).map(c => ({
+            nome: c.nome,
+            funcao: c.funcao || "Definida no dia"
+          }))}
         />
       ))}
     </div>

@@ -7,6 +7,7 @@ interface Coroinha {
   id: string;
   nome: string;
   foto: string;
+  funcao?: string;
 }
 
 const CalendarConfissoes: React.FC = () => {
@@ -27,6 +28,7 @@ const CalendarConfissoes: React.FC = () => {
           id: doc.id,
           nome: data.nome,
           foto: data.foto,
+          funcao: data.funcao || "",
         });
       }
 
@@ -36,32 +38,30 @@ const CalendarConfissoes: React.FC = () => {
     fetchCoroinhas();
   }, []);
 
-const escalas = [
-  { "id": "escalaoutubro-ivan-2026-10-01-08hs-confissoes-1", "data": "2026-10-01", "horario": "08hs", "local": "Confissões", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-adefinir-2026-10-02-17hs-rosario-1", "data": "2026-10-02", "horario": "17hs", "local": "Confissões no Rosário", "padre": "A definir" },
-  { "id": "escalaoutubro-rafael-2026-10-06-17hs-rosario-1", "data": "2026-10-06", "horario": "17hs", "local": " Rosário(Confissões)", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-rafael-2026-10-07-0830-atendimento-1", "data": "2026-10-07", "horario": "08:30", "local": "Secretaria", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-08-08hs-confissoes-1", "data": "2026-10-08", "horario": "08hs", "local": "Confissões", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-ivan-2026-10-09-17hs-confissoes-1", "data": "2026-10-09", "horario": "17hs", "local": "Confissões", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-ivanerafael-2026-10-10-08hs-cp-1", "data": "2026-10-10", "horario": "08hs", "local": "CP (Confissões)", "padre": "Padre Ivan e Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-13-17hs-confissoes-1", "data": "2026-10-13", "horario": "17hs", "local": "Confissões", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-14-0830-Secretaria-1", "data": "2026-10-14", "horario": "08:30", "local": "Secretaria", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-15-08hs-confissoes-1", "data": "2026-10-15", "horario": "08hs", "local": "Confissões", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-16-17hs-confissoes-1", "data": "2026-10-16", "horario": "17hs", "local": "Confissões", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivanerafael-2026-10-17-08hs-cp-1", "data": "2026-10-17", "horario": "08hs", "local": "CP (Confissões)", "padre": "Padre Ivan e Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-20-17hs-confissoes-1", "data": "2026-10-20", "horario": "17hs", "local": "Confissões", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-21-0830-Secretaria-1", "data": "2026-10-21", "horario": "08:30", "local": "Secretaria", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-22-08hs-confissoes-1", "data": "2026-10-22", "horario": "08hs", "local": "Confissões", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-23-17hs-confissoes-1", "data": "2026-10-23", "horario": "17hs", "local": "Confissões", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivanerafael-2026-10-24-08hs-cp-1", "data": "2026-10-24", "horario": "08hs", "local": "CP (Confissões)", "padre": "Padre Ivan e Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-27-17hs-confissoes-1", "data": "2026-10-27", "horario": "17hs", "local": "Confissões", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-28-0830-Secretaria-1", "data": "2026-10-28", "horario": "08:30", "local": "Secretaria", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-29-08hs-confissoes-1", "data": "2026-10-29", "horario": "08hs", "local": "Confissões", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-ivan-2026-10-31-08hs-matriz-1", "data": "2026-10-31", "horario": "08hs", "local": "Matriz (Confissões)", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-31-09hs-pqsjoao-1", "data": "2026-10-31", "horario": "09hs", "local": "Parque São João (Confissões)", "padre": "Padre Rafael" },
-
-
-];
+  const escalas = [
+    { "id": "escalaoutubro-ivan-2026-10-01-08hs-confissoes-1", "data": "2026-10-01", "horario": "08hs", "local": "Confissões", "padre": "Padre Ivan" },
+    { "id": "escalaoutubro-adefinir-2026-10-02-17hs-rosario-1", "data": "2026-10-02", "horario": "17hs", "local": "Confissões no Rosário", "padre": "A definir" },
+    { "id": "escalaoutubro-rafael-2026-10-06-17hs-rosario-1", "data": "2026-10-06", "horario": "17hs", "local": " Rosário(Confissões)", "padre": "Padre Rafael" },
+    { "id": "escalaoutubro-rafael-2026-10-07-0830-atendimento-1", "data": "2026-10-07", "horario": "08:30", "local": "Secretaria", "padre": "Padre Rafael" },
+    { "id": "escalaoutubro-ivan-2026-10-08-08hs-confissoes-1", "data": "2026-10-08", "horario": "08hs", "local": "Confissões", "padre": "Padre Ivan" },
+    { "id": "escalaoutubro-ivan-2026-10-09-17hs-confissoes-1", "data": "2026-10-09", "horario": "17hs", "local": "Confissões", "padre": "Padre Ivan" },
+    { "id": "escalaoutubro-ivanerafael-2026-10-10-08hs-cp-1", "data": "2026-10-10", "horario": "08hs", "local": "CP (Confissões)", "padre": "Padre Ivan e Padre Rafael" },
+    { "id": "escalaoutubro-ivan-2026-10-13-17hs-confissoes-1", "data": "2026-10-13", "horario": "17hs", "local": "Confissões", "padre": "Padre Ivan" },
+    { "id": "escalaoutubro-rafael-2026-10-14-0830-Secretaria-1", "data": "2026-10-14", "horario": "08:30", "local": "Secretaria", "padre": "Padre Rafael" },
+    { "id": "escalaoutubro-ivan-2026-10-15-08hs-confissoes-1", "data": "2026-10-15", "horario": "08hs", "local": "Confissões", "padre": "Padre Ivan" },
+    { "id": "escalaoutubro-rafael-2026-10-16-17hs-confissoes-1", "data": "2026-10-16", "horario": "17hs", "local": "Confissões", "padre": "Padre Rafael" },
+    { "id": "escalaoutubro-ivanerafael-2026-10-17-08hs-cp-1", "data": "2026-10-17", "horario": "08hs", "local": "CP (Confissões)", "padre": "Padre Ivan e Padre Rafael" },
+    { "id": "escalaoutubro-ivan-2026-10-20-17hs-confissoes-1", "data": "2026-10-20", "horario": "17hs", "local": "Confissões", "padre": "Padre Ivan" },
+    { "id": "escalaoutubro-rafael-2026-10-21-0830-Secretaria-1", "data": "2026-10-21", "horario": "08:30", "local": "Secretaria", "padre": "Padre Rafael" },
+    { "id": "escalaoutubro-ivan-2026-10-22-08hs-confissoes-1", "data": "2026-10-22", "horario": "08hs", "local": "Confissões", "padre": "Padre Ivan" },
+    { "id": "escalaoutubro-rafael-2026-10-23-17hs-confissoes-1", "data": "2026-10-23", "horario": "17hs", "local": "Confissões", "padre": "Padre Rafael" },
+    { "id": "escalaoutubro-ivanerafael-2026-10-24-08hs-cp-1", "data": "2026-10-24", "horario": "08hs", "local": "CP (Confissões)", "padre": "Padre Ivan e Padre Rafael" },
+    { "id": "escalaoutubro-ivan-2026-10-27-17hs-confissoes-1", "data": "2026-10-27", "horario": "17hs", "local": "Confissões", "padre": "Padre Ivan" },
+    { "id": "escalaoutubro-rafael-2026-10-28-0830-Secretaria-1", "data": "2026-10-28", "horario": "08:30", "local": "Secretaria", "padre": "Padre Rafael" },
+    { "id": "escalaoutubro-ivan-2026-10-29-08hs-confissoes-1", "data": "2026-10-29", "horario": "08hs", "local": "Confissões", "padre": "Padre Ivan" },
+    { "id": "escalaoutubro-ivan-2026-10-31-08hs-matriz-1", "data": "2026-10-31", "horario": "08hs", "local": "Matriz (Confissões)", "padre": "Padre Ivan" },
+    { "id": "escalaoutubro-rafael-2026-10-31-09hs-pqsjoao-1", "data": "2026-10-31", "horario": "09hs", "local": "Parque São João (Confissões)", "padre": "Padre Rafael" },
+  ];
 
   const getUniquePadres = () => Array.from(new Set(escalas.map((escala) => escala.padre)));
   const getUniqueLocais = () => Array.from(new Set(escalas.map((escala) => escala.local)));
@@ -107,7 +107,10 @@ const escalas = [
           data={escala.data}
           horario={escala.horario}
           local={escala.local}
-          coroinhas={coroinhasData[escala.id] || []}
+          coroinhasEscalados={(coroinhasData[escala.id] || []).map(c => ({
+            nome: c.nome,
+            funcao: c.funcao || "Definida no dia"
+          }))}
         />
       ))}
     </div>
