@@ -1,36 +1,36 @@
 import React from "react"; 
 import { format, isToday, parseISO, getMonth } from "date-fns";
 import { ptBR } from "date-fns/locale";
-import { Coroinha } from "../types/coroinhas";
+// Importamos o banco de coroinhas para pegar as fotos!
+import coroinhasDb from "../dados/coroinhas"; 
 
 const linksLocais: Record<string, string> = {
   "Matriz": "https://maps.app.goo.gl/wdCowWAsnpkRkzJ59",
-  "Matriz (Missa pelas famílias)": "https://maps.app.goo.gl/wdCowWAsnpkRkzJ59",
   "Centro de Pastoral": "https://maps.app.goo.gl/odRaEWko8oJospxZA",
   "Divino": "https://maps.app.goo.gl/TCVVegRcGQMUg6ys9",
   "Nossa Senhora Aparecida": "https://maps.app.goo.gl/kyntkv5C4pam1Eit7",
   "Santa Luzia": "https://maps.app.goo.gl/yBbUwFJgdQZKL6LN7",
   "Sagrado Coração de Jesus": "https://maps.app.goo.gl/R7i5ewDzoiKdrdmh7",
   "São João Batista": "https://maps.app.goo.gl/LmRpW9y7Pqmq1QPH9",
-  "Festa de São Sebastião": "https://maps.app.goo.gl/wdCowWAsnpkRkzJ59",
   "Mãe Rainha": "https://maps.app.goo.gl/ytpFjJwJHuBSFhuH6",
   "Urucará": "https://maps.app.goo.gl/yph5tbRAgTNSdEaY9",
   "São Pedro": "https://maps.app.goo.gl/QCnjNLk5Rj4XiXqL8",
-  "Matriz (Posse Pe. Adair)": "https://maps.app.goo.gl/wdCowWAsnpkRkzJ59", 
-  "Nossa Senhora das Candeias (Festa)": "https://maps.app.goo.gl/yph5tbRAgTNSdEaY9",
   "Nossa Senhora das Candeias": "https://maps.app.goo.gl/yph5tbRAgTNSdEaY9",
   "São Benedito": "https://maps.app.goo.gl/5pYSKE6ZWRXh3wGW6",
-
 };
+
+interface CoroinhaEscalado {
+  nome: string;
+  funcao: string;
+}
 
 interface CardEscalaProps {
   padre: string;
   data: string;
   horario: string;
   local: string;
-  coroinhas: Coroinha[];
-  onAddCoroinha?: () => void;
-  onDeleteCoroinha?: (id: string) => void;
+  coroinhasEscalados?: CoroinhaEscalado[];
+  onUpdateFuncao?: (nome: string, novaFuncao: string) => void;
   isPublicView?: boolean;
 }
 
@@ -39,52 +39,42 @@ const CardEscala: React.FC<CardEscalaProps> = ({
   data,
   horario,
   local,
-  coroinhas,
-  onAddCoroinha,
-  onDeleteCoroinha,
+  coroinhasEscalados = [],
+  onUpdateFuncao,
   isPublicView = false,
 }) => {
   const dataFormatada = format(new Date(`${data}T00:00:00`), "dd-MM-yyyy");
   const diaSemana = format(new Date(`${data}T00:00:00`), "EEEE", { locale: ptBR });
   const isTodayCard = isToday(parseISO(`${data}T00:00:00`));
 
-  // Verifica se estamos em Dezembro
   const isNatal = getMonth(new Date()) === 11;
   const caminhoChapeu = "/chapeu-natal.png";
 
   const getFotoPadre = (padre: string) => {
     switch (padre) {
+      case "Pe. Rafael": return "/pe-rafael.png";
+      case "Pe. Ivan": return "/vigario.png";
       case "Padre Eudásio": return "/paroco.jpg";
       case "Padre Ivan": return "/vigario.png";
       case "Padre Rafael": return "/pe-rafael.png";
-      case "Padre William": return "/padre-william.png";
-      case "Padre Rafhael": return "/padre-rafhael.png";
       case "Padre João Paulo": return "/padre-joaop.png";
       case "Padre Aurênio": return "/pe-aurenio.png";
       case "Dom Gregório": return "/dom-gregorio.png";
       case "Padre Diego": return "/pe-diego.jpeg";
-      case "Padre Adair": return "/padre-adair.jpg";
       case "Padre Flávio": return "/padre-flavio.jpeg";
       case "Padre Washington": return "/pe-washington.jpg";
       case "Padre João Pedro": return "/padre-joao-pedro.jpg";
       case "Frei Gilmar": return "/frei-gilmar.jpeg";
-      case "Padre Antonio": return "pe-antonio.png";
-      case "Diácono Alexandre": return "diac-alexandre.png";
-      case "Dom José Antonio": return "dom-jose.jpg";
       case "Cônego Vladian": return "conego-vladian.jpg";
       case "Dom Antônio": return "dom-antonio.jpg";
       default: return "/imagens/semfoto.jpg";
     }
   };
 
-  const cerimoniarios = [
-    "José Vitor", "Fernando", "Adrian", "Victor Manuel", "Kauan", "Gustavo", "Francisco José",
-  ];
-
   const getMapLink = (nomeLocal: string) => {
-    if (linksLocais[nomeLocal]) {
-      return linksLocais[nomeLocal];
-    }
+    // Busca flexível no link do mapa
+    const chaveLocal = Object.keys(linksLocais).find(k => nomeLocal.includes(k));
+    if (chaveLocal) return linksLocais[chaveLocal];
     return `https://www.google.com/maps/search/?api=1&query=Igreja+Católica+${encodeURIComponent(nomeLocal)}`;
   };
 
@@ -95,8 +85,7 @@ const CardEscala: React.FC<CardEscalaProps> = ({
       }`}
     >
       <div className="flex items-center mb-4">
-        <div className="flex flex-col items-center mr-4">
-          {/* FOTO DO PADRE */}
+        <div className="flex flex-col items-center mr-4 w-24">
           <div className="w-16 h-16 relative bg-gray-200 rounded-full">
             <img
               src={getFotoPadre(padre)}
@@ -111,25 +100,18 @@ const CardEscala: React.FC<CardEscalaProps> = ({
               />
             )}
           </div>
-          <p className="mt-2 font-medium text-gray-800 text-center">{padre}</p>
+          <p className="mt-2 font-medium text-gray-800 text-center text-sm">{padre}</p>
         </div>
 
         <div className="flex-1 text-center">
-          
-          {/* --- LOCALIZAÇÃO (LINK PURO SEM EFEITOS DE COR) --- */}
           <a 
             href={getMapLink(local)}
             target="_blank"
             rel="noopener noreferrer"
-            // Removi "hover:bg-gray-100" e mantive apenas classes de layout e cursor
             className="group flex items-center justify-center gap-2 p-1 rounded cursor-pointer"
             title="Ver localização no mapa"
           >
-            {/* Removi "group-hover:text-blue-600" e "transition-colors" */}
-            <p className="font-bold text-lg">
-              {local}
-            </p>
-            {/* Ícone SVG - Mantive apenas o scale no hover, removendo cores se houvesse */}
+            <p className="font-bold text-lg">{local}</p>
             <svg 
               xmlns="http://www.w3.org/2000/svg" 
               viewBox="0 0 24 24" 
@@ -148,38 +130,29 @@ const CardEscala: React.FC<CardEscalaProps> = ({
               {dataFormatada} - {horario}
             </span>
           </div>
-
-          {!isPublicView && onAddCoroinha && (
-            <button
-              type="button"
-              onClick={onAddCoroinha}
-              className="text-green-500 text-lg font-bold hover:text-green-700 mt-2"
-            >
-              +
-            </button>
-          )}
         </div>
       </div>
 
       <ul className="mt-4">
-        {coroinhas.map((coroinha) => {
-          const isInvestiduraRosario =
-            local === "Rosário - Investidura Coroinhas" && data === "2025-08-16" && horario === "19h";
-
-          const isCerimoniario =
-            isInvestiduraRosario && cerimoniarios.includes(coroinha.nome);
+        {coroinhasEscalados.map((coroinha, index) => {
+          // Procura a foto no seu arquivo dados/coroinhas.ts verificando se o nome bate ou é parecido
+          const coroinhaDb = coroinhasDb.find(c => 
+            c.nome === coroinha.nome || coroinha.nome.includes(c.nome)
+          );
+          
+          const foto = coroinhaDb ? coroinhaDb.foto : "/imagens/semfoto.jpg";
 
           return (
             <li
-              key={coroinha.id}
+              key={`${coroinha.nome}-${index}`}
               className="flex items-center justify-between border-b py-2"
             >
               <div className="flex items-center">
-                <div className="relative mr-2">
+                <div className="relative mr-3">
                   <img
-                    src={coroinha.foto}
+                    src={foto}
                     alt={coroinha.nome}
-                    className="w-14 h-14 rounded-full object-cover"
+                    className="w-12 h-12 rounded-full object-cover"
                   />
                   {isNatal && (
                     <img 
@@ -189,24 +162,33 @@ const CardEscala: React.FC<CardEscalaProps> = ({
                     />
                   )}
                 </div>
-                <span className="text-base">
-                  {coroinha.nome}{" "}
-                  <span className="text-sm text-gray-600">
-                    - {coroinha.funcao || (isCerimoniario ? "Cerimoniário" : "Túnica Branca")}
-                  </span>
-                </span>
-              </div>
-              {!isPublicView && onDeleteCoroinha && (
-                <div className="space-x-2">
-                  <button
-                    type="button"
-                    onClick={() => onDeleteCoroinha(coroinha.id)}
-                    className="text-red-500 text-sm hover:underline"
-                  >
-                    Excluir
-                  </button>
+                
+                <div className="flex flex-col">
+                  <span className="text-base font-medium">{coroinha.nome}</span>
+                  
+                  {/* Se for visão pública, mostra apenas o texto. Se não, mostra o Select para alterar */}
+                  {isPublicView || !onUpdateFuncao ? (
+                    <span className="text-sm text-gray-600">
+                       {coroinha.funcao}
+                    </span>
+                  ) : (
+                    <select
+                      value={coroinha.funcao}
+                      onChange={(e) => onUpdateFuncao(coroinha.nome, e.target.value)}
+                      className="mt-1 border border-gray-300 rounded p-1 text-sm bg-gray-50 focus:outline-none focus:ring-1 focus:ring-blue-500"
+                    >
+                      <option value="Definida no dia">Definida no dia</option>
+                      <option value="Cerimoniário">Cerimoniário</option>
+                      <option value="Cruz - Sineta">Cruz - Sineta</option>
+                      <option value="Missal">Missal</option>
+                      <option value="Ofertório">Ofertório</option>
+                      <option value="Tocha">Tocha</option>
+                      <option value="Turíbulo">Turíbulo</option>
+                      <option value="Naveta">Naveta</option>
+                    </select>
+                  )}
                 </div>
-              )}
+              </div>
             </li>
           );
         })}

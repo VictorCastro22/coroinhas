@@ -1,307 +1,111 @@
 import { useState, useEffect } from "react";
-import { collection, addDoc, getDocs, deleteDoc, doc } from "firebase/firestore";
+import { doc, getDoc, updateDoc } from "firebase/firestore"; 
 import db from "../../../firebaseConfig";
 import CardEscala from "../../components/CardEscala";
-import ModalAddCoroinha from "../../components/ModalAddCoroinha";
-import coroinhas from "../../dados/coroinhas";
-import { Coroinha } from "../../types/coroinhas";
 
+interface CoroinhaEscalado {
+  nome: string;
+  funcao: string;
+}
+
+interface EscalaMissa {
+  id: string;
+  data: string;
+  horario: string;
+  local: string;
+  padre: string;
+  coroinhas_escalados?: CoroinhaEscalado[];
+}
 
 const CalendarioPadres: React.FC = () => {
-  const [coroinhasData, setCoroinhas] = useState<{ [key: string]: Coroinha[] }>({});
-  const [selectedCard, setSelectedCard] = useState<string | null>(null);
-  const [selectedCoroinha, setSelectedCoroinha] = useState<string>("");
-  const [selectionCounts, setSelectionCounts] = useState<{ [key: string]: number }>({});
-  const [selectedFuncao, setSelectedFuncao] = useState<string>("");
+  const [escalas, setEscalas] = useState<EscalaMissa[]>([]);
+  const [loadingEscalas, setLoadingEscalas] = useState(true);
 
-
+  // Busca as missas do mês no Firebase e converte a String em Objeto
   useEffect(() => {
-    const fetchCoroinhas = async () => {
-      const querySnapshot = await getDocs(collection(db, "coroinhas"));
-      const coroinhasData: { [key: string]: Coroinha[] } = {};
-      const counts: { [key: string]: number } = {};
+    const fetchEscalasMensais = async () => {
+      try {
+        const docRef = doc(db, "escalas_mensais", "mes_atual"); 
+        const docSnap = await getDoc(docRef);
 
-      for (const doc of querySnapshot.docs) {
-        const data = doc.data();
-        const cardId = data.cardId;
-        if (!coroinhasData[cardId]) coroinhasData[cardId] = [];
-        coroinhasData[cardId].push({
-          id: doc.id,
-          nome: data.nome,
-          foto: data.foto,
-          funcao: data.funcao || "", 
-        });
-        counts[data.nome] = (counts[data.nome] || 0) + 1;
+        if (docSnap.exists()) {
+          const dadosBrutos = docSnap.data().missas;
+          
+          if (typeof dadosBrutos === "string") {
+            setEscalas(JSON.parse(dadosBrutos));
+          } else if (Array.isArray(dadosBrutos)) {
+            setEscalas(dadosBrutos);
+          }
+        } else {
+          console.log("Nenhuma escala encontrada para este mês no Firebase.");
+        }
+      } catch (error) {
+        console.error("Erro ao buscar a escala:", error);
+      } finally {
+        setLoadingEscalas(false);
       }
-
-      setCoroinhas(coroinhasData);
-      setSelectionCounts(counts);
     };
 
-    fetchCoroinhas();
+    fetchEscalasMensais();
   }, []);
 
-  const handleSubmitCoroinha = async () => {
-    if (!selectedCard || !selectedCoroinha) return;
+  // Função para os meninos atualizarem a função direto no Select
+  const handleUpdateFuncao = async (escalaId: string, nomeCoroinha: string, novaFuncao: string) => {
+    // 1. Atualiza visualmente na tela na mesma hora
+    const novasEscalas = escalas.map(escala => {
+      if (escala.id === escalaId && escala.coroinhas_escalados) {
+        return {
+          ...escala,
+          coroinhas_escalados: escala.coroinhas_escalados.map(c => 
+            c.nome === nomeCoroinha ? { ...c, funcao: novaFuncao } : c
+          )
+        };
+      }
+      return escala;
+    });
 
+    setEscalas(novasEscalas);
+
+    // 2. Salva o JSON atualizado lá no Firebase
     try {
-      const coroinha = coroinhas.find(c => c.id === selectedCoroinha);
-      if (!coroinha) return;
-
-      const docRef = await addDoc(collection(db, "coroinhas"), {
-        nome: coroinha.nome,
-        cardId: selectedCard,
-        foto: coroinha.foto,
-        funcao: selectedFuncao,
+      const docRef = doc(db, "escalas_mensais", "mes_atual");
+      await updateDoc(docRef, {
+        missas: JSON.stringify(novasEscalas)
       });
-
-
-      const novosCoroinhas = [
-        ...(coroinhasData[selectedCard] || []),
-      { id: docRef.id, nome: coroinha.nome, foto: coroinha.foto, funcao: selectedFuncao }
-      ];
-      setCoroinhas({ ...coroinhasData, [selectedCard]: novosCoroinhas });
-
-      setSelectionCounts({ 
-        ...selectionCounts, 
-        [coroinha.nome]: (selectionCounts[coroinha.nome] || 0) + 1 
-      });
-
-      setSelectedCard(null);
-      setSelectedCoroinha("");
-      setSelectedFuncao("");
     } catch (error) {
-      console.error("Erro ao adicionar coroinha:", error);
-    }
-  };  
-
-  const handleDeleteCoroinha = async (cardId: string, coroinhaId: string) => {
-    try {
-      await deleteDoc(doc(db, "coroinhas", coroinhaId));
-
-      const novosCoroinhas = coroinhasData[cardId].filter(
-        (coroinha) => coroinha.id !== coroinhaId
-      );
-      setCoroinhas({ ...coroinhasData, [cardId]: novosCoroinhas });
-    } catch (error) {
-      console.error("Erro ao deletar coroinha:", error);
+      console.error("Erro ao salvar nova função no Firebase:", error);
     }
   };
 
-const escalas = [
-  // --- 30/09 (Quarta-feira) ---
-  { "id": "escalasetembro-rafael-2026-09-30-19hs-matriz-1", "data": "2026-09-30", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalasetembro-ivan-2026-09-30-19hs-mororo-1", "data": "2026-09-30", "horario": "19hs", "local": "Mororó", "padre": "Padre Ivan" },
-
-  // --- 01/10 (Quinta-feira) ---
-
-  { "id": "escalaoutubro-ivan-2026-10-01-19hs-matriz-1", "data": "2026-10-01", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-01-19hs-staterezinha-1", "data": "2026-10-01", "horario": "19hs", "local": "Santa Terezinha", "padre": "Padre Rafael" },
-
-  // --- 02/10 (Sexta-feira) ---
-  { "id": "escalaoutubro-adefinir-2026-10-02-19hs-Centro Pastoral-1", "data": "2026-10-02", "horario": "19hs", "local": "Centro Pastoral", "padre": "A definir" },
-
-  // --- 03/10 (Sábado) ---
-  { "id": "escalaoutubro-rafael-2026-10-03-17hs-staluzia-1", "data": "2026-10-03", "horario": "17hs", "local": "Santa Luzia", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-03-17hs-stoantonio-1", "data": "2026-10-03", "horario": "17hs", "local": "Santo Antonio", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-ivan-2026-10-03-19hs-matriz-1", "data": "2026-10-03", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-03-19hs-enCentro Pastoralirapora-1", "data": "2026-10-03", "horario": "19hs", "local": "Enc. Pirapora", "padre": "Padre Rafael" },
-  { "id": "festaNossa Senhora Aparecida-roberto-2026-10-03-19hs-Nossa Senhora Aparecida-1", "data": "2026-10-03", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Roberto Araújo" },
-
-  // --- 04/10 (Domingo) ---
-  { "id": "escalaoutubro-rafael-2026-10-04-07hs-matriz-1", "data": "2026-10-04", "horario": "07hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-04-07hs-divino-1", "data": "2026-10-04", "horario": "07hs", "local": "Divino", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-ivan-2026-10-04-09hs-matriz-1", "data": "2026-10-04", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-ivan-2026-10-04-11hs-saojose-1", "data": "2026-10-04", "horario": "11hs", "local": "São José", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-04-16hs-matriz-1", "data": "2026-10-04", "horario": "16hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-joaopaulo-2026-10-04-17hs-divino-1", "data": "2026-10-04", "horario": "17hs", "local": "Divino", "padre": "Padre João Paulo" },
-  { "id": "escalaoutubro-ivan-2026-10-04-17hs-psjoao-1", "data": "2026-10-04", "horario": "17hs", "local": "Parque São João", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-04-18hs-Nossa Senhora Aparecida-1", "data": "2026-10-04", "horario": "18hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-joaopaulo-2026-10-04-19hs-candeias-1", "data": "2026-10-04", "horario": "19hs", "local": "Candeias", "padre": "Padre João Paulo" },
-  { "id": "escalaoutubro-rafael-2026-10-04-19hs-matriz-2", "data": "2026-10-04", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
-
-  // --- 05/10 (Segunda-feira) ---
-  { "id": "festaaparecida-diego-2026-10-05-19hs-aparecida-1", "data": "2026-10-05", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Diego" },
-  { "id": "escalaoutubro-ivan-2026-10-05-19hs-saobenedito-1", "data": "2026-10-05", "horario": "19hs", "local": "São Benedito", "padre": "Padre Ivan" },
-
-  // --- 06/10 (Terça-feira) ---
-  { "id": "festaaparecida-joaopaulo-2026-10-06-19hss-aparecida-1", "data": "2026-10-06", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre João Paulo" },
-  { "id": "escalaoutubro-ivan-2026-10-06-19hs-rosario-1", "data": "2026-10-06", "horario": "19hs", "local": "Rosário", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-06-19hs-santaedwiges-1", "data": "2026-10-06", "horario": "19hs", "local": "Santa Edwiges", "padre": "Padre Rafael" },
-
-  // --- 07/10 (Quarta-feira) ---
-  { "id": "festaaparecida-washington-2026-10-07-19hss-aparecida-1", "data": "2026-10-07", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Washington" },
-  { "id": "escalaoutubro-rafael-2026-10-07-19hs-nsrosario-1", "data": "2026-10-07", "horario": "19hs", "local": "Rosário", "padre": "Padre Rafael" },
-
-  // --- 08/10 (Quinta-feira) ---
-  { "id": "festaaparecida-henrique-2026-10-08-19hss-aparecida-1", "data": "2026-10-08", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Henrique Bezerra" },
-  { "id": "escalaoutubro-rafael-2026-10-08-0615-irmas-1", "data": "2026-10-08", "horario": "06:15", "local": "Irmãs", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-vladian-2026-10-08-19hs-abrigodospobres-1", "data": "2026-10-08", "horario": "19:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" },
-  { "id": "escalaoutubro-ivan-2026-10-08-19hs-maerainha-1", "data": "2026-10-08", "horario": "19hs", "local": "Mãe Rainha", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-08-19hs-matriz-1", "data": "2026-10-08", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
-
-  // --- 09/10 (Sexta-feira) ---
-  { "id": "festaaparecida-joaopedro-2026-10-09-19hss-aparecida-1", "data": "2026-10-09", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre João Pedro" },
-  { "id": "escalaoutubro-vladian-2026-10-09-19hs-abrigodospobres-1", "data": "2026-10-09", "horario": "19:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" },
-  { "id": "escalaoutubro-edgle-2026-10-09-19hs-matriz-1", "data": "2026-10-09", "horario": "19hs", "local": "Matriz", "padre": "Frei Edglê" },
-  { "id": "escalaoutubro-ivan-2026-10-09-19hs-mororo-1", "data": "2026-10-09", "horario": "19hs", "local": "Mororó", "padre": "Padre Ivan" },
-
-  // --- 10/10 (Sábado) ---
-  { "id": "festaaparecida-edgle-2026-10-10-19hss-aparecida-1", "data": "2026-10-10", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Frei Edglê" },
-  { "id": "escalaoutubro-ivan-2026-10-10-17hs-stadulce-1", "data": "2026-10-10", "horario": "17hs", "local": "Sta Dulce", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-vladian-2026-10-10-19hs-abrigodospobres-1", "data": "2026-10-10", "horario": "19:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" },
-  { "id": "escalaoutubro-rafael-2026-10-10-19hs-matriz-1", "data": "2026-10-10", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-10-19hs-sjbatista-1", "data": "2026-10-10", "horario": "19hs", "local": "São João Batista", "padre": "Padre Ivan" },
-
-  // --- 11/10 (Domingo) ---
-  
-  { "id": "escalaoutubro-ivan-2026-10-11-07hs-matriz-1", "data": "2026-10-11", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-11-07hs-divino-1", "data": "2026-10-11", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-11-09hs-matriz-1", "data": "2026-10-11", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-11-16hs-matriz-1", "data": "2026-10-11", "horario": "16hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-vladian-2026-10-11-17hs-abrigodospobres-1", "data": "2026-10-11", "horario": "17:00", "local": "Abrigo dos Pobres", "padre": "Cônego Vladian" },
-  { "id": "escalaoutubro-rafael-2026-10-11-17hs-divino-1", "data": "2026-10-11", "horario": "17hs", "local": "Divino", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-11-17hs-psjoao-1", "data": "2026-10-11", "horario": "17hs", "local": "Parque São João", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-ivan-2026-10-11-18hs-Nossa Senhora Aparecida-1", "data": "2026-10-11", "horario": "18hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-ivan-2026-10-11-19hs-candeias-1", "data": "2026-10-11", "horario": "19hs", "local": "Candeias", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-11-19hs-matriz-1", "data": "2026-10-11", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
-
-  // --- 12/10 (Segunda-feira) ---
-  { "id": "escalaoutubro-rafael-2026-10-12-11hs-divino-1", "data": "2026-10-12", "horario": "11hs", "local": "Divino", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-rafael-2026-10-12-17hs-matriz-1", "data": "2026-10-12", "horario": "17hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-rafael-2026-10-12-19hs-Nossa Senhora Aparecida-1", "data": "2026-10-12", "horario": "19hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Rafael" },
-
-  // --- 13/10 (Terça-feira) ---
-  { "id": "escalaoutubro-ivan-2026-10-13-12hs-matriz-1", "data": "2026-10-13", "horario": "12hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-13-17hs-vilares-1", "data": "2026-10-13", "horario": "17hs", "local": "Vilares", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-rafael-2026-10-13-19hs-pqsjoao-1", "data": "2026-10-13", "horario": "19hs", "local": "Parque São João", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-13-19hs-matriz-1", "data": "2026-10-13", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-
-  // --- 14/10 (Quarta-feira) ---
-  { "id": "escalaoutubro-ivan-2026-10-14-19hs-nsprovidencia-1", "data": "2026-10-14", "horario": "19hs", "local": "NS Providência", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-14-19hs-matriz-1", "data": "2026-10-14", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
-
-  // --- 15/10 (Quinta-feira) ---
-  { "id": "escalaoutubro-rafael-2026-10-15-0615-irmas-1", "data": "2026-10-15", "horario": "06:15", "local": "Irmãs", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-rafael-2026-10-15-19hs-shalom-1", "data": "2026-10-15", "horario": "19hs", "local": "Shalom", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-15-19hs-matriz-1", "data": "2026-10-15", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-
-  // --- 16/10 (Sexta-feira) ---
-  { "id": "escalaoutubro-ivan-2026-10-16-19hs-nsgracas-1", "data": "2026-10-16", "horario": "19hs", "local": "NS Graças", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-flavio-2026-10-16-19hs-staedwiges-1", "data": "2026-10-16", "horario": "19hs", "local": "Santa Edwiges", "padre": "Padre Flávio" },
-  { "id": "escalaoutubro-rafael-2026-10-16-19hs-matriz-1", "data": "2026-10-16", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
-
-  // --- 17/10 (Sábado) ---
-  { "id": "escalaoutubro-ivan-2026-10-17-17hs-staluzia-1", "data": "2026-10-17", "horario": "17hs", "local": "Santa Luzia", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-17-17hs-stoantonio-1", "data": "2026-10-17", "horario": "17hs", "local": "Santo Antonio", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-antoniocarlos-2026-10-17-19hs-matriz-1", "data": "2026-10-17", "horario": "19hs", "local": "Matriz", "padre": "Dom Antônio" },
-  { "id": "escalaoutubro-ivan-2026-10-17-19hs-scjesus-1", "data": "2026-10-17", "horario": "19hs", "local": "Sagrado Coração de Jesus", "padre": "Padre Ivan" },
-
-  // --- 18/10 (Domingo) ---
-  { "id": "escalaoutubro-rafael-2026-10-18-07hs-matriz-1", "data": "2026-10-18", "horario": "07hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-18-07hs-divino-1", "data": "2026-10-18", "horario": "07hs", "local": "Divino", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-ivan-2026-10-18-09hs-matriz-1", "data": "2026-10-18", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-18-09hs-Nossa Senhora Aparecida-1", "data": "2026-10-18", "horario": "09hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-rafael-2026-10-18-11hs-saojose-1", "data": "2026-10-18", "horario": "11hs", "local": "São José", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-18-16hs-matriz-1", "data": "2026-10-18", "horario": "16hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-18-17hs-divino-1", "data": "2026-10-18", "horario": "17hs", "local": "Divino", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-18-17hs-psjoao-1", "data": "2026-10-18", "horario": "17hs", "local": "Parque São João", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-18-18hs-maerainha-1", "data": "2026-10-18", "horario": "18hs", "local": "Mãe Rainha", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-18-19hs-candeias-1", "data": "2026-10-18", "horario": "19hs", "local": "Candeias", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-18-19hs-matriz-2", "data": "2026-10-18", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
-
-  // --- 20/10 (Terça-feira) ---
-  { "id": "escalaoutubro-ivan-2026-10-20-19hs-matriz-1", "data": "2026-10-20", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-20-19hs-saopedro-1", "data": "2026-10-20", "horario": "19hs", "local": "São Pedro", "padre": "Padre Rafael" },
-
-  // --- 21/10 (Quarta-feira) ---
-  { "id": "escalaoutubro-rafael-2026-10-21-19hs-matriz-1", "data": "2026-10-21", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-21-19hs-nsdores-1", "data": "2026-10-21", "horario": "19hs", "local": "NS Dores", "padre": "Padre Ivan" },
-
-  // --- 22/10 (Quinta-feira) ---
-  { "id": "escalaoutubro-rafael-2026-10-22-0615-irmas-1", "data": "2026-10-22", "horario": "06:15", "local": "Irmãs", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-22-19hs-matriz-1", "data": "2026-10-22", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-
-  // --- 23/10 (Sexta-feira) ---
-  { "id": "escalaoutubro-aurenio-2026-10-23-19hs-matriz-1", "data": "2026-10-23", "horario": "19hs", "local": "Matriz", "padre": "Padre Aurênio" },
-  { "id": "escalaoutubro-rafael-2026-10-23-19hs-staterezinha-1", "data": "2026-10-23", "horario": "19hs", "local": "Santa Terezinha", "padre": "Padre Rafael" },
-
-  // --- 24/10 (Sábado) ---
-  { "id": "escalaoutubro-rafael-2026-10-24-17hs-starita-1", "data": "2026-10-24", "horario": "17hs", "local": "Santa Rita", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-24-19hs-matriz-1", "data": "2026-10-24", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-24-19hs-sjbatista-1", "data": "2026-10-24", "horario": "19hs", "local": "São João Batista", "padre": "Padre Rafael" },
-
-  // --- 25/10 (Domingo) ---
-  { "id": "escalaoutubro-ivan-2026-10-25-07hs-matriz-1", "data": "2026-10-25", "horario": "07hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-25-07hs-divino-1", "data": "2026-10-25", "horario": "07hs", "local": "Divino", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-25-09hs-matriz-1", "data": "2026-10-25", "horario": "09hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-25-09hs-Nossa Senhora Aparecida-1", "data": "2026-10-25", "horario": "09hs", "local": "Nossa Senhora Aparecida", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-25-1530-staedwiges-1", "data": "2026-10-25", "horario": "15:30", "local": "Santa Edwiges", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-25-16hs-matriz-1", "data": "2026-10-25", "horario": "16hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-25-17hs-divino-1", "data": "2026-10-25", "horario": "17hs", "local": "Divino", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-25-17hs-psjoao-1", "data": "2026-10-25", "horario": "17hs", "local": "Parque São João", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-rafael-2026-10-25-19hs-candeias-1", "data": "2026-10-25", "horario": "19hs", "local": "Candeias", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-25-19hs-matriz-2", "data": "2026-10-25", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-
-  // --- 27/10 (Terça-feira) ---
-  { "id": "escalaoutubro-ivan-2026-10-27-19hs-matriz-1", "data": "2026-10-27", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-rafael-2026-10-27-19hs-delta-1", "data": "2026-10-27", "horario": "19hs", "local": "Delta", "padre": "Padre Rafael" },
-
-  // --- 28/10 (Quarta-feira) ---
-  { "id": "escalaoutubro-ivan-2026-10-28-19hs-matriz-1", "data": "2026-10-28", "horario": "19hs", "local": "Matriz", "padre": "Padre Ivan" },
-
-  // --- 29/10 (Quinta-feira) ---
-  { "id": "escalaoutubro-rafael-2026-10-29-0615-irmas-1", "data": "2026-10-29", "horario": "06:15", "local": "Irmãs", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-rafael-2026-10-29-0830-visitas-1", "data": "2026-10-29", "horario": "08:30", "local": "Visitas", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-rafael-2026-10-29-19hs-matriz-1", "data": "2026-10-29", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
-  { "id": "escalaoutubro-ivan-2026-10-29-19hs-nspiedade-1", "data": "2026-10-29", "horario": "19hs", "local": "NS Piedade", "padre": "Padre Ivan" },
-
-  // --- 30/10 (Sexta-feira) ---
-  { "id": "escalaoutubro-ivanerafael-2026-10-30-19hs-amanari-1", "data": "2026-10-30", "horario": "19hs", "local": "Amanari", "padre": "Padre Ivan e Padre Rafael" },
-
-  // --- 31/10 (Sábado) ---
-  { "id": "escalaoutubro-ivan-2026-10-31-17hs-saobenedito-1", "data": "2026-10-31", "horario": "17hs", "local": "São Benedito", "padre": "Padre Ivan" },
-  { "id": "escalaoutubro-antoniocarlos-2026-10-31-19hs-matriz-1", "data": "2026-10-31", "horario": "19hs", "local": "Matriz", "padre": "Dom Antônio" },
-  { "id": "escalaoutubro-rafael-2026-10-31-19hs-scjesus-1", "data": "2026-10-31", "horario": "19hs", "local": "Sagrado Coração de Jesus", "padre": "Padre Rafael" }
-];
-
-  
   return (
     <div>
       <h1 className="text-[30px] font-playfair font-semibold text-[#535043] text-center mb-6">
         Calendário das Missas
       </h1>
 
-      
-            {escalas.map((escala) => (
-              <CardEscala
-                key={escala.id}
-                padre={escala.padre}
-                data={escala.data}
-                horario={escala.horario}
-                local={escala.local}
-                coroinhas={coroinhasData[escala.id] || []}
-                onAddCoroinha={() => setSelectedCard(escala.id)}
-                onDeleteCoroinha={(id) => handleDeleteCoroinha(escala.id, id)}
-              />
-            ))}
-      
-            <ModalAddCoroinha
-              isOpen={!!selectedCard}
-              coroinhas={coroinhas}
-              coroinhasDaMissa={selectedCard ? (coroinhasData[selectedCard] || []) : []} 
-              onSubmit={handleSubmitCoroinha}
-              onClose={() => setSelectedCard(null)}
-              selectedCoroinha={selectedCoroinha}
-              setSelectedCoroinha={setSelectedCoroinha}
-              selectedFuncao={selectedFuncao}
-              setSelectedFuncao={setSelectedFuncao}
-              selectionCounts={selectionCounts} 
-            />
-
-      
-          </div>
-        );
-      };
+      {loadingEscalas ? (
+        <div className="flex justify-center items-center py-10">
+          <p className="text-lg text-gray-500 font-medium">Carregando calendário de missas...</p>
+        </div>
+      ) : escalas.length > 0 ? (
+        escalas.map((escala) => (
+          <CardEscala
+            key={escala.id}
+            padre={escala.padre}
+            data={escala.data}
+            horario={escala.horario}
+            local={escala.local}
+            coroinhasEscalados={escala.coroinhas_escalados || []}
+            onUpdateFuncao={(nome, novaFuncao) => handleUpdateFuncao(escala.id, nome, novaFuncao)}
+          />
+        ))
+      ) : (
+        <div className="flex justify-center items-center py-10">
+          <p className="text-lg text-gray-500 font-medium">Nenhuma missa agendada no momento.</p>
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default CalendarioPadres;
