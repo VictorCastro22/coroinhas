@@ -1,5 +1,4 @@
 const coroinhas = [
-  { id: "1", nome: "Adryan", foto: "/imagens/Adrian-mestre.png" },
   { id: "2", nome: "Ana Isabelly", foto: "/imagens/ana-isabelly.jpeg" },
   { id: "3", nome: "Ana Jéssica", foto: "/imagens/ana-jessica.jpg" },
   { id: "4", nome: "Ana Júlia", foto: "/imagens/julia-amorim.jpeg" },
@@ -23,7 +22,7 @@ const coroinhas = [
   { id: "31", nome: "Danilo", foto: "/imagens/danilo.jpg" },
   { id: "32", nome: "Davi Cardoso", foto: "/imagens/davi-cardoso.jpg" },
   { id: "33", nome: "Davi Sousa", foto: "/imagens/semfoto.jpg" },
-  { id: "30000", nome: "Eduarda Castelo", foto: "/imagens/semfoto.jpg" },
+  { id: "3000", nome: "Eduarda Castelo", foto: "/imagens/semfoto.jpg" },
   { id: "35", nome: "Eduarda Cavalcante", foto: "/imagens/semfoto.jpg" },
   { id: "36", nome: "Eduarda Cordeiro", foto: "/imagens/eduarda-cordeiro.jpg" },
   { id: "37", nome: "Fernando", foto: "/imagens/semfoto.jpg" },

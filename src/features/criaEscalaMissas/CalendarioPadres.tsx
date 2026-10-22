@@ -1,93 +1,83 @@
 import { useState, useEffect } from "react";
-import { collection, addDoc, getDocs, deleteDoc, doc } from "firebase/firestore";
+import { doc, getDoc, updateDoc } from "firebase/firestore"; 
 import db from "../../../firebaseConfig";
 import CardEscala from "../../components/CardEscala";
-import ModalAddCoroinha from "../../components/ModalAddCoroinha";
-import coroinhas from "../../dados/coroinhas";
-import { Coroinha } from "../../types/coroinhas";
 
+interface CoroinhaEscalado {
+  nome: string;
+  funcao: string;
+}
+
+interface EscalaMissa {
+  id: string;
+  data: string;
+  horario: string;
+  local: string;
+  padre: string;
+  coroinhas_escalados?: CoroinhaEscalado[];
+}
 
 const CalendarioPadres: React.FC = () => {
-  const [coroinhasData, setCoroinhas] = useState<{ [key: string]: Coroinha[] }>({});
-  const [selectedCard, setSelectedCard] = useState<string | null>(null);
-  const [selectedCoroinha, setSelectedCoroinha] = useState<string>("");
-  const [selectionCounts, setSelectionCounts] = useState<{ [key: string]: number }>({});
-  const [selectedFuncao, setSelectedFuncao] = useState<string>("");
+  const [escalas, setEscalas] = useState<EscalaMissa[]>([]);
+  const [loadingEscalas, setLoadingEscalas] = useState(true);
 
-
+  // Busca as missas do mês no Firebase e converte a String em Objeto
   useEffect(() => {
-    const fetchCoroinhas = async () => {
-      const querySnapshot = await getDocs(collection(db, "coroinhas"));
-      const coroinhasData: { [key: string]: Coroinha[] } = {};
-      const counts: { [key: string]: number } = {};
+    const fetchEscalasMensais = async () => {
+      try {
+        const docRef = doc(db, "escalas_mensais", "mes_atual"); 
+        const docSnap = await getDoc(docRef);
 
-      for (const doc of querySnapshot.docs) {
-        const data = doc.data();
-        const cardId = data.cardId;
-        if (!coroinhasData[cardId]) coroinhasData[cardId] = [];
-        coroinhasData[cardId].push({
-          id: doc.id,
-          nome: data.nome,
-          foto: data.foto,
-          funcao: data.funcao || "", 
-        });
-        counts[data.nome] = (counts[data.nome] || 0) + 1;
+        if (docSnap.exists()) {
+          const dadosBrutos = docSnap.data().missas;
+          
+          if (typeof dadosBrutos === "string") {
+            setEscalas(JSON.parse(dadosBrutos));
+          } else if (Array.isArray(dadosBrutos)) {
+            setEscalas(dadosBrutos);
+          }
+        } else {
+          console.log("Nenhuma escala encontrada para este mês no Firebase.");
+        }
+      } catch (error) {
+        console.error("Erro ao buscar a escala:", error);
+      } finally {
+        setLoadingEscalas(false);
       }
-
-      setCoroinhas(coroinhasData);
-      setSelectionCounts(counts);
     };
 
-    fetchCoroinhas();
+    fetchEscalasMensais();
   }, []);
 
-  const handleSubmitCoroinha = async () => {
-    if (!selectedCard || !selectedCoroinha) return;
+  // Função para os meninos atualizarem a função direto no Select
+  const handleUpdateFuncao = async (escalaId: string, nomeCoroinha: string, novaFuncao: string) => {
+    // 1. Atualiza visualmente na tela na mesma hora
+    const novasEscalas = escalas.map(escala => {
+      if (escala.id === escalaId && escala.coroinhas_escalados) {
+        return {
+          ...escala,
+          coroinhas_escalados: escala.coroinhas_escalados.map(c => 
+            c.nome === nomeCoroinha ? { ...c, funcao: novaFuncao } : c
+          )
+        };
+      }
+      return escala;
+    });
 
+    setEscalas(novasEscalas);
+
+    // 2. Salva o JSON atualizado lá no Firebase
     try {
-      const coroinha = coroinhas.find(c => c.id === selectedCoroinha);
-      if (!coroinha) return;
-
-      const docRef = await addDoc(collection(db, "coroinhas"), {
-        nome: coroinha.nome,
-        cardId: selectedCard,
-        foto: coroinha.foto,
-        funcao: selectedFuncao,
+      const docRef = doc(db, "escalas_mensais", "mes_atual");
+      await updateDoc(docRef, {
+        missas: JSON.stringify(novasEscalas)
       });
-
-
-      const novosCoroinhas = [
-        ...(coroinhasData[selectedCard] || []),
-      { id: docRef.id, nome: coroinha.nome, foto: coroinha.foto, funcao: selectedFuncao }
-      ];
-      setCoroinhas({ ...coroinhasData, [selectedCard]: novosCoroinhas });
-
-      setSelectionCounts({ 
-        ...selectionCounts, 
-        [coroinha.nome]: (selectionCounts[coroinha.nome] || 0) + 1 
-      });
-
-      setSelectedCard(null);
-      setSelectedCoroinha("");
-      setSelectedFuncao("");
     } catch (error) {
-      console.error("Erro ao adicionar coroinha:", error);
-    }
-  };  
-
-  const handleDeleteCoroinha = async (cardId: string, coroinhaId: string) => {
-    try {
-      await deleteDoc(doc(db, "coroinhas", coroinhaId));
-
-      const novosCoroinhas = coroinhasData[cardId].filter(
-        (coroinha) => coroinha.id !== coroinhaId
-      );
-      setCoroinhas({ ...coroinhasData, [cardId]: novosCoroinhas });
-    } catch (error) {
-      console.error("Erro ao deletar coroinha:", error);
+      console.error("Erro ao salvar nova função no Firebase:", error);
     }
   };
 
+<<<<<<< HEAD
 const escalas = [
   { "id": "escalaoutubro-rafael-2026-10-21-19hs-matriz-1", "data": "2026-10-21", "horario": "19hs", "local": "Matriz", "padre": "Padre Rafael" },
   { "id": "escalaoutubro-ivan-2026-10-21-19hs-nsdores-1", "data": "2026-10-21", "horario": "19hs", "local": "NS Dores", "padre": "Padre Ivan" },
@@ -140,42 +130,37 @@ const escalas = [
 ];
 
   
+=======
+>>>>>>> 2e1deebe9e332ba550e5ceffbea3e05bd0afe44b
   return (
     <div>
       <h1 className="text-[30px] font-playfair font-semibold text-[#535043] text-center mb-6">
         Calendário das Missas
       </h1>
 
-      
-            {escalas.map((escala) => (
-              <CardEscala
-                key={escala.id}
-                padre={escala.padre}
-                data={escala.data}
-                horario={escala.horario}
-                local={escala.local}
-                coroinhas={coroinhasData[escala.id] || []}
-                onAddCoroinha={() => setSelectedCard(escala.id)}
-                onDeleteCoroinha={(id) => handleDeleteCoroinha(escala.id, id)}
-              />
-            ))}
-      
-            <ModalAddCoroinha
-              isOpen={!!selectedCard}
-              coroinhas={coroinhas}
-              coroinhasDaMissa={selectedCard ? (coroinhasData[selectedCard] || []) : []} 
-              onSubmit={handleSubmitCoroinha}
-              onClose={() => setSelectedCard(null)}
-              selectedCoroinha={selectedCoroinha}
-              setSelectedCoroinha={setSelectedCoroinha}
-              selectedFuncao={selectedFuncao}
-              setSelectedFuncao={setSelectedFuncao}
-              selectionCounts={selectionCounts} 
-            />
-
-      
-          </div>
-        );
-      };
+      {loadingEscalas ? (
+        <div className="flex justify-center items-center py-10">
+          <p className="text-lg text-gray-500 font-medium">Carregando calendário de missas...</p>
+        </div>
+      ) : escalas.length > 0 ? (
+        escalas.map((escala) => (
+          <CardEscala
+            key={escala.id}
+            padre={escala.padre}
+            data={escala.data}
+            horario={escala.horario}
+            local={escala.local}
+            coroinhasEscalados={escala.coroinhas_escalados || []}
+            onUpdateFuncao={(nome, novaFuncao) => handleUpdateFuncao(escala.id, nome, novaFuncao)}
+          />
+        ))
+      ) : (
+        <div className="flex justify-center items-center py-10">
+          <p className="text-lg text-gray-500 font-medium">Nenhuma missa agendada no momento.</p>
+        </div>
+      )}
+    </div>
+  );
+};
 
 export default CalendarioPadres;
