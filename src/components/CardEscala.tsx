@@ -52,11 +52,11 @@ const CardEscala: React.FC<CardEscalaProps> = ({
 
   const getFotoPadre = (padre: string) => {
     switch (padre) {
-      case "Pe. Rafael": return "/pe-rafael.png";
-      case "Pe. Ivan": return "/vigario.png";
+      case "Padre Rafael": return "/pe-rafael.png";
+      case "Padre Ivan": return "/vigario.png";
       case "Padre Eudásio": return "/paroco.jpg";
       case "Padre Ivan": return "/vigario.png";
-      case "Padre Rafael": return "/pe-rafael.png";
+      case "Padre Rafhael": return "/padre-rafhael.png";
       case "Padre João Paulo": return "/padre-joaop.png";
       case "Padre Aurênio": return "/pe-aurenio.png";
       case "Dom Gregório": return "/dom-gregorio.png";
